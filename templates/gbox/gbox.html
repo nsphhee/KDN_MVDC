@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- 호환성 -->     
+        <meta name="generator" content="EditPlus®"><!-- 사용프로그램 -->
+        <meta name="format-detection" content="telephone=no,email=no,address=no"><!-- 전화번호, 주소, 메일등 링크로 인식방지 -->
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"><!-- 화면맞춤 -->
+        <meta name="author" content="국가생명연구자원정보센터(KOBIC)"><!-- 저작자 -->
+        <meta name="keywords" content="국가생명연구자원정보센터(KOBIC)"><!-- 키워드 -->
+        <meta name="description" content="국가생명연구자원정보센터(KOBIC)"><!-- 웹페이지의 축약된 설명을 제공_최대45자(네이버 웹마스터도구 기준) -->
+        <meta name="copyright" content="Copyright &copy; 2021 BY KOREA BIOINFORMATION CENTER(KOBIC). ALL RIGHTS RESERVED."><!-- 저작권 -->
+        <!-- 오픈그래프_소셜미디어로 공유될 때 우선적으로 활용되는 정보:s -->
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="국가생명연구자원정보센터(KOBIC)">
+        <meta property="og:description" content="국가생명연구자원정보센터(KOBIC)">
+        <meta property="og:url" content="https://www.kobic.re.kr/kobic/">
+        <!-- 오픈그래프_소셜미디어로 공유될 때 우선적으로 활용되는 정보:e -->
+        <link rel="shortcut icon" type="image/x-icon" href="../../static/images/common/favicon.ico"><!-- 파비콘 -->        
+        <title>국가생명연구자원정보센터(KOBIC)</title>    
+        <link media="all" rel="stylesheet" type="text/css" href="../../static/css/font.css">  
+        <link media="all" rel="stylesheet" type="text/css" href="../../static/css/gbox/gbox.css">
+        <script src="../../static/js/gbox/gbox.js"></script>
+        <script src="../../static/js/jquery-3.7.0.min.js"></script>
+    </head>
+    <body class="scroll">    
+        <div id="wrap">
+            <!-- header :s --> 
+            <header id="header" class="header-wrap">
+                <div class="header-inner">                    
+                    <div class="logo-wrap">
+                        <h1 class="h1-logo">
+                            <a href="/" class="logo"><img src="../../static/images/gbox/gbox_logo_w.svg" alt="gobx"></a>
+                        </h1>  
+                        <a href="https://www.kobic.re.kr/bioexpress/execute/execute" class="logo"><img src="../../static/images/gbox/bx_logo_g.svg" alt="Bio-Express"></a>
+                    </div> 
+                    <div class="utill-wrap">
+                        <button class="btn btn-refresh">새로고침</button>
+                        <span class="today">2023-10-23 13:53:14</span>
+                        <span class="user">bioex 님</span>
+                        <a href="" target="_blank" class="go-link">KOBIC</a>
+                    </div>
+                </div>
+            </header>
+            <!-- header :e -->        
+            <!-- main : s -->
+            <main id="main">
+                <div id="gbox-wrap">
+                    <div id="left-wrap">
+                        <div class="left-inner">
+                            <div class="nav-wrap">
+                                <div class="nav-inner scroll">
+                                    <div class="nav-list">
+                                        <div class="nav-item">
+                                            <div class="nav-item-tit"><span class="mn-recent">최근</span></div>
+                                        </div>
+                                        <div class="nav-item active"> <!-- 선택시 active 추가 -->
+                                            <div class="nav-item-tit"><span class="mn-mydrive">내 드라이브</span></div>  
+                                            <!-- tree menu :s -->
+                                            <div class="nav-tree scroll">
+                                                <ul class="mn-tree">   
+                                                    <li class="mn-tree-item mn-tree-item-open"> <!-- 닫힌폴더 = mn-tree-item-close / 열린폴더 = mn-tree-item-open / 하위폴더없는폴더 = mn-tree-item-last -->
+                                                        <div class="mn-tree-tit"><button type="button"><span class="hidden">-</span></button><span><span>workspace1</span></span></div> <!-- 열린폴더 버튼 <span class="hidden">-</span> / 닫힌폴더 버튼 <span class="hidden">+</span> -->                                                   
+                                                        <ul class="mn-subtree"> <!-- 서브트리 ul class 모두 동일 -->
+                                                            <li class="mn-tree-item mn-tree-item-last">                                                                                                                     
+                                                                <div class="mn-tree-tit"><span class="active"><span title="Single-Cell-RNA-Sequencing-Pipeline-modify">Single-Cell-RNA-Sequencing-Pipeline-modify</span></span></div> <!-- 선택시 첫번째 시작 span에 class="active" 추가 / 맨 마지막 span에 title 추가 /  -->     
+                                                            </li>
+                                                            <li class="mn-tree-item mn-tree-item-open">                                                                                                                     
+                                                                <div class="mn-tree-tit"><button type="button"><span class="hidden">-</span></button><span><span title="Cutadapt">Cutadapt</span></span></div> 
+                                                                <ul class="mn-subtree">
+                                                                    <li class="mn-tree-item mn-tree-item-last">                                                                                                              
+                                                                        <div class="mn-tree-tit"><span><span title="pipeline01-01">pipeline01-01</span></span></div>  
+                                                                    </li>
+                                                                    <li class="mn-tree-item mn-tree-item-last">                                                                                                              
+                                                                        <div class="mn-tree-tit"><span><span title="pipeline01-02">pipeline01-02</span></span></div>  
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="mn-tree-item mn-tree-item-last">                                                                                                                     
+                                                                <div class="mn-tree-tit"><span><span title="">fastp</span></span></div>     
+                                                            </li>
+                                                            <li class="mn-tree-item mn-tree-item-close">                                                                                                                     
+                                                                <div class="mn-tree-tit"><button type="button"><span class="hidden">+</span></button><span><span title="">FastQC</span></span></div> 
+                                                                <ul class="mn-subtree">
+                                                                    <li class="mn-tree-item mn-tree-item-last">                                                                                                                                                                                 
+                                                                        <div class="mn-tree-tit"><span><span title="">test</span></span></div> 
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+
+                                                    <li class="mn-tree-item mn-tree-item-close"> 
+                                                        <div class="mn-tree-tit"><button type="button"><span class="hidden">+</span></button><span><span title="">workspace3</span></span></div>                               
+                                                        <ul class="mn-subtree">
+                                                            <li class="mn-tree-item mn-tree-item-last">                                                                                                                                                                   
+                                                                <div class="mn-tree-tit"><span><span title="">test</span></span></div> 
+                                                            </li>
+                                                            <li class="mn-tree-item mn-tree-item-close">
+                                                                <div class="mn-tree-tit"><button type="button"><span class="hidden">+</span></button><span><span title="">333</span></span></div> 
+                                                                <ul class="mn-subtree">
+                                                                    <li class="mn-tree-item mn-tree-item-last">                                                                                                                                                                    
+                                                                        <div class="mn-tree-tit"><span><span title="">test</span></span></div> 
+                                                                    </li>
+                                                                    <li class="mn-tree-item mn-tree-item-last">                                                                                                                                                                    
+                                                                        <div class="mn-tree-tit"><span><span title="">test</span></span></div> 
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="mn-tree-item mn-tree-item-last">                                                                                                                                                                     
+                                                                <div class="mn-tree-tit"><span><span title="">test</span></span></div> 
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+
+                                                    <li class="mn-tree-item mn-tree-item-last"> 
+                                                        <div class="mn-tree-tit"><span><span title="">workspace4</span></span></div>        
+                                                    </li>    
+
+                                                    <li class="mn-tree-item mn-tree-item-open">
+                                                        <div class="mn-tree-tit"><button type="button"><span class="hidden">-</span></button><span><span title="">workspace5</span></span></div>                                       
+                                                        <ul class="mn-subtree">
+                                                            <li class="mn-tree-item mn-tree-item-last">                                                                                                                                                                        
+                                                                <div class="mn-tree-tit"><span><span title="Whole-Genome-Sequencing">Whole-Genome-Sequencing</span></span></div>  
+                                                            </li>
+
+                                                            <li class="mn-tree-item mn-tree-item-close">                                                                                                                     
+                                                                <div class="mn-tree-tit"><button type="button"><span class="hidden">+</span></button><span><span title="">FastQC</span></span></div> 
+                                                                <ul class="mn-subtree">
+                                                                    <li class="mn-tree-item mn-tree-item-last">                                                                                                                                                                                 
+                                                                        <div class="mn-tree-tit"><span><span title="">test</span></span></div> 
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+
+                                                            <li class="mn-tree-item mn-tree-item-open">                                                                                                                                                                    
+                                                                <div class="mn-tree-tit"><button type="button"><span class="hidden">-</span></button><span><span title="">test11</span></span></div>
+                                                                <ul class="mn-subtree">
+                                                                    <li class="mn-tree-item mn-tree-item-last">                                                                                                                                                                        
+                                                                        <div class="mn-tree-tit"><span><span title="Whole-Genome-Sequencing">test11-1</span></span></div>  
+                                                                    </li>
+                                                                    <li class="mn-tree-item mn-tree-item-close">                                                                                                                     
+                                                                        <div class="mn-tree-tit"><button type="button"><span class="hidden">+</span></button><span><span title="">test11-2</span></span></div> 
+                                                                        <ul class="mn-subtree">
+                                                                            <li class="mn-tree-item mn-tree-item-last">                                                                                                                                                                                 
+                                                                                <div class="mn-tree-tit"><span><span title="">test11-2-1</span></span></div> 
+                                                                            </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="mn-tree-item mn-tree-item-open">                                                                                                                                                                    
+                                                                        <div class="mn-tree-tit"><button type="button"><span class="hidden">-</span></button><span><span title="">test11-3</span></span></div>
+                                                                        <ul class="mn-subtree">
+                                                                            <li class="mn-tree-item mn-tree-item-last">                                                                                                                                                                        
+                                                                                <div class="mn-tree-tit"><span><span title="Whole-Genome-Sequencing">Whole-Genome-Sequencing</span></span></div>  
+                                                                            </li>
+                                                                            <li class="mn-tree-item mn-tree-item-close">                                                                                                                     
+                                                                                <div class="mn-tree-tit"><button type="button"><span class="hidden">+</span></button><span><span title="">FastQC</span></span></div> 
+                                                                                <ul class="mn-subtree">
+                                                                                    <li class="mn-tree-item mn-tree-item-last">                                                                                                                                                                                 
+                                                                                        <div class="mn-tree-tit"><span><span title="">test</span></span></div> 
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+
+                                                        </ul>
+                                                    </li>
+                                                </ul>                   
+                                            </div>                  
+                                            <!-- tree menu :e -->       
+                                        </div>
+                                    </div>
+                                    <a href="" class="go-help" target="_blank"><span>도움말</span></a>
+                                </div>
+                            </div>
+                            <div class="usage-wrap">
+                                <div class="usage-inner">
+                                    <div class="usage-top">
+                                        <p class="u-tit"><span>개인사용량</span></p>
+                                        <p class="u-num"><span>20.0GB</span> / 1TB</p>
+                                    </div>
+                                    <div class="usage-data-chart">
+                                        <div class="chart-area">
+                                            <span></span> <!-- 실제 용량 차트 추가시 삭제 -->
+                                        </div>
+                                    </div>
+                                    <span class="txt-sm">여유 79.8GB</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="right-wrap">
+                        <div class="right-inner">
+                            <!-- 가운데 영역 :s  -->
+                            <div class="gbox-area scroll">
+                                <div class="gbox-area-inner">         
+                                    <!-- 타이틀 영역 : s -->                           
+                                    <div class="gbox-area-item">
+                                        <div class="flex-between"> 
+                                            <h2 class="h2-tit">내 드라이브</h2>
+                                            <div class="gbox-down-wrap">
+                                                <div class="gbox-down-inner"> <!-- 클릭시 active 추가 -->
+                                                    <span class="gbox-down-tit"><span>GBox 다운로드 패키지</span></span>
+                                                    <ul class="gbox-os-list">
+                                                        <li class="gbox-os"><a href=""><span>Windows</span></a></li>
+                                                        <li class="gbox-os"><a href=""><span>Linux</span></a></li>
+                                                        <li class="gbox-os"><a href=""><span>Mac Intel</span></a></li>
+                                                        <li class="gbox-os"><a href=""><span>Mac Apple Silicon</span></a></li>
+                                                        <li class="gbox-os"><a href=""><span>CLI Windows</span></a></li>
+                                                        <li class="gbox-os"><a href=""><span>CLI Linux</span></a></li>
+                                                        <li class="gbox-os"><a href=""><span>CLI Mac Intel</span></a></li>
+                                                        <li class="gbox-os"><a href=""><span>CLI Mac Apple Silicon</span></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!--div class="search-wrap">
+                                                <div class="search-inner">
+                                                    <label for="totalSearchInput" class="hidden">통합검색어</label>
+                                                    <input type="text" name="totalSearchInput" id="totalSearchInput" class="" placeholder="">
+                                                    <label for="totalSearchBtn" class="hidden">통합검색</label>
+                                                    <input type="button" class="search-magnifier" value="통합검색" id="totalSearchBtn">
+                                                </div>
+                                            </div -->
+                                        </div>
+                                        <div class="file-path">bioex / workspace1 / <span>Single-Cell-RNA-Sequencing-Pipeline-modify</span></div> <!-- 내 드라이브 화면일때만 path 노출-->
+                                    </div>
+                                    <!-- 타이틀 영역 : e --> 
+                                    <!-- 버튼 영역 :s -->
+                                    <div class="gbox-area-item">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-down"><span>다운로드</span></button>
+                                            <button type="button" class="btn btn-line-gray"><span>삭제</span></button>
+                                            <button type="button" class="btn btn-line-gray mright20 open-lp" aria-controls="file-move"><span>이동</span></button>                                        
+                                            <button type="button" class="btn btn-line-gray open-lp" aria-controls="folder-create"><span>새폴더</span></button>
+                                            <button type="button" class="btn btn-line-gray open-lp" aria-controls="name-modify"><span>편집</span></button>
+                                        </div>
+                                    </div>
+                                    <!-- 버튼영역 :e -->
+                                    <!-- 업로드 영역 :s -->
+                                    <div class="gbox-area-item"> <!-- 검색결과 및 최근 작업내역 페이지에 비노출 -->
+                                        <div class="upload-area">
+                                            <div class="upload-area-inner">
+                                                <div class="upload-txt">
+                                                    업로드를 위해 파일을 이곳에 <span class="fc-blue">드래그</span>하여 넣으세요.<br>혹은
+                                                </div>
+                                                <button class="btn btn-upload">내 컴퓨터에서 파일 선택</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 업로드 영역 :e -->
+                                    <!-- 파일 목록 영역 :s -->
+                                    <div class="gbox-area-item">
+                                        <div class="scroll file-table-scroll">
+                                            <div class="file-table">
+                                                <!-- 파일 테이블 header :s -->
+                                                <div class="file-table-top">
+                                                    <div class="file-table-top-inner">
+                                                        <div aria-label="전체선택" class="gbox-file-check">
+                                                            <input type="checkbox">
+                                                        </div>                                                    
+                                                        <div class="top-file-name">
+                                                            <span class="txt">이름</span>
+                                                            <div class="sort-box">
+                                                                <span>▲</span>
+                                                                <span>▼</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="top-file-size">
+                                                            <span class="txt">크기</span>
+                                                            <div class="sort-box">
+                                                                <span>▲</span>
+                                                                <span>▼</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="top-file-update">
+                                                            <span class="txt">마지막 수정일</span>
+                                                            <div class="sort-box">
+                                                                <span class="active">▲</span> <!-- 정렬 선택시 class active 추가 -->
+                                                                <span>▼</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- 파일 테이블 header :e -->
+                                                <!-- 파일 테이블 list :s -->
+                                                <div class="file-table-list">
+                                                    <div class="file-table-item"><!-- 상위폴더가 있을경우에 노출 -->
+                                                        <div class="file-table-item-inner">
+                                                            <div class="list-file-title list-back">
+                                                                <div class="txt" data-type="back">..</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="file-table-item">       
+                                                        <div class="file-table-item-inner">                   
+                                                            <div aria-label="선택" class="gbox-file-check">
+                                                                <input type="checkbox">
+                                                            </div>                                        
+                                                            <div class="list-file-title">
+                                                                <div class="txt" data-type="folder"><span class="file-tit" title="Single-Cell-RNA-Sequencing-Pipeline-modifySingle-Cell-RNA-Sequencing-Pipeline-modifySingle-Cell-RNA-Sequencing-Pipeline-modifySingle-Cell-RNA-Sequencing-Pipeline-modify">Single-Cell-RNA-Sequencing-Pipeline-modifySingle-Cell-RNA-Sequencing-Pipeline-modifySingle-Cell-RNA-Sequencing-Pipeline-modifySingle-Cell-RNA-Sequencing-Pipeline-modify</span><button class="file-more"><span class="hidden">메뉴</span></button></div> <!--  data-type에 따라 아이콘 변경 -->
+                                                            </div>
+                                                            <div class="list-file-size">
+                                                                <span class="txt">1024 Byte</span>
+                                                            </div>
+                                                            <div class="list-file-update">
+                                                                <span class="txt">2023.06.05 18:00</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="file-table-item">       
+                                                        <div class="file-table-item-inner">                             
+                                                            <div aria-label="선택" class="gbox-file-check">
+                                                                <input type="checkbox">
+                                                            </div>                
+                                                            <div class="list-file-title">
+                                                                <div class="txt" data-type="folder-zip"><span class="file-tit" title="Single-Cell-RNA-Sequencing-Pipeline-modify">Single-Cell-RNA-Sequencing-Pipeline-modify</span><button class="file-more"><span class="hidden">메뉴</span></button></div>
+                                                            </div>
+                                                            <div class="list-file-size">
+                                                                <span class="txt">32.0KB</span>
+                                                            </div>
+                                                            <div class="list-file-update">
+                                                                <span class="txt">2023.06.05 18:00</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="file-table-item">       
+                                                        <div class="file-table-item-inner">                             
+                                                            <div aria-label="선택" class="gbox-file-check">
+                                                                <input type="checkbox">
+                                                            </div>                
+                                                            <div class="list-file-title">
+                                                                <div class="txt" data-type="file-default"><span class="file-tit" title="Single-Cell-RNA-Sequencing-Pipeline-modify">Single-Cell-RNA-Sequencing-Pipeline-modify</span><button class="file-more"><span class="hidden">메뉴</span></button></div>
+                                                            </div>
+                                                            <div class="list-file-size">
+                                                                <span class="txt">32.0KB</span>
+                                                            </div>
+                                                            <div class="list-file-update">
+                                                                <span class="txt">2023.06.05 18:00</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="file-table-item">       
+                                                        <div class="file-table-item-inner">                             
+                                                            <div aria-label="선택" class="gbox-file-check">
+                                                                <input type="checkbox">
+                                                            </div>                
+                                                            <div class="list-file-title">
+                                                                <div class="txt" data-type="file-img"><span class="file-tit" title="Single-Cell-RNA-Sequencing-Pipeline-modify">Single-Cell-RNA-Sequencing-Pipeline-modify</span><button class="file-more"><span class="hidden">메뉴</span></button></div>
+                                                            </div>
+                                                            <div class="list-file-size">
+                                                                <span class="txt">32.0KB</span>
+                                                            </div>
+                                                            <div class="list-file-update">
+                                                                <span class="txt">2023.06.05 18:00</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="file-table-item">       
+                                                        <div class="file-table-item-inner">                             
+                                                            <div aria-label="선택" class="gbox-file-check">
+                                                                <input type="checkbox">
+                                                            </div>                
+                                                            <div class="list-file-title">
+                                                                <div class="txt" data-type="file-video"><span class="file-tit" title="Single-Cell-RNA-Sequencing-Pipeline-modify">Single-Cell-RNA-Sequencing-Pipeline-modify</span><button class="file-more"><span class="hidden">메뉴</span></button></div>
+                                                            </div>
+                                                            <div class="list-file-size">
+                                                                <span class="txt">32.0KB</span>
+                                                            </div>
+                                                            <div class="list-file-update">
+                                                                <span class="txt">2023.06.05 18:00</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="file-table-item">       
+                                                        <div class="file-table-item-inner">                             
+                                                            <div aria-label="선택" class="gbox-file-check">
+                                                                <input type="checkbox">
+                                                            </div>                
+                                                            <div class="list-file-title">
+                                                                <div class="txt" data-type="file-sound"><span class="file-tit" title="Single-Cell-RNA-Sequencing-Pipeline-modify">Single-Cell-RNA-Sequencing-Pipeline-modify</span><button class="file-more"><span class="hidden">메뉴</span></button></div>
+                                                            </div>
+                                                            <div class="list-file-size">
+                                                                <span class="txt">32.0KB</span>
+                                                            </div>
+                                                            <div class="list-file-update">
+                                                                <span class="txt">2023.06.05 18:00</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="file-table-item">       
+                                                        <div class="file-table-item-inner">                             
+                                                            <div aria-label="선택" class="gbox-file-check">
+                                                                <input type="checkbox">
+                                                            </div>                
+                                                            <div class="list-file-title">
+                                                                <div class="txt" data-type="file-code"><span class="file-tit" title="Single-Cell-RNA-Sequencing-Pipeline-modify">Single-Cell-RNA-Sequencing-Pipeline-modify</span><button class="file-more"><span class="hidden">메뉴</span></button></div>
+                                                            </div>
+                                                            <div class="list-file-size">
+                                                                <span class="txt">32.0KB</span>
+                                                            </div>
+                                                            <div class="list-file-update">
+                                                                <span class="txt">2023.06.05 18:00</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="file-table-item">       
+                                                        <div class="file-table-item-inner">                             
+                                                            <div aria-label="선택" class="gbox-file-check">
+                                                                <input type="checkbox">
+                                                            </div>                
+                                                            <div class="list-file-title">
+                                                                <div class="txt" data-type="file-excel"><span class="file-tit" title="Single-Cell-RNA-Sequencing-Pipeline-modify">Single-Cell-RNA-Sequencing-Pipeline-modify</span><button class="file-more"><span class="hidden">메뉴</span></button></div>
+                                                            </div>
+                                                            <div class="list-file-size">
+                                                                <span class="txt">32.0KB</span>
+                                                            </div>
+                                                            <div class="list-file-update">
+                                                                <span class="txt">2023.06.05 18:00</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="file-table-item">       
+                                                        <div class="file-table-item-inner">                             
+                                                            <div aria-label="선택" class="gbox-file-check">
+                                                                <input type="checkbox">
+                                                            </div>                
+                                                            <div class="list-file-title">
+                                                                <div class="txt" data-type="file-ppt"><span class="file-tit" title="Single-Cell-RNA-Sequencing-Pipeline-modify">Single-Cell-RNA-Sequencing-Pipeline-modify</span><button class="file-more"><span class="hidden">메뉴</span></button></div>
+                                                            </div>
+                                                            <div class="list-file-size">
+                                                                <span class="txt">32.0KB</span>
+                                                            </div>
+                                                            <div class="list-file-update">
+                                                                <span class="txt">2023.06.05 18:00</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="file-table-item">       
+                                                        <div class="file-table-item-inner">                             
+                                                            <div aria-label="선택" class="gbox-file-check">
+                                                                <input type="checkbox">
+                                                            </div>                
+                                                            <div class="list-file-title">
+                                                                <div class="txt" data-type="file-pdf"><span class="file-tit" title="Single-Cell-RNA-Sequencing-Pipeline-modify">Single-Cell-RNA-Sequencing-Pipeline-modify</span><button class="file-more"><span class="hidden">메뉴</span></button></div>
+                                                            </div>
+                                                            <div class="list-file-size">
+                                                                <span class="txt">32.0KB</span>
+                                                            </div>
+                                                            <div class="list-file-update">
+                                                                <span class="txt">2023.06.05 18:00</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="file-table-item">       
+                                                        <div class="file-table-item-inner">                             
+                                                            <div aria-label="선택" class="gbox-file-check">
+                                                                <input type="checkbox">
+                                                            </div>                
+                                                            <div class="list-file-title">
+                                                                <div class="txt" data-type="file-psd"><span class="file-tit" title="Single-Cell-RNA-Sequencing-Pipeline-modify">Single-Cell-RNA-Sequencing-Pipeline-modify</span><button class="file-more"><span class="hidden">메뉴</span></button></div>
+                                                            </div>
+                                                            <div class="list-file-size">
+                                                                <span class="txt">32.0KB</span>
+                                                            </div>
+                                                            <div class="list-file-update">
+                                                                <span class="txt">2023.06.05 18:00</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="file-table-item">       
+                                                        <div class="file-table-item-inner">                             
+                                                            <div aria-label="선택" class="gbox-file-check">
+                                                                <input type="checkbox">
+                                                            </div>                
+                                                            <div class="list-file-title">
+                                                                <div class="txt" data-type="file-word"><span class="file-tit" title="Single-Cell-RNA-Sequencing-Pipeline-modify">Single-Cell-RNA-Sequencing-Pipeline-modify</span><button class="file-more"><span class="hidden">메뉴</span></button></div>
+                                                            </div>
+                                                            <div class="list-file-size">
+                                                                <span class="txt">32.0KB</span>
+                                                            </div>
+                                                            <div class="list-file-update">
+                                                                <span class="txt">2023.06.05 18:00</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="file-table-item">       
+                                                        <div class="file-table-item-inner">                             
+                                                            <div aria-label="선택" class="gbox-file-check">
+                                                                <input type="checkbox">
+                                                            </div>                
+                                                            <div class="list-file-title">
+                                                                <div class="txt" data-type="file-ai"><span class="file-tit" title="Single-Cell-RNA-Sequencing-Pipeline-modify">Single-Cell-RNA-Sequencing-Pipeline-modify</span><button class="file-more"><span class="hidden">메뉴</span></button></div>
+                                                            </div>
+                                                            <div class="list-file-size">
+                                                                <span class="txt">32.0KB</span>
+                                                            </div>
+                                                            <div class="list-file-update">
+                                                                <span class="txt">2023.06.05 18:00</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>                                                
+                                                <!-- 파일 테이블 list :e -->
+                                            </div>
+                                        </div>
+                                    </div>                                    
+                                    <!-- 파일 목록 영역 :e -->
+                                </div>
+                            </div>
+                            <!-- 가운데 영역 :e -->
+
+                            <!-- 단일파일 선택 / 다중파일 선택 dis-none 제어 -->
+                            <!-- 단일파일 선택 정보 영역 :s -->
+                            <div class="info-area scroll">
+                                <!-- 파일정보 영역 :s -->
+                                <div class="file-info-wrap">
+                                    <div class="file-info-inner">
+                                        <div class="file-info-title"><span>Single-Cell-RNA-Sequencing-Pipeline-modify</span></div>
+                                        <div class="file-info-img">
+                                            <button type="button" class="file-down"><span class="hidden">다운로드</span></button>
+                                            <div class="file-type-img" data-type="folder"><span class="hidden">선택항목이미지</span></div>
+                                        </div>
+                                        <div class="file-info-list">
+                                            <ul>
+                                                <li><span>종류</span><span>폴더</span></li>
+                                                <li><span>크기</span><span>342.7 MB</span></li>
+                                                <li><span>위치</span><span>/workspace111</span></li>
+                                                <li><span>내용</span><span>폴더 1 / 파일 3</span></li>
+                                                <li><span>등록</span><span>2023.10.01 13:23</span></li>
+                                                <li><span>수정</span><span>2023.10.12 20:22</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>       
+                                <!-- 파일정보 영역 :e -->    
+                                <!-- 파일 작업내역 영역 :s -->              
+                                <div class="file-history-wrap">
+                                    <p class="file-history-title">작업내역 <span class="history-num">14</span>건</p>
+                                    <div class="scroll">
+                                        <div class="file-history-inner">
+                                            <div class="file-history-list">
+                                                <div class="file-history-item">
+                                                    <div class="file-history-top">
+                                                        <span class="f-history-status history-folder">폴더 이동</span> <!-- 폴더관련 작업일시 class history-folder / 파일관련 작업일시 class history-file -->
+                                                        <span class="f-history-date">2023.10.10 15:03</span>
+                                                    </div>
+                                                    <div class="file-history-cont">
+                                                        <span class="past-file-title" title="/workspace222">/workspace222</span>
+                                                        <span class="fin-file-title" title="/workspace111">/workspace111</span>
+                                                    </div>
+                                                </div>
+                                                <div class="file-history-item">
+                                                    <div class="file-history-top">
+                                                        <span class="f-history-status history-file">파일 이동</span> <!-- 폴더관련 작업일시 class history-folder / 파일관련 작업일시 class history-file -->
+                                                        <span class="f-history-date">2023.10.10 15:03</span>
+                                                    </div>
+                                                    <div class="file-history-cont">
+                                                        <span class="past-file-title" title="/workspace222/test_img_fin.ai">/workspace222/test_img_fin.ai</span>
+                                                        <span class="fin-file-title" title="/workspace111/test_img_fin.ai">/workspace111/test_img_fin.ai</span>
+                                                    </div>
+                                                </div>
+                                                <div class="file-history-item">
+                                                    <div class="file-history-top">
+                                                        <span class="f-history-status history-file">파일추가</span>
+                                                        <span class="f-history-date">2023.10.10 15:03</span>
+                                                    </div>
+                                                    <div class="file-history-cont">
+                                                        <span class="fin-file-title" title="/test_html.zip">/test_html.zip</span>
+                                                    </div>
+                                                </div>
+                                                <div class="file-history-item">
+                                                    <div class="file-history-top">
+                                                        <span class="f-history-status history-folder">폴더 편집</span>
+                                                        <span class="f-history-date">2023.10.10 15:03</span>
+                                                    </div>
+                                                    <div class="file-history-cont">
+                                                        <span class="past-file-title" title="Double-Cell-RNA-Sequencing-Pipeline-modifyyyyyyyy">Double-Cell-RNA-Sequencing-Pipeline-modifyyyyyyyy</span>
+                                                        <span class="fin-file-title" title="Single-Cell-RNA-Sequencing-Pipeline-modiifyyyyyy">Single-Cell-RNA-Sequencing-Pipeline-modiifyyyyyy</span>
+                                                    </div>
+                                                </div>
+                                                <div class="file-history-item">
+                                                    <div class="file-history-top">
+                                                        <span class="f-history-status history-file">파일추가</span>
+                                                        <span class="f-history-date">2023.10.10 15:03</span>
+                                                    </div>
+                                                    <div class="file-history-cont">
+                                                        <span class="fin-file-title" title="/test_html.zip">/test_html.zip</span>
+                                                    </div>
+                                                </div>
+
+                                                <!-- 작업내역 없을때 :s -->
+                                                <div class="file-history-item no-history"> 
+                                                    <span>작업내역이 없습니다.</span>
+                                                </div>
+                                                <!-- 작업내역 없을때 :e -->
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                                
+                                <!-- 파일 작업내역 영역 :e -->       
+                                <button type="button" class="btn-close"><span class="hidden">닫기</span></button>
+                            </div>
+                            <!-- 단일파일 선택 정보 영역 :e -->
+                            
+                            <!-- 다중파일 선택 정보 영역 :s -->
+                            <div class="info-area scroll multi-info-area dis-none"> 
+                                <div class="multi-choice-wrap">
+                                    <div class="multi-info-img">
+                                        <div class="multi-type-img"><span class="hidden">다중선택이미지</span></div>
+                                    </div>
+                                    <p class="multi-tit"><span>3</span>개의 선택 항목을</p>
+                                    <div class="btn-list">
+                                        <button class="btn btn-down">다운로드</button>
+                                        <button class="btn btn-line-gray">삭제</button>
+                                        <button class="btn btn-line-gray open-lp" aria-controls="file-move">이동</button>
+                                    </div>
+                                </div>      
+                                <button type="button" class="btn-close"><span class="hidden">닫기</span></button>                      
+                            </div>                            
+                            <!-- 다중파일 선택 정보 영역 :e -->
+                        </div>
+                    </div>
+                </div>                
+            </main>    
+            <!-- main : e -->
+
+        </div>
+        
+        <!-- 새폴더 생성 popup :s -->
+        <div class="layer-pop" id="folder-create" role="dialog" aria-modal="true" aria-label=" 새폴더 생성">
+            <div class="layer-pop-bg">
+                <div class="layer-pop-inner">   
+                    <div class="gbox-pop-wrap">
+                        <h3 class="h3-tit">새폴더 생성</h3>
+                        <div class="lp-cont-wrap">          
+                            <label for="folderName" class="hidden">폴더명</label>                   
+                            <input type="text" name="folderName" id="folderName" placeholder="폴더명을 입력해주세요.">    
+                        </div>                                            
+                        <div class="btn-wrap flex-center">
+                            <button class="btn btn-disabled" disabled  aria-label="생성">생성</button> <!-- 이름 입력 시 활성화 disabled 삭제 / btn-disabled >> btn-blue 로 변경 -->
+                            <button class="btn btn-gray" aria-label="취소">취소</button>
+                        </div>                                                             
+                    </div>                    
+                </div>
+            </div>
+        </div>
+        <!-- 새폴더 생성 popup :e -->
+        
+        <!-- 이름편집 popup :s -->
+        <div class="layer-pop" id="name-modify" role="dialog" aria-modal="true" aria-label="이름 편집">
+            <div class="layer-pop-bg">
+                <div class="layer-pop-inner">   
+                    <div class="gbox-pop-wrap">
+                        <h3 class="h3-tit">이름 편집</h3>
+                        <div class="lp-cont-wrap">           
+                            <label for="fileName" class="hidden">파일명</label>                
+                            <input type="text" name="fileName" id="fileName" value="선택한 파일이름 들어감">    
+                        </div>                                         
+                        <div class="btn-wrap flex-center">
+                            <button class="btn btn-blue" aria-label="수정">수정</button>
+                            <button class="btn btn-gray" aria-label="취소">취소</button>
+                        </div>                                                            
+                    </div>                    
+                </div>
+            </div>
+        </div>
+        <!-- 이름편집 popup :e -->
+
+        
+        
+        <!-- 이동 popup :s -->
+        <div class="layer-pop" id="file-move" role="dialog" aria-modal="true" aria-label="이름 편집">
+            <div class="layer-pop-bg">
+                <div class="layer-pop-inner scroll">   
+                    <div class="gbox-pop-wrap">
+                        <h3 class="h3-tit">이동</h3>
+                        <div class="lp-cont-wrap scroll">           
+                            <div class="move-folder-list">
+                                <div class="move-folder-item"> <!-- 상위폴더가 있을경우에 노출 -->
+                                    <div class="txt" data-type="back"><span class="folder-tit">..</span></div> 
+                                </div>
+                                <div class="move-folder-item">
+                                    <div class="txt" data-type="folder"><span class="folder-tit" title="Single-Cell-RNA-Sequencing-Pipeline-modifySingle-Cell-RNA-Sequencing-Pipeline-modifySingle-Cell-RNA-Sequencing-Pipeline-modifySingle-Cell-RNA-Sequencing-Pipeline-modifySingle-Cell-RNA-Sequencing-Pipeline-modifySingle-Cell-RNA-Sequencing-Pipeline-modify">Single-Cell-RNA-Sequencing-Pipeline-modifySingle-Cell-RNA-Sequencing-Pipeline-modifySingle-Cell-RNA-Sequencing-Pipeline-modifySingle-Cell-RNA-Sequencing-Pipeline-modifySingle-Cell-RNA-Sequencing-Pipeline-modifySingle-Cell-RNA-Sequencing-Pipeline-modify</span></div>
+                                </div>
+                                <div class="move-folder-item">
+                                    <div class="txt" data-type="folder"><span class="folder-tit" title="workspace1">workspace1</span></div>
+                                </div>
+                            </div>   
+                        </div>                                          
+                        <div class="btn-wrap flex-center">
+                            <button class="btn btn-blue" aria-label="이동">이동</button>
+                            <button class="btn btn-gray" aria-label="취소">취소</button>
+                        </div>                                                              
+                    </div>                    
+                </div>
+            </div>
+        </div>
+        <!-- 이동 popup :e -->
+
+
+
+        <script>            
+            // GBox Download 'active' class toggle.
+            $(".gbox-down-inner").click(function(e) {
+                $(".gbox-down-inner").toggleClass("active");
+            });
+        </script>
+    </body>
+</html>
