@@ -165,21 +165,32 @@
 .login-footer {position: absolute;bottom: 4.0rem;width: 100%;text-align: center;font-size: 1.3rem;color: var(--color-gray);}
 
 
+
+/* layout */
+#wrap {width:100%; background: var(--color-black); color:var(--color-text06); position: relative;}
+#header {height:6.0rem; z-index:11; position: absolute; top:0; left:0; width: 100%; background: var(--color-bg04); min-width:840px;}
+.header-inner {padding:0; display: flex;justify-content: space-between; align-items: center; height:6.0rem; position: relative; width:calc(100% - 3.4rem); margin:0 auto;}
+
+#main {padding-top:6.1rem;}
+#main-wrap {display: flex; justify-content: space-between; min-height: calc(100vh - 6.1rem);}
+#left-nav {z-index: 1;background: var(--color-bg04);margin-right:0.1rem;min-height: calc(100vh - 6.1rem);}
+.left-nav-inner{width: 7.0rem;height: 100%;height: calc(100vh - 6.1rem);box-sizing: border-box;position: relative;}
+
+#cont-area {background: var(--color-bg01);width:100%; height: 100%;  min-height: calc(100vh - 6.1rem); }
+.cont-area-inner {min-height: calc(100vh - 6.1rem); background: var(--color-black);}
+
+.tab-menu-wrap {width:100%; height:4.8rem; margin-bottom:0.1rem; background: var(--color-bg01);}
+
+.contain-wrap {min-height: calc(100vh - 11rem);background: var(--color-bg01); }
+.contain-inner {min-height: calc(100vh - 11rem);height: 100%;}
+.main-box {display: flex;align-items: center;min-height: calc(100vh - 11rem);}
+.main-box-inner {width:70%;margin:0 auto;}
+
+
+
+
 /* file image */
 [data-type=back]:before {background: url(../../images/gbox/file_type_back.svg) no-repeat center center; background-size: contain;}
-
-/* gbox */
-#wrap {width:100%;}
-#header {height:50px; z-index:11; position: absolute; top:0; left:0; width: 100%; background: #2A2E3F; min-width:840px;}
-.header-inner {padding:0; display: flex;justify-content: space-between; align-items: center; height:50px; position: relative; width:calc(100% - 6.0rem); margin:0 auto;}
-
-#main {margin-top:50px;}
-#gbox-wrap {display: flex; justify-content: space-between; min-height: calc(100vh - 50px); height: 100%;}
-#left-wrap {z-index: 1;}
-
-.nav-wrap {width:100%; height:100%; flex-grow:1;}
-.nav-list {margin-top:1.0rem;flex-grow: 1;}
-
 
 @keyframes fadeInDown {
     0% {
