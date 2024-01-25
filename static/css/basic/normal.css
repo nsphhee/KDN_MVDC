@@ -131,7 +131,7 @@
 .login-inner .right-area-inner {/* position:relative; */height: 100%;display: flex;justify-content: center;align-items: center;width: calc(100% - 4.0rem);margin: 0 auto;}
 
 .logo-title {text-align: center;width: 100%;}
-.logo-title .login-logo img {width:35.0rem;height:10.0rem;object-fit: contain;margin: 0 0 1.6rem 0;}
+.logo-title .login-logo img {width:35.0rem;height:10.0rem;object-fit: contain;margin:1.6rem 0;}
 .logo-title span {display:block;}
 .logo-title span {font-size:1.6rem; color:var(--color-text03);}
 .logo-title span:last-child::before {display: block; width:2.4rem; height:0.2rem; background: #9092A0; margin:0.8rem auto;}
