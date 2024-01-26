@@ -12,15 +12,53 @@
         <meta name="copyright" content="&copy; 한전KDN(주). All right reserved."><!-- 저작권 -->
         <link rel="shortcut icon" type="image/x-icon" href="../../static/images/common/favicon.ico"><!-- 파비콘 -->        
         <title>한전KDN(주) K &middot; GRID</title>     
-        <link media="all" rel="stylesheet" type="text/css" href="static/css/common.css">  
-        <link media="all" rel="stylesheet" type="text/css" href="static/css/basic/normal.css"> 
+        <link media="all" rel="stylesheet" href="static/css/common.css">  
+        <link media="all" rel="stylesheet" href="static/css/font.css">  
+        <link media="all" rel="stylesheet" href="static/css/basic/normal.css">         
+        <link media="all" rel="stylesheet" href="static/css/swiper-bundle.min.css">  
+        <script src="static/js/jquery-3.7.0.min.js"></script>
+        <script src="static/js/swiper-bundle.min.js"></script>
     </head>
     <body class="scroll">  
         <div id="wrap">
             <!-- header :s --> 
             <header id="header" class="header-wrap">
                 <div class="header-inner">                    
-                    상단영역
+                    <div class="top-left header-item">
+                        <h1 class="logo-img">로고영역</h1>
+                        <p class="program-name">Engineering Tools -<span class="ellipsis">TK_VT2</span></p>
+                    </div>
+                    <div class="top-mid header-item">
+                        <a href="" class="btn all-menu btn-type01">모든메뉴</a>
+                        <div class="info-list">
+                            <span class="info-ip nw-good">localhost:8070</span> <!-- 상태값 확인필요 -->
+                            <span class="info-date">2024-01-01 13:35:15</span>
+                            <span class="info-paths ellipsis">편집도구 > SCL저작도구(KGRID.MG.ENG.Editor.SCL.View.SclEditor)</span>
+                        </div>
+                        <div class="tnb-list header-item">
+                            <button class="top-icon" menu-icon="top01"><span class="dis-none">메뉴명1</span></button>
+                            <button class="top-icon" menu-icon="top02"><span class="dis-none">메뉴명2</span></button>
+                            <button class="top-icon" menu-icon="top03"><span class="dis-none">메뉴명3</span></button>
+                            <button class="top-icon" menu-icon="top04"><span class="dis-none">메뉴명4</span></button>
+                            <button class="top-icon" menu-icon="top05"><span class="dis-none">메뉴명5</span></button>
+                        </div>
+                    </div>
+                    <div class="top-right">
+                        <div class="select-wrap">
+                            <select class="select-type01">
+                                <option>TK_VT1</option>
+                                <option>TK_VT2</option>
+                                <option>TK_VT3</option>
+                                <option>TK_VT4</option>
+                                <option>TK_VT5</option>
+                            </select> 
+                        </div>              
+       
+                        <div class="utill-wrap">
+                            <p class="utill-welcome"><span class="welcome-user">mgadmin 님</span>, 안녕하세요.</p>
+                            <a href="" class="utill-setting"><span class="dis-none">설정</span></a>
+                        </div>
+                    </div>
                 </div>
             </header>
             <!-- header :e -->  
@@ -29,21 +67,47 @@
                 <div id="main-wrap">
                     <nav id="left-nav" class="left-nav-wrap">
                         <div class="left-nav-inner">
-                            <div>
-                                <a>1</a>
-                                <a>2</a>
-                                <a>3</a>
-                                <a>4</a>
-                                <a>5</a>
+                            <div class="lnb-list">
+                                <div class="lnb-list-top">
+                                    <a href="" class="nav-icon" menu-icon="left01"><span class="dis-none">메뉴명1</span></a>
+                                    <a href="" class="nav-icon on" menu-icon="left02"><span class="dis-none">메뉴명2</span></a>
+                                    <a href="" class="nav-icon" menu-icon="left03"><span class="dis-none">메뉴명3</span></a>
+                                    <a href="" class="nav-icon" menu-icon="left04"><span class="dis-none">메뉴명4</span></a>
+                                    <a href="" class="nav-icon" menu-icon="left05"><span class="dis-none">메뉴명5</span></a>
+                                </div>   
+                                <div class="lnb-list-bottom">
+                                    <a href="" class="nav-icon" menu-icon="left06"><span class="dis-none">메뉴명5</span></a>
+                                </div>                         
                             </div>
-                            <a>6</a>
+
+
                         </div>
                     </nav>         
                     <div id="cont-area" class="cont-area-wrap">
                         <div class="cont-area-inner">
-                            <div class="tab-menu-wrap">
-                                <div class="tab-menu-inner">
-                                    상단탭
+                            <div class="stab-menu-wrap">
+                                <div class="stab-menu-inner">
+                                    <a href="" class="go-main-btn"><span class="dis-none">메인</span></a>
+                                    <div class="swiper stab-menu-list"> 
+                                        <div class="swiper-wrapper"> 
+                                            <div class="swiper-slide"><a href="" class="stab-menu-item">화면저작도구</a> </div> 
+                                            <div class="swiper-slide"><a href="" class="stab-menu-item">화면저작도구</a> </div> 
+                                            <div class="swiper-slide"><a href="" class="stab-menu-item">화면저작도구</a> </div> 
+                                            <div class="swiper-slide"><a href="" class="stab-menu-item">화면저작도구</a> </div> 
+                                            <div class="swiper-slide"><a href="" class="stab-menu-item">화면저작도구</a> </div> 
+                                            <div class="swiper-slide"><a href="" class="stab-menu-item">화면저작도구2</a> </div> 
+                                            <div class="swiper-slide"><a href="" class="stab-menu-item">화면저작도구2</a> </div> 
+                                            <div class="swiper-slide"><a href="" class="stab-menu-item">화면저작도구2</a> </div> 
+                                            <div class="swiper-slide"><a href="" class="stab-menu-item">화면저작도구2</a> </div> 
+                                            <div class="swiper-slide"><a href="" class="stab-menu-item">화면저작도구3</a> </div> 
+                                            <div class="swiper-slide"><a href="" class="stab-menu-item">화면저작도구3</a> </div> 
+                                            <div class="swiper-slide"><a href="" class="stab-menu-item">화면저작도구3</a> </div> 
+                                            <div class="swiper-slide"><a href="" class="stab-menu-item">화면저작도구3</a> </div> 
+                                            <div class="swiper-slide"><a href="" class="stab-menu-item">화면저작도구3</a> </div> 
+                                            <div class="swiper-slide"><a href="" class="stab-menu-item">화면저작도구3</a> </div> 
+                                        </div>                                        
+                                        <div class="swiper-scrollbar"></div>
+                                    </div> 
                                 </div>
                             </div>
                             <div class="contain-wrap">
@@ -51,53 +115,6 @@
                                     <div class="main-box">
                                         <div class="main-box-inner">
                                             <div>설명</div>
-                                            <div>메인메뉴</div>
-                                            <div>메인메뉴</div>
-                                            <div>메인메뉴</div>
-                                            <div>메인메뉴</div>
-                                            <div>메인메뉴</div>
-                                            <div>메인메뉴</div>
-                                            <div>메인메뉴</div>
-                                            <div>메인메뉴</div>
-                                            <div>메인메뉴</div>
-                                            <div>메인메뉴</div>
-                                            <div>메인메뉴</div>
-                                            <div>메인메뉴</div>
-                                            <div>메인메뉴</div>
-                                            <div>메인메뉴</div>
-                                            <div>메인메뉴</div>
-                                            <div>메인메뉴</div>
-                                            <div>메인메뉴</div>
-                                            <div>메인메뉴</div>
-                                            <div>메인메뉴</div>
-                                            <div>메인메뉴</div>
-                                            <div>메인메뉴</div>
-                                            <div>메인메뉴</div>
-                                            <div>메인메뉴</div>
-                                            <div>메인메뉴</div>
-                                            <div>메인메뉴</div>
-                                            <div>메인메뉴</div>
-                                            <div>메인메뉴</div>
-                                            <div>메인메뉴</div>
-                                            <div>메인메뉴</div>
-                                            <div>메인메뉴</div>
-                                            <div>메인메뉴</div>
-                                            <div>메인메뉴</div>
-                                            <div>메인메뉴</div>
-                                            <div>메인메뉴</div>
-                                            <div>메인메뉴</div>
-                                            <div>메인메뉴</div>
-                                            <div>메인메뉴</div>
-                                            <div>메인메뉴</div>
-                                            <div>메인메뉴</div>
-                                            <div>메인메뉴</div>
-                                            <div>메인메뉴</div>
-                                            <div>메인메뉴</div>
-                                            <div>메인메뉴</div>
-                                            <div>메인메뉴</div>
-                                            <div>메인메뉴</div>
-                                            <div>메인메뉴</div>
-                                            <div>메인메뉴</div>
                                             <div>메인메뉴</div>
                                         </div>
                                     </div>
@@ -110,4 +127,22 @@
             </main>         
         </div>
     </body>
+    <script>
+        new Swiper(".stab-menu-list", {
+            direction: 'horizontal',
+            slidesPerView: "auto",
+            spaceBetween: 0,
+            mousewheel: true,
+            observer: true,	
+            observeParents: true,	
+            freeMode: {
+                enabled: true,
+                sticky: true,
+            },        
+            scrollbar: {
+             el: ".swiper-scrollbar",
+             },
+        });   
+      
+    </script>
 </html>

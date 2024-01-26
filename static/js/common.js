@@ -27,35 +27,16 @@ $(document).ready(function() {
     }
 
 
-    // 파이프라인 키워드 슬라이드
-    new Swiper(".pipe-keyword-slide", {        
-        direction: 'horizontal', //방향 셋팅 vertical 수직, horizontal 수평 설정이 없으면 수평
-        loopAdditionalSlides : 1,// 슬라이드 반복 시 마지막 슬라이드에서 다음 슬라이드가 보여지지 않는 현상 수정        
-        autoHeight : true, // 현재 활성 슬라이드높이 맞게 높이조정
+    // 상단 탭메뉴 슬라이드
+    new Swiper(".stab-menu-list", {
         slidesPerView: "auto",
-        spaceBetween: 0,
-        allowTouchMove : true,
-        //방향표
-        navigation: {
-            //다음페이지 설정
-            nextEl: '.swiper-button-next',
-            //이전페이지 설정
-            prevEl: '.swiper-button-prev',
+        freeMode: {
+          enabled: true,
+          sticky: true,
         },
-        //접근성
-        a11y: {
-            prevSlideMessage: '이전 슬라이드',
-            nextSlideMessage: '다음 슬라이드',
-        },
-
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-          type: "fraction",
-        },
-        
-        observer: true,	// 추가
-        observeParents: true,	// 추가
+      
+        spaceBetween: 10,
+        mousewheel: true
       });    
    
 
