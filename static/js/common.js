@@ -27,19 +27,6 @@ $(document).ready(function() {
     }
 
 
-    // 상단 탭메뉴 슬라이드
-    new Swiper(".stab-menu-list", {
-        slidesPerView: "auto",
-        freeMode: {
-          enabled: true,
-          sticky: true,
-        },
-      
-        spaceBetween: 10,
-        mousewheel: true
-      });    
-   
-
     // 레이어팝업
     // jQuery 환경에서만 작동할 수 있게 처리
     if (typeof jQuery === "undefined") throw new Error("Modal requires jQuery.");
