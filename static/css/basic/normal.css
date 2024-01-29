@@ -166,18 +166,19 @@
 .btn-setting:hover {opacity: 1;}
 .login-footer {position: absolute;bottom: 4.0rem;width: 100%;text-align: center;font-size: 1.3rem;color: var(--color-gray);}
 
-.project-list-wrap {width: 44rem;margin:0 auto;}
+.project-list-wrap {width: 60rem;margin:0 auto;}
 
-.project-list {overflow-y: auto; width:100%; padding:0 1.8rem 0 0; height:21.4rem;}
-.projcet-item > a {border:1px solid transparent; width:44rem; padding: 0.8rem 0;font-size:1.5rem; line-height: 1.7; border-radius: 6px;display: flex;align-items: center;background: #f0f0f4;}
+.project-top {display: flex; justify-content: flex-end; align-items: center; margin-bottom:0.4rem;}
+.project-list {overflow-y: auto; width:100%; padding:0 1.8rem 0 0; height:21.8rem;}
+.projcet-item > a {border:1px solid transparent; width:60rem; margin-bottom:0.1rem; padding: 0.8rem 0; font-size:1.5rem; line-height: 1.7; border-radius: 6px;display: flex;align-items: center;background: #f0f0f4;}
 .projcet-item:nth-child(2n) > a {background: none;}
-.projcet-item:last-child > a {margin-bottom:0;}
+.projcet-item:last-child > a {margin-bottom: 0.6rem;}
 .projcet-item > a:hover {border:1px solid #065bc3;transition: all .2s; ;}
-.projcet-item > a .num {width:calc(8% - 0.4rem); padding-left:0.4rem; text-align: center; font-weight: bold;}
-.projcet-item > a .title {width:40%; margin:0 1%;}
-.projcet-item > a .description {width:calc(50% - 1.2rem); text-align: right; padding-right:1.2rem; opacity: 0.8;}
+.projcet-item > a .num {width:calc(6% - 0.6rem); padding-left:0.6rem; text-align: center; font-weight: bold;}
+.projcet-item > a .title {width:42%; margin:0 1%;}
+.projcet-item > a .description {width:calc(50% - 1.2rem); text-align: right; padding-right:1.2rem; opacity: 0.6;}
 
-.project-list-wrap .ok-btn {width:100%; font-size:1.7rem;border-radius: 8px;height: 6.0rem; font-weight: 500; box-shadow: 0px 4px 8px rgb(47 60 85 / 20%);background:#0065DE;color:var(--color-white);margin-top: 2.4rem;}
+.project-list-wrap .ok-btn {width:44.0rem; font-size:1.7rem;border-radius: 8px;height: 6.0rem; font-weight: 500; box-shadow: 0px 4px 8px rgb(47 60 85 / 20%);background:#0065DE;color:var(--color-white);  margin: 2.4rem auto 0 auto; display: block;}
 .project-list-wrap .ok-btn:hover { box-shadow: none; background:#065bc3; transition: all .2s;}
 
 
@@ -403,6 +404,8 @@
 }
 @media (max-width: 1480px){ 
     .info-paths {width:28.0rem;}
+    .project-list-wrap {width:56.0rem;}
+    .projcet-item > a {width:56.0rem;}
 }
 @media (max-width: 1280px){   
     #login-wrap {width:1280px;}
