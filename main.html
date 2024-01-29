@@ -23,42 +23,52 @@
         <div id="wrap">
             <!-- header :s --> 
             <header id="header" class="header-wrap">
-                <div class="header-inner">                    
-                    <div class="top-left header-item">
-                        <h1 class="logo-img">로고영역</h1>
-                        <p class="program-name">Engineering Tools<span class="ellipsis">TK_VT2</span></p>
-                    </div>
-                    <div class="top-mid header-item">
-                        <a href="" class="btn all-menu btn-type01">모든메뉴</a>
-                        <div class="info-list">
-                            <span class="info-ip nw-good">localhost:8070</span> <!-- 상태값 확인필요 -->
-                            <span class="info-date">2024-01-01 13:35:15</span>
-                            <span class="info-paths ellipsis">편집도구 > SCL저작도구(KGRID.MG.ENG.Editor.SCL.View.SclEditor)</span>
-                        </div>
-                        <div class="tnb-list header-item">
-                            <button class="top-icon" menu-icon="top01"><span class="dis-none">메뉴명1</span></button>
-                            <button class="top-icon" menu-icon="top02"><span class="dis-none">메뉴명2</span></button>
-                            <button class="top-icon" menu-icon="top03"><span class="dis-none">메뉴명3</span></button>
-                            <button class="top-icon" menu-icon="top04"><span class="dis-none">메뉴명4</span></button>
-                            <button class="top-icon" menu-icon="top05"><span class="dis-none">메뉴명5</span></button>
-                        </div>
-                    </div>
-                    <div class="top-right">
-                        <div class="select-wrap">
-                            <select class="select-type01">
-                                <option>TK_VT1</option>
-                                <option>TK_VT2</option>
-                                <option>TK_VT3</option>
-                                <option>TK_VT4</option>
-                                <option>TK_VT5</option>
-                            </select> 
-                        </div>              
-       
-                        <div class="utill-wrap">
-                            <p class="utill-welcome"><span class="welcome-user">mgadmin 님</span><span>, 안녕하세요.</span></p>
-                            <a href="" class="utill-setting"><span class="dis-none">설정</span></a>
-                        </div>
-                    </div>
+                <div class="header-inner">  
+                        <div class=" swiper header-menu-wrap">
+                            <div class="swiper-wrapper header-menu-inner">
+                                <div class="swiper-slide">
+                                    <div class="top-left header-item">
+                                        <h1 class="logo-img">로고영역</h1>
+                                        <p class="program-name">Engineering Tools - <span class="ellipsis">TK_VT2</span></p>
+                                    </div>
+                                    <div class="top-mid header-item">
+                                        <a href="" class="btn all-menu btn-type01">모든메뉴</a>
+                                        <div class="info-list">
+                                            <span class="info-ip nw-good">localhost:8070</span> <!-- 상태값 확인필요 -->
+                                            <span class="info-date">2024-01-01 13:35:15</span>
+                                            <span class="info-paths ellipsis">편집도구 > SCL저작도구(KGRID.MG.ENG.Editor.SCL.View.SclEditor)</span>
+                                        </div>
+                                        <div class="tnb-list header-item">
+                                            <button class="top-icon" menu-icon="top01"><span class="dis-none">메뉴명1</span></button>
+                                            <button class="top-icon" menu-icon="top02"><span class="dis-none">메뉴명2</span></button>
+                                            <button class="top-icon" menu-icon="top03"><span class="dis-none">메뉴명3</span></button>
+                                            <button class="top-icon" menu-icon="top04"><span class="dis-none">메뉴명4</span></button>
+                                            <button class="top-icon" menu-icon="top05"><span class="dis-none">메뉴명5</span></button>
+                                        </div>
+                                    </div>
+                                    <div class="top-right">
+                                        <div class="select-wrap">
+                                            <select class="select-type01">
+                                                <option>TK_VT1</option>
+                                                <option>TK_VT2</option>
+                                                <option>TK_VT3</option>
+                                                <option>TK_VT4</option>
+                                                <option>TK_VT5</option>
+                                            </select> 
+                                        </div>              
+                       
+                                        <div class="utill-wrap">
+                                            <p class="utill-welcome"><span class="welcome-user">mgadmin 님</span><span>, 안녕하세요.</span></p>
+                                            <a href="" class="utill-setting"><span class="dis-none">설정</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="swiper-scrollbar"></div>
+                        </div>  
+
                 </div>
             </header>
             <!-- header :e -->  
@@ -193,6 +203,21 @@
              el: ".swiper-scrollbar",
              },
         });   
+        new Swiper(".header-menu-wrap", {
+            direction: 'horizontal',
+            slidesPerView: "auto",
+            spaceBetween: 0,
+            mousewheel: true,
+            observer: true,	
+            observeParents: true,	
+            freeMode: {
+                enabled: true,
+                sticky: true,
+            },        
+            scrollbar: {
+             el: ".swiper-scrollbar",
+             },
+        });  
       
     </script>
 </html>
