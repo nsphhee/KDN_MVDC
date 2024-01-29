@@ -26,7 +26,7 @@ time, mark, audio, video, button {
 
 /* HTML5 display-role reset for older browsers */
 article,aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display:block;}
-html {font-size:10px; overflow-y:auto; -webkit-box-sizing:border-box; box-sizing:border-box;}
+html {font-size:10px; /* overflow-y:auto; */ overflow: hidden; -webkit-box-sizing:border-box; box-sizing:border-box;}
 body {line-height:1; font-size:1.6rem; color:#222222;overflow: hidden;}
 address, em, i {font-style:normal;}
 p, span, a, h1, h2, h3, h4, h5, h6, ul, li, tr, td, input, select, textarea, button, figure, blockquote {transform:skew(-0.1deg);}
