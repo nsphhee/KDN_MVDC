@@ -178,13 +178,13 @@
 .project-del:hover {background: #ffeeee;transition: all .2s;}
 .project-del:before {background: url(../../images/common/icon_minus.svg)no-repeat center center; background-size: contain;}
 
-.project-list {overflow-y: auto;width:100%;padding:0 1.8rem 0 0;height: 25rem;}
+.project-list {overflow-y: auto;width:100%;padding:0 1.8rem 0 0;height: 25.2rem;}
 .projcet-item > a {border:2px solid transparent;width:60rem;margin-bottom:0.1rem;padding: 1.0rem 0;font-size:1.5rem;line-height: 1.7;border-radius: 6px;display: flex;align-items: center;background: #f5f5f8;}
 .projcet-item:nth-child(2n) > a {background: none;}
 .projcet-item:last-child > a {margin-bottom: 0.6rem;}
 .projcet-item > a:hover, 
 .projcet-item.on > a:hover, 
-.projcet-item.on > a {border:2px solid #065bc3; background: #eff1fd; transition: all .2s;color:#00479A; }
+.projcet-item.on > a {border:2px solid #065bc3; background: #eff1fd; transition: all .1s;color:#00479A;}
 
 .projcet-item > a .num {width:calc(6% - 0.6rem); padding-left:0.6rem; text-align: center; font-weight: bold;}
 .projcet-item > a .title {width:42%; margin:0 1%;}
