@@ -23,6 +23,7 @@
     --color-text05: #D2DAE5;
     --color-text06: #E5EBF5;  
     --color-text07: #3C9DFF;  
+    --color-text08: #40506f; 
     --color-point01: #1664C1;
     --color-point02: #FF8A8A;    
     --color-status01: #03D017;
@@ -80,11 +81,12 @@
 .h-scroll::-webkit-scrollbar-track{background-color:var(--scroll-bg01);}
 
 /* 스크롤바 설정*/
-.b-scroll::-webkit-scrollbar{width:12px; height:12px;}
+.b-scroll::-webkit-scrollbar{width:8px; height:8px;}
 /* 스크롤바 막대 설정*/
 .b-scroll::-webkit-scrollbar-thumb{height:20%; background-color: #999999; border-radius: 10px;}
 /* 스크롤바 뒷 배경 설정*/
-.b-scroll::-webkit-scrollbar-track{background-color:#eeeeee;}
+.b-scroll::-webkit-scrollbar-track{background-color:#ffffff;}
+
 
 /* text */
 .fc-blue {color:var(--font-blue);}
@@ -100,6 +102,10 @@
 
 .btn-type01 {background: var(--color-select-bg02); padding:0 1.2rem; color: var(--color-text05);  border: 1px solid var(--border01) !important; height:3.4rem; line-height: 3.4rem; }
 .btn-type01:hover {background: var(--color-bg01); border:1px solid var(--border06) !important;}
+
+.btn-type02 {background: var(--color-select-bg02); padding:0 1.2rem; color: var(--color-text05);  border: 1px solid var(--border01) !important; height:3.4rem; line-height: 3.4rem; }
+.btn-type02:hover {background: var(--color-bg01); border:1px solid var(--border06) !important;}
+
 
 .btn-down {color:#ffffff; padding:0 1.6rem; border-radius: 4px; display: flex; justify-content:center; align-items: center; box-sizing: border-box;border: 1px solid #265ABF !important; background: #265ABF;}
 .btn-down::before {content:''; display: inline-block; background: url(../../images/gbox/icon_down_w.svg) no-repeat center center; background-size:contain; width:1.2rem; height:1.2rem; padding:0; margin:0 0.8rem 0 0;}
@@ -120,7 +126,7 @@
 /* login */
 #login-wrap {width:100%;}
 .login-inner {display: flex; justify-content: space-between; align-items: center;}
-.login-inner > div {height: calc(100vh - 6.0rem);min-height: 54rem;}
+.login-inner > div {height: calc(100vh - 6.0rem);min-height: 58rem;}
 .login-inner .left-area {padding: 3.0rem 0 3.0rem 3.0rem;width: calc(50% - 3.0rem);}
 .login-inner .left-area-inner {background: var(--color-bg07);border-radius: 12px;height:100%;background-size: cover;display: flex;align-items: center; justify-content: center;}
 .login-inner .right-area {padding: 3.0rem 0;position: relative;width:50%;}
@@ -159,6 +165,21 @@
 .btn-setting {background: url(../../images/common/icon_setting.svg) no-repeat center center;width:2.0rem;height:2.0rem;position:absolute;top: 3.0rem;right: 3.0rem;opacity: 0.4;background-size: contain;}
 .btn-setting:hover {opacity: 1;}
 .login-footer {position: absolute;bottom: 4.0rem;width: 100%;text-align: center;font-size: 1.3rem;color: var(--color-gray);}
+
+.project-list-wrap {width: 44rem;margin:0 auto;}
+
+.project-list {overflow-y: auto; width:100%; padding:0 1.8rem 0 0; height:21.4rem;}
+.projcet-item > a {border:1px solid transparent; width:44rem; padding: 0.8rem 0;font-size:1.5rem; line-height: 1.7; border-radius: 6px;display: flex;align-items: center;background: #f0f0f4;}
+.projcet-item:nth-child(2n) > a {background: none;}
+.projcet-item:last-child > a {margin-bottom:0;}
+.projcet-item > a:hover {border:1px solid #065bc3;transition: all .2s; ;}
+.projcet-item > a .num {width:calc(8% - 0.4rem); padding-left:0.4rem; text-align: center; font-weight: bold;}
+.projcet-item > a .title {width:40%; margin:0 1%;}
+.projcet-item > a .description {width:calc(50% - 1.2rem); text-align: right; padding-right:1.2rem; opacity: 0.8;}
+
+.project-list-wrap .ok-btn {width:100%; font-size:1.7rem;border-radius: 8px;height: 6.0rem; font-weight: 500; box-shadow: 0px 4px 8px rgb(47 60 85 / 20%);background:#0065DE;color:var(--color-white);margin-top: 2.4rem;}
+.project-list-wrap .ok-btn:hover { box-shadow: none; background:#065bc3; transition: all .2s;}
+
 
 
 
