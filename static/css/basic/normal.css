@@ -104,16 +104,16 @@
 input:read-only {background: #f0f0f0;}
 
 /* button */
-.btn {min-width:8.0rem; border-radius: 4px; font-size:1.3rem; border: none !important; color: var(--color-text05); text-align: center;  display: inline-block; box-sizing: border-box; margin-right:0.6rem;}
+.btn {height:3.4rem; line-height:3.4rem; min-width:8.0rem; border-radius: 4px; font-size:1.3rem; border: none !important; color: var(--color-text05); text-align: center;  display: inline-block; box-sizing: border-box; margin-right:0.6rem;}
 .btn:hover { transition: all ease 0.2s 0s;}
 
-.btn-type01 {background: var(--color-select-bg02); padding:0 1.2rem; color: var(--color-text05);  border: 1px solid var(--border01) !important; height:3.4rem; }
+.btn-type01 {background: var(--color-select-bg02); padding:0 1.2rem; color: var(--color-text05);  border: 1px solid var(--border01) !important; }
 .btn-type01:hover {background: var(--color-bg01); border:1px solid var(--border06) !important;}
 
-.btn-type02 {background: var(--color-btn-bg01); padding:0 1.2rem; color:var(--color-text09);  border: 1px solid var(--color-btn-bg01) !important; height:3.4rem; }
+.btn-type02 {background: var(--color-btn-bg01); padding:0 1.2rem; color:var(--color-text09);  border: 1px solid var(--color-btn-bg01) !important; }
 .btn-type02:hover {background: var(--color-btn-bg02); border:1px solid var(--color-btn-bg02) !important;}
 
-.btn-gray {background: #e8e8e8; padding:0 1.2rem;  color:#555555; border: 1px solid #dddddd !important; height:3.4rem; }
+.btn-gray {background: #e8e8e8; padding:0 1.2rem;  color:#555555; border: 1px solid #dddddd !important;}
 .btn-gray:hover {background: #dddddd; border:1px solid #cccccc !important;}
 
 
