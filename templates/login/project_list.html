@@ -15,7 +15,8 @@
         <link media="all" rel="stylesheet" href="../../static/css/common.css">  
         <link media="all" rel="stylesheet" href="../../static/css/font.css">  
         <link media="all" rel="stylesheet" href="../../static/css/basic/normal.css">
-
+        <script src="../../static/js/jquery-3.7.0.min.js"></script>
+        <script src="../../static/js/common.js"></script>
     </head>
     <body class="b-scroll">  <!-- 로그인페이지일때 b-scroll -->
         <div id="default-wrap">   
@@ -45,7 +46,7 @@
                             <div class="project-list-wrap">
                                 <div class="project-list-inner">
                                     <div class="project-top">
-                                        <button class="project-add"><span class="dis-none1">추가</span></button>
+                                        <button class="project-add open-lp" aria-controls="project-create"><span class="dis-none1">추가</span></button>
                                         <button class="project-del"><span class="dis-none1">삭제</span></button>
                                     </div>
                                     <div class="project-list b-scroll">
@@ -74,6 +75,73 @@
             </div>
         </div>        
 
+        <!-- 새프로젝트 생성 popup :s -->
+        <div class="layer-pop" id="project-create" role="dialog" aria-modal="true" aria-label="새프로젝트 생성">
+            <div class="layer-pop-bg">
+                <div class="layer-pop-inner">   
+                    <div class="kgrid-pop-wrap">
+                        <h3 class="h3-tit">프로젝트 정보 등록</h3>                        
+                        <div class="lp-cont-wrap"> 
+                            <h4 class="h4-tit">기본 정보</h4>
+                            <div class="lp-cont-inner b-scroll">          
+                                <div class="lp-input-item">
+                                    <label for="projectID" class="">프로젝트 ID</label>        
+                                    <div>
+                                        <input type="text" name="projectID" id="projectID" value="64" readonly onfocus="this.blur()">   
+                                     </div>           
+                                </div>          
+                                <div class="lp-input-item">
+                                    <label for="projectName" class="">프로젝트 이름</label>     
+                                    <div>
+                                        <input type="text" name="projectName" id="projectName" placeholder="프로젝트 이름을 입력해주세요.">
+                                    </div>              
+                                       
+                                </div>          
+                                <div class="lp-input-item">
+                                    <label for="projectDesc" class="hidden">설명</label>          
+                                    <div>
+                                        <input type="text" name="projectDesc" id="projectDesc" placeholder="프로젝트 설명을 입력해주세요.">
+                                    </div>    
+                                </div>          
+                                <div class="lp-input-item">
+                                    <label for="projectCreateDate" class="hidden">만든날짜</label>       
+                                    <div>
+                                        <input type="text" name="projectCreateDate" id="projectCreateDate" value="" readonly onfocus="this.blur()">   
+                                    </div>            
+                                    
+                                </div>          
+                                <div class="lp-input-item">
+                                    <label for="projectModifyDate" class="hidden">수정날짜</label>        
+                                    <div>
+                                        <input type="text" name="projectModifyDate" id="projectModifyDate" value="" readonly onfocus="this.blur()">
+                                    </div>           
+                                       
+                                </div>          
+                                <div class="lp-input-item">
+                                    <label for="projectCopy" class="hidden">복사</label>    
+                                    <div class="flex-start">
+                                        <input type="checkbox">            
+                                        <div class="select-wrap">
+                                            <select name="projectCopy" id="projectCopy" class="select-type02">
+                                                <option>test01</option>
+                                                <option>daegu demo02</option>
+                                            </select> 
+                                        </div>  
+                                    </div>   
+
+                                </div> 
+                            </div>  
+                        </div>                                             
+                        <div class="btn-wrap flex-center">
+                            <button class="btn btn-type02" aria-label="저장">저장</button> 
+                            <button class="btn btn-gray" aria-label="취소">취소</button>
+                        </div>                                                             
+                    </div>                    
+                </div>
+            </div>
+        </div>
+        <!-- 새프로젝트 생성 popup :e -->
 
     </body>
+
 </html>
