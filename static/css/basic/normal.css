@@ -104,7 +104,7 @@
 input:read-only {background: #f0f0f0;}
 
 /* button */
-.btn {height:3.4rem; line-height:3.4rem; min-width:8.0rem; border-radius: 4px; font-size:1.3rem; border: none !important; color: var(--color-text05); text-align: center;  display: inline-block; box-sizing: border-box; margin-right:0.6rem;}
+.btn {height:3.4rem; line-height:3.2rem; min-width:8.0rem; border-radius: 4px; font-size:1.3rem; border: none !important; color: var(--color-text05); text-align: center;  display: inline-block; box-sizing: border-box; margin-right:0.6rem;}
 .btn:hover { transition: all ease 0.2s 0s;}
 
 .btn-type01 {background: var(--color-select-bg02); padding:0 1.2rem; color: var(--color-text05);  border: 1px solid var(--border01) !important; }
@@ -115,7 +115,6 @@ input:read-only {background: #f0f0f0;}
 
 .btn-gray {background: #e8e8e8; padding:0 1.2rem;  color:#555555; border: 1px solid #dddddd !important;}
 .btn-gray:hover {background: #dddddd; border:1px solid #cccccc !important;}
-
 
 .btn-down {color:#ffffff; padding:0 1.6rem; border-radius: 4px; display: flex; justify-content:center; align-items: center; box-sizing: border-box;border: 1px solid #265ABF !important; background: #265ABF;}
 .btn-down::before {content:''; display: inline-block; background: url(../../images/common/icon_down_w.svg) no-repeat center center; background-size:contain; width:1.2rem; height:1.2rem; padding:0; margin:0 0.8rem 0 0;}
