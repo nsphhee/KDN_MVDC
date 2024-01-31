@@ -18,6 +18,8 @@
         <link media="all" rel="stylesheet" href="../static/css/swiper-bundle.min.css">  
         <script src="../static/js/jquery-3.7.0.min.js"></script>
         <script src="../static/js/swiper-bundle.min.js"></script>
+        <script src="../static/js/common.js"></script>
+
     </head>
     <body class="scroll">  
         <div id="wrap">
@@ -39,11 +41,11 @@
                                         <span class="info-paths ellipsis">편집도구 > SCL저작도구(KGRID.MG.ENG.Editor.SCL.View.SclEditor)</span>
                                     </div>
                                     <div class="tnb-list header-item">
-                                        <button class="top-icon" menu-icon="top-home"><span class="dis-none">메뉴명1</span></button>
-                                        <button class="top-icon" menu-icon="top-tab-close"><span class="dis-none">메뉴명2</span></button>
-                                        <button class="top-icon" menu-icon="top-alltab-close"><span class="dis-none">메뉴명3</span></button>
-                                        <button class="top-icon" menu-icon="top-img-save"><span class="dis-none">메뉴명4</span></button>
-                                        <button class="top-icon" menu-icon="top-print"><span class="dis-none">메뉴명5</span></button>
+                                        <button class="top-icon" menu-icon="top-home"><span class="dis-none">메인</span></button>
+                                        <button class="top-icon" menu-icon="top-tab-close"><span class="dis-none">탭닫기</span></button>
+                                        <button class="top-icon" menu-icon="top-alltab-close"><span class="dis-none">탭모두닫기</span></button>
+                                        <button class="top-icon" menu-icon="top-img-save"><span class="dis-none">이미지저장</span></button>
+                                        <button class="top-icon" menu-icon="top-print"><span class="dis-none">인쇄</span></button>
                                     </div>
                                 </div>
                                 <div class="top-right">
@@ -296,10 +298,6 @@
              },
         }); 
 
-        $(".menu-full").click(function() {            
-            $("#lnb-full").toggleClass("lnb-list-full");
-            $(this).toggleClass("on");
-        });
 
 
     </script>

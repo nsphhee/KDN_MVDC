@@ -1,4 +1,23 @@
 $(document).ready(function() {    
+    //좌측메뉴 
+    $(".menu-full").click(function() {            
+        $("#lnb-full").toggleClass("lnb-list-full");
+        $(this).toggleClass("on");
+    });
+
+    $(".btn-display").click(function() {            
+        $(this).toggleClass("btn-display-none");
+        $(".cm-tab-cont").toggleClass("dis-none");
+    });
+
+    $(".btn-box > .tool-txt .tool-icon").click(function() {        
+        var btnBox = $(this).parents(".btn-box");       
+        var toolMore = $(btnBox).children(".tool-more");   
+        $(".tool-more.on").removeClass("on"); 
+        $(toolMore).addClass("on");
+        
+    });
+
 
     // 레이어팝업
     // jQuery 환경에서만 작동할 수 있게 처리
@@ -76,21 +95,25 @@ $(document).ready(function() {
     });
 
     
-    // 탭 - 레이어팝업
-    const tabList = document.querySelectorAll('.tab-default .tab-h-list li');
-    const contents = document.querySelectorAll('.tab-cont .tab-c-item')
+    // 탭
+    const lpTabList = document.querySelectorAll('.lp-tab-default .tab-h-list li'); //레이어팝업 탭
+    const lpContents = document.querySelectorAll('.lp-tab-cont .tab-c-item'); //레이어팝업 탭
+    
+    const cmTabList = document.querySelectorAll('.cm-tab-default .tab-h-list li'); //홈,설정 탭
+    const cmContents = document.querySelectorAll('.cm-tab-cont .tab-c-item'); //홈,설정 탭
+
     let activeCont = ''; // 현재 활성화 된 컨텐츠 (기본:#tab1 활성화)
 
-    for(var i = 0; i < tabList.length; i++){
-        if ( tabList[i].querySelector('.t-tit') != null ) {
-            tabList[i].querySelector('.t-tit').addEventListener('click', function(e){
+    for(var i = 0; i < lpTabList.length; i++){
+        if ( lpTabList[i].querySelector('.t-tit') != null ) {
+            lpTabList[i].querySelector('.t-tit').addEventListener('click', function(e){
                 e.preventDefault();
-                for(var j = 0; j < tabList.length; j++){
+                for(var j = 0; j < lpTabList.length; j++){
                     // 나머지 버튼 클래스 제거
-                    tabList[j].classList.remove('tab-h-on');
+                    lpTabList[j].classList.remove('tab-h-on');
 
                     // 나머지 컨텐츠 display:none 처리
-                    contents[j].style.display = 'none';   
+                    lpContents[j].style.display = 'none';   
                 }
 
                 // 버튼 관련 이벤트
@@ -101,7 +124,30 @@ $(document).ready(function() {
                 document.querySelector(activeCont).style.display = 'block';
             });
         }
-    }
+    };
+
+    for(var i = 0; i < cmTabList.length; i++){
+        if ( cmTabList[i].querySelector('.t-tit') != null ) {
+            cmTabList[i].querySelector('.t-tit').addEventListener('click', function(e){
+                e.preventDefault();
+                for(var j = 0; j < cmTabList.length; j++){
+                    // 나머지 버튼 클래스 제거
+                    cmTabList[j].classList.remove('tab-h-on');
+
+                    // 나머지 컨텐츠 display:none 처리
+                    cmContents[j].style.display = 'none';   
+                }
+
+                // 버튼 관련 이벤트
+                this.parentNode.classList.add('tab-h-on');
+
+                // 버튼 클릭시 컨텐츠 전환
+                activeCont = this.getAttribute('href');
+                document.querySelector(activeCont).style.display = 'block';
+            });
+        }
+    };
+    
 
 
 });
