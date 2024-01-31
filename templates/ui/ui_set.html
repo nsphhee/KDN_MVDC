@@ -21,14 +21,15 @@
         <script src="../../static/js/common.js"></script>
 
         <style>
-            #ui-wrap {padding:3.0rem;width: calc(100vw - 6rem);}
+            #ui-wrap {padding:3.0rem;width: calc(100vw - 6rem);height: calc(100vh - 8rem);}
             #ui-wrap > h2:first-child {margin:0 0 3.0rem 0;}
             #ui-wrap > h2 {font-size:2.0rem; margin:6.0rem 0 3.0rem 0; font-weight: bold;}
-            #ui-wrap > div {width:100%; overflow: auto;}
+            #ui-wrap > div {width:100%;height: 100%;overflow: hidden;}
         </style>
     </head>
     <body class="b-scroll">  
         <div id="ui-wrap">  
+            <div class="ui-inner">
             <h2>서브탭</h2> 
             <!-- stab-menu-wrap :s -->
             <div class="stab-menu-wrap">
@@ -46,7 +47,7 @@
             <!-- stab-menu-wrap :e -->
 
             <h2>툴바 - SCL 저작도구</h2>
-            <div class="ui-inner">
+            
                 <!-- scl home/setting :s -->
                 <div class="c-main-top-wrap">
                     <div class="c-main-top-inner">

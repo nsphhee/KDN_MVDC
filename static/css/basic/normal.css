@@ -432,7 +432,7 @@ input:read-only {background: #f0f0f0;}
 .btn-display-none:hover {opacity: 1;} 
 
 /* tool-bar */
-.tool-menu-wrap {height:4.0rem; /* min-width:128.0rem; */ background: var(--color-bg05);}
+.tool-menu-wrap {height:4.0rem; background: var(--color-bg05);}
 .tool-menu-wrap.swiper {overflow: unset;}
 .tool-menu-inner > div {padding:0; display: flex;justify-content: flex-start; align-items: center; position: relative; width:calc(100% - 3.0rem); margin:0 auto; min-width:13.2rem;}
 .tool-item {display: flex; justify-content: flex-start; align-items: center; margin-right:1.2rem;}
@@ -495,7 +495,7 @@ input:read-only {background: #f0f0f0;}
 .btn-box {position: relative;}
 .btn-box .tool-txt .tool-icon:after {display: block; margin-left:0.6rem; background: url(../../images/common/arrow_more.svg)no-repeat center center; width:1.0rem; height: 1.0rem; background-size: contain;}
 .btn-box .tool-more {display: none;}
-.btn-box .tool-more.on {width:100%; min-width: 16.0rem;display: block;position: absolute;top:2.8rem;left:0;background: var(--color-bg04);border-radius: 4px;padding: 0.8rem 0.4rem;}
+.btn-box .tool-more.on {color:var(--color-text06); width:100%; min-width: 16.0rem;display: block;position: absolute;top:2.8rem;left:0;background: var(--color-bg04);border-radius: 4px;padding: 0.8rem 0.4rem;}
 .btn-box .tool-more .tool-icon {width:calc(100%); padding:0 1.2rem; justify-content: flex-start;}
 .btn-box .tool-more .tool-icon > span { font-size:1.3rem; color:var(--color-text05); display: block; margin-left:0.6rem;}
 .btn-box .tool-more .tool-icon:hover {border:1px solid transparent; background: var(--color-bg01);}
