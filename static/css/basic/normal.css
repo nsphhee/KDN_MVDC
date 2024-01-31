@@ -179,9 +179,9 @@ input:read-only {background: #f0f0f0;}
 .project-top {display: flex;justify-content: flex-end;align-items: center;margin-bottom: 1.6rem;}
 .project-top > button {border-radius: 4px; height:3.0rem;padding: 0 1.6rem;display: flex;align-items: center;font-size: 1.4rem;}
 .project-top > button:before {display: block;width:1.2rem;height:1.2rem;margin: 0 0.6rem 0 0;}
-.project-add {border:1px solid #1554b5; margin-right:0.6rem; color:#1554b5;}
-.project-add:hover {background: #eceeff;transition: all .2s;}
-.project-add:before {background: url(../../images/common/icon_plus.svg)no-repeat center center; background-size: contain;}
+.project-create {border:1px solid #1554b5; margin-right:0.6rem; color:#1554b5;}
+.project-create:hover {background: #eceeff;transition: all .2s;}
+.project-create:before {background: url(../../images/common/icon_plus.svg)no-repeat center center; background-size: contain;}
 .project-del {border:1px solid #F13131; color:#F13131; }
 .project-del:hover {background: #ffeeee;transition: all .2s;}
 .project-del:before {background: url(../../images/common/icon_minus.svg)no-repeat center center; background-size: contain;}
@@ -414,28 +414,44 @@ input:read-only {background: #f0f0f0;}
 .scl-cont-inner .c-main-mid-wrap {flex-grow: 1;} 
 .scl-cont-inner .c-main-right-wrap {width:37.0rem;} 
 
+/* tab */
+.tab-head-type01 {margin:0;}
+.tab-head-type01 > .tab-h-list {display: flex;align-items: center;width: 100%;border-bottom: 1px solid #c8c8c8;}
+.tab-head-type01 > .tab-h-list li {border-radius: 0; margin: 0 0 0 0; text-align: center;}
+.tab-head-type01 > .tab-h-list li.tab-h-on {z-index: 9;}
+.tab-head-type01 > .tab-h-list li a {letter-spacing: -0.5px; color:#666666; font-size: 1.5rem;position:relative;box-sizing: border-box; padding: 0 0.6rem 1.6rem 0.6rem; display: block; } 
+.tab-head-type01 > .tab-h-list li.tab-h-on a {position:relative; font-weight: 600; color:#222222;}
+.tab-head-type01 > .tab-h-list li a:hover {transition: all ease 0.1s 0s; font-weight: 600; color:#222222;}
+.tab-head-type01 > .tab-h-list li.tab-h-on a:after,
+.tab-head-type01 > .tab-h-list li a:hover:after {display: block;width:100%;height: 0.3rem;background: #000000;position: absolute;bottom: -0.2rem; left:0;}
+
+.tab-c-item {display: none;} 
 
 /* layer popup */
 .layer-pop {display:none; transition: all ease 0.2s 0s;}
 .layer-pop.on {display: flex; position: fixed; top:0; left:0; right:0; bottom:0; z-index: 10000;}
-.layer-pop-bg {padding: 0;min-height: calc(100vh - 48px);align-items: center;display: flex;justify-content: center; flex-direction: column; background:rgba(0,0,0,.8); width: 100%;}
+.layer-pop-bg {padding: 0;min-height: calc(100vh - 48px);align-items: center;display: flex;justify-content: center;background:rgba(0,0,0,.8);width: 100%;flex-wrap: wrap;overflow-y: auto;flex-direction: row;}
 .layer-pop-inner {z-index:10001;background: #ffffff;border-radius: 10px 10px 8px 8px;position: relative;}
 .layer-pop-close {position: absolute; top: 18px; right: 16px; background:url(../../images/common/icon_close_b.svg) no-repeat center center; background-size: contain; width: 3.6rem; height: 3.6rem; color:transparent;}
 .layer-pop-inner .kgrid-pop-wrap {padding: 0 0 3.0rem 0;}
 .layer-pop-inner .h3-tit {font-size:1.8rem;font-weight: 500;padding-bottom:1.6rem;background: #065bc3;padding: 2.0rem 3.0rem;color: #ffffff;border-radius: 8px 8px 0 0;}
 .layer-pop-inner .h4-tit {font-size:1.7rem;font-weight: 600;padding: 0 0 1.4rem 0; border-bottom:1px solid #c8c8c8;}
 .layer-pop-inner .lp-cont-wrap {padding: 0 3.0rem; margin:2.6rem 0;}
-.layer-pop-inner .lp-cont-inner {padding:0; margin: 1.6rem 0 0 0;}
-.layer-pop-inner input[type=text] {padding:0.2rem 0.8rem; font-size:1.4rem; width:100%; height: 3.4rem;}
-.layer-pop-inner select {max-width: 100%; font-size:1.4rem; height: 3.4rem;}
+.layer-pop-inner .lp-cont-inner {margin: 1.6rem 0 0 0;padding: 0; min-height: 14rem;}
+.layer-pop-inner input[type=text],
+.layer-pop-inner input[type=number] {padding:0.2rem 0.8rem; font-size:1.4rem; width:100%; height: 3.4rem;}
+.layer-pop-inner select {max-width: 100%; font-size:1.4rem; height: 3.4rem; width:100%;}
 .layer-pop-inner .lp-input-item {width:100%; display: flex; align-items: center; margin-bottom:1.2rem;font-size:1.4rem;}
 .layer-pop-inner .lp-input-item:last-child {margin-bottom:0;}
 .layer-pop-inner .lp-input-item label {width:12.0rem;font-weight: 500;position: relative;padding: 0 0 0 1.0rem;}
 .layer-pop-inner .lp-input-item label:before {display: block;position: absolute;left:0;top: calc(50% - 0.2rem);width: 0.4rem;height: 0.4rem;background: #aaaaaa;border-radius: 4px;}
 .layer-pop-inner .lp-input-item > div {width:calc(100% - 12.8rem);}
-.layer-pop-inner .select-wrap {margin-left:1.2rem;width: calc(100% - 3.2rem);}
+.layer-pop-inner .select-wrap {margin:0; width: calc(100% - 3.2rem);}
+.layer-pop-inner input[type=checkbox] + .select-wrap {margin-left:1.2rem;width: calc(100% - 3.2rem);}
+.layer-pop-inner .btn-wrap  {border-top:1px solid #c8c8c8; padding:1.8rem 0 0 0; width: calc(100% - 6rem); margin: 0 auto;}
 .layer-pop-inner .btn-wrap > button {font-weight: normal !important; margin: 0 0.3rem;}
-#project-create .layer-pop-inner {width:60.0rem; max-height: 90vh; animation: fadeInDown 0.4s;}
+#project-create .layer-pop-inner {width:60.0rem; /* max-height: 90vh; */animation: fadeInDown 0.4s;}
+#system-preference .layer-pop-inner {width:50.0rem; /* max-height: 90vh; */ animation: fadeInDown 0.4s;}
 
 @keyframes fadeInDown {
     0% {

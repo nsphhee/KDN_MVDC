@@ -46,8 +46,8 @@
                             <div class="project-list-wrap">
                                 <div class="project-list-inner">
                                     <div class="project-top">
-                                        <button class="project-add open-lp" aria-controls="project-create"><span class="dis-none1">추가</span></button>
-                                        <button class="project-del"><span class="dis-none1">삭제</span></button>
+                                        <button class="project-create open-lp" aria-controls="project-create"><span>추가</span></button>
+                                        <button class="project-del"><span>삭제</span></button>
                                     </div>
                                     <div class="project-list b-scroll">
                                         <div class="projcet-item"><a href=""><span class="num">1</span><span class="title ellipsis">Daegu Daegu Daegu Daegu Daegu Demo1</span><span class="description ellipsis">xEMS Interface xEMS Interface xEMS Interface Demo</span></a></div>
@@ -86,41 +86,42 @@
                             <div class="lp-cont-inner b-scroll">          
                                 <div class="lp-input-item">
                                     <label for="projectID" class="">프로젝트 ID</label>        
-                                    <div>
+                                    <div class="input-wrap">
                                         <input type="text" name="projectID" id="projectID" value="64" readonly onfocus="this.blur()">   
                                      </div>           
                                 </div>          
                                 <div class="lp-input-item">
                                     <label for="projectName" class="">프로젝트 이름</label>     
-                                    <div>
+                                    <div class="input-wrap">
                                         <input type="text" name="projectName" id="projectName" placeholder="프로젝트 이름을 입력해주세요.">
                                     </div>              
                                        
                                 </div>          
                                 <div class="lp-input-item">
-                                    <label for="projectDesc" class="hidden">설명</label>          
-                                    <div>
+                                    <label for="projectDesc">설명</label>          
+                                    <div class="input-wrap">
                                         <input type="text" name="projectDesc" id="projectDesc" placeholder="프로젝트 설명을 입력해주세요.">
                                     </div>    
                                 </div>          
                                 <div class="lp-input-item">
-                                    <label for="projectCreateDate" class="hidden">만든날짜</label>       
-                                    <div>
+                                    <label for="projectCreateDate">만든날짜</label>       
+                                    <div class="input-wrap">
                                         <input type="text" name="projectCreateDate" id="projectCreateDate" value="" readonly onfocus="this.blur()">   
                                     </div>            
                                     
                                 </div>          
                                 <div class="lp-input-item">
-                                    <label for="projectModifyDate" class="hidden">수정날짜</label>        
-                                    <div>
+                                    <label for="projectModifyDate">수정날짜</label>        
+                                    <div class="input-wrap">
                                         <input type="text" name="projectModifyDate" id="projectModifyDate" value="" readonly onfocus="this.blur()">
                                     </div>           
                                        
                                 </div>          
                                 <div class="lp-input-item">
-                                    <label for="projectCopy" class="hidden">복사</label>    
+                                    <label for="projectCopy">복사</label>    
                                     <div class="flex-start">
-                                        <input type="checkbox">            
+                                        <label for="copy-check" class="dis-none">복사 선택</label>
+                                        <input type="checkbox" id="copy-check">            
                                         <div class="select-wrap">
                                             <select name="projectCopy" id="projectCopy" class="select-type02">
                                                 <option>test01</option>
