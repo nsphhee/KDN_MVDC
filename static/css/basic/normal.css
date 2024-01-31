@@ -661,7 +661,6 @@ input:read-only {background: #f0f0f0;}
     }
 }
 
-.swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal {}
 
 @media (max-width: 1780px){ 
     .main-menu-wrap {width:90% !important;}
