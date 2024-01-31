@@ -511,7 +511,7 @@ input:read-only {background: #f0f0f0;}
 .btn-box .tool-check:last-child,
 .btn-box .tool-select:last-child {margin-bottom: 0;}
 
-.btn-box label {color:var(--color-text06); opacity: 0.8;}
+.tool-item label {color:var(--color-text06); opacity: 0.8;}
 
 .tool-number > input {font-size:1.3rem; height: 2.6rem; width:8.0rem;}
 .tool-select > select {font-size:1.3rem; height: 2.6rem !important;}
