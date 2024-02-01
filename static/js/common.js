@@ -1,4 +1,7 @@
-$(document).ready(function() {    
+$(document).ready(function() {  
+
+  
+
     //좌측메뉴 
     $(".menu-full").click(function() {            
         $("#lnb-full").toggleClass("lnb-list-full");
