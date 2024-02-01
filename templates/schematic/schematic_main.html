@@ -155,8 +155,8 @@
                                     <a href="" class="go-main-btn"><span class="dis-none">메인</span></a> <!-- 선택시 on 추가 -->
                                     <div class="swiper stab-menu-list"> 
                                         <div class="swiper-wrapper"> 
-                                            <div class="swiper-slide"><a href="" class="stab-menu-item on"><span>SCL저작도구</span></a><button class="stab-close"><span class="dis-none">닫기</span></button></div> <!-- 선택시 on 추가 -->
-                                            <div class="swiper-slide"><a href="" class="stab-menu-item"><span>화면저작도구</span></a><button class="stab-close"><span class="dis-none">닫기</span></button></div> 
+                                            <div class="swiper-slide"><a href="" class="stab-menu-item"><span>SCL저작도구</span></a><button class="stab-close"><span class="dis-none">닫기</span></button></div> <!-- 선택시 on 추가 -->
+                                            <div class="swiper-slide"><a href="" class="stab-menu-item on"><span>화면저작도구</span></a><button class="stab-close"><span class="dis-none">닫기</span></button></div> 
                                         </div>                                        
                                         <div class="swiper-scrollbar"></div>
                                     </div> 
@@ -173,14 +173,14 @@
                                             <!-- contain top :s -->
                                             <div class="c-top-wrap">
                                                 <div class="c-top-inner">
-                                                    <p><span>SCL저작도구</span><span>편집도구</span></p>
+                                                    <p><span>화면저작도구</span><span>편집도구</span></p>
                                                 </div>
                                             </div>
                                             <!-- contain top :e -->
                                             <!-- contain main :s -->
                                             <div class="c-main-wrap">
                                                 <div class="c-main-inner">
-                                                    <!-- scl home/setting :s -->
+                                                    <!-- schematic home/setting :s -->
                                                     <div class="c-main-top-wrap">
                                                         <div class="c-main-top-inner">
 
@@ -228,11 +228,37 @@
                                                                                                 <button class="tool-icon" tool-icon="tool-delete" title="삭제"><span class="dis-none">삭제</span></button>
                                                                                             </div>
                                                                                             <div class="tool-item">
-                                                                                                <button class="tool-icon on" tool-icon="tool-pointer" title="포인터"><span class="dis-none">포인터</span></button>
+                                                                                                <button class="tool-icon on" tool-icon="tool-pointer" title="포인터"><span class="dis-none">포인터</span></button> 
                                                                                                 <button class="tool-icon" tool-icon="tool-textbox" title="텍스트상자"><span class="dis-none">텍스트상자</span></button>
-                                                                                                <button class="tool-icon" tool-icon="tool-pencil" title="연필"><span class="dis-none">연필</span></button>
-                                                                                                <button class="tool-icon" tool-icon="tool-path" title="패스툴"><span class="dis-none">패스툴</span></button>
-                                                                                                <button class="tool-icon" tool-icon="tool-connector" title="연결선"><span class="dis-none">연결선</span></button>
+                                                                                                <div class="btn-box">
+                                                                                                    <div class="tool-txt">                                                                                                        
+                                                                                                        <button class="tool-icon" tool-icon="tool-shape" title="도형"><span class="dis-none">도형</span></button> 
+                                                                                                    </div>
+                                                                                                    <div class="tool-more">
+                                                                                                        <div class="tool-more-flex shape-group">
+                                                                                                            <button class="tool-icon" tool-icon="tool-rect" title="네모"><span class="dis-none">네모</span></button> 
+                                                                                                            <button class="tool-icon" tool-icon="tool-roundrect" title="라운드네모"><span class="dis-none">라운드 네모</span></button>
+                                                                                                            <button class="tool-icon" tool-icon="tool-circle" title="원"><span class="dis-none">원</span></button>
+                                                                                                            <button class="tool-icon" tool-icon="tool-triangle" title="세모"><span class="dis-none">세모</span></button>
+                                                                                                            <button class="tool-icon" tool-icon="tool-line" title="선"><span class="dis-none">선</span></button>
+                                                                                                        </div>                                                
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="btn-box">
+                                                                                                    <div class="tool-txt">                                                                                                        
+                                                                                                        <button class="tool-icon" tool-icon="tool-cn-ac" title="연결선"><span class="dis-none">연결선</span></button> <!-- 하위 연결선 선택 시 선택한 이미지 및 타이틀로 변경 -->
+                                                                                                    </div>
+                                                                                                    <div class="tool-more tool-select-group">
+                                                                                                        <button class="tool-icon on" tool-icon="tool-cn-ac" title="연결노드 AC"><span>연결노드 AC</span></button>
+                                                                                                        <button class="tool-icon" tool-icon="tool-cn-dc" title="연결노드 DC"><span>연결노드 DC</span></button>
+                                                                                                        <button class="tool-icon" tool-icon="tool-lin-ac" title="전력선 AC"><span>전력선 AC</span></button>
+                                                                                                        <button class="tool-icon" tool-icon="tool-lin-dc" title="전력선 DC"><span>전력선 DC</span></button>
+                                                                                                        <button class="tool-icon" tool-icon="tool-epip-w" title="수도 배관"><span>수도 배관</span></button>
+                                                                                                        <button class="tool-icon" tool-icon="tool-epip-g" title="가스 배관"><span>가스 배관</span></button>
+                                                                                                        <button class="tool-icon" tool-icon="tool-epip-t" title="열 배관"><span>열 배관</span></button>
+                                                                                                        <button class="tool-icon" tool-icon="tool-connector" title="일반"><span>일반</span></button>
+                                                                                                    </div>
+                                                                                                </div>
                                                                                             </div>
                                                                                             <div class="tool-item">
                                                                                                 <div class="tool-txt">                                                                                                    
@@ -245,7 +271,7 @@
                                                                                             <div class="tool-item">
                                                                                                 <div class="btn-box">
                                                                                                     <div class="tool-txt">                                                                                                        
-                                                                                                        <button class="tool-icon on" tool-icon="tool-bring-forward" title="앞이로 가져오기"><span>앞으로 가져오기</span></button> <!-- 선택 시 on 추가 / 다른 툴 아이콘 선택 시 on 삭제 -->
+                                                                                                        <button class="tool-icon on" tool-icon="tool-bring-forward" title="앞으로 가져오기"><span>앞으로 가져오기</span></button> <!-- 선택 시 on 추가 / 다른 툴 아이콘 선택 시 on 삭제 -->
                                                                                                     </div>
                                                                                                     <div class="tool-more">
                                                                                                         <button class="tool-icon" tool-icon="tool-bring-forward" title="앞으로 가져오기"><span>앞으로 가져오기</span></button> 
@@ -254,14 +280,14 @@
                                                                                                 </div>
                                                                                                 <div class="btn-box">
                                                                                                     <div class="tool-txt">
-                                                                                                        <button class="tool-icon" tool-icon="tool-send-backward" title="뒤로 보내기"><span>뒤로 보내기</span></button>
+                                                                                                        <button class="tool-icon" tool-icon="tool-send-backward" title="뒤로보내기"><span>뒤로 보내기</span></button>
                                                                                                     </div>
                                                                                                     <div class="tool-more">                                                                                                    
                                                                                                         <button class="tool-icon" tool-icon="tool-send-backward" title="뒤로 보내기"><span>뒤로 보내기</span></button>
-                                                                                                        <button class="tool-icon" tool-icon="tool-send-back" title="맨뒤로 보내기"><span>맨뒤로 보내기</span></button>
+                                                                                                        <button class="tool-icon" tool-icon="tool-send-back" title="맨뒤로 보내기"><span >맨뒤로 보내기</span></button>
                                                                                                     </div>
                                                                                                 </div>                                                                                                
-                                                                                            </div>
+                                                                                            </div>                                                                                            
                                                                                             <div class="tool-item">
                                                                                                 <button class="tool-icon" tool-icon="tool-halign-left" title="왼쪽맞춤"><span class="dis-none">왼쪽맞춤</span></button>
                                                                                                 <button class="tool-icon" tool-icon="tool-halign-center" title="가운데맞춤"><span class="dis-none">가운데맞춤</span></button>
@@ -271,22 +297,12 @@
                                                                                                 <button class="tool-icon" tool-icon="tool-valign-bottom" title="아래쪽맞춤"><span class="dis-none">아래쪽맞춤</span></button>
                                                                                             </div>
                                                                                             <div class="tool-item">
+                                                                                                <button class="tool-icon" tool-icon="tool-add-image" title="이미지 삽입"><span class="dis-none">이미지 삽입</span></button>
+                                                                                            </div>
+                                                                                            <div class="tool-item">
+                                                                                                <button class="tool-icon" tool-icon="tool-export-file" title="파일로 내보내기"><span class="dis-none">파일로 내보내기</span></button>
                                                                                                 <button class="tool-icon" tool-icon="tool-export-image" title="이미지로 내보내기"><span class="dis-none">이미지로 내보내기</span></button>
-                                                                                            </div>
-                                                                                            <div class="tool-item">
-                                                                                                <button class="tool-icon" tool-icon="tool-cn-ac" title="연결노드 AC"><span class="dis-none">연결노드 AC</span></button>
-                                                                                                <button class="tool-icon" tool-icon="tool-cn-dc" title="연결노드 DC"><span class="dis-none">연결노드 DC</span></button>
-                                                                                                <button class="tool-icon" tool-icon="tool-lin-ac" title="전력선 AC"><span class="dis-none">전력선 AC</span></button>
-                                                                                                <button class="tool-icon" tool-icon="tool-lin-dc" title="전력선 DC"><span class="dis-none">전력선 DC</span></button>
-                                                                                                <button class="tool-icon" tool-icon="tool-epip-w" title="수도 배관"><span class="dis-none">수도 배관</span></button>
-                                                                                                <button class="tool-icon" tool-icon="tool-epip-g" title="가스 배관"><span class="dis-none">가스 배관</span></button>
-                                                                                                <button class="tool-icon" tool-icon="tool-epip-t" title="열 배관"><span class="dis-none">열 배관</span></button>
-                                                                                            </div>
-
-                                                                                            <div class="tool-item">
-                                                                                                <button class="tool-icon" tool-icon="tool-error-check" title="오류검증"><span class="dis-none">오류검증</span></button>
-                                                                                            </div>                  
-
+                                                                                            </div>            
                                                                                             <div class="tool-item">
                                                                                                 <button class="tool-icon" tool-icon="tool-file-open" title="가져오기"><span class="dis-none">가져오기</span></button>
                                                                                             </div>
@@ -424,7 +440,7 @@
                                                             <button class="btn-display"><span class="dis-none">숨김/펼침</span></button> <!-- btn-display : cm-tab-cont 보임  / btn-display-none : cm-tab-cont 숨김 -->
                                                         </div>
                                                     </div>                                                    
-                                                    <!-- scl home/setting :e -->
+                                                    <!-- schematic home/setting :e -->
                                                     
                                                     <!-- scl cont :s -->
                                                     <div class="c-main-cont-wrap scl-cont-wrap">

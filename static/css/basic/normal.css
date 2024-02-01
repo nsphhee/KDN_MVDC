@@ -492,13 +492,24 @@ input:read-only {background: #f0f0f0;}
 [tool-icon=tool-snap-grid]:before {background: url(../../images/toolbar/prop_snap_grid.png)no-repeat center center; background-size:contain;}
 [tool-icon=tool-view]:before {background: url(../../images/toolbar/prop_view.png)no-repeat center center; background-size:contain;}
 
+[tool-icon=tool-export-file]:before {background: url(../../images/toolbar/export_file.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-add-image]:before {background: url(../../images/toolbar/tool_add_image.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-connector]:before {background: url(../../images/toolbar/tool_connector.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-line]:before {background: url(../../images/toolbar/tool_line.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-triangle]:before {background: url(../../images/toolbar/tool_triangle.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-circle]:before {background: url(../../images/toolbar/tool_circle.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-roundrect]:before {background: url(../../images/toolbar/tool_roundrect.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-rect]:before {background: url(../../images/toolbar/tool_rect.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-shape]:before {background: url(../../images/toolbar/tool_shape.png)no-repeat center center; background-size:contain;}
+
+
 .btn-box {position: relative;}
 .btn-box .tool-txt .tool-icon:after {display: block; margin-left:0.6rem; background: url(../../images/common/arrow_more.svg)no-repeat center center; width:1.0rem; height: 1.0rem; background-size: contain;}
 .btn-box .tool-more {display: none;}
 .btn-box .tool-more.on {color:var(--color-text06); width:100%; min-width: 16.0rem;display: block;position: absolute;top:2.8rem;left:0;background: var(--color-bg04);border-radius: 4px;padding: 0.8rem 0.4rem;}
 .btn-box .tool-more .tool-icon {width:calc(100%); padding:0 1.2rem; justify-content: flex-start;}
-.btn-box .tool-more .tool-icon > span { font-size:1.3rem; color:var(--color-text05); display: block; margin-left:0.6rem;}
-.btn-box .tool-more .tool-icon:hover {border:1px solid transparent; background: var(--color-bg01);}
+.btn-box .tool-more .tool-icon > span { font-size:1.3rem; color:var(--color-text05); display: block; margin-left:0.8rem;}
+.btn-box .tool-more .tool-icon:hover {border:1px solid var(--border02); background: var(--color-bg01); }
 
 .tool-number,
 .tool-check,
@@ -525,7 +536,13 @@ input:read-only {background: #f0f0f0;}
 .tool-more-flex > div {width: auto; padding:0 !important; margin:0 1.2rem 0 0!important;}
 .tool-more-flex > div:last-child {margin-right:0 !important;}
 .tool-more-flex .tool-more.on {top:3.4rem;}
-.tool-more-flex .tool-icon.on {background: var(--color-bg03) !important; border:none !important;}
+.tool-more-flex .tool-icon.on {background: var(--color-bg03) !important; border:1px solid var(--border02) !important;}
+.tool-select-group .tool-icon.on {background: var(--color-bg03) !important; border:1px solid var(--border02)!important;}
+
+.tool-item .shape-group {justify-content: flex-start; flex-wrap: wrap;}
+.tool-item .shape-group .tool-icon {width:2.4rem !important; justify-content: center !important; padding:0; margin:0 0.2rem;}
+
+.btn-box .tool-more:has(.shape-group) {min-width:8.4rem !important; width:8.4rem !important}
 
 .empty-area {font-size:1.3rem; text-align: center;}
 
