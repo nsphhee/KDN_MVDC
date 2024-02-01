@@ -58,16 +58,14 @@
  }
  
  .tui-tree-wrap {
-   width: 300px;
+   width: auto;
    height: auto;
-   padding: 30px 0;
+   padding: 0;
    margin: 0;
-   font-size: 11px;
-   background-color: #f9f9f9;
  }
  
  .tui-tree-root {
-   overflow-y: auto;
+   /* overflow-y: auto; */
  }
  
  .tui-tree-wrap .tui-tree,
@@ -124,10 +122,10 @@
    overflow: hidden;
    position: relative;
    display: block;
-   padding: 5px 0;
+   padding: 6px 0;
    font-size: 12px;
    font-weight: 400;
-   text-overflow: ellipsis;
+   /* text-overflow: ellipsis; */
    color: #777;
    /* *display: inline; */
    zoom: 1;
@@ -171,7 +169,7 @@
  }
  
  .tui-tree-leaf > .tui-tree-content-wrapper .tui-tree-text {
-   padding-left: 17px;
+   padding-left: 14px;
  }
  
  .tui-tree-input {
@@ -257,10 +255,10 @@
  }
  
  .tui-tree-content-wrapper {
-   width: 300px;
+   /*width: 300px; */
    overflow: hidden;
-   padding-left: 26px;
-   padding-right: 25px;
+   padding-left: 4px;
+   padding-right: 9px;
    white-space: nowrap;
    text-overflow: ellipsis;
  }
@@ -278,17 +276,27 @@
  }
  
  .tui-tree-subtree .tui-tree-content-wrapper {
-   padding-left: 46px;
+   padding-left: 30px;
  }
  
  .tui-tree-subtree .tui-tree-subtree .tui-tree-content-wrapper {
-   padding-left: 69px;
+   padding-left: 44px;
  }
  
  .tui-tree-subtree .tui-tree-subtree .tui-tree-subtree .tui-tree-content-wrapper {
-   padding-left: 93px;
+   padding-left: 64px;
  }
  
+ 
+.tui-tree-subtree .tui-tree-subtree .tui-tree-subtree .tui-tree-subtree .tui-tree-content-wrapper {
+  padding-left: 82px;
+}
+
+.tui-tree-subtree .tui-tree-subtree .tui-tree-subtree .tui-tree-subtree .tui-tree-subtree .tui-tree-content-wrapper {
+  padding-left: 106px;
+}
+
+
  .tui-tree-wrap-checkbox .tui-tree-toggle-btn {
    margin-right: 4px;
  }

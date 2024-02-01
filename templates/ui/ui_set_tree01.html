@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- 호환성 -->     
+        <meta name="generator" content="EditPlus®"><!-- 사용프로그램 -->
+        <meta name="format-detection" content="telephone=no,email=no,address=no"><!-- 전화번호, 주소, 메일등 링크로 인식방지 -->
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"><!-- 화면맞춤 -->
+        <meta name="author" content="한전KDN(주)"><!-- 저작자 -->
+        <meta name="keywords" content="한전KDN(주) K &middot; GRID"><!-- 키워드 -->
+        <meta name="description" content="한전KDN(주) K &middot; GRID"><!-- 웹페이지의 축약된 설명을 제공_최대45자(네이버 웹마스터도구 기준) -->
+        <meta name="copyright" content="&copy; 한전KDN(주). All right reserved."><!-- 저작권 -->
+        <link rel="shortcut icon" type="image/x-icon" href="../../static/images/common/favicon.ico"><!-- 파비콘 -->        
+        <title>한전KDN(주) K &middot; GRID</title>     
+        <link media="all" rel="stylesheet" href="../../static/css/common.css">  
+        <link media="all" rel="stylesheet" href="../../static/css/font.css">  
+        <link media="all" rel="stylesheet" href="../../static/css/basic/normal.css">         
+        <link media="all" rel="stylesheet" href="../../static/js/swiper/swiper-bundle.min.css">  
+        <link media="all" rel="stylesheet" href="../../static/js/tui/tui-context-menu.css">
+        <link media="all" rel="stylesheet" href="../../static/js/tui/tui-tree.css">
+        <script src="../../static/js/jquery-3.7.0.min.js"></script>
+        <script src="../../static/js/swiper/swiper-bundle.min.js"></script>
+        <script src="../../static/js/tui/tui-context-menu.js"></script>
+        <script src="../../static/js/tui/tui-tree.js"></script>
+        <script src="../../static/js/common.js"></script>
+        <script src="../../static/js/tree-menu.js"></script>
+
+        <style>
+            #ui-wrap {padding:3.0rem;width: calc(100vw - 6rem);height: calc(100vh - 8rem);}
+            #ui-wrap > div > h2:first-child {margin:0 0 3.0rem 0;}
+            #ui-wrap > div > h2 {font-size:2.0rem; margin:6.0rem 0 3.0rem 0; font-weight: bold;}
+            #ui-wrap > div {width:100%;height: 100%; overflow: hidden;}
+            .cm-lnb-wrap {width:290px; height: calc(100vh - 13rem);}
+        </style>
+    </head>
+    <body class="b-scroll">  
+        <div id="ui-wrap">  
+            <div class="ui-inner">                
+
+                <h2>계통설비 목록 - 트리메뉴 / 아이콘 개발 적용시 변경 예정</h2>
+                
+                <!-- schematic home/setting :s -->
+
+                <div class="cm-lnb-wrap">
+                    <div class="cm-lnb-inner">
+                        <div class="cm-left-top">
+                            <span>계통설비 목록</span>
+                            <button class="area-hide"><span class="dis-none">접기</span></button> <!-- 접혀있을때 area-open / 펼쳐있을때 area-hide -->
+                        </div>
+                        <div class="cm-left-cont">   
+                            <div class="cm-left-cont-inner">
+                                <div id="tree" class="tui-tree-wrap"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                                 
+                <!-- schematic home/setting :e -->
+
+            </div>
+            
+
+        </div>   
+    </body>
+    <script>
+        new Swiper(".stab-menu-list", {
+            direction: 'horizontal',
+            slidesPerView: "auto",
+            spaceBetween: 0,
+            mousewheel: true,
+            observer: true,	
+            observeParents: true,	
+            freeMode: {
+                enabled: true,
+                sticky: true,
+            },        
+            scrollbar: {
+             el: ".swiper-scrollbar",
+             },
+        });   
+        new Swiper(".header-menu-wrap", {
+            direction: 'horizontal',
+            slidesPerView: "auto",
+            spaceBetween: 0,
+            mousewheel: true,
+            observer: true,	
+            observeParents: true,	
+            freeMode: {
+                enabled: true,
+                sticky: true,
+            },        
+            scrollbar: {
+             el: ".swiper-scrollbar",
+             },
+        });  
+
+        new Swiper(".lnb-list", {
+            direction: "vertical",
+            slidesPerView: "auto",
+            spaceBetween: 0,
+            mousewheel: true,
+            observer: true,	
+            observeParents: true,	
+            freeMode: {
+                enabled: true,
+                sticky: true,
+            },        
+            scrollbar: {
+             el: ".swiper-scrollbar",
+             },
+        }); 
+
+        new Swiper(".tool-menu-wrap", {
+            direction: 'horizontal',
+            slidesPerView: "auto",
+            spaceBetween: 0,
+            mousewheel: true,
+            observer: true,	
+            observeParents: true,	
+            freeMode: {
+                enabled: true,
+                sticky: true,
+            },        
+            scrollbar: {
+             el: ".swiper-scrollbar",
+             },
+        });  
+
+    </script> 
+</html>

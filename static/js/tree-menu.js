@@ -1,33 +1,60 @@
 $(document).ready(function() {  
     const Tree = tui.Tree;
     var data = [
-        {text: 'rootA', children: [
-            {text: 'sub-A1'},
-            {text: 'sub-A2'},
-            {text: 'sub-A3'},
-            {text: 'sub-A4'},
-            {text: 'sub-A5', state: 'closed', children: [
-                {text:'sub-A5A', children:[
-                    {text:'sub-A5A1'}
+        {text: '계통도', children: [
+            {text: 'VT1'},
+            {text: 'VT2', state: 'closed', children: [
+                {text:'BUS', children:[
+                    {text:'BUS1', state: 'closed', children: [                        
+                        {text:'TMI'},                        
+                        {text:'MMXU1'}
+                    ]},
+                    {text:'BUS2', state: 'closed', children: [                        
+                        {text:'TMI'},                        
+                        {text:'MMXU1'}
+                    ]},
+                    {text:'BUS3', state: 'closed', children: [                        
+                        {text:'TMI'},                        
+                        {text:'MMXU1'}
+                    ]},
+
                 ]},
-                {text:'sub_A5B'}
+                {text:'MWS', children:[
+                    {text:'MWS11', state: 'closed', children: [                        
+                        {text:'TMI'},                        
+                        {text:'MMXU1'}
+                    ]},
+                    {text:'MWS22', state: 'closed', children: [                        
+                        {text:'TMI'},                        
+                        {text:'MMXU1'}
+                    ]},
+                    {text:'MWS33', state: 'closed', children: [                        
+                        {text:'MWS33-11', state: 'closed', children: [                        
+                            {text:'TMI'},                        
+                            {text:'TMI'}
+                        ]},                        
+                        {text:'MWS33-22'}
+                    ]},
+
+                ]},
+                {text:'BUS', children:[
+                    {text:'BUS1', state: 'closed', children: [                        
+                        {text:'TMI'},                        
+                        {text:'MMXU1'}
+                    ]},
+
+                ]},
+                {text:'BUS2'}
             ]},
-            {text: 'sub-A6'},
-            {text: 'sub-A7'},
-            {text: 'sub-A8'},
-            {text: 'sub-A9', state: 'closed', children: [
-                {text:'sub-A9A'},
-                {text:'sub-A9B'}
-            ]},
-            {text: 'sub-A10'},
-            {text: 'sub-A11'},
-            {text: 'sub-A12'}
+            {text: 'ST1234'}
         ]},
-        {text: 'rootB', state:'closed', children: [
-            {text:'sub-B1'},
-            {text:'sub-B2'},
-            {text:'sub-B3'}
-        ]}
+        {text : '테스트1 '},
+        {text : '테스트2'},
+        {text : '테스트3'},
+        {text : '테스트4'},
+        {text : '테스트5'},
+        {text : '테스트6'},
+        {text : '테스트7'},
     ];
 
     var tree = new tui.Tree('#tree', {
