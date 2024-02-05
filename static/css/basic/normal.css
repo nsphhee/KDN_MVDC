@@ -78,11 +78,14 @@
 
 
 /* 스크롤바 설정*/
-#tree::-webkit-scrollbar{width:6px; height:6px;}
+#tree::-webkit-scrollbar,
+.cm-scroll::-webkit-scrollbar{width:6px; height:6px;} 
 /* 스크롤바 막대 설정*/
-#tree::-webkit-scrollbar-thumb{height:20%; background-color: rgba(0,0,0,.4); border-radius: 10px;}
+#tree::-webkit-scrollbar-thumb,
+.cm-scroll::-webkit-scrollbar-thumb{height:20%; /*background-color: rgba(0,0,0,.4);*/  background-color: var(--scroll-bg02); border-radius: 10px;}
 /* 스크롤바 뒷 배경 설정*/
-#tree::-webkit-scrollbar-track{background-color:rgba(0,0,0,.1);}
+#tree::-webkit-scrollbar-track,
+.cm-scroll::-webkit-scrollbar-track{/* background-color:rgba(0,0,0,.1); */ background-color:var(--scroll-bg01);}
 
 
 /* 스크롤바 설정*/
@@ -91,6 +94,7 @@
 .h-scroll::-webkit-scrollbar-thumb{height:20%; background-color: var(--scroll-bg02); border-radius: 10px;}
 /* 스크롤바 뒷 배경 설정*/
 .h-scroll::-webkit-scrollbar-track{background-color:var(--scroll-bg01);}
+
 
 /* 스크롤바 설정*/
 .b-scroll::-webkit-scrollbar{width:8px; height:8px;}
@@ -219,10 +223,10 @@ input:read-only {background: #f0f0f0;}
 #wrap {width:100%; color:var(--color-text06); position: relative;}
 
 /* layout - header */
-#header {height:6.0rem; z-index:11; position: absolute; top:0; left:0; width: 100%; background: var(--color-bg04); min-width:128.0rem;}
+#header {height: 5rem;z-index:11;position: absolute;top:0;left:0;width: 100%;background: var(--color-bg04);min-width:128.0rem;}
 #header:after {display: block; width:100%; height:0.1rem; background: var(--border00);}
 .header-inner {padding:0; width:100%;}
-.header-menu-wrap {height:6.0rem; min-width:128.0rem;}
+.header-menu-wrap {height: 5rem;min-width:128.0rem;}
 .header-menu-inner > div {padding:0; display: flex;justify-content: space-between; align-items: center; position: relative; width:calc(100% - 3.4rem) !important;margin:0 auto;}
 .header-item {display: flex; justify-content: flex-start; align-items: center;}
 
@@ -266,13 +270,13 @@ input:read-only {background: #f0f0f0;}
 .utill-wrap .utill-setting:hover {opacity: 1;}
 
 /* layout - main */
-#main {padding-top:6.1rem;}
-#main-wrap {display: flex; justify-content: space-between; min-height: calc(100vh - 6.1rem);}
+#main {padding-top: 5.1rem;}
+#main-wrap {display: flex;justify-content: space-between;min-height: calc(100vh - 5.1rem);}
 
 /* layout - left nav */
-#left-nav {z-index: 1;background: var(--color-bg04);min-height: calc(100vh - 6.1rem); position: relative; padding-right: 0.1rem;}
+#left-nav {z-index: 1;background: var(--color-bg04);min-height: calc(100vh - 5.1rem); position: relative; padding-right: 0.1rem;}
 #left-nav:after {display: block;width:0.1rem;height: 100%;background: var(--border00);top: 0;position: absolute; right: 0;}
-.left-nav-inner {width: 7.0rem;height: 100%;height: calc(100vh - 6.1rem);box-sizing: border-box;position: relative; }
+.left-nav-inner {width: 7.0rem;height: 100%;height: calc(100vh - 5.1rem);box-sizing: border-box;position: relative; }
 .left-nav-inner .swiper {overflow: unset;}
 .left-nav-inner.lnb-list-full {width:18.0rem; transition: all 0.1s;} 
 .lnb-list {height:100%;}
@@ -320,8 +324,8 @@ input:read-only {background: #f0f0f0;}
 
 
 /* layout - cont area */
-#cont-area {background: var(--color-bg01);width:100%;/* height: 100%; */height: calc(100vh - 6.1rem);flex-grow: 1;overflow: hidden;}
-.cont-area-inner {min-height: calc(100vh - 6.1rem);width: 100%;height: 100%;}
+#cont-area {background: var(--color-bg01);width:100%;/* height: 100%; */height: calc(100vh - 5.1rem);flex-grow: 1;overflow: hidden;}
+.cont-area-inner {min-height: calc(100vh - 5.1rem);width: 100%;height: 100%;}
 
 /* layout - stab */
 .stab-menu-wrap {width:100%; height:4.8rem; background: var(--color-bg01); display: block; padding-bottom: 0.1rem;}
@@ -358,7 +362,7 @@ input:read-only {background: #f0f0f0;}
 
 
 /* layout - contain */
-.contain-wrap {height: calc(100vh - 11rem);background: var(--color-bg01);}
+.contain-wrap {height: calc(100vh - 10rem);background: var(--color-bg01);}
 .contain-inner,
 .contain-box,
 .contain-box-inner {height:100%;}
@@ -423,18 +427,18 @@ input:read-only {background: #f0f0f0;}
 [main-menu=ems]:before {display: block; background: url(../../images/common/main_icon06.svg)no-repeat center center; width:10.0rem; height:10.0rem; background-size: contain;margin-bottom:1.4rem;}
 
 /* SCL */
-.c-top-wrap {background: var(--color-bg06); height:5.0rem; line-height: 5.0rem;}
+.c-top-wrap {background: var(--color-bg06);height: 4.4rem;line-height: 4.4rem;}
 .c-top-wrap .c-top-inner {padding:0 2.0rem;}
 .c-top-wrap .c-top-inner > p {display: flex; align-items: center; justify-content: flex-start;}
 .c-top-wrap .c-top-inner > p > span:first-child {font-weight: 600; margin-right:1.2rem}
 .c-top-wrap .c-top-inner > p > span:last-child {font-size:1.4rem;}
-.c-main-wrap {overflow: hidden;box-sizing: border-box;border-left:10px solid var(--color-bg06);border-bottom:10px solid var(--color-bg06);border-right:10px solid var(--color-bg06);box-sizing: border-box;height: calc(100% - 5.0rem);/* min-height: calc(100vh - 16rem); */}
+.c-main-wrap {overflow: hidden;box-sizing: border-box;border-left:8px solid var(--color-bg06);border-bottom:8px solid var(--color-bg06);border-right:8px solid var(--color-bg06);box-sizing: border-box;height: calc(100% - 4.4rem);/* min-height: calc(100vh - 16rem); */}
 .c-main-inner {height: 100%;/* min-height: calc(100vh - 17rem); */display: flex;flex-direction: column;}
 .scl-cont-wrap {width:100%;height: calc(100% - 7.2rem);/* min-height: calc(100vh - 24.2rem); */flex-grow: 1;}
 .scl-cont-wrap .scl-cont-inner {display: flex;justify-content: flex-start;width:100%;border: 2px solid var(--border00); border-bottom:none; height: 100%; box-sizing: border-box;}
 .scl-cont-inner .c-main-left-wrap {width:29.0rem;height: 100%;border-right: 2px solid var(--border00); box-sizing: border-box;}   
 .scl-cont-inner .c-main-mid-wrap {flex-grow: 1;height: 100%;} 
-.scl-cont-inner .c-main-right-wrap {width:37.0rem;height: 100%;border-left: 2px solid var(--border00);box-sizing: border-box;} 
+.scl-cont-inner .c-main-right-wrap {width:37.0rem;height: 100%;border-left: 2px solid var(--border00);box-sizing: border-box; position: relative;} 
 
 .c-main-top-wrap {background: var(--color-bg03); box-sizing: border-box; border-bottom:1px solid var(--border05);}
 .c-main-top-inner {border:2px solid var(--color-bg03); position: relative; border-bottom: none;}
@@ -444,8 +448,17 @@ input:read-only {background: #f0f0f0;}
 .btn-display:hover,
 .btn-display-none:hover {opacity: 1;} 
 
-
 .c-main-mid-inner {height:100%;}
+.c-main-mid-inner .tab-wrap {height:100%; display: flex; flex-direction: column; width:100%;}
+
+
+.c-main-right-wrap > .area-hide {position: absolute; right:0.4rem; top:0.6rem; width:2.4rem; height:2.4rem;}
+.c-main-right-wrap > .area-hide:before {display:block; width:2.4rem; height:2.4rem; background:url(../../images/common/arrow_up_w.svg)no-repeat center center; transform: rotate(90deg); background-size: contain;  opacity: 0.8;}
+.c-main-right-wrap > .area-open:before {display:block; width:2.4rem; height:2.4rem; background:url(../../images/common/arrow_up_w.svg)no-repeat center center; transform: rotate(270deg); background-size: contain;  opacity: 0.8;}
+
+.c-main-right-inner {height:100%;}
+.c-main-right-inner .tab-wrap {height:100%;display: flex;flex-direction: column;width:100%;}
+
 
 /* tool-bar */
 .tool-menu-wrap {height:4.0rem; background: var(--color-bg05);}
@@ -561,6 +574,99 @@ input:read-only {background: #f0f0f0;}
 
 .empty-area {font-size:1.3rem; text-align: center;}
 
+/* 계통도 설비 컴포넌트 */
+.component-wrap {height:60%;}
+.component-inner {height:100%; display: flex; flex-wrap:wrap; justify-content: center;}
+.component-inner .tab-c-item {height:100%; overflow-y: auto;}
+.component-inner .tab-c-item-wrap {height:100%;}
+.component-inner .tab-c-item-inner {height:100%;}
+.component-inner .component-list {height:100%;padding: 0 0.2rem 0 1.1rem;}
+.component-inner .component-list-inner {/* height: 100%; *//* overflow-y: auto; */display: flex;flex-wrap: wrap;justify-content:flex-start;align-items: flex-start;/* flex-direction: column; */}
+.component-ltem {width: 7.0rem;height:auto;position: relative;display: flex;flex-direction: column-reverse;margin-bottom: 1.6rem;margin-right: 1.4rem;}
+.component-ltem:nth-child(4n) {margin-right:0;}
+.component-ltem > span {display: block;margin-left: 0;font-size:1.3rem;color:var(--color-text05);text-align: center;margin: 0.6rem auto 0 auto;}
+.component-ltem:hover > span {color:var(--color-text07)}
+.component-ltem:after {display: block;width: 7.0rem;height: 7.0rem;background-color: var(--color-bg04);border-radius: 6px; border:1px solid transparent; box-sizing: border-box;}
+.component-ltem:hover:after {background-color:var(--color-hover-bg02); border:1px solid var(--border06)}
+.component-ltem:before {display: block;width: 4.0rem;height: 4.0rem;position: absolute;top: 1.5rem;left: 1.5rem;z-index: 11;}
+[component-icon=component-ALTS]:before {background: url(../../images/component/electrical/PNG/ALTS.png)no-repeat center center; background-size:contain;}
+[component-icon=component-SVC]:before {background: url(../../images/component/electrical/PNG/SVC.png)no-repeat center center; background-size:contain;}
+[component-icon=component-JP]:before {background: url(../../images/component/electrical/PNG/JunctionPoint.png)no-repeat center center; background-size:contain;}
+[component-icon=component-FC]:before {background: url(../../images/component/electrical/PNG/FC.png)no-repeat center center; background-size:contain;}
+[component-icon=component-CAP]:before {background: url(../../images/component/electrical/PNG/CAP.png)no-repeat center center; background-size:contain;}
+[component-icon=component-SCS]:before {background: url(../../images/component/electrical/PNG/StationContainerShape.png)no-repeat center center; background-size:contain;}
+[component-icon=component-BS]:before {background: url(../../images/component/electrical/PNG/BusbarSection.png)no-repeat center center; background-size:contain;}
+[component-icon=component-CB]:before {background: url(../../images/component/electrical/PNG/CircuitBreaker.png)no-repeat center center; background-size:contain;}
+[component-icon=component-CS]:before {background: url(../../images/component/electrical/PNG/CompositeSwitch.png)no-repeat center center; background-size:contain;}
+[component-icon=component-CT]:before {background: url(../../images/component/electrical/PNG/CurrentTransformer.png)no-repeat center center; background-size:contain;}
+[component-icon=component-EES]:before {background: url(../../images/component/electrical/PNG/EES.png)no-repeat center center; background-size:contain;}
+[component-icon=component-CHP]:before {background: url(../../images/component/electrical/PNG/CHP.png)no-repeat center center; background-size:contain;}
+[component-icon=component-WT]:before {background: url(../../images/component/electrical/PNG/WT.png)no-repeat center center; background-size:contain;}
+[component-icon=component-PV]:before {background: url(../../images/component/electrical/PNG/PV.png)no-repeat center center; background-size:contain;}
+[component-icon=component-Generator]:before {background: url(../../images/component/electrical/PNG/Generator.png)no-repeat center center; background-size:contain;}
+[component-icon=component-Load]:before {background: url(../../images/component/electrical/PNG/Load.png)no-repeat center center; background-size:contain;}
+[component-icon=component-PT]:before {background: url(../../images/component/electrical/PNG/PowerTransformer.png)no-repeat center center; background-size:contain;}
+[component-icon=component-PT3]:before {background: url(../../images/component/electrical/PNG/PowerTransformer3.png)no-repeat center center; background-size:contain;}
+[component-icon=component-Disconnector]:before {background: url(../../images/component/electrical/PNG/Disconnector.png)no-repeat center center; background-size:contain;}
+[component-icon=component-SW-M]:before {background: url(../../images/component/electrical/PNG/Disconnector.png)no-repeat center center; background-size:contain;}
+
+[component-icon=component-ALK]:before {background: url(../../images/component/general/PNG/ALK.png)no-repeat center center; background-size:contain;}
+[component-icon=component-BP]:before {background: url(../../images/component/general/PNG/BrinePump.png)no-repeat center center; background-size:contain;}
+[component-icon=component-CTower]:before {background: url(../../images/component/general/PNG/CoolingTower.png)no-repeat center center; background-size:contain;}
+[component-icon=component-CWPump]:before {background: url(../../images/component/general/PNG/CoolWaterPump.png)no-repeat center center; background-size:contain;}
+[component-icon=component-Dehumidifier]:before {background: url(../../images/component/general/PNG/Dehumidifier.png)no-repeat center center; background-size:contain;}
+[component-icon=component-Electrolyzer]:before {background: url(../../images/component/general/PNG/Electrolyzer.png)no-repeat center center; background-size:contain;}
+[component-icon=component-HP]:before {background: url(../../images/component/general/PNG/HeatPump.png)no-repeat center center; background-size:contain;}
+[component-icon=component-HWP]:before {background: url(../../images/component/general/PNG/HotWaterPump.png)no-repeat center center; background-size:contain;}
+[component-icon=component-PCV]:before {background: url(../../images/component/general/PNG/PipeCheckValve.png)no-repeat center center; background-size:contain;}
+[component-icon=component-PipeValve]:before {background: url(../../images/component/general/PNG/PipeValve.png)no-repeat center center; background-size:contain;}
+[component-icon=component-SDB]:before {background: url(../../images/component/general/PNG/SmartDistBoard.png)no-repeat center center; background-size:contain;}
+[component-icon=component-SO]:before {background: url(../../images/component/general/PNG/SmartOutlet.png)no-repeat center center; background-size:contain;}
+[component-icon=component-DB]:before {background: url(../../images/component/general/PNG/DistBoard.png)no-repeat center center; background-size:contain;}
+[component-icon=component-PE4W]:before {background: url(../../images/component/general/PNG/PipeElbow4Way.png)no-repeat center center; background-size:contain;}
+[component-icon=component-PE3W]:before {background: url(../../images/component/general/PNG/PipeElbow3Way.png)no-repeat center center; background-size:contain;}
+[component-icon=component-Light]:before {background: url(../../images/component/general/PNG/Light.png)no-repeat center center; background-size:contain;}
+[component-icon=component-Machine]:before {background: url(../../images/component/general/PNG/Machine.png)no-repeat center center; background-size:contain;}
+[component-icon=component-HE]:before {background: url(../../images/component/general/PNG/HeatExchanger.png)no-repeat center center; background-size:contain;}
+[component-icon=component-ST]:before {background: url(../../images/component/general/PNG/SolarThermal.png)no-repeat center center; background-size:contain;}
+[component-icon=component-PEM]:before {background: url(../../images/component/general/PNG/PEM.png)no-repeat center center; background-size:contain;}
+[component-icon=component-H2P]:before {background: url(../../images/component/general/PNG/H2Purifier.png)no-repeat center center; background-size:contain;}
+[component-icon=component-PWG]:before {background: url(../../images/component/general/PNG/PureWaterGenerator.png)no-repeat center center; background-size:contain;}
+[component-icon=component-Tank]:before {background: url(../../images/component/general/PNG/Tank.png)no-repeat center center; background-size:contain;}
+[component-icon=component-BOILER]:before {background: url(../../images/component/general/PNG/BOILER.png)no-repeat center center; background-size:contain;}
+[component-icon=component-AC]:before {background: url(../../images/component/general/PNG/AirConditioner.png)no-repeat center center; background-size:contain;}
+[component-icon=component-CHILLER]:before {background: url(../../images/component/general/PNG/CHILLER.png)no-repeat center center; background-size:contain;}
+[component-icon=component-DC]:before {background: url(../../images/component/general/PNG/DryChamber.png)no-repeat center center; background-size:contain;}
+[component-icon=component-COMPRESSOR]:before {background: url(../../images/component/general/PNG/COMPRESSOR.png)no-repeat center center; background-size:contain;}
+[component-icon=component-EF]:before {background: url(../../images/component/general/PNG/ExhaustFan.png)no-repeat center center; background-size:contain;}
+[component-icon=component-WM]:before {background: url(../../images/component/general/PNG/WashingMachine.png)no-repeat center center; background-size:contain;}
+
+[component-icon=component-RC4-A]:before {background: url(../../images/component/supply/PNG/CompositeRecloser4_RC4_A.png)no-repeat center center; background-size:contain;}
+[component-icon=component-RC4-M]:before {background: url(../../images/component/supply/PNG/CompositeRecloser4_RC4_M.png)no-repeat center center; background-size:contain;}
+[component-icon=component-RC3-M]:before {background: url(../../images/component/supply/PNG/CompositeRecloser3_RC3_M.png)no-repeat center center; background-size:contain;}
+[component-icon=component-RC3-A]:before {background: url(../../images/component/supply/PNG/CompositeRecloser3_RC3_A.png)no-repeat center center; background-size:contain;}
+[component-icon=component-SW3-M]:before {background: url(../../images/component/supply/PNG/CompositeSwitch3_SW3_M.png)no-repeat center center; background-size:contain;}
+[component-icon=component-SW3-A]:before {background: url(../../images/component/supply/PNG/CompositeSwitch3_SW3_A.png)no-repeat center center; background-size:contain;}
+[component-icon=component-SW6-M]:before {background: url(../../images/component/supply/PNG/CompositeSwitch6_SW6_M.png)no-repeat center center; background-size:contain;}
+[component-icon=component-SW6-A]:before {background: url(../../images/component/supply/PNG/CompositeSwitch6_SW6_A.png)no-repeat center center; background-size:contain;}
+[component-icon=component-SW4-M]:before {background: url(../../images/component/supply/PNG/CompositeSwitch4_SW4_M.png)no-repeat center center; background-size:contain;}
+[component-icon=component-SW4-A]:before {background: url(../../images/component/supply/PNG/CompositeSwitch4_SW4_A.png)no-repeat center center; background-size:contain;}
+[component-icon=component-COS]:before {background: url(../../images/component/supply/PNG/DisconnectorCos.png)no-repeat center center; background-size:contain;}
+[component-icon=component-SW-A]:before {background: url(../../images/component/supply/PNG/DisconnectorA_SW_A.png)no-repeat center center; background-size:contain;}
+[component-icon=component-DER]:before {background: url(../../images/component/supply/PNG/DER.png)no-repeat center center; background-size:contain;}
+[component-icon=component-DTR]:before {background: url(../../images/component/supply/PNG/DTR.png)no-repeat center center; background-size:contain;}
+[component-icon=component-LoadL]:before {background: url(../../images/component/supply/PNG/LoadL.png)no-repeat center center; background-size:contain;}
+[component-icon=component-LoadH]:before {background: url(../../images/component/supply/png/LoadH.png)no-repeat center center; background-size:contain;}
+[component-icon=component-CP]:before {background: url(../../images/component/supply/png/CablePole.png)no-repeat center center; background-size:contain;}
+
+
+
+
+/* 속성 */
+.property-wrap {height:40%;}
+.property-inner {height:100%;}
+
+
 
 /* main cont left menu */
 .c-main-left-inner,
@@ -619,16 +725,18 @@ button:hover.area-open:before {opacity: 1;}
 .tab-head-type03 {margin:0;}
 .tab-head-type03 > .tab-h-list {display: flex;align-items: center;width: 100%;}
 .tab-head-type03 > .tab-h-list li {border-radius: 0; margin:0; text-align: center;}
-.tab-head-type03 > .tab-h-list li:after {display: block;width:0.1rem;height: 2.0rem;background: var(--border03);position: absolute;right:0;top: calc(50% - 1.0rem);}
+.tab-head-type03 > .tab-h-list li:after {display: block;width:0.1rem;height: 2.0rem;background: var(--border03);position: absolute;right:0;top: calc(50% - 1.0rem);z-index: 1;}
 .tab-head-type03 > .tab-h-list li:last-child:after {display: none;}
 .tab-head-type03 > .tab-h-list li.tab-h-on {z-index: 9; position: relative;}
 .tab-head-type03 > .tab-h-list li.tab-h-on:before {z-index:10; display: block; width:100%; height:0.2rem; position: absolute; top:0; left:0; background: var(--border06);}
-.tab-head-type03 > .tab-h-list li a {color:var(--color-text05); font-size: 1.4rem;position:relative;box-sizing: border-box; display: block; background: var(--color-bg03); position: relative; padding: 1.2rem 2.0rem; } 
-.tab-head-type03 > .tab-h-list li.tab-h-on a {position:relative; background: var(--color-bg05); color:var(--color-text06);}
+.tab-head-type03 > .tab-h-list li a {color:var(--color-text03); font-size: 1.4rem;position:relative;box-sizing: border-box; display: block; background: var(--color-bg03); position: relative; padding: 1.2rem 2.0rem; } 
+.tab-head-type03 > .tab-h-list li.tab-h-on a {position:relative;background: var(--color-bg05);color:var(--color-text06);z-index: 2;}
 .tab-head-type03 > .tab-h-list li a:hover {transition: all ease 0.1s 0s; background: var(--color-bg05);color:var(--color-text06);}
 .tab-head-type03 > .tab-h-list li a:hover:before {z-index:10; display: block; width:100%; height:0.2rem; position: absolute; top:0; left:0; background: var(--border06);}
 
-.tab-cont-type03.c-mid-tab-cont {border:0.6rem solid var(--border03); box-sizing: border-box; height: 100%;}
+.tab-cont-type03.c-mid-tab-cont {border:0.6rem solid var(--color-bg05); box-sizing: border-box; height: 100%; flex-grow: 1; border-bottom:none}
+.tab-cont-type03.component-tab-cont {border:0.6rem solid var(--color-bg05);box-sizing: border-box;height: calc(100% - 3.8rem);flex-grow: 1;padding: 1.6rem 0.6rem;}
+
 
 /* layer popup */
 .layer-pop {display:none; transition: all ease 0.2s 0s;}

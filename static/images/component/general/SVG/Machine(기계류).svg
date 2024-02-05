@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="레이어_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+<style type="text/css">
+	.그림자_x0020_만들기{fill:none;}
+	.모퉁이_x0020_둥글리기_x0020_2pt{fill:#FFFFFF;stroke:#231815;stroke-miterlimit:10;}
+	.라이브_x0020_반사_x0020_X{fill:none;}
+	.경사_x0020_부드럽게{fill:url(#SVGID_1_);}
+	.황혼{fill:#FFFFFF;}
+	.잎_GS{fill:#FFE100;}
+	.퐁파두르_GS{fill-rule:evenodd;clip-rule:evenodd;fill:#4CACE2;}
+	.st0{opacity:0.3;clip-path:url(#SVGID_00000114756478749029058400000000138881926971141255_);}
+	.st1{opacity:0.3;}
+	.st2{fill:#E8E8E8;}
+	.st3{opacity:0.3;fill:#9E9E9E;}
+	.st4{fill:#9E9E9E;}
+</style>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0.7071" y2="0.7071">
+	<stop  offset="0" style="stop-color:#E6E7EA"/>
+	<stop  offset="0.1747" style="stop-color:#E2E3E6"/>
+	<stop  offset="0.3538" style="stop-color:#D6D7DA"/>
+	<stop  offset="0.5349" style="stop-color:#C1C4C5"/>
+	<stop  offset="0.7174" style="stop-color:#A4A8A8"/>
+	<stop  offset="0.8993" style="stop-color:#808584"/>
+	<stop  offset="1" style="stop-color:#686E6C"/>
+</linearGradient>
+<g>
+	<g>
+		<defs>
+			<rect id="SVGID_00000072256110682574622030000017177022177310658202_" width="50" height="50"/>
+		</defs>
+		<clipPath id="SVGID_00000076578992592545592540000012430621493374838696_">
+			<use xlink:href="#SVGID_00000072256110682574622030000017177022177310658202_"  style="overflow:visible;"/>
+		</clipPath>
+		<polygon style="opacity:0.3;clip-path:url(#SVGID_00000076578992592545592540000012430621493374838696_);" points="67.46,42.46 
+			33.89,60.82 11,37.43 10.34,30.37 9.37,28.33 10,13 18.4,11.57 33.24,10.44 37.22,13.5 38.52,13.5 		"/>
+	</g>
+	<path class="st1" d="M22.09,11.22h11.42c0.74,0,1.34,0.6,1.34,1.34v17.46H20.75V12.57C20.75,11.82,21.35,11.22,22.09,11.22z"/>
+	<path class="st1" d="M36.2,13.91h2.22c0.66,0,1.22,0.47,1.33,1.12l2.24,13.43c0.14,0.82-0.49,1.56-1.33,1.56H36.2V13.91z"/>
+	<path class="st1" d="M19.4,30.03h-8.06c-0.74,0-1.34-0.6-1.34-1.34V13.91c0-0.74,0.6-1.34,1.34-1.34h8.06V30.03z"/>
+	<path class="st2" d="M35.2,12.91h2.22c0.66,0,1.22,0.47,1.33,1.12l2.24,13.43c0.14,0.82-0.49,1.56-1.33,1.56H35.2V12.91z"/>
+	<path class="st2" d="M32.51,10.22H21.09c-0.74,0-1.34,0.6-1.34,1.34v17.46h14.11V11.57C33.85,10.82,33.25,10.22,32.51,10.22z
+		 M32.51,20.3c0,0.37-0.3,0.67-0.67,0.67H21.76c-0.37,0-0.67-0.3-0.67-0.67v-8.06c0-0.37,0.3-0.67,0.67-0.67h10.08
+		c0.37,0,0.67,0.3,0.67,0.67V20.3z"/>
+	<polyline class="st3" points="22,20.04 22,12.5 31.6,12.5 	"/>
+	<polyline class="st3" points="11.2,15.41 11.2,13.91 16.2,13.91 	"/>
+	<g>
+		<path class="st2" d="M10.34,11.57C9.6,11.57,9,12.17,9,12.91v14.78c0,0.74,0.6,1.34,1.34,1.34h8.06V11.57H10.34z M17.06,15.6
+			c0,0.37-0.3,0.67-0.67,0.67h-5.37c-0.38,0-0.68-0.3-0.68-0.67v-2.02c0-0.37,0.3-0.67,0.68-0.67h5.37c0.37,0,0.67,0.3,0.67,0.67
+			V15.6z"/>
+	</g>
+	<path class="st4" d="M31.84,26.34L31.84,26.34c-0.37,0-0.67-0.3-0.67-0.67v-1.34c0-0.37,0.3-0.67,0.67-0.67l0,0
+		c0.37,0,0.67,0.3,0.67,0.67v1.34C32.51,26.04,32.21,26.34,31.84,26.34z"/>
+	<path class="st4" d="M21.76,26.34L21.76,26.34c-0.37,0-0.67-0.3-0.67-0.67v-1.34c0-0.37,0.3-0.67,0.67-0.67l0,0
+		c0.37,0,0.67,0.3,0.67,0.67v1.34C22.43,26.04,22.13,26.34,21.76,26.34z"/>
+	<g>
+		<g>
+			<circle class="st4" cx="11.35" cy="19.29" r="1.01"/>
+			<circle class="st4" cx="16.05" cy="19.29" r="1.01"/>
+			<circle class="st4" cx="11.35" cy="22.65" r="1.01"/>
+			<circle class="st4" cx="16.05" cy="22.65" r="1.01"/>
+			<circle class="st4" cx="11.35" cy="26.01" r="1.01"/>
+			<circle class="st4" cx="16.05" cy="26.01" r="1.01"/>
+		</g>
+		<g>
+			<circle class="st4" cx="11.35" cy="19.29" r="1.01"/>
+			<circle class="st4" cx="16.05" cy="19.29" r="1.01"/>
+			<circle class="st4" cx="11.35" cy="22.65" r="1.01"/>
+			<circle class="st4" cx="16.05" cy="22.65" r="1.01"/>
+			<circle class="st4" cx="11.35" cy="26.01" r="1.01"/>
+			<circle class="st4" cx="16.05" cy="26.01" r="1.01"/>
+		</g>
+	</g>
+	<path class="st4" d="M10.34,30.37v6.05c0,0.74,0.6,1.34,1.34,1.34h1.34l0.49,1.64c0.11,0.23,0.35,0.37,0.6,0.37h3.2
+		c0.25,0,0.49-0.14,0.6-0.37l0.49-1.64h13.43l0.49,1.64c0.11,0.23,0.35,0.37,0.6,0.37h3.2c0.25,0,0.49-0.14,0.6-0.37l0.49-1.64h1.34
+		c0.74,0,1.34-0.6,1.34-1.34v-6.05H10.34z"/>
+  <rect
+    width="50"
+    height="50"
+    x="0"
+    y="0"
+    style="fill:#ffffff;fill-opacity:0" />
+</g>
+</svg>
