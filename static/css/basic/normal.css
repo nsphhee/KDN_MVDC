@@ -49,6 +49,7 @@
     --border05: #3F465F;
     --border06: #2792FE;
     --border07: #0A84FF;
+    --border07: #0A84FF;
     --scroll-bg01: #121213;
     --scroll-bg02: #5B6171;
 
@@ -119,7 +120,10 @@
 input:read-only {background: #f0f0f0;}
 
 .input-type01 {width:14.0rem;  font-size:1.3rem; border:1px solid var(--border05) !important; background-color: var(--color-select-bg02); height:3.4rem; box-sizing: border-box; color:var(--color-text06);}
-.input-type01:focus {border:1px solid var(--border06);background-color: var(--color-select-bg02) !important; }
+.input-type01:focus {border:1px solid var(--border06) !important;background-color: var(--color-select-bg02) !important; }
+
+.input-type02 {width:14.0rem;  font-size:1.3rem; border:1px solid var(--border04) !important; background-color: var(--color-select-bg01); height:3.4rem; box-sizing: border-box; color:var(--color-text06);}
+.input-type02:focus {border:1px solid var(--border06) !important;background-color: var(--color-select-bg01) !important; }
 
 /* button */
 .btn {height:3.4rem; line-height:3.2rem; min-width:8.0rem; border-radius: 4px; font-size:1.3rem; border: none !important; color: var(--color-text05); text-align: center;  display: inline-block; box-sizing: border-box; margin-right:0.6rem;}
@@ -575,7 +579,7 @@ input:read-only {background: #f0f0f0;}
 .empty-area {font-size:1.3rem; text-align: center;}
 
 /* 계통도 설비 컴포넌트 */
-.component-wrap {height:60%;}
+.component-wrap {height:56%;}
 .component-inner {height:100%; display: flex; flex-wrap:wrap; justify-content: center;}
 .component-inner .tab-c-item {height:100%; overflow-y: auto;}
 .component-inner .tab-c-item-wrap {height:100%;}
@@ -660,13 +664,40 @@ input:read-only {background: #f0f0f0;}
 [component-icon=component-CP]:before {background: url(../../images/component/supply/png/CablePole.png)no-repeat center center; background-size:contain;}
 
 
-
-
 /* 속성 */
-.property-wrap {height:40%;}
+.property-wrap {height:44%;}
 .property-inner {height:100%;}
-
-
+.property-inner .tab-c-item {height: 100%;}
+.property-inner .tab-c-item-wrap {height:100%;}
+.property-inner .tab-c-item-inner {height:100%;}
+.property-inner .property-list {height:100%;}
+.property-list .property-list-inner {height:100%;padding: 0 1.2rem;display: flex;flex-direction: column;}
+.prop-top {border-bottom:1px solid var(--border05);}
+.prop-top > span {font-size:1.3rem; display: block; padding:1.0rem 0.2rem 1.6rem 0.2rem; border-bottom:1px solid var(--border00);}
+.prop-cont {padding: 1.2rem 0 0 0;/* flex-grow: 1; */position: relative;height: calc(100% - 4.8rem);display: flex;flex-direction: column;}
+.prop-cont > div:first-child {flex: 1; min-height: calc(100% - 7rem);}
+.prop-search {display: flex; flex-wrap: wrap; align-items: center; flex-direction: row; margin-bottom:1.2rem;}
+.prop-search > button {height:3.4rem;width: 3.8rem;}
+.prop-search > button:before {display: block; opacity: 0.6; margin:0 auto;}
+.prop-search > button:first-child {margin-right:0.6rem;}
+.sort-category {background: var(--color-bg06); padding:0;}
+.sort-category:before {background: url(../../images/common/icon_category.svg) no-repeat center center; background-size: contain; width:2.0rem; height:1.4rem;}
+.sort-alphabet {background: var(--color-bg06); padding:0;}
+.sort-alphabet:before {background: url(../../images/common/icon_alphabet.svg) no-repeat center center; background-size: contain; width:2.0rem; height:1.2rem;}
+.prop-search > button.on,
+.prop-search > button:hover {background: var(--color-btn-bg02);}
+.prop-search > button.on:before,
+.prop-search > button:hover:before {opacity: 1;}
+.prop-search-input {position: relative; margin-left:0.8rem; flex-grow: 1;}
+.prop-search-input > input[type=text] {padding: 0 3.4rem 0 0.8rem;width:100%;}
+.prop-search-input .search-btn {position: absolute; top:0; right:0; height:100%; padding:0 1.0rem;}
+.prop-search-input .search-btn:before {opacity: 0.6; display: block; background: url(../../images/common/icon_search.svg) no-repeat center center; background-size: contain; width:1.6rem; height:1.6rem;}
+.prop-search-input .search-btn:hover:before {opacity: 1;}
+.prop-list {overflow-y: auto;height: calc(100% - 4.4rem);}
+.prop-desc {background: var(--color-bg02);border-radius: 6px;padding: 1.2rem;height:7.0rem;/*position: absolute;bottom: 0;left:0;*/width: calc(100% - 2.4rem);overflow-y: auto;}
+.prop-desc > span {font-size:1.3rem; display: block;}
+.prop-desc-title {font-weight: 600;}
+.prop-desc-info {color:var(--color-text05)}
 
 /* main cont left menu */
 .c-main-left-inner,
@@ -735,7 +766,9 @@ button:hover.area-open:before {opacity: 1;}
 .tab-head-type03 > .tab-h-list li a:hover:before {z-index:10; display: block; width:100%; height:0.2rem; position: absolute; top:0; left:0; background: var(--border06);}
 
 .tab-cont-type03.c-mid-tab-cont {border:0.6rem solid var(--color-bg05); box-sizing: border-box; height: 100%; flex-grow: 1; border-bottom:none}
-.tab-cont-type03.component-tab-cont {border:0.6rem solid var(--color-bg05);box-sizing: border-box;height: calc(100% - 3.8rem);flex-grow: 1;padding: 1.6rem 0.6rem;}
+.component-tab-cont {border:0.6rem solid var(--color-bg05);box-sizing: border-box;height: calc(100% - 3.8rem);flex-grow: 1;padding: 1.6rem 0.6rem;}
+.property-tab-cont {background-color: var(--color-bg05);box-sizing: border-box;height: calc(100% - 3.8rem);flex-grow: 1;padding:0.6rem;}
+
 
 
 /* layer popup */
