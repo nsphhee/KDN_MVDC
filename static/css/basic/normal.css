@@ -678,7 +678,6 @@ input:read-only {background: #f0f0f0;}
 [component-icon=component-LoadH]:before {background: url(../../images/component/supply/png/LoadH.png)no-repeat center center; background-size:contain;}
 [component-icon=component-CP]:before {background: url(../../images/component/supply/png/CablePole.png)no-repeat center center; background-size:contain;}
 
-
 /* 속성 */
 .property-wrap {height:44%;}
 .property-inner {height:100%;}
@@ -687,9 +686,9 @@ input:read-only {background: #f0f0f0;}
 .property-inner .tab-c-item-inner {height:100%;}
 .property-inner .property-list {height:100%;}
 .property-list .property-list-inner {height:100%;padding: 0 1.2rem;display: flex;flex-direction: column;}
-.prop-top {border-bottom:1px solid var(--border05);height: 4.0rem;box-sizing: border-box;}
-.prop-top > span {font-size:1.3rem;display: block;padding: 1.0rem 0.2rem 1.6rem 0.2rem;border-bottom:1px solid var(--border00);height: 3.9rem;box-sizing: border-box;}
-.prop-cont {padding: 1.2rem 0 0 0;flex-grow: 1;position: relative;height: calc(100% - 5.4rem);display: flex;flex-direction: column;}
+.prop-top {border-bottom:1px solid var(--border05);max-height: 5.6rem;box-sizing: border-box; display: flex;flex-direction: column;justify-content: center;padding: 0.4rem 0 0.6rem 0;min-height: 4.6rem;}
+.prop-top > span {font-size:1.3rem;padding: 0.2rem;box-sizing: border-box;line-height: 1.4; }
+.prop-cont {padding: 1.2rem 0 0 0;flex-grow: 1;position: relative;height: calc(100% - 6.6rem);display: flex;flex-direction: column;}
 .prop-cont > div:first-child {flex: 1;min-height: calc(100% - 10.4rem);}
 .prop-search {display: flex;flex-wrap: wrap;align-items: center;flex-direction: row;margin-bottom: 1.0rem;}
 .prop-search > button {height:3.4rem;width: 3.8rem;}
@@ -709,7 +708,7 @@ input:read-only {background: #f0f0f0;}
 .prop-search-input .search-btn:before {opacity: 0.6; display: block; background: url(../../images/common/icon_search.svg) no-repeat center center; background-size: contain; width:1.6rem; height:1.6rem;}
 .prop-search-input .search-btn:hover:before {opacity: 1;}
 .prop-list {overflow-y: auto;height: calc(100% - 4.6rem);padding: 0 0.4rem 0 0;}
-.prop-desc {position: relative; background: var(--color-bg02);border-radius: 4px;padding: 1.2rem 1.4rem 1.0rem 1.4rem;height: 5.8rem;width: calc(100% - 2.8rem);overflow-y: auto;margin-top: 0.8rem; display:none;}
+.prop-desc {position: relative;background: var(--color-bg02);border-radius: 4px;padding: 1.0rem 1.4rem 1.0rem 1.4rem;height: 5.2rem;width: calc(100% - 2.8rem);overflow-y: auto;margin-top: 0.8rem;display:none;}
 .prop-desc > span {font-size:1.3rem; display: block;}
 .prop-desc-title {font-weight: 500; margin-bottom:0.6rem; width:calc(100% - 2.0rem); line-height: 1.2;}
 .prop-desc-info {color:var(--color-text04); line-height: 1.4; font-weight: 300;}
@@ -816,7 +815,7 @@ button:hover.area-open:before {opacity: 1;}
 
 .tab-cont-type03.c-mid-tab-cont {border:0.6rem solid var(--color-bg05); box-sizing: border-box; height: 100%; flex-grow: 1; border-bottom:none}
 .component-tab-cont {border:0.6rem solid var(--color-bg05);box-sizing: border-box;height: calc(100% - 3.8rem);flex-grow: 1;padding: 1.6rem 0.6rem;}
-.property-tab-cont {background-color: var(--color-bg05);box-sizing: border-box;height: calc(100% - 3.8rem);flex-grow: 1;padding:0.6rem;}
+.property-tab-cont {background-color: var(--color-bg05);box-sizing: border-box;height: calc(100% - 3.8rem);flex-grow: 1;padding: 0.2rem 0.6rem 0.8rem 0.6rem;}
 
 
 /* layer popup */
@@ -966,6 +965,7 @@ button:hover.area-open:before {opacity: 1;}
     .default-inner .left-area-inner .logo-title:after {display: none;}
     .lp-cont-inner {height: 34vh; overflow-y: auto; padding: 0 0.8rem 0 0 !important;}
 }
+
 
 
 
