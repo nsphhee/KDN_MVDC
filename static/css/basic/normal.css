@@ -446,7 +446,7 @@ input:read-only {background: #f0f0f0;}
 .c-top-wrap .c-top-inner > p {display: flex; align-items: center; justify-content: flex-start;}
 .c-top-wrap .c-top-inner > p > span:first-child {font-weight: 600; margin-right:1.2rem}
 .c-top-wrap .c-top-inner > p > span:last-child {font-size:1.4rem;}
-.c-main-wrap {overflow: hidden;box-sizing: border-box;border-left:8px solid var(--color-bg06);border-bottom:8px solid var(--color-bg06);border-right:8px solid var(--color-bg06);box-sizing: border-box;height: calc(100% - 4.4rem);/* min-height: calc(100vh - 16rem); */}
+.c-main-wrap {/* overflow: hidden; */box-sizing: border-box;border-left:8px solid var(--color-bg06);border-bottom:8px solid var(--color-bg06);border-right:8px solid var(--color-bg06);box-sizing: border-box;height: calc(100% - 4.4rem);/* min-height: calc(100vh - 16rem); */}
 .c-main-inner {height: 100%;/* min-height: calc(100vh - 17rem); */display: flex;flex-direction: column;overflow: hidden;}
 .scl-cont-wrap {width:100%;height: calc(100% - 7.2rem);/* min-height: calc(100vh - 24.2rem); */flex-grow: 1;}
 .scl-cont-wrap .scl-cont-inner {display: flex;justify-content: flex-start;width:100%;border: 2px solid var(--border00); border-bottom:none; height: 100%; box-sizing: border-box;}
@@ -764,7 +764,7 @@ input:read-only {background: #f0f0f0;}
 .c-main-mid-wrap .area-col-1 {width:calc(100% - 36.0rem);height: 100%;/* min-width: 54.0rem; *//* overflow-x: auto; */}
 .c-main-mid-wrap .area-col-2 {width:calc(100% - 36.0rem);}
 
-.tc-flex {display: flex !important;flex-direction: row !important;/* width: 1550px !important; *//* margin: 0 1.7rem; */}
+.tc-flex {display: flex !important;flex-direction: row !important;}
 .tc-flex > div:first-child {flex-grow: 1;box-sizing: border-box;padding: 0.8rem;height: 100%;min-width: 36.0rem;}
 .tc-flex > div:last-child {box-sizing: border-box;padding: 0.8rem 0.8rem 0.8rem 0;}
 
@@ -978,7 +978,13 @@ button:hover.area-open:before {opacity: 1;}
     .project-list-wrap {width:49.6rem;}
     .projcet-item > a {width:49.6rem;}
     .info-paths {width:28.0rem;}
-    .tc-swiper > div > div {width:1110px !important;}
+    .c-main-mid-wrap .tab-c-item-inner {
+        /* min-width: 1100px; */
+        overflow-x: auto;
+        width: 100%;
+    }
+    
+    .c-main-mid-wrap .tab-c-item-inner > div {width:1200px;}
 }
 @media (max-width: 1280px){   
     #default-wrap{width:1280px;}
