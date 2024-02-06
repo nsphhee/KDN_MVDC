@@ -433,7 +433,7 @@
                                                     <div class="c-main-cont-wrap scl-cont-wrap">
                                                         <div class="c-main-cont-inner scl-cont-inner">
                                                             <!-- scl left area :s -->
-                                                            <div class="c-main-left-wrap">
+                                                            <div class="c-main-left-wrap"> <!-- 접혔을때 left-close 추가 -->
                                                                 <div class="c-main-left-inner">
 
                                                                     <div class="cm-lnb-wrap">
@@ -449,7 +449,6 @@
                                                                             </div>
                                                                         </div>
                                                                     </div>
-
 
                                                                 </div>
                                                             </div>
@@ -727,7 +726,7 @@
                                                                                                             <span title="SclConductingEquipment">SclConductingEquipment - 전력설비 [1149]</span>
                                                                                                         </div>
                                                                                                         <div class="prop-cont">
-                                                                                                            <div >
+                                                                                                            <div class="prop-cont-inner">
                                                                                                                 <div class="prop-search">
                                                                                                                     <button class="sort-category on" title="Categorize"><span class="dis-none">Categorize</span></button> <!--선택시 on 추가 -->
                                                                                                                     <button class="sort-alphabet" title="Alphabetical"><span class="dis-none">Alphabetical</span></button> 
@@ -736,32 +735,106 @@
                                                                                                                         <input type="text" class="input-type02" id="propSearch" placeholder="검색어를 입렵해주세요">
                                                                                                                         <button class="search-btn"><span class="dis-none">검색</span></button>
                                                                                                                     </div>
-                                                                                                                </div>
-    
-                                                                                                                <div class="prop-list on cm-scroll"> <!-- prop-desc 있으면 on추가 없으면 on삭제 -->
-                                                                                                                    <div class="prop-item">1</div>
-                                                                                                                    <div class="prop-item">2</div>
-                                                                                                                    <div class="prop-item">3</div>
-                                                                                                                    <div class="prop-item">4</div>
-                                                                                                                    <div class="prop-item">5</div>
-                                                                                                                    <div class="prop-item">6</div>
-                                                                                                                    <div class="prop-item">5</div>
-                                                                                                                    <div class="prop-item">6</div>
-                                                                                                                    <div class="prop-item">5</div>
-                                                                                                                    <div class="prop-item">6</div>                                                                                                                <div class="prop-item">6</div>
-                                                                                                                    <div class="prop-item">6</div>
-                                                                                                                    <div class="prop-item">6</div>
-                                                                                                                    <div class="prop-item">6</div>
-                                                                                                                    <div class="prop-item">6</div>
+                                                                                                                </div>    
+                                                                                                                <div class="prop-list desc-on cm-scroll"> <!-- 속성 요소 클릭시 desc-on 추가 / 설명글 닫기 버튼 클릭시 desc-on 삭제 -->
+                                                                                                                    <div class="prop-item">
+                                                                                                                        <label for="" title="Conducting Equip ID">Conducting Equip ID</label>
+                                                                                                                        <div class="input-wrap">
+                                                                                                                            <input type="text" id="" class="input-type02" value="1149" readonly>
+                                                                                                                        </div>
+                                                                                                                    </div>
+
+                                                                                                                    <div class="prop-item">
+                                                                                                                        <label for="" title="Topo Knd Code">Topo Knd Code</label>
+                                                                                                                        <div class="select-wrap">
+                                                                                                                            <select class="select-type03">
+                                                                                                                                <option>111</option>
+                                                                                                                                <option>222</option>
+                                                                                                                                <option>333</option>
+                                                                                                                            </select> 
+                                                                                                                        </div>
+                                                                                                                    </div>    
+                                                                                                                    
+                                                                                                                    <div class="prop-item">
+                                                                                                                        <button class="more-item open"><span class="dis-none">펼침/닫힘</span></button> <!-- 펼침 시 open 추가 / 닫을 시 open 삭제 -->
+                                                                                                                        <label for="" title="Power System Resource">Power System Resource</label>
+                                                                                                                        <div class="input-wrap">
+                                                                                                                            <input type="text" id="" class="input-type02" value="" readonly>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                    <!-- 펼침 클릭시 보여지고 닫으면 사라짐 -->
+                                                                                                                    <div class="prop-item-depth01">
+                                                                                                                        <div class="prop-item">
+                                                                                                                            <label for="" title="Resource ID">Resource ID</label>
+                                                                                                                            <div class="input-wrap">
+                                                                                                                                <input type="text" id="" class="input-type02" value="2727" readonly>
+                                                                                                                            </div>
+                                                                                                                        </div>  
+                                                                                                                        <div class="prop-item">
+                                                                                                                            <button class="more-item open"><span class="dis-none">펼침/닫힘</span></button> <!-- 펼침 시 open 추가 / 닫을 시 open 삭제 -->
+                                                                                                                            <label for="" title="Diagram Object">Diagram Object</label>
+                                                                                                                            <div class="input-wrap">
+                                                                                                                                <input type="text" id="" class="input-type02" value="심볼[0]" readonly>
+                                                                                                                            </div>
+                                                                                                                        </div>  
+                                                                                                                            
+                                                                                                                        <!-- 펼침 클릭시 보여지고 닫으면 사라짐 -->
+                                                                                                                        <div class="prop-item-depth02">
+                                                                                                                            <div class="prop-item">
+                                                                                                                                <label for="" title="ID">ID</label>
+                                                                                                                                <div class="input-wrap">
+                                                                                                                                    <input type="text" id="" class="input-type02" value="test">
+                                                                                                                                </div>
+                                                                                                                            </div>  
+
+                                                                                                                            <div class="prop-item">
+                                                                                                                                <label for="" title="Name">Name</label>
+                                                                                                                                <div class="input-wrap">
+                                                                                                                                    <input type="text" id="" class="input-type02" value="test">
+                                                                                                                                </div>
+                                                                                                                            </div>  
+                                                                                                                        </div> 
+                                                                                                                    </div>  
+
+                                                                                                                    <div class="prop-item">
+                                                                                                                        <button class="more-item"><span class="dis-none">펼침/닫힘</span></button> <!-- 펼침 시 open 추가 / 닫을 시 open 삭제 -->
+                                                                                                                        <label for="" title="Power System Resource">Terminal</label>
+                                                                                                                        <div class="select-wrap">
+                                                                                                                            <select class="select-type03">
+                                                                                                                                <option>111</option>
+                                                                                                                                <option>222</option>
+                                                                                                                                <option>333</option>
+                                                                                                                            </select> 
+                                                                                                                        </div>
+                                                                                                                    </div>
+
+                                                                                                                    <!-- 펼침 클릭시 보여지고 닫으면 사라짐 -->
+                                                                                                                    <div class="prop-item-depth01">
+                                                                                                                        <div class="prop-item">
+                                                                                                                            <label for="" title="Resource ID">Resource ID</label>
+                                                                                                                            <div class="input-wrap">
+                                                                                                                                <input type="text" id="" class="input-type02" value="2727" readonly>
+                                                                                                                            </div>
+                                                                                                                        </div>  
+                                                                                                                        <div class="prop-item">
+                                                                                                                            <button class="more-item open"><span class="dis-none">펼침/닫힘</span></button> <!-- 펼침 시 open 추가 / 닫을 시 open 삭제 -->
+                                                                                                                            <label for="" title="Diagram Object">Diagram Object</label>
+                                                                                                                            <div class="input-wrap">
+                                                                                                                                <input type="text" id="" class="input-type02" value="심볼[0]" readonly>
+                                                                                                                            </div>
+                                                                                                                        </div>  
+                                                                                                                    </div>  
+                                                                                                                    
+                                                                                                                     
                                                                                                                 </div>
                                                                                                             </div>
-
-
-                                                                                                            <div class="prop-desc"> <!-- 설명영역 -->
-                                                                                                                <span class="prop-desc-title">Power Sysytem Resource</span> <!-- 타이틀 -->
-                                                                                                                <span class="prop-desc-info">Power Sysytem Resource Info</span> <!-- 상세설명 -->
+                                                                                                            <!-- 설명영역 :s -->
+                                                                                                            <div class="prop-desc cm-scroll"> 
+                                                                                                                <span class="prop-desc-title">Power System Resource</span> <!-- 타이틀 -->
+                                                                                                                <span class="prop-desc-info">Power System Resource Info</span> <!-- 상세설명 -->
+                                                                                                                <button class="desc-close"><span class="dis-none">닫기</span></button>
                                                                                                             </div>
-                                                                                                            
+                                                                                                            <!-- 설명영역 :e -->                                                                                                            
                                                                                                         </div>
                                                                                                     </div>
                                                                                                 </div>
