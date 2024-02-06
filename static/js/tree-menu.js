@@ -98,6 +98,76 @@ $(document).ready(function() {
         selectedMenuValue.value = message;
     });
 
+
+
+
+    var commiData = [
+        {text: '통신설정', children: [
+            {text: 'Comm1', state: 'closed', children: [
+                {text:'W01', children:[
+                    {text:'IED1_AP', state: 'closed', children: [                       
+                        {text:'PhysConn1'},             
+                        {text:'ADDR1'},             
+                        {text:'C1'},             
+                        {text:'C1'},
+                    ]},
+
+                ]},
+                {text:'IDE4_AP', state: 'closed', children:[
+                    {text:'ADDR2'},
+
+                ]},
+                {text:'IDE5_AP', state: 'closed', children:[
+                    {text:'ADDR4'},
+
+                ]},
+            ]},
+        ]}
+    ];
+
+
+    var commTree = new tui.Tree('#comm-tree', {
+        data: commiData,
+        nodeDefaultState: 'opened'
+    }).enableFeature('ContextMenu', {
+        menuData: [
+            {title: 'menu1'},
+            {title: 'menu2', disable: true}
+        ]
+    });
+
+    commTree.on('beforeOpenContextMenu', function(nodeId) {
+        var menuData = [];
+
+        if (nodeId === 'tui-tree-node-2') { // sub-A1 node
+            menuData = [
+                {title: 'menu'}
+            ];
+        } else {
+            menuData = [
+                {title: 'menu1'},
+                {title: 'menu2', disable: true},
+                {title: 'menu3', menu: [
+                    {title: 'submenu1', disable: true},
+                    {title: 'submenu2'}
+                ]},
+                {separator: true},
+                {title: 'menu4'},
+                {title: 'menu5'}
+            ];
+        }
+
+        commTree.changeContextMenu(menuData); // change menu api
+    });
+
+    commTree.on('selectContextMenu', function(eventData) {
+        var treeNodeData = commTree.getNodeData(eventData.nodeId);
+        var message = '"' + eventData.command + '" is selected on "' + treeNodeData.text + '" node';
+
+        selectedMenuValue.value = message;
+    });
+
+
   
 });
 

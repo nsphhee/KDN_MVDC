@@ -462,12 +462,12 @@
                                                                         <!-- tab head :s -->
                                                                         <div class="tab-head-type03 c-mid-tab-default">
                                                                             <ul class="tab-h-list">                              
-                                                                                <li class="r-area-open tab-h-on"> <!-- 계통도 탭 선택시 우측 영역 펼침 r-area-open 추가(우측열림) / 다른 탭 선택 시 r-area-open 삭제(우측닫힘)-->
+                                                                                <li class="r-area-open"> <!-- 계통도 탭 선택시 우측 영역 펼침 r-area-open 추가(우측열림) / 다른 탭 선택 시 r-area-open 삭제(우측닫힘)-->
                                                                                     <a href="#cMidTab1" class="t-tit">
                                                                                     계통도
                                                                                     </a>
                                                                                 </li> 
-                                                                                <li>
+                                                                                <li class="tab-h-on">
                                                                                     <a href="#cMidTab2" class="t-tit">
                                                                                     통신설정
                                                                                     </a>
@@ -489,19 +489,76 @@
                                                                         <!-- tab cont :s -->
                                                                         <div class="tab-cont-type03 c-mid-tab-cont">
                                                                             <!-- tab1 :s -->
-                                                                            <div class="tab-c-item" id="cMidTab1" style="display: block;">
+                                                                            <div class="tab-c-item" id="cMidTab1">
                                                                                 <div class="tab-c-item-wrap">
                                                                                     <div class="tab-c-item-inner">
-                                                                                        11
+                                                                                        계통도 영역
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
                                                                             <!-- tab1 :e -->
                                                                             <!-- tab2 :s -->
-                                                                            <div class="tab-c-item" id="cMidTab2">
+                                                                            <div class="tab-c-item" id="cMidTab2" style="display: block;">
                                                                                 <div class="tab-c-item-wrap">
-                                                                                    <div class="tab-c-item-inner">
-                                                                                        22
+                                                                                    <div class="tab-c-item-inner">        
+
+
+                                                                                        <div class="swiper tc-swiper communi-wrap">
+                                                                                            <div class="swiper-wrapper communi-inner">                                                                                                
+                                                                                                <div class="swiper-slide tc-flex">
+                                                                                                    <div class="comm-menu-list tc-menu-list">
+                                                                                                        <div class="comm-menu-top tc-top">
+                                                                                                            <span>통신설정 목록</span>
+                                                                                                        </div>
+                                                                                                        <div class="comm-menu-cont tc-cont">
+                                                                                                            <div class="comm-menu-cont-inner tc-cont-inner">                                                                  
+                                                                                                                <div id="comm-tree" class="tui-tree-wrap"></div>
+                                                                                                            </div>                                      
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="area-col-1">
+                                                                                                        <div class="comm-prop-top tc-top">
+                                                                                                            <span class="fc-yellow bold">서브네트워크</span>
+                                                                                                        </div>
+                                                                                                        <div class="comm-prop-cont tc-cont">
+                                                                                                            <div class="comm-prop-cont-inner tc-cont-inner cm-scroll">                                                                                                 
+                                                                                                                <div class="prop-item">
+                                                                                                                    <label for="" title="이름">이름</label>
+                                                                                                                    <div class="input-wrap">
+                                                                                                                        <input type="text" id="" class="input-type02" value="W01">
+                                                                                                                    </div>
+                                                                                                                </div>                                                                    
+                                                                                                                <div class="prop-item">
+                                                                                                                    <label for="" title="설명">설명</label>
+                                                                                                                    <div class="input-wrap">
+                                                                                                                        <input type="text" id="" class="input-type02" value="">
+                                                                                                                    </div>
+                                                                                                                </div>                                                                
+                                                                                                                <div class="prop-item">
+                                                                                                                    <label for="" title="타입">타입</label>
+                                                                                                                    <div class="input-wrap">
+                                                                                                                        <input type="text" id="" class="input-type02" value="8-MMS">
+                                                                                                                    </div>
+                                                                                                                </div>                                                               
+                                                                                                                <div class="prop-item">
+                                                                                                                    <label for="" title="Bit Rate">Bit Rate</label>
+                                                                                                                    <div class="input-wrap">
+                                                                                                                        <input type="text" id="" class="input-type02" value="10">
+                                                                                                                    </div>
+                                                                                                                </div>     
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <!--div class="area-col-2">
+                                                                                                        <div>2분할영역</div>
+                                                                                                        <div>2분할영역</div>
+                                                                                                    </div -->
+                                                                                                </div>
+                                                                                            </div>                                                              
+                                                                                            <div class="swiper-scrollbar"></div>
+                                                                                        </div>
+
+
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
@@ -510,7 +567,7 @@
                                                                             <div class="tab-c-item" id="cMidTab3">
                                                                                 <div class="tab-c-item-wrap">
                                                                                     <div class="tab-c-item-inner">
-                                                                                        33
+                                                                                         지능형 통신 장치 영역
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
@@ -519,7 +576,7 @@
                                                                             <div class="tab-c-item" id="cMidTab4">
                                                                                 <div class="tab-c-item-wrap">
                                                                                     <div class="tab-c-item-inner">
-                                                                                        44
+                                                                                        테이터 타입 템플릿 영역
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
@@ -1042,6 +1099,21 @@
         });  
 
 
+        new Swiper(".tc-swiper", {
+            direction: 'horizontal',
+            slidesPerView: "auto",
+            spaceBetween: 0,
+            mousewheel: true,
+            observer: true,	
+            observeParents: true,	
+            freeMode: {
+                enabled: true,
+                sticky: true,
+            },        
+            scrollbar: {
+             el: ".swiper-scrollbar",
+             },
+        });  
 
 
     </script>
