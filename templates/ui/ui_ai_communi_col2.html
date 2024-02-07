@@ -42,62 +42,61 @@
         <div id="ui-wrap">  
             <div class="ui-inner">                
 
-                <h2>통신설정 컨텐츠 영역 2분할 - 트리메뉴 아이콘 개발 적용시 변경 예정</h2>
+                <h2>지능형 통신장치 컨텐츠 영역 2분할 - 트리메뉴 아이콘 개발 적용시 변경 예정</h2>
 
                 <div class="tab-c-item cm-scroll" id="cMidTab2">
                     <div class="tab-c-item-wrap">
                         <div class="tab-c-item-inner">  
 
-                            <!-- 통신설정 컨텐츠 : s -->
-                            
-                            <div class="communi-wrap">
-                                <div class="communi-inner tc-flex">              
+                            <!-- 지능형 통신장치 컨텐츠 : s -->
+                            <div class="ai-communi-wrap">
+                                <div class="ai-communi-inner tc-flex">              
                                     <div class="tc-menu-list">
                                         <div class="tc-top">
-                                            <span>통신설정 목록</span>
+                                            <span>지능형 통신장치 목록</span>
                                         </div>
                                         <div class="tc-cont">
                                             <div class="tc-cont-inner">                                                                  
-                                                <div id="comm-tree" class="tui-tree-wrap cm-scroll"></div>
+                                                <div id="ai-comm-tree" class="tui-tree-wrap cm-scroll"></div>
                                             </div>                                      
                                         </div>
                                     </div>
                                     <div class="area-col-1">
-                                        <div class="tc-top">
-                                            <span class="fc-yellow bold">서브네트워크</span>
+                                        <div class="ai-comm-prop-top tc-top">
+                                            <span class="fc-yellow bold">IED</span>
                                         </div>
-                                        <div class="comm-prop-cont tc-cont">
-                                            <div class="comm-prop-cont-inner tc-cont-inner cm-scroll">                                                                                                 
+                                        <div class="ai-comm-prop-cont tc-cont">
+                                            <div class="ai-comm-prop-cont-inner tc-cont-inner cm-scroll">                                                                                                 
                                                 <div class="prop-item">
                                                     <label for="" title="이름">이름</label>
                                                     <div class="input-wrap">
-                                                        <input type="text" id="" class="input-type02" value="W01">
+                                                        <input type="text" id="" class="input-type02" value="IED1">
                                                     </div>
                                                 </div>                                                                    
                                                 <div class="prop-item">
                                                     <label for="" title="설명">설명</label>
                                                     <div class="input-wrap">
-                                                        <input type="text" id="" class="input-type02" value="">
+                                                        <input type="text" id="" class="input-type02" value="RTU1">
                                                     </div>
                                                 </div>                                                                
                                                 <div class="prop-item">
-                                                    <label for="" title="타입">타입</label>
+                                                    <label for="" title="타입">설정버전</label>
                                                     <div class="input-wrap">
-                                                        <input type="text" id="" class="input-type02" value="8-MMS">
+                                                        <input type="text" id="" class="input-type02" value="1.0">
                                                     </div>
                                                 </div>                                                               
                                                 <div class="prop-item">
-                                                    <label for="" title="Bit Rate">Bit Rate</label>
+                                                    <label for="" title="Bit Rate">제조사</label>
                                                     <div class="input-wrap">
-                                                        <input type="text" id="" class="input-type02" value="10">
+                                                        <input type="text" id="" class="input-type02" value="KEPCO_consortium">
                                                     </div>
                                                 </div>     
                                             </div>                                                                                                      
-                                        </div>  
-                                    </div>                                
-                                </div>
+                                        </div>
+                                    </div>
+                                </div>                                
                             </div>
-                            <!-- 통신설정 컨텐츠 : e -->
+                            <!-- 지능형 통신장치 컨텐츠 : e -->
 
                         </div>
                     </div>
@@ -109,33 +108,53 @@
     <script>
     const Tree = tui.Tree;
 
-    var commiData = [
-        {text: '통신설정', children: [
-            {text: 'Comm1', state: 'closed', children: [
-                {text:'W01', children:[
-                    {text:'IED1_AP', state: 'closed', children: [                       
-                        {text:'PhysConn1'},             
-                        {text:'ADDR1'},             
-                        {text:'C1'},             
-                        {text:'C1'},
+    //지능형 통신장치 목록
+    var aiCommiData = [
+        {text: '지능형 통신장치', children: [
+            {text: 'menu01', state: 'closed', children: [
+                {text:'menu01-01', children:[
+                    {text:'menu01-01-01', state: 'closed', children: [                       
+                        {text:'menu01-01-01-01'},             
+                        {text:'menu01-01-01-02'},             
+                        {text:'menu01-01-01-03'},             
+                        {text:'menu01-01-01-04'},
                     ]},
 
                 ]},
-                {text:'IDE4_AP', state: 'closed', children:[
-                    {text:'ADDR2'},
+                {text:'menu01-02', state: 'closed', children:[
+                    {text:'menu01-02-01'},
 
                 ]},
-                {text:'IDE5_AP', state: 'closed', children:[
-                    {text:'ADDR4'},
+                {text:'menu01-03', state: 'closed', children:[
+                    {text:'menu01-03-01'},
 
                 ]},
             ]},
+            {text: 'menu02', state: 'closed', children: [
+                {text:'menu02-01', children:[
+                    {text:'menu02-01-01', state: 'closed', children: [                       
+                        {text:'menu02-01-01-01'},             
+                        {text:'menu02-01-01-02'},             
+                        {text:'menu02-01-01-03'},             
+                        {text:'menu02-01-01-04'},
+                    ]},
+
+                ]},
+                {text:'menu02-02', state: 'closed', children:[
+                    {text:'menu02-02-01'},
+
+                ]},
+                {text:'menu02-03', state: 'closed', children:[
+                    {text:'menu02-03-01'},
+
+                ]},
+            ]}
         ]}
     ];
 
 
-    var commTree = new tui.Tree('#comm-tree', {
-        data: commiData,
+    var aiCommTree = new tui.Tree('#ai-comm-tree', {
+        data: aiCommiData,
         nodeDefaultState: 'opened'
     }).enableFeature('ContextMenu', {
         menuData: [
@@ -144,7 +163,7 @@
         ]
     });
 
-    commTree.on('beforeOpenContextMenu', function(nodeId) {
+    aiCommTree.on('beforeOpenContextMenu', function(nodeId) {
         var menuData = [];
 
         if (nodeId === 'tui-tree-node-2') { // sub-A1 node
@@ -165,14 +184,15 @@
             ];
         }
 
-        commTree.changeContextMenu(menuData); // change menu api
+        aiCommTree.changeContextMenu(menuData); // change menu api
     });
 
-    commTree.on('selectContextMenu', function(eventData) {
-        var treeNodeData = commTree.getNodeData(eventData.nodeId);
+    aiCommTree.on('selectContextMenu', function(eventData) {
+        var treeNodeData = aiCommTree.getNodeData(eventData.nodeId);
         var message = '"' + eventData.command + '" is selected on "' + treeNodeData.text + '" node';
 
         selectedMenuValue.value = message;
     });
+
     </script> 
 </html>

@@ -764,8 +764,8 @@ input:read-only {background: #f0f0f0;}
 
 
 /* 통신설정, 지능형통신장치, 데이터 타입템플릿 */
-.communi-wrap {height: 100%;}
-.communi-inner {height: 100%;}
+.c-main-mid-inner .c-mid-tab-cont .tab-c-item-inner > div,
+.c-main-mid-inner .c-mid-tab-cont .tab-c-item-inner > div > div {height:100%;}
 
 .tab-c-item label {font-size: 1.4rem; width: 13rem;}
 .tab-c-item .prop-item > .input-wrap, 
@@ -791,7 +791,9 @@ input:read-only {background: #f0f0f0;}
 .area-col-1 .tc-cont-inner,
 .area-col-2 .tc-cont-inner {padding: 0 1.0rem !important;}
 
-.comm-prop-cont-inner {padding-left:1.6rem; padding-right:2.0rem; overflow-y: auto;}
+.comm-prop-cont-inner, 
+.ai-comm-prop-cont-inner, 
+.data-type-cont-inner {padding-left:1.6rem; padding-right:2.0rem; overflow-y: auto;}
 .tc-cont .btn-area {justify-content:end; margin-bottom:1.2rem;}
 .tc-cont .btn-area > button {height:3.0rem; line-height: 2.8rem; margin:0 0 0 0.6rem; padding:0 1.0rem;}
 .grid-table-wrap {overflow-x: auto; overflow-y: hidden; padding:0 0 1.2rem 0;}
@@ -814,7 +816,9 @@ button:hover.area-open:before {opacity: 1;}
 
 /* tree menu */
 .cm-left-cont .tui-tree-wrap,
-.communi-wrap .tui-tree-wrap {background: none !important;height: calc(100%) !important; padding: 0 0.8rem 0 0; overflow-y: auto; width:100%;}
+.communi-wrap .tui-tree-wrap,
+.ai-communi-wrap .tui-tree-wrap,
+.data-type-wrap .tui-tree-wrap {background: none !important;height: calc(100%) !important; padding: 0 0.8rem 0 0; overflow-y: auto; width:100%;}
 .cm-left-cont .tui-tree-wrap span,
 .c-mid-tab-cont .tui-tree-wrap span,
 .tui-tree-opened > .tui-tree-content-wrapper .tui-tree-text {color:var(--color-text06) !important; font-weight: 300 !important; font-size:1.4rem;}
@@ -833,6 +837,9 @@ button:hover.area-open:before {opacity: 1;}
 
 #comm-tree .tui-tree-root > li:first-child > div > span > span {background: url(../../images/tree/tui_icon_root02.svg) no-repeat center center !important;margin: 0 8px 0 0;background-size: contain !important;width: 1.4rem !important;height: 1.4rem !important;}
 
+#ai-comm-tree .tui-tree-root > li:first-child > div > span > span {background: url(../../images/tree/tui_icon_root03.svg) no-repeat center center !important;margin: 0 8px 0 0;background-size: contain !important;width: 1.4rem !important;height: 1.4rem !important;}
+
+#data-type-tree .tui-tree-root > li:first-child > div > span > span {background: url(../../images/tree/tui_icon_root04.svg) no-repeat center center !important;margin: 0 8px 0 0;background-size: contain !important;width: 1.4rem !important;height: 1.4rem !important;}
 
  /* tab */
 .tab-c-item {display: none;height: 100%;} 
@@ -1014,8 +1021,8 @@ button:hover.area-open:before {opacity: 1;}
     .projcet-item > a {width:49.6rem;}
     .info-paths {width:28.0rem;}
     .c-main-mid-wrap {width:calc(100% - 27.4rem);}
-
 }
+
 @media (max-width: 1280px){   
     #default-wrap{width:1280px;}
     .login-input {width:44.0rem;}

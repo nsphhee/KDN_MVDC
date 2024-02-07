@@ -505,18 +505,18 @@
 
                                                                                         <div class="communi-wrap">
                                                                                             <div class="communi-inner tc-flex">              
-                                                                                                <div class="comm-menu-list tc-menu-list">
-                                                                                                    <div class="comm-menu-top tc-top">
+                                                                                                <div class="tc-menu-list">
+                                                                                                    <div class="tc-top">
                                                                                                         <span>통신설정 목록</span>
                                                                                                     </div>
-                                                                                                    <div class="comm-menu-cont tc-cont">
-                                                                                                        <div class="comm-menu-cont-inner tc-cont-inner">                                                                  
+                                                                                                    <div class="tc-cont">
+                                                                                                        <div class="tc-cont-inner">                                                                  
                                                                                                             <div id="comm-tree" class="tui-tree-wrap cm-scroll"></div>
                                                                                                         </div>                                      
                                                                                                     </div>
                                                                                                 </div>
                                                                                                 <div class="area-col-1">
-                                                                                                    <div class="comm-prop-top tc-top">
+                                                                                                    <div class="tc-top">
                                                                                                         <span class="fc-yellow bold">서브네트워크</span>
                                                                                                     </div>
                                                                                                     <div class="comm-prop-cont tc-cont">
@@ -551,7 +551,7 @@
 
                                                                                                 <!-- div class="area-col-2">
                                                                                                     <div>
-                                                                                                        <div class="comm-prop-top tc-top">
+                                                                                                        <div class="tc-top">
                                                                                                             <span class="fc-yellow bold">GSE</span>
                                                                                                         </div>                                                                                                        
                                                                                                         <div class="comm-prop-cont tc-cont">
@@ -572,7 +572,7 @@
                                                                                                         </div>
                                                                                                     </div>
                                                                                                     <div>
-                                                                                                        <div class="comm-prop-top tc-top">
+                                                                                                        <div class="tc-top">
                                                                                                             <span>제어블럭 값 목록</span>
                                                                                                         </div>                                                                                                        
                                                                                                         <div class="comm-prop-cont tc-cont">
@@ -595,7 +595,7 @@
 
                                                                                             </div>                                
                                                                                         </div>
-                                                                                        
+
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
@@ -604,7 +604,55 @@
                                                                             <div class="tab-c-item cm-scroll" id="cMidTab3">
                                                                                 <div class="tab-c-item-wrap">
                                                                                     <div class="tab-c-item-inner">
-                                                                                         지능형 통신 장치 영역
+
+                                                                                        <div class="ai-communi-wrap">
+                                                                                            <div class="ai-communi-inner tc-flex">              
+                                                                                                <div class="tc-menu-list">
+                                                                                                    <div class="tc-top">
+                                                                                                        <span>지능형 통신장치 목록</span>
+                                                                                                    </div>
+                                                                                                    <div class="tc-cont">
+                                                                                                        <div class="tc-cont-inner">                                                                  
+                                                                                                            <div id="ai-comm-tree" class="tui-tree-wrap cm-scroll"></div>
+                                                                                                        </div>                                      
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="area-col-1">
+                                                                                                    <div class="ai-comm-prop-top tc-top">
+                                                                                                        <span class="fc-yellow bold">IED</span>
+                                                                                                    </div>
+                                                                                                    <div class="ai-comm-prop-cont tc-cont">
+                                                                                                        <div class="ai-comm-prop-cont-inner tc-cont-inner cm-scroll">                                                                                                 
+                                                                                                            <div class="prop-item">
+                                                                                                                <label for="" title="이름">이름</label>
+                                                                                                                <div class="input-wrap">
+                                                                                                                    <input type="text" id="" class="input-type02" value="IED1">
+                                                                                                                </div>
+                                                                                                            </div>                                                                    
+                                                                                                            <div class="prop-item">
+                                                                                                                <label for="" title="설명">설명</label>
+                                                                                                                <div class="input-wrap">
+                                                                                                                    <input type="text" id="" class="input-type02" value="RTU1">
+                                                                                                                </div>
+                                                                                                            </div>                                                                
+                                                                                                            <div class="prop-item">
+                                                                                                                <label for="" title="타입">설정버전</label>
+                                                                                                                <div class="input-wrap">
+                                                                                                                    <input type="text" id="" class="input-type02" value="1.0">
+                                                                                                                </div>
+                                                                                                            </div>                                                               
+                                                                                                            <div class="prop-item">
+                                                                                                                <label for="" title="Bit Rate">제조사</label>
+                                                                                                                <div class="input-wrap">
+                                                                                                                    <input type="text" id="" class="input-type02" value="KEPCO_consortium">
+                                                                                                                </div>
+                                                                                                            </div>     
+                                                                                                        </div>                                                                                                      
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>                                
+                                                                                        </div>
+
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
@@ -613,7 +661,69 @@
                                                                             <div class="tab-c-item cm-scroll" id="cMidTab4">
                                                                                 <div class="tab-c-item-wrap">
                                                                                     <div class="tab-c-item-inner">
-                                                                                        테이터 타입 템플릿 영역
+
+
+                                                                                        <div class="data-type-wrap">
+                                                                                            <div class="data-type-inner tc-flex">              
+                                                                                                <div class="tc-menu-list">
+                                                                                                    <div class="tc-top">
+                                                                                                        <span>데이터 타입 템플릿 목록</span>
+                                                                                                    </div>
+                                                                                                    <div class="tc-cont">
+                                                                                                        <div class="tc-cont-inner">                                                                  
+                                                                                                            <div id="data-type-tree" class="tui-tree-wrap cm-scroll"></div>
+                                                                                                        </div>                                      
+                                                                                                    </div>
+                                                                                                </div>
+
+                                                                                                <div class="area-col-2">
+                                                                                                    <div>
+                                                                                                        <div class="tc-top">
+                                                                                                            <span class="fc-yellow bold">열거형 타입</span>
+                                                                                                        </div>                                                                                                        
+                                                                                                        <div class="data-type-prop-cont tc-cont">
+                                                                                                            <div class="data-type-prop-cont-inner tc-cont-inner cm-scroll">                                                                    
+                                                                                                                <div class="prop-item">
+                                                                                                                    <label for="" title="열거형 타입 ID">열거형 타입 ID</label>
+                                                                                                                    <div class="input-wrap">
+                                                                                                                        <input type="text" id="" class="input-type02" value="angid">
+                                                                                                                    </div>
+                                                                                                                </div>                                                                            
+                                                                                                                <div class="prop-item">
+                                                                                                                    <label for="" title="설명">설명</label>
+                                                                                                                    <div class="input-wrap">
+                                                                                                                        <input type="text" id="" class="input-type02" value="">
+                                                                                                                    </div>
+                                                                                                                </div>  
+                                                                                                            </div>                                                                                                      
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div>
+                                                                                                        <div class="tc-top">
+                                                                                                            <span>열거 값 목록</span>
+                                                                                                        </div>                                                                                                        
+                                                                                                        <div class="data-type-prop-cont tc-cont">
+                                                                                                            <div class="data-type-prop-cont-inner tc-cont-inner cm-scroll">                                                                    
+                                                                                                                <div class="btn-area">
+                                                                                                                    <button class="btn btn-type02">추가</button>
+                                                                                                                    <button class="btn btn-type03">삭제</button>
+                                                                                                                </div>
+                                                                                                                <div class="grid-table-wrap cm-scroll">
+                                                                                                                    <div class="grid-table-inner">
+                                                                                                                        grid-table 영역
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>                                                                                                      
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+
+
+
+                                                                                            </div>                                
+                                                                                        </div>
+
+                                                                                        
                                                                                     </div>
                                                                                 </div>
                                                                             </div>

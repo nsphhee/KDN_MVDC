@@ -1,5 +1,7 @@
 $(document).ready(function() {  
     const Tree = tui.Tree;
+
+    // 계통설비 목록 
     var data = [
         {text: '계통도', children: [
             {text: 'VT1'},
@@ -100,7 +102,7 @@ $(document).ready(function() {
 
 
 
-
+    //통신설정 목록
     var commiData = [
         {text: '통신설정', children: [
             {text: 'Comm1', state: 'closed', children: [
@@ -167,6 +169,179 @@ $(document).ready(function() {
         selectedMenuValue.value = message;
     });
 
+
+    //지능형 통신장치 목록
+    var aiCommiData = [
+        {text: '지능형 통신장치', children: [
+            {text: 'menu01', state: 'closed', children: [
+                {text:'menu01-01', children:[
+                    {text:'menu01-01-01', state: 'closed', children: [                       
+                        {text:'menu01-01-01-01'},             
+                        {text:'menu01-01-01-02'},             
+                        {text:'menu01-01-01-03'},             
+                        {text:'menu01-01-01-04'},
+                    ]},
+
+                ]},
+                {text:'menu01-02', state: 'closed', children:[
+                    {text:'menu01-02-01'},
+
+                ]},
+                {text:'menu01-03', state: 'closed', children:[
+                    {text:'menu01-03-01'},
+
+                ]},
+            ]},
+            {text: 'menu02', state: 'closed', children: [
+                {text:'menu02-01', children:[
+                    {text:'menu02-01-01', state: 'closed', children: [                       
+                        {text:'menu02-01-01-01'},             
+                        {text:'menu02-01-01-02'},             
+                        {text:'menu02-01-01-03'},             
+                        {text:'menu02-01-01-04'},
+                    ]},
+
+                ]},
+                {text:'menu02-02', state: 'closed', children:[
+                    {text:'menu02-02-01'},
+
+                ]},
+                {text:'menu02-03', state: 'closed', children:[
+                    {text:'menu02-03-01'},
+
+                ]},
+            ]}
+        ]}
+    ];
+
+
+    var aiCommTree = new tui.Tree('#ai-comm-tree', {
+        data: aiCommiData,
+        nodeDefaultState: 'opened'
+    }).enableFeature('ContextMenu', {
+        menuData: [
+            {title: 'menu1'},
+            {title: 'menu2', disable: true}
+        ]
+    });
+
+    aiCommTree.on('beforeOpenContextMenu', function(nodeId) {
+        var menuData = [];
+
+        if (nodeId === 'tui-tree-node-2') { // sub-A1 node
+            menuData = [
+                {title: 'menu'}
+            ];
+        } else {
+            menuData = [
+                {title: 'menu1'},
+                {title: 'menu2', disable: true},
+                {title: 'menu3', menu: [
+                    {title: 'submenu1', disable: true},
+                    {title: 'submenu2'}
+                ]},
+                {separator: true},
+                {title: 'menu4'},
+                {title: 'menu5'}
+            ];
+        }
+
+        aiCommTree.changeContextMenu(menuData); // change menu api
+    });
+
+    aiCommTree.on('selectContextMenu', function(eventData) {
+        var treeNodeData = aiCommTree.getNodeData(eventData.nodeId);
+        var message = '"' + eventData.command + '" is selected on "' + treeNodeData.text + '" node';
+
+        selectedMenuValue.value = message;
+    });
+
+
+    //데이터 타입 템플릿 목록
+    var  dataTypeData = [
+        {text: '데이터 타입 템플릿', children: [
+            {text: 'menu01', state: 'closed', children: [
+                {text:'menu01-01', children:[
+                    {text:'menu01-01-01', state: 'closed', children: [                       
+                        {text:'menu01-01-01-01'},             
+                        {text:'menu01-01-01-02'},             
+                        {text:'menu01-01-01-03'},             
+                        {text:'menu01-01-01-04'},
+                    ]},
+
+                ]},
+                {text:'menu01-02', state: 'closed', children:[
+                    {text:'menu01-02-01'},
+
+                ]},
+                {text:'menu01-03', state: 'closed', children:[
+                    {text:'menu01-03-01'},
+
+                ]},
+            ]},
+            {text: 'menu02', state: 'closed', children: [
+                {text:'menu02-01', children:[
+                    {text:'menu02-01-01', state: 'closed', children: [                       
+                        {text:'menu02-01-01-01'},             
+                        {text:'menu02-01-01-02'},             
+                        {text:'menu02-01-01-03'},             
+                        {text:'menu02-01-01-04'},
+                    ]},
+
+                ]},
+                {text:'menu02-02', state: 'closed', children:[
+                    {text:'menu02-02-01'},
+
+                ]},
+                {text:'menu02-03', state: 'closed', children:[
+                    {text:'menu02-03-01'},
+
+                ]},
+            ]}
+        ]}
+    ];
+
+
+    var dataTypeDataTree = new tui.Tree('#data-type-tree', {
+        data: dataTypeData,
+        nodeDefaultState: 'opened'
+    }).enableFeature('ContextMenu', {
+        menuData: [
+            {title: 'menu1'},
+            {title: 'menu2', disable: true}
+        ]
+    });
+
+    dataTypeDataTree.on('beforeOpenContextMenu', function(nodeId) {
+        var menuData = [];
+
+        if (nodeId === 'tui-tree-node-2') { // sub-A1 node
+            menuData = [
+                {title: 'menu'}
+            ];
+        } else {
+            menuData = [
+                {title: 'menu1'},
+                {title: 'menu2', disable: true},
+                {title: 'menu3', menu: [
+                    {title: 'submenu1', disable: true},
+                    {title: 'submenu2'}
+                ]},
+                {separator: true},
+                {title: 'menu4'},
+                {title: 'menu5'}
+            ];
+        }
+
+        dataTypeDataTree.changeContextMenu(menuData); // change menu api
+    });
+
+    dataTypeDataTree.on('selectContextMenu', function(eventData) {
+        var treeNodeData = dataTypeDataTree.getNodeData(eventData.nodeId);
+        var message = '"' + eventData.command + '" is selected on "' + treeNodeData.text + '" node';
+
+        selectedMenuValue.value = message;
+    });
 
   
 });
