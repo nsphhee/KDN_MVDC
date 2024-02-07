@@ -103,11 +103,17 @@
 
 
 /* 스크롤바 설정*/
+.layer-pop-bg::-webkit-scrollbar,
 .b-scroll::-webkit-scrollbar{width:8px; height:8px;}
 /* 스크롤바 막대 설정*/
+.layer-pop-bg::-webkit-scrollbar-thumb,
 .b-scroll::-webkit-scrollbar-thumb{height:20%; background-color: #aaaaaa; border-radius: 10px;}
 /* 스크롤바 뒷 배경 설정*/
+.layer-pop-bg::-webkit-scrollbar-track,
 .b-scroll::-webkit-scrollbar-track{background-color:#f5f5f5;}
+
+
+html:has(.scroll-off){overflow: hidden !important;}
 
 
 /* text */
@@ -221,10 +227,10 @@ input:read-only {background: #f0f0f0;}
 .project-top > button:before {display: block;width:1.2rem;height:1.2rem;margin: 0 0.6rem 0 0;}
 .project-create {border:1px solid #1554b5; margin-right:0.6rem; color:#1554b5;}
 .project-create:hover {background: #eceeff;transition: all .2s;}
-.project-create:before {background: url(../../images/common/icon_plus.svg)no-repeat center center; background-size: contain;}
-.project-del {border:1px solid #F13131; color:#F13131; }
+.project-create:before {background: url(../../images/common/icon_plus_b.svg)no-repeat center center; background-size: contain;}
+.project-del {border:1px solid #F13131; color:#F13131;}
 .project-del:hover {background: #ffeeee;transition: all .2s;}
-.project-del:before {background: url(../../images/common/icon_minus.svg)no-repeat center center; background-size: contain;}
+.project-del:before {background: url(../../images/common/icon_minus_r.svg)no-repeat center center; background-size: contain;}
 
 .project-list {overflow-y: auto;width:100%;padding:0 1.8rem 0 0;height: 25.2rem;}
 .projcet-item > a {border:2px solid transparent;width:57.6rem;margin-bottom:0.1rem;padding: 1.0rem 0;font-size:1.5rem;line-height: 1.7;border-radius: 6px;display: flex;align-items: center;background: #f5f5f8;}
@@ -896,7 +902,7 @@ button:hover.area-open:before {opacity: 1;}
 /* layer popup */
 .layer-pop {display:none; transition: all ease 0.2s 0s;}
 .layer-pop.on {display: flex; position: fixed; top:0; left:0; right:0; bottom:0; z-index: 10000;}
-.layer-pop-bg {padding: 0;min-height: calc(100vh - 48px);align-items: center;display: flex;justify-content: center;background:rgba(0,0,0,.8);width: 100%;flex-wrap: wrap;overflow-y: auto;flex-direction: row;}
+.layer-pop-bg {padding: 1.0rem 0;min-height: calc(100vh - 48px);align-items: center;display: flex;justify-content: center;background:rgba(0,0,0,.8);width: 100%;flex-wrap: wrap;overflow-y: auto;flex-direction: row;}
 .layer-pop-inner {z-index:10001;background: #ffffff;border-radius: 10px 10px 8px 8px;position: relative;}
 .layer-pop-close {position: absolute; top: 18px; right: 16px; background:url(../../images/common/icon_close_b.svg) no-repeat center center; background-size: contain; width: 3.6rem; height: 3.6rem; color:transparent;}
 .layer-pop-inner .kgrid-pop-wrap {padding: 0 0 3.0rem 0;}
