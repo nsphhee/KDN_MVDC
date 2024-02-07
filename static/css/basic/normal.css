@@ -756,6 +756,9 @@ input:read-only {background: #f0f0f0;}
 
 
 /* 통신설정, 지능형통신장치, 데이터 타입템플릿 */
+.communi-wrap {height: 100%;}
+.communi-inner {height: 100%;}
+
 .c-main-mid-wrap label {font-size: 1.4rem; width: 14rem;}
 .c-main-mid-wrap .prop-item > .input-wrap, 
 .c-main-mid-wrap .prop-item > .select-wrap {width: calc(100% - 15rem);}
@@ -775,8 +778,6 @@ input:read-only {background: #f0f0f0;}
 .area-col-1 .tc-cont-inner {height: calc(100%);padding: 0 1.2rem;box-sizing: border-box;}
 
 .comm-prop-cont-inner {padding-left:1.6rem; padding-right:2.0rem; overflow-y: auto;}
-
-.tc-swiper {/* overflow: unset !important; *//* min-width: 110.0rem; */}
 
 /* main cont left menu */
 .c-main-left-inner,
@@ -816,8 +817,6 @@ button:hover.area-open:before {opacity: 1;}
 .tab-c-item {display: none;height: 100%;} 
 .c-main-mid-wrap .tab-c-item-wrap {height:100%;}
 .c-main-mid-wrap .tab-c-item-inner {height:100%;}
-/* .c-main-mid-wrap .tab-c-item-inner > div,
-.c-main-mid-wrap .tab-c-item-inner > div > div {height:100%;} */
 
 .tab-head-type01 {margin:0;}
 .tab-head-type01 > .tab-h-list {display: flex;align-items: center;width: 100%;border-bottom: 1px solid #c8c8c8;}
@@ -978,13 +977,6 @@ button:hover.area-open:before {opacity: 1;}
     .project-list-wrap {width:49.6rem;}
     .projcet-item > a {width:49.6rem;}
     .info-paths {width:28.0rem;}
-    .c-main-mid-wrap .tab-c-item-inner {
-        /* min-width: 1100px; */
-        overflow-x: auto;
-        width: 100%;
-    }
-    
-    .c-main-mid-wrap .tab-c-item-inner > div {width:1200px;}
 }
 @media (max-width: 1280px){   
     #default-wrap{width:1280px;}
