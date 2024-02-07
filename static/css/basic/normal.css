@@ -705,10 +705,10 @@ input:read-only {background: #f0f0f0;}
 .property-inner .tab-c-item-wrap {height:100%;}
 .property-inner .tab-c-item-inner {height:100%;}
 .property-inner .property-list {height:100%;}
-.property-list .property-list-inner {height:100%;padding: 0 1.2rem;display: flex;flex-direction: column;}
+.property-list .property-list-inner {height:100%;padding: 0 1.4rem;display: flex;flex-direction: column;}
 .prop-top {border-bottom:1px solid var(--border05);max-height: 5.6rem;box-sizing: border-box; display: flex;flex-direction: column;justify-content: center;padding: 0.4rem 0 0.6rem 0;min-height: 4.6rem;}
 .prop-top > span {font-size:1.3rem;padding: 0.2rem;box-sizing: border-box;line-height: 1.4; }
-.prop-cont {padding: 1.2rem 0 0 0;flex-grow: 1;position: relative;height: calc(100% - 6.6rem);display: flex;flex-direction: column;}
+.prop-cont {padding: 1.2rem 0 0.4rem 0;flex-grow: 1;position: relative;height: calc(100% - 6.6rem);display: flex;flex-direction: column;}
 .prop-cont > div:first-child {flex: 1;min-height: calc(100% - 10.4rem);}
 .prop-search {display: flex;flex-wrap: wrap;align-items: center;flex-direction: row;margin-bottom: 1.0rem;}
 .prop-search > button {height:3.4rem;width: 3.8rem;}
@@ -739,7 +739,8 @@ input:read-only {background: #f0f0f0;}
 .prop-cont-inner:has(.desc-on) + .prop-desc {display: block !important;}
 
 .prop-item {display: flex; align-items: center; margin-bottom: 0.4rem;}
-.prop-item label {width:13.0rem; font-size:1.2rem; padding: 0.2rem 0; font-weight: 300; margin-right:1.0rem; white-space:inherit; overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-box-orient:vertical; word-wrap:break-word; word-break:keep-all; -webkit-line-clamp:2;}
+.prop-item label {width:13.0rem; padding: 0.2rem 0; font-weight: 300; margin-right:1.0rem; white-space:inherit; overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-box-orient:vertical; word-wrap:break-word; word-break:keep-all; -webkit-line-clamp:2;}
+.property-wrap .prop-item label {font-size:1.2rem !important;}
 .prop-item > .input-wrap,
 .prop-item > .select-wrap {width:calc(100% - 14.0rem);}
 .prop-item > .input-wrap input {width:100%; height:3.0rem; padding:0 0.8rem;}
@@ -753,12 +754,12 @@ input:read-only {background: #f0f0f0;}
 .prop-item-depth01 {padding:0 0 0 1.8rem;}
 .prop-item-depth01 .prop-item > label {width:11.2rem;}
 .prop-item-depth01 .prop-item > .input-wrap,
-.prop-item-depth01 .prop-item > .select-wrap {width:calc(100% - 12.2rem);}
+.prop-item-depth01 .prop-item > .select-wrap {width: calc(100% - 12.2rem) !important;}
 
 .prop-item-depth02 {padding:0 0 0 1.8rem;}
 .prop-item-depth02 .prop-item > label {width:9.4rem;}
 .prop-item-depth02 .prop-item > .input-wrap,
-.prop-item-depth02 .prop-item > .select-wrap {width:calc(100% - 10.4rem);}
+.prop-item-depth02 .prop-item > .select-wrap {width:calc(100% - 10.4rem) !important;}
 
 .prop-item .more-item + label {width:11.2rem;}
 .prop-item-depth01 .prop-item .more-item + label {width:9.4rem;}
@@ -768,6 +769,8 @@ input:read-only {background: #f0f0f0;}
 .prop-item:has(.more-item) + .prop-item-depth01,
 .prop-item:has(.more-item) + .prop-item-depth02 {display:none !important;}
 
+
+.c-main-right-inner .tab-wrap:has(> .tab-head-type04) {flex-direction: row; justify-content: space-between;}
 
 /* 통신설정, 지능형통신장치, 데이터 타입템플릿 */
 .c-main-mid-inner .c-mid-tab-cont .tab-c-item-inner > div,
@@ -850,7 +853,7 @@ button:hover.area-open:before {opacity: 1;}
  /* tab */
 .tab-c-item {display: none;height: 100%;} 
 .c-main-mid-wrap .tab-c-item-wrap {height:100%;}
-.c-main-mid-wrap .tab-c-item-inner {height:100%;width: 100%;}
+.c-main-mid-wrap .tab-c-item-inner {height:100%; width: 100%;}
 
 .tab-head-type01 {margin:0;}
 .tab-head-type01 > .tab-h-list {display: flex;align-items: center;width: 100%;border-bottom: 1px solid #c8c8c8;}
@@ -882,9 +885,19 @@ button:hover.area-open:before {opacity: 1;}
 .tab-head-type03 > .tab-h-list li a:hover {transition: all ease 0.1s 0s; background: var(--color-bg05);color:var(--color-text06);}
 .tab-head-type03 > .tab-h-list li a:hover:before {z-index:10; display: block; width:100%; height:0.2rem; position: absolute; top:0; left:0; background: var(--border06);}
 
-.tab-cont-type03.c-mid-tab-cont {border:0.6rem solid var(--color-bg05);box-sizing: border-box;height: calc(100% - 4.6rem);flex-grow: 1;border-bottom:none;overflow: hidden;/* width: 100%; *//* min-width: 100%; *//* padding-right: 20.0rem; *//* overflow-x: auto; */}
+
+.tab-head-type04 {margin:0;padding: 0.3rem 0 0.3rem 0.3rem;background: var(--color-bg01);border-radius: 0;}
+.tab-head-type04 > .tab-h-list {display: flex; flex-direction: column; align-items: center;width: 100%;}
+.tab-head-type04 > .tab-h-list li {border-radius: 0; margin:0; text-align: center;}
+.tab-head-type04 > .tab-h-list li.tab-h-on {z-index: 9; position: relative;}
+.tab-head-type04 > .tab-h-list li a {color:var(--color-text03);font-size: 1.3rem;position:relative;box-sizing: border-box;display: block;background: var(--color-bg03);position: relative;padding: 0.6rem 0.6rem 0.6rem 0.5rem;border-radius: 0;width: 2.2rem;text-align: center;} 
+.tab-head-type04 > .tab-h-list li.tab-h-on a {position:relative;background: var(--color-bg05);color:var(--color-text07);z-index: 2;}
+.tab-head-type04 > .tab-h-list li a:hover {transition: all ease 0.1s 0s; background: var(--color-bg05);color:var(--color-text07);}
+.tab-cont-type04 {flex-grow: 1;}
+
+.tab-cont-type03.c-mid-tab-cont {border:0.6rem solid var(--color-bg05);box-sizing: border-box;height: calc(100% - 4.6rem);flex-grow: 1;border-bottom:none;overflow: hidden;}
 .component-tab-cont {border:0.6rem solid var(--color-bg05);box-sizing: border-box;height: calc(100% - 3.8rem);flex-grow: 1;padding: 1.6rem 0.6rem;}
-.property-tab-cont {background-color: var(--color-bg05);box-sizing: border-box;height: calc(100% - 3.8rem);flex-grow: 1;padding: 0.2rem 0.6rem 0.8rem 0.6rem;}
+.property-tab-cont {background-color: var(--color-bg05);box-sizing: border-box;height: calc(100% - 3.8rem);flex-grow: 1;padding: 0.2rem 0.2rem 0.3rem 0.2rem;}
 
 .swiper.c-mid-tab-head {width: 100%;}
 .swiper-wrapper.tab-h-list {display: flex;align-items: center;width: 100%;}
@@ -1045,8 +1058,8 @@ button:hover.area-open:before {opacity: 1;}
 }
 
 @media (max-height: 860px){   
-    .component-wrap {min-height:calc(100% - 30.0rem);}
-    .property-wrap {min-height:30.0rem}   
+    .component-wrap {height:calc(100% - 30.0rem);}
+    .property-wrap {height:30.0rem}   
 }
 
 @media (max-height: 680px){   

@@ -114,7 +114,12 @@ $(document).ready(function() {
     const propertyTabList = document.querySelectorAll('.property-tab-default .tab-h-list li'); //우측 설정 탭
     const propertyContents = document.querySelectorAll('.property-tab-cont .tab-c-item'); //우측 설정 탭
 
+    const propTabList = document.querySelectorAll('.prop-tab-default .tab-h-list li'); //우측 설정 2차 탭
+    const propContents = document.querySelectorAll('.prop-tab-cont .tab-c-item'); //우측 설정 2차 탭
 
+
+
+    
     let activeCont = ''; // 현재 활성화 된 컨텐츠 (기본:#tab1 활성화)
 
     for(var i = 0; i < lpTabList.length; i++){
@@ -220,6 +225,28 @@ $(document).ready(function() {
 
                     // 나머지 컨텐츠 display:none 처리
                     propertyContents[j].style.display = 'none';   
+                }
+
+                // 버튼 관련 이벤트
+                this.parentNode.classList.add('tab-h-on');
+
+                // 버튼 클릭시 컨텐츠 전환
+                activeCont = this.getAttribute('href');
+                document.querySelector(activeCont).style.display = 'block';
+            });
+        }
+    };
+
+    for(var i = 0; i < propTabList.length; i++){
+        if ( propTabList[i].querySelector('.t-tit') != null ) {
+            propTabList[i].querySelector('.t-tit').addEventListener('click', function(e){
+                e.preventDefault();
+                for(var j = 0; j < propTabList.length; j++){
+                    // 나머지 버튼 클래스 제거
+                    propTabList[j].classList.remove('tab-h-on');
+
+                    // 나머지 컨텐츠 display:none 처리
+                    propContents[j].style.display = 'none';   
                 }
 
                 // 버튼 관련 이벤트
