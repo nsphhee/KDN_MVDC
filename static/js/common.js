@@ -105,8 +105,8 @@ $(document).ready(function() {
     const cmTabList = document.querySelectorAll('.cm-tab-default .tab-h-list li'); //홈,설정 탭
     const cmContents = document.querySelectorAll('.cm-tab-cont .tab-c-item'); //홈,설정 탭
 
-    const cMidTabList = document.querySelectorAll('.c-mid-tab-default .tab-h-list li'); //홈,설정 탭
-    const cMidContents = document.querySelectorAll('.c-mid-tab-cont .tab-c-item'); //홈,설정 탭
+    const cMidTabList = document.querySelectorAll('.c-mid-tab-default .tab-h-list .swiper-slide'); //가운데 영역 컨텐츠 탭
+    const cMidContents = document.querySelectorAll('.c-mid-tab-cont .tab-c-item'); //가운데 영역 컨텐츠  탭
 
     const componentTabList = document.querySelectorAll('.component-tab-default .tab-h-list li'); //계통도 컴포넌트 탭
     const componentContents = document.querySelectorAll('.component-tab-cont .tab-c-item'); //계통도 컴포넌트 탭
@@ -180,7 +180,8 @@ $(document).ready(function() {
                 // 버튼 클릭시 컨텐츠 전환
                 activeCont = this.getAttribute('href');
                 document.querySelector(activeCont).style.display = 'block';
-            });
+            });           
+   
         }
     };
 

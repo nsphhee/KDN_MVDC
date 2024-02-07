@@ -277,24 +277,24 @@
  }
  
  .tui-tree-subtree .tui-tree-content-wrapper {
-   padding-left: 30px;
+   padding-left: 28px;
  }
  
  .tui-tree-subtree .tui-tree-subtree .tui-tree-content-wrapper {
-   padding-left: 44px;
+   padding-left: 48px;
  }
  
  .tui-tree-subtree .tui-tree-subtree .tui-tree-subtree .tui-tree-content-wrapper {
-   padding-left: 64px;
+   padding-left: 68px;
  }
  
  
 .tui-tree-subtree .tui-tree-subtree .tui-tree-subtree .tui-tree-subtree .tui-tree-content-wrapper {
-  padding-left: 82px;
+  padding-left: 90px;
 }
 
 .tui-tree-subtree .tui-tree-subtree .tui-tree-subtree .tui-tree-subtree .tui-tree-subtree .tui-tree-content-wrapper {
-  padding-left: 106px;
+  padding-left: 108px;
 }
 
 
