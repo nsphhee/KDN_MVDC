@@ -22,7 +22,7 @@
         <script src="../../static/js/swiper/swiper-bundle.min.js"></script>
         <script src="../../static/js/tui/tui-context-menu.js"></script>
         <script src="../../static/js/tui/tui-tree.js"></script>
-        <script src="../../static/js/common.js"></script>
+        <script src="../../static/js/common_design.js"></script>
         <script src="../../static/js/tree-menu.js"></script>
     </head>
     <body class="scroll">  
@@ -39,10 +39,10 @@
                                 </div>
                                 <div class="top-mid header-item">
                                     <div class="all-menu-wrap">
-                                        <a href="" class="btn all-menu btn-type01">모든메뉴</a>
+                                        <button class="btn all-menu btn-type01"><span>모든메뉴</span></button> <!-- 현재와 같은 방식으로 보여줄지 모달로 띄울지 고민 -->
                                     </div>
                                     <div class="info-list">
-                                        <span class="info-ip nw-good">localhost:8070</span> <!-- 상태값 확인필요 -->
+                                        <span class="info-ip nw-good">localhost:8070</span> <!-- 상태값 확인필요 / 상태값별 포인트 컬러 변경 -->
                                         <span class="info-date">2024-01-01 13:35:15</span>
                                         <span class="info-paths ellipsis">편집도구 > SCL저작도구(KGRID.MG.ENG.Editor.SCL.View.SclEditor)</span>
                                     </div>
@@ -144,11 +144,9 @@
                                             </div>
                                         </div>                         
                                     </div>    
-                                </div>                             
-                             
+                                </div>                  
                                 <div class="swiper-scrollbar"></div>
                             </div>   
-   
                         </div>
                     </nav>        
                     <!-- left-nav :e -->
@@ -160,6 +158,7 @@
                             <div class="stab-menu-wrap">
                                 <div class="stab-menu-inner">
                                     <a href="" class="go-main-btn"><span class="dis-none">메인</span></a> <!-- 선택시 on 추가 -->
+                                    <!-- stab-menu-list :s -->
                                     <div class="swiper stab-menu-list"> 
                                         <div class="swiper-wrapper"> 
                                             <div class="swiper-slide"><a href="" class="stab-menu-item on"><span>SCL저작도구</span></a><button class="stab-close"><span class="dis-none">닫기</span></button></div> <!-- 선택시 on 추가 -->
@@ -167,6 +166,7 @@
                                         </div>                                        
                                         <div class="swiper-scrollbar"></div>
                                     </div> 
+                                    <!-- stab-menu-list :e -->
                                 </div>
                             </div>
                             <!-- stab-menu-wrap :e -->
@@ -177,22 +177,22 @@
                                     <!-- scl-box :s -->
                                     <div class="contain-box scl-box scroll">
                                         <div class="contain-box-inner scl-box-inner">
-                                            <!-- contain top :s -->
+                                            <!-- contain title top :s -->
                                             <div class="c-top-wrap">
                                                 <div class="c-top-inner">
                                                     <p><span>SCL저작도구</span><span>편집도구</span></p>
                                                 </div>
                                             </div>
-                                            <!-- contain top :e -->
+                                            <!-- contain title top :e -->
                                             <!-- contain main :s -->
                                             <div class="c-main-wrap">
                                                 <div class="c-main-inner">
-                                                    <!-- scl home/setting :s -->
+                                                    <!-- scl 홈/설정 :s -->
                                                     <div class="c-main-top-wrap">
                                                         <div class="c-main-top-inner">
-
-                                                            <!-- 툴 탭 컨텐츠 :s -->
+                                                            <!-- tool tab :s -->
                                                             <div class="tab-wrap">
+                                                                
                                                                 <!-- tab head :s -->
                                                                 <div class="tab-head-type02 cm-tab-default">
                                                                     <ul class="tab-h-list">                              
@@ -304,8 +304,7 @@
                                                                             </div>
                                                                         </div>
                                                                     </div>
-                                                                    <!-- tab1 :e -->
-                                    
+                                                                    <!-- tab1 :e -->                                    
                                                                     <!-- tab2:s -->
                                                                     <div class="tab-c-item" id="cmTab2">
                                                                         <div class="tab-c-item-wrap">
@@ -419,17 +418,16 @@
                                                                             </div>
                                                                         </div>
                                                                     </div>
-                                                                    <!-- tab2:e -->
-                                    
-                                                                </div>
-                                    
+                                                                    <!-- tab2:e -->                                    
+                                                                </div>                                    
                                                                 <!-- tab cont :e -->
+
                                                             </div>  
-                                                            <!-- 툴 탭 컨텐츠 :e -->
+                                                            <!-- tool tab :e -->
                                                             <button class="btn-display"><span class="dis-none">숨김/펼침</span></button> <!-- btn-display : cm-tab-cont 보임  / btn-display-none : cm-tab-cont 숨김 -->
                                                         </div>
                                                     </div>                                                    
-                                                    <!-- scl home/setting :e -->
+                                                    <!-- scl 홈/설정 :e -->
                                                     
                                                     <!-- scl cont :s -->
                                                     <div class="c-main-cont-wrap scl-cont-wrap">
@@ -464,12 +462,12 @@
                                                                         <!-- tab head :s -->
                                                                         <div class="swiper c-mid-tab-head c-mid-tab-default">
                                                                             <div class="swiper-wrapper tab-h-list">
-                                                                                <div class="swiper-slide r-area-open"><!-- 계통도 탭 선택시 우측 영역 펼침 r-area-open 추가(우측열림) / 다른 탭 선택 시 r-area-open 삭제(우측닫힘)-->
+                                                                                <div class="swiper-slide tab-h-on r-area-open"><!-- 계통도 탭 선택시 우측 영역 펼침 r-area-open 추가(우측열림) / 다른 탭 선택 시 r-area-open 삭제(우측닫힘)-->
                                                                                     <a href="#cMidTab1" class="t-tit">
                                                                                         계통도
                                                                                     </a>
                                                                                 </div>
-                                                                                <div class="swiper-slide tab-h-on">
+                                                                                <div class="swiper-slide">
                                                                                     <a href="#cMidTab2" class="t-tit">
                                                                                         통신설정
                                                                                         </a>
@@ -492,16 +490,18 @@
                                                                         <!-- tab cont :s -->
                                                                         <div class="tab-cont-type03 c-mid-tab-cont">
                                                                             <!-- tab1 :s -->
-                                                                            <div class="tab-c-item cm-scroll" id="cMidTab1">
+                                                                            <div class="tab-c-item cm-scroll" id="cMidTab1" style="display: block;">
                                                                                 <div class="tab-c-item-wrap">
                                                                                     <div class="tab-c-item-inner">
-                                                                                        계통도 영역
+                                                                                        <div class="no-area-info"> <!-- 영역설명 -->
+                                                                                            <span>계통도 영역</span>
+                                                                                        </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
                                                                             <!-- tab1 :e -->
                                                                             <!-- tab2 :s -->
-                                                                            <div class="tab-c-item cm-scroll" id="cMidTab2" style="display: block;">
+                                                                            <div class="tab-c-item cm-scroll" id="cMidTab2">
                                                                                 <div class="tab-c-item-wrap">
                                                                                     <div class="tab-c-item-inner">  
 
@@ -712,7 +712,9 @@
                                                                                                                 </div>
                                                                                                                 <div class="grid-table-wrap cm-scroll">
                                                                                                                     <div class="grid-table-inner">
-                                                                                                                        grid-table 영역
+                                                                                                                        <div class="no-area-info"> <!-- 영역설명 -->
+                                                                                                                            <span>grid-table 영역</span>
+                                                                                                                        </div>                                                                                                                   
                                                                                                                     </div>
                                                                                                                 </div>
                                                                                                             </div>                                                                                                      

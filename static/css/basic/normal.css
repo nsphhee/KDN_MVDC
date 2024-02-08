@@ -82,39 +82,31 @@
 /* 스크롤바 뒷 배경 설정*/
 .scroll::-webkit-scrollbar-track{background-color:var(--scroll-bg01);}
 
-
-/* 스크롤바 설정*/
+/* 컨텐츠영역 스크롤*/
 #tree::-webkit-scrollbar,
 .cm-scroll::-webkit-scrollbar{width:6px; height:6px;} 
-/* 스크롤바 막대 설정*/
 #tree::-webkit-scrollbar-thumb,
-.cm-scroll::-webkit-scrollbar-thumb{height:20%; /*background-color: rgba(0,0,0,.4);*/  background-color: var(--scroll-bg02); border-radius: 10px;}
-/* 스크롤바 뒷 배경 설정*/
+.cm-scroll::-webkit-scrollbar-thumb{height:20%;  background-color: var(--scroll-bg02); border-radius: 10px;}
 #tree::-webkit-scrollbar-track,
-.cm-scroll::-webkit-scrollbar-track{/* background-color:rgba(0,0,0,.1); */ background-color:var(--scroll-bg01);}
+.cm-scroll::-webkit-scrollbar-track{background-color:var(--scroll-bg01);}
 
-
-/* 스크롤바 설정*/
+/* 스크롤 숨김 */
 .h-scroll::-webkit-scrollbar{width:0px; height:0px;}
-/* 스크롤바 막대 설정*/
 .h-scroll::-webkit-scrollbar-thumb{height:20%; background-color: var(--scroll-bg02); border-radius: 10px;}
-/* 스크롤바 뒷 배경 설정*/
 .h-scroll::-webkit-scrollbar-track{background-color:var(--scroll-bg01);}
 
-
-/* 스크롤바 설정*/
+/* 로그인 스크롤 */
 .layer-pop-bg::-webkit-scrollbar,
 .b-scroll::-webkit-scrollbar{width:8px; height:8px;}
-/* 스크롤바 막대 설정*/
 .layer-pop-bg::-webkit-scrollbar-thumb,
 .b-scroll::-webkit-scrollbar-thumb{height:20%; background-color: #aaaaaa; border-radius: 10px;}
-/* 스크롤바 뒷 배경 설정*/
 .layer-pop-bg::-webkit-scrollbar-track,
 .b-scroll::-webkit-scrollbar-track{background-color:#f5f5f5;}
 
-
+/* 레이어팝업 시 스크롤 숨기 */
 html:has(.scroll-off){overflow: hidden !important;}
 
+.no-area-info {display: flex; align-items: center; justify-content: center;}
 
 /* text */
 .fc-blue {color:var(--font-blue);}
@@ -500,6 +492,7 @@ input:read-only {background: #f0f0f0;}
 .c-main-mid-wrap:has(.r-area-open.tab-h-on) + .c-main-right-wrap {display: block;}
 
 /* tool-bar */
+.c-main-top-inner > .tab-wrap {position: relative; z-index: 11;}
 .tool-menu-wrap {height:4.0rem; background: var(--color-bg05);}
 .tool-menu-wrap.swiper {overflow: unset;}
 .tool-menu-inner > div {padding:0; display: flex;justify-content: flex-start; align-items: center; position: relative; width:calc(100% - 3.0rem); margin:0 auto; min-width:13.2rem;}
@@ -589,7 +582,7 @@ input:read-only {background: #f0f0f0;}
 .btn-box .tool-check:last-child,
 .btn-box .tool-select:last-child {margin-bottom: 0;}
 
-.tool-item label {color:var(--color-text06); opacity: 0.8;}
+.tool-item label {color:var(--color-text06); opacity: 0.8; width: auto !important; font-size: 1.3rem;}
 
 .tool-number > input {font-size:1.3rem; height: 2.6rem; width:8.0rem;}
 .tool-select > select {font-size:1.3rem; height: 2.6rem !important;}
@@ -770,7 +763,7 @@ input:read-only {background: #f0f0f0;}
 .prop-item:has(.more-item) + .prop-item-depth02 {display:none !important;}
 
 
-.c-main-right-inner .tab-wrap:has(> .tab-head-type04) {flex-direction: row; justify-content: space-between;}
+.c-main-right-inner .tab-wrap:has(> .tab-head-type04) {flex-direction: row-reverse;justify-content: space-between;}
 
 /* 통신설정, 지능형통신장치, 데이터 타입템플릿 */
 .c-main-mid-inner .c-mid-tab-cont .tab-c-item-inner > div,
@@ -886,7 +879,7 @@ button:hover.area-open:before {opacity: 1;}
 .tab-head-type03 > .tab-h-list li a:hover:before {z-index:10; display: block; width:100%; height:0.2rem; position: absolute; top:0; left:0; background: var(--border06);}
 
 
-.tab-head-type04 {margin:0;padding: 0.3rem 0 0.3rem 0.3rem;background: var(--color-bg01);border-radius: 0;}
+.tab-head-type04 {margin:0;padding: 0.3rem 0.3rem 0.3rem 0;background: var(--color-bg01);border-radius: 0;}
 .tab-head-type04 > .tab-h-list {display: flex; flex-direction: column; align-items: center;width: 100%;}
 .tab-head-type04 > .tab-h-list li {border-radius: 0; margin:0; text-align: center;}
 .tab-head-type04 > .tab-h-list li.tab-h-on {z-index: 9; position: relative;}
