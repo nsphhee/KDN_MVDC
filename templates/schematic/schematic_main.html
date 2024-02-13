@@ -552,165 +552,170 @@
                                                             <div class="c-main-right-wrap">
                                                                 <div class="c-main-right-inner">
 
-                                                                    <div class="component-wrap">
-                                                                        <div class="component-inner">
-                                                                            <!-- 계통도 컴포넌트 탭 컨텐츠 :s -->
+                                                                    <div class="scm-rtab-wrap">
+                                                                        <div class="scm-rtab-inner">
+                                                                            <!-- 계통설비 및 심볼 목록 탭 컨텐츠 :s -->
                                                                             <div class="tab-wrap">
                                                                                 <!-- tab head :s -->
-                                                                                <div class="tab-head-type03 component-tab-default">
+                                                                                <div class="tab-head-type03 r-tab-default">
                                                                                     <ul class="tab-h-list">                              
                                                                                         <li class="tab-h-on">
-                                                                                            <a href="#compTab1" class="t-tit">
-                                                                                            전력설비
+                                                                                            <a href="#rTab1" class="t-tit">
+                                                                                            계통설비 목록
                                                                                             </a>
                                                                                         </li> 
                                                                                         <li>
-                                                                                            <a href="#compTab2" class="t-tit">
-                                                                                            일반설비
+                                                                                            <a href="#rTab2" class="t-tit">
+                                                                                            심볼 목록
                                                                                             </a>
-                                                                                        </li>      
-                                                                                        <li>
-                                                                                            <a href="#compTab3" class="t-tit">
-                                                                                            배전설비
-                                                                                            </a>
-                                                                                        </li>                                    
+                                                                                        </li>                                        
                                                                                     </ul>
                                                                                 </div>    
                                                                                 <!-- tab head :e -->
 
                                                                                 <!-- tab cont :s -->
-                                                                                <div class="tab-cont-type03 component-tab-cont">
+                                                                                <div class="tab-cont-type03 r-tab-cont">
                                                                                     <!-- tab1 :s -->
-                                                                                    <div class="tab-c-item cm-scroll" id="compTab1" style="display: block;">
+                                                                                    <div class="tab-c-item cm-scroll" id="rTab1" style="display: block;">
                                                                                         <div class="tab-c-item-wrap">
                                                                                             <div class="tab-c-item-inner">
-                                                                                                <div class="component-list">
-                                                                                                    <div class="component-list-inner">
-                                                                                                        <button class="component-ltem" component-icon="component-ALTS"><span>ALTS</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-SVC"><span>SVC</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-JP"><span>분기점</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-FC"><span>연료전지</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-CAP"><span>캐패시터</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-SCS"><span>스테이션</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-BS"><span>버스바</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-CB"><span>차단기</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-CS"><span>개폐기4</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-CT"><span>컨버터</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-EES"><span>EES</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-CHP"><span>열병합</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-WT"><span>풍력</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-PV"><span>태양광</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-Generator"><span>디젤</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-Load"><span>수용가</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-PT"><span>변압기</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-PT3"><span>변압기3</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-Disconnector"><span>단로기</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-SW-M"><span>SW(M)</span></button>
+                                                                                                <div class="btn-area btn-col-2">
+                                                                                                    <button class="btn btn-type02">전체계통도 불러오기</button>
+                                                                                                    <button class="btn btn-type03">새로고침</button>
+                                                                                                </div>
+
+                                                                                                <div class="treemenu-wrap cm-scroll">       
+                                                                                                    
+                                                                                                    <div class="no-area-info"> <!-- 영역설명 -->
+                                                                                                        <span>계통설비 트리메뉴 영역</span>
                                                                                                     </div>
                                                                                                 </div>
+
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
                                                                                     <!-- tab1 :e -->
                                                                                     <!-- tab2 :s -->
-                                                                                    <div class="tab-c-item cm-scroll" id="compTab2">
+                                                                                    <div class="tab-c-item cm-scroll" id="rTab2">
                                                                                         <div class="tab-c-item-wrap">
                                                                                             <div class="tab-c-item-inner">
-                                                                                                <div class="component-list">
-                                                                                                    <div class="component-list-inner">
-                                                                                                        <button class="component-ltem" component-icon="component-ALK"><span>ALK</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-BP"><span>브라인 펌프</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-CTower"><span>냉각탑</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-CWPump"><span>냉각수 펌프</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-Dehumidifier"><span>제습기</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-Electrolyzer"><span>전해조</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-HP"><span>히트 펌프</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-HWP"><span>온수 펌프</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-PCV"><span>체크 밸브</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-PipeValve"><span>밸브</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-SDB"><span>스마트 분전</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-SO"><span>스마트 콘센트</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-DB"><span>분전반</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-PE4W"><span>4-Way 엘보</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-PE3W"><span>3-Way 엘보</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-Light"><span>조명</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-Machine"><span>기계류</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-HE"><span>열교환기</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-ST"><span>태양열</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-PEM"><span>PEM</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-H2P"><span>수소정제기</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-PWG"><span>순수물제조</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-Tank"><span>탱크</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-BOILER"><span>보일러</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-AC"><span>공조기</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-CHILLER"><span>냉각기</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-DC"><span>건조기</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-COMPRESSOR"><span>압축기</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-EF"><span>환풍기</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-WM"><span>세탁기</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-H2Tank"><span>수소탱크(예정)</span></button>
-                                                                                                    </div>
+
+                                                                                                <!-- 심볼목록 탭 :s -->                                                                                                
+                                                                                                <div class="tab-wrap">
+                                                                                                    
+                                                                                                    <!-- tab head :s -->
+                                                                                                    <div class="tab-head-type05 symbol-tab-default">
+                                                                                                        <ul class="tab-h-list">                              
+                                                                                                            <li class="tab-h-on">
+                                                                                                                <a href="#symbolTab1" class="t-tit" symbol-tab="symbol-tab-icon01" title="전력설비">
+                                                                                                                    <span>전력설비</span>
+                                                                                                                </a>
+                                                                                                            </li> 
+                                                                                                            <li>
+                                                                                                                <a href="#symbolTab2" class="t-tit" symbol-tab="symbol-tab-icon02" title="일반설비">
+                                                                                                                    <span>일반설비</span>                                                                                                                
+                                                                                                                </a>
+                                                                                                            </li>     
+                                                                                                            <li>
+                                                                                                                <a href="#symbolTab3" class="t-tit" symbol-tab="symbol-tab-icon03" title="컴포넌트">
+                                                                                                                    <span>컴포넌트</span>                                                                                                                
+                                                                                                                </a>
+                                                                                                            </li>                                     
+                                                                                                        </ul>
+                                                                                                    </div>    
+                                                                                                    <!-- tab head :e -->
+                                                                                
+                                                                                                    <!-- tab cont :s -->
+                                                                                                    <div class="tab-cont-type05 symbol-tab-cont cm-scroll">
+                                                                                                        <!-- tab1 :s -->
+                                                                                                        <div class="tab-c-item cm-scroll" id="symbolTab1" style="display: block;">
+                                                                                                            <div class="tab-c-item-wrap">
+                                                                                                                <div class="tab-c-item-inner">
+
+                                                                                                                    <div class="symbol-group symbol-g-open"> <!-- 심볼타이틀 클릭시 symbol-g-open 추가 -->
+                                                                                                                        <span class="symbol-g-tit">전력설비</span>
+                                                                                                                        <div class="symbol-list">
+                                                                                                                            <div class="symbol-list-inner">
+                                                                                                                                <button class="symbol-ltem" symbol-icon="symbol-ALTS"><span>ALTS</span></button>
+                                                                                                                                <button class="symbol-ltem" symbol-icon="symbol-ALTS"><span>ALTS</span></button>
+                                                                                                                                <button class="symbol-ltem" symbol-icon="symbol-ALTS"><span>ALTS</span></button>
+                                                                                                                                <button class="symbol-ltem" symbol-icon="symbol-ALTS"><span>ALTS</span></button>
+                                                                                                                                <button class="symbol-ltem" symbol-icon="symbol-ALTS"><span>ALTS</span></button>
+                                                                                                                            </div>
+                                                                                                                        </div>
+                                                                                                                    </div> 
+
+                                                                                                                    <div class="symbol-group">
+                                                                                                                        <span class="symbol-g-tit">전력설비2</span>
+                                                                                                                        <div class="symbol-list">
+                                                                                                                            <div class="symbol-list-inner">
+                                                                                                                                <button class="symbol-ltem" symbol-icon="symbol-ALTS"><span>ALTS</span></button>
+                                                                                                                                <button class="symbol-ltem" symbol-icon="symbol-ALTS"><span>ALTS</span></button>
+                                                                                                                                <button class="symbol-ltem" symbol-icon="symbol-ALTS"><span>ALTS</span></button>
+                                                                                                                                <button class="symbol-ltem" symbol-icon="symbol-ALTS"><span>ALTS</span></button>
+                                                                                                                                <button class="symbol-ltem" symbol-icon="symbol-ALTS"><span>ALTS</span></button>
+                                                                                                                            </div>
+                                                                                                                        </div>
+                                                                                                                    </div> 
+
+                                                                                                                    
+                                                                                                                    <div class="symbol-group">
+                                                                                                                        <span class="symbol-g-tit">전력설비3</span>
+                                                                                                                        <div class="symbol-list">
+                                                                                                                            <div class="symbol-list-inner">
+                                                                                                                                <button class="symbol-ltem" symbol-icon="symbol-ALTS"><span>ALTS</span></button>
+                                                                                                                                <button class="symbol-ltem" symbol-icon="symbol-ALTS"><span>ALTS</span></button>
+                                                                                                                                <button class="symbol-ltem" symbol-icon="symbol-ALTS"><span>ALTS</span></button>
+                                                                                                                                <button class="symbol-ltem" symbol-icon="symbol-ALTS"><span>ALTS</span></button>
+                                                                                                                                <button class="symbol-ltem" symbol-icon="symbol-ALTS"><span>ALTS</span></button>
+                                                                                                                            </div>
+                                                                                                                        </div>
+                                                                                                                    </div> 
+
+
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <!-- tab1 :e -->
+                                                                                                        
+                                                                                                        <!-- tab2 :s -->
+                                                                                                        <div class="tab-c-item cm-scroll" id="symbolTab2">
+                                                                                                            <div class="tab-c-item-wrap">
+                                                                                                                <div class="tab-c-item-inner">
+                                                                                                                    22
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <!-- tab2 :e -->
+
+                                                                                                        <!-- tab3 :s -->
+                                                                                                        <div class="tab-c-item cm-scroll" id="symbolTab3">
+                                                                                                            <div class="tab-c-item-wrap">
+                                                                                                                <div class="tab-c-item-inner">
+                                                                                                                    33
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <!-- tab3 :e -->
+
+                                                                                                    </div>                                                                                
+                                                                                                    <!-- tab cont :e -->
+
                                                                                                 </div>
+                                                                                                <!-- 심볼목록 탭 :e -->
+
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
                                                                                     <!-- tab2 :e -->
-                                                                                    <!-- tab3 :s -->
-                                                                                    <div class="tab-c-item cm-scroll" id="compTab3">
-                                                                                        <div class="tab-c-item-wrap">
-                                                                                            <div class="tab-c-item-inner">
-
-                                                                                                <div class="component-list">
-                                                                                                    <div class="component-list-inner">
-                                                                                                        <button class="component-ltem" component-icon="component-ALTS"><span>ALTS</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-BS"><span>버스바</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-CAP"><span>캐패시터</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-CHP"><span>열병합</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-CB"><span>차단기</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-RC4-A"><span>RC4(A)</span></button>                                                                                                        
-                                                                                                        <button class="component-ltem" component-icon="component-RC4-M"><span>RC4(M)</span></button>                                                                                                  
-                                                                                                        <button class="component-ltem" component-icon="component-RC3-M"><span>RC3(M)</span></button>                                                                                               
-                                                                                                        <button class="component-ltem" component-icon="component-RC3-A"><span>RC3(A)</span></button>                                                                                            
-                                                                                                        <button class="component-ltem" component-icon="component-SW3-M"><span>SW3(M)</span></button>                                                                                           
-                                                                                                        <button class="component-ltem" component-icon="component-SW3-A"><span>SW3(A)</span></button>                                                                                               
-                                                                                                        <button class="component-ltem" component-icon="component-SW6-M"><span>SW6(M)</span></button>                                                                                         
-                                                                                                        <button class="component-ltem" component-icon="component-SW6-A"><span>SW6(A)</span></button>                                                                                    
-                                                                                                        <button class="component-ltem" component-icon="component-SW4-M"><span>SW4(M)</span></button>                                                                                 
-                                                                                                        <button class="component-ltem" component-icon="component-SW4-A"><span>SW4(A)</span></button>                                                                                                        
-                                                                                                        <button class="component-ltem" component-icon="component-CT"><span>컨버터</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-COS"><span>COS</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-SW-M"><span>SW(M)</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-SW-A"><span>SW(A)</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-EES"><span>EES</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-SVC"><span>SVC</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-FC"><span>연료전지</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-Generator"><span>디젤</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-DER"><span>분산전원</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-DTR"><span>지상변압기</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-LoadL"><span>저압고객</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-LoadH"><span>고압고객</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-CP"><span>입상주</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-JP"><span>분기점</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-Load"><span>수용가</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-PT"><span>변압기</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-PT3"><span>변압기3</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-PV"><span>태양광</span></button>
-                                                                                                        <button class="component-ltem" component-icon="component-WT"><span>풍력</span></button>
-
-                                                                                                    </div>
-                                                                                                </div>
-
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <!-- tab3 :e -->
-
                                                                                 </div>
                                                                                 <!-- tab cont :e -->   
                                                                             </div>                                                                        
-                                                                            <!-- 계통도 컴포넌트 탭 컨텐츠 :e -->
+                                                                            <!-- 계통설비 및 심볼 목록 탭 컨텐츠 :e -->
                                                                         </div>
-                                                                    </div>
+                                                                    </div>                                                                    
+
+
                                                                     <div class="property-wrap">
                                                                         <div class="property-inner">
                                                                             <!-- 속성 탭 컨텐츠 :s -->

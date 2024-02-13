@@ -79,6 +79,8 @@ a {color:inherit; text-decoration:none; cursor:pointer;}
 .ellipsis-3 {white-space:inherit; overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-box-orient:vertical; word-wrap:break-word; word-break:keep-all; -webkit-line-clamp:3;}
 .ellipsis-4 {white-space:inherit; overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-box-orient:vertical; word-wrap:break-word; word-break:keep-all; -webkit-line-clamp:4;}
  
+.overflow-y {overflow-y: auto;}
+
 /* margin */
 .mtop0 {margin-top:0px !important;}
 .mtop5 {margin-top:5px !important;}
