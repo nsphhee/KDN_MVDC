@@ -3,54 +3,54 @@ $(document).ready(function() {
 
     // 계통설비 목록 
     var data = [
-        {text: '계통도', children: [
-            {text: 'VT1'},
-            {text: 'VT2', state: 'closed', children: [
-                {text:'BUS', children:[
-                    {text:'BUS1', state: 'closed', children: [                        
-                        {text:'TMI'},                        
-                        {text:'MMXU1'}
+        {text: '루트', children: [
+            {text: '메뉴2'},
+            {text: '메뉴2', state: 'closed', children: [
+                {text:'메뉴3', children:[
+                    {text:'메뉴4', state: 'closed', children: [                        
+                        {text:'메뉴5'},                        
+                        {text:'메뉴5'}
                     ]},
-                    {text:'BUS2', state: 'closed', children: [                        
-                        {text:'TMI'},                        
-                        {text:'MMXU1'}
+                    {text:'메뉴4', state: 'closed', children: [                        
+                        {text:'메뉴5'},                        
+                        {text:'메뉴5'}
                     ]},
-                    {text:'BUS3', state: 'closed', children: [                        
-                        {text:'TMI'},                        
-                        {text:'MMXU1'}
+                    {text:'메뉴4', state: 'closed', children: [                        
+                        {text:'메뉴5'},                        
+                        {text:'메뉴5'}
                     ]},
 
                 ]},
-                {text:'MWS', children:[
-                    {text:'MWS11', state: 'closed', children: [                        
-                        {text:'TMI'},                        
-                        {text:'MMXU1'}
+                {text:'메뉴3', children:[
+                    {text:'메뉴4', state: 'closed', children: [                        
+                        {text:'메뉴5'},                        
+                        {text:'메뉴5'}
                     ]},
-                    {text:'MWS22', state: 'closed', children: [                        
-                        {text:'TMI'},                        
-                        {text:'MMXU1'}
+                    {text:'메뉴4', state: 'closed', children: [                        
+                        {text:'메뉴5'},                        
+                        {text:'메뉴5'}
                     ]},
-                    {text:'MWS33', state: 'closed', children: [                        
-                        {text:'MWS33-11', state: 'closed', children: [                        
-                            {text:'TMI'},                        
-                            {text:'TMI'}
+                    {text:'메뉴4', state: 'closed', children: [                        
+                        {text:'메뉴5', state: 'closed', children: [                        
+                            {text:'메뉴6'},                        
+                            {text:'메뉴6'}
                         ]},                        
-                        {text:'MWS33-22'}
+                        {text:'메뉴5'}
                     ]},
 
                 ]},
-                {text:'BUS', children:[
-                    {text:'BUS1', state: 'closed', children: [                        
-                        {text:'TMI'},                        
-                        {text:'MMXU1'}
+                {text:'메뉴3', children:[
+                    {text:'메뉴4', state: 'closed', children: [                        
+                        {text:'메뉴5'},                        
+                        {text:'메뉴5'}
                     ]},
 
                 ]},
-                {text:'BUS2'}
+                {text:'메뉴3'}
             ]},
-            {text: 'ST1234'}
+            {text: '메뉴2'}
         ]},
-        {text : '테스트1 '},
+        {text : '테스트1'},
         {text : '테스트2'},
         {text : '테스트3'},
         {text : '테스트4'},

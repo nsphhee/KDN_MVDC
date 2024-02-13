@@ -38,9 +38,11 @@
                                     <p class="program-name">Engineering Tools - <span class="ellipsis">TK_VT2</span></p>
                                 </div>
                                 <div class="top-mid header-item">
-                                    <a href="" class="btn all-menu btn-type01">모든메뉴</a>
+                                    <div class="all-menu-wrap">
+                                        <button class="btn all-menu btn-type01"><span>모든메뉴</span></button> <!-- 현재와 같은 방식으로 보여줄지 모달로 띄울지 고민 -->
+                                    </div>
                                     <div class="info-list">
-                                        <span class="info-ip nw-good">localhost:8070</span> <!-- 상태값 확인필요 -->
+                                        <span class="info-ip nw-good">localhost:8070</span> <!-- 상태값 확인필요 / 상태값별 포인트 컬러 변경 -->
                                         <span class="info-date">2024-01-01 13:35:15</span>
                                         <span class="info-paths ellipsis">편집도구 > SCL저작도구(KGRID.MG.ENG.Editor.SCL.View.SclEditor)</span>
                                     </div>
@@ -72,9 +74,9 @@
                         <div class="swiper-scrollbar"></div>
                     </div>  
                 </div>
-            </header>
+            </header>              
             <!-- header :e -->  
-              
+
             <!-- main :s -->
             <main id="main">     
                 <div id="main-wrap">
@@ -172,9 +174,9 @@
                             <!-- contain-wrap :s -->
                             <div class="contain-wrap">
                                 <div class="contain-inner">
-                                    <!-- scl-box :s -->
-                                    <div class="contain-box scl-box scroll">
-                                        <div class="contain-box-inner scl-box-inner">
+                                    <!-- scm-box :s -->
+                                    <div class="contain-box scm-box scroll">
+                                        <div class="contain-box-inner scm-box-inner">
                                             <!-- contain top :s -->
                                             <div class="c-top-wrap">
                                                 <div class="c-top-inner">
@@ -185,7 +187,7 @@
                                             <!-- contain main :s -->
                                             <div class="c-main-wrap">
                                                 <div class="c-main-inner">
-                                                    <!-- schematic home/setting :s -->
+                                                    <!-- 화면저작도구 홈/설정 :s -->
                                                     <div class="c-main-top-wrap">
                                                         <div class="c-main-top-inner">
 
@@ -214,7 +216,6 @@
                                                                     <div class="tab-c-item" id="cmTab1" style="display: block;">
                                                                         <div class="tab-c-item-wrap">
                                                                             <div class="tab-c-item-inner">
-
 
                                                                                 <div class="swiper tool-menu-wrap">
                                                                                     <div class="swiper-wrapper tool-menu-inner">
@@ -314,8 +315,7 @@
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="swiper-scrollbar"></div>
-                                                                                </div> 
-                                                                                
+                                                                                </div>                                                                                 
 
                                                                             </div>
                                                                         </div>
@@ -445,36 +445,123 @@
                                                             <button class="btn-display"><span class="dis-none">숨김/펼침</span></button> <!-- btn-display : cm-tab-cont 보임  / btn-display-none : cm-tab-cont 숨김 -->
                                                         </div>
                                                     </div>                                                    
-                                                    <!-- schematic home/setting :e -->
+                                                    <!-- 화면저작도구 홈/설정 :e -->
                                                     
-                                                    <!-- scl cont :s -->
-                                                    <div class="c-main-cont-wrap scl-cont-wrap">
-                                                        <div class="c-main-cont-inner scl-cont-inner">
-                                                            <!-- scl left area :s -->
-                                                            <div class="c-main-left-wrap">
-                                                                <div class="c-main-left-inner">좌측</div>
+                                                    <!-- scm cont :s -->
+                                                    <div class="c-main-cont-wrap scm-cont-wrap">
+                                                        <div class="c-main-cont-inner scm-cont-inner">
+                                                            <!-- scm left area :s -->
+                                                            <div class="c-main-left-wrap"> <!-- 접혔을때 left-close 추가 -->
+                                                                <div class="c-main-left-inner">
+
+                                                                    <div class="cm-lnb-wrap">
+                                                                        <div class="cm-lnb-inner">
+                                                                            <div class="cm-left-top">
+                                                                                <span>화면파일 목록</span>
+                                                                                <button class="area-hide"><span class="dis-none">접기</span></button> <!-- 접혀있을때 area-open / 펼쳐있을때 area-hide -->
+                                                                            </div>
+                                                                            <div class="cm-left-cont">   
+                                                                                <div class="cm-left-cont-inner">
+                                                                                    <div id="tree" class="tui-tree-wrap"></div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
                                                             </div>
-                                                            <!-- scl left area :e -->
+                                                            <!-- scm left area :e -->
                                                             
-                                                            <!-- scl mid area :s -->
+                                                            <!-- scm mid area :s -->
                                                             <div class="c-main-mid-wrap">
-                                                                <div class="c-main-mid-inner">중앙</div>
+                                                                <div class="c-main-mid-inner">
+
+                                                                    <!-- 화면파일 탭 컨텐츠 :s -->
+                                                                    <div class="tab-wrap">
+                                                                        <!-- tab head :s -->
+                                                                        <div class="swiper c-mid-tab-head c-mid-tab-default">
+                                                                            <div class="swiper-wrapper tab-h-list">
+                                                                                <div class="swiper-slide tab-h-on r-area-open"><!-- 화면저작도구화면에선 r-area-open 디폴트 -->
+                                                                                    <a href="#cMidTab1" class="t-tit">
+                                                                                        NajuDiagram1
+                                                                                    </a>
+                                                                                    <button class="ctab-close"><span class="dis-none">닫기</span></button> <!-- 해당 탭 닫기 / 탭 닫히면 탭컨텐츠도 같이 닫힘 -->
+                                                                                </div>
+                                                                                <div class="swiper-slide r-area-open">
+                                                                                    <a href="#cMidTab2" class="t-tit">
+                                                                                        NajuDiagram2
+                                                                                    </a>
+                                                                                    <button class="ctab-close"><span class="dis-none">닫기</span></button> <!-- 해당 탭 닫기 / 탭 닫히면 탭컨텐츠도 같이 닫힘 -->
+                                                                                </div>
+                                                                                <div class="swiper-slide r-area-open">
+                                                                                    <a href="#cMidTab3" class="t-tit">
+                                                                                        NajuDiagram3
+                                                                                    </a>
+                                                                                    <button class="ctab-close"><span class="dis-none">닫기</span></button> <!-- 해당 탭 닫기 / 탭 닫히면 탭컨텐츠도 같이 닫힘 -->
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="swiper-scrollbar"></div>
+                                                                        </div>
+                                                                        <!-- tab head :e -->
+
+                                                                        <!-- tab cont :s -->
+                                                                        <div class="tab-cont-type03 c-mid-tab-cont">
+                                                                            <!-- tab1 :s -->
+                                                                            <div class="tab-c-item cm-scroll" id="cMidTab1" style="display: block;">
+                                                                                <div class="tab-c-item-wrap">
+                                                                                    <div class="tab-c-item-inner">
+                                                                                        <div class="no-area-info"> <!-- 영역설명 -->
+                                                                                            <span>NajuDiagram1 영역</span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <!-- tab1 :e -->
+                                                                            <!-- tab2 :s -->
+                                                                            <div class="tab-c-item cm-scroll" id="cMidTab2">
+                                                                                <div class="tab-c-item-wrap">
+                                                                                    <div class="tab-c-item-inner">
+                                                                                        <div class="no-area-info"> <!-- 영역설명 -->
+                                                                                            <span>NajuDiagram2 영역</span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <!-- tab2 :e -->
+                                                                            <!-- tab2 :s -->
+                                                                            <div class="tab-c-item cm-scroll" id="cMidTab3">
+                                                                                <div class="tab-c-item-wrap">
+                                                                                    <div class="tab-c-item-inner">
+                                                                                        <div class="no-area-info"> <!-- 영역설명 -->
+                                                                                            <span>NajuDiagram3 영역</span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <!-- tab2 :e -->
+
+                                                                        </div>
+                                                                        <!-- tab cont :e -->   
+                                                                    </div>                                                                        
+                                                                    <!-- 화면파일 탭 컨텐츠 :s -->
+
+                                                                </div>
                                                             </div>
-                                                            <!-- scl mid area :e -->
-                                                            <!-- scl right area :e -->
+                                                            <!-- scm mid area :e -->
+                                                            <!-- scm right area :e -->
                                                             <div class="c-main-right-wrap">
                                                                 <div class="c-main-right-inner">우측</div>
                                                             </div>
-                                                            <!-- scl right area :e -->
+                                                            <!-- scm right area :e -->
                                                         </div>
                                                     </div>
-                                                    <!-- scl cont :e -->
+                                                    <!-- scm cont :e -->
                                                 </div>
                                             </div>                                            
-                                            <!-- scl main :e -->
+                                            <!-- contain main :e -->
                                         </div>
                                     </div>                                    
-                                    <!-- scl-box :e -->
+                                    <!-- scm-box :e -->
                                 </div>
                             </div>                            
                             <!-- contain-wrap :e -->
@@ -550,6 +637,25 @@
              el: ".swiper-scrollbar",
              },
         });  
+
+        
+        new Swiper(".c-mid-tab-default", {
+            direction: 'horizontal',
+            slidesPerView: "auto",
+            spaceBetween: 0,
+            mousewheel: true,
+            observer: true,	
+            observeParents: true,	
+            freeMode: {
+                enabled: true,
+                sticky: true,
+            },        
+            scrollbar: {
+             el: ".swiper-scrollbar",
+             },
+        });  
+
+
 
     </script>
 </html>
