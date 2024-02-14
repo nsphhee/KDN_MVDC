@@ -698,12 +698,12 @@ input:read-only {background: #f0f0f0;}
 [component-icon=component-LoadH]:before {background: url(../../images/component/supply/PNG/LoadH.png)no-repeat center center; background-size:contain;}
 [component-icon=component-CP]:before {background: url(../../images/component/supply/PNG/CablePole.png)no-repeat center center; background-size:contain;}
 
-[component-icon=component-BG]:before {background: url(../../images/component/gauge/PNG/BarGauge.png)no-repeat center center; background-size:contain;}
-[component-icon=component-EESCG]:before {background: url(../../images/component/gauge/PNG/EESChargeGauge.png)no-repeat center center; background-size:contain;}
-[component-icon=component-HLG]:before {background: url(../../images/component/gauge/PNG/HLinearGauge.png)no-repeat center center; background-size:contain;}
-[component-icon=component-RG]:before {background: url(../../images/component/gauge/PNG/RadialGauge.png)no-repeat center center; background-size:contain;}
-[component-icon=component-SRG]:before {background: url(../../images/component/gauge/PNG/SemiRadialGauge.png)no-repeat center center; background-size:contain;}
-[component-icon=component-VG]:before {background: url(../../images/component/gauge/PNG/VLinearGauge.png)no-repeat center center; background-size:contain;}
+[component-icon=component-BG]:before {background: url(../../images/component/gauge/png/BarGauge.png)no-repeat center center; background-size:contain;}
+[component-icon=component-EESCG]:before {background: url(../../images/component/gauge/png/EESChargeGauge.png)no-repeat center center; background-size:contain;}
+[component-icon=component-HLG]:before {background: url(../../images/component/gauge/png/HLinearGauge.png)no-repeat center center; background-size:contain;}
+[component-icon=component-RG]:before {background: url(../../images/component/gauge/png/RadialGauge.png)no-repeat center center; background-size:contain;}
+[component-icon=component-SRG]:before {background: url(../../images/component/gauge/png/SemiRadialGauge.png)no-repeat center center; background-size:contain;}
+[component-icon=component-VG]:before {background: url(../../images/component/gauge/png/VLinearGauge.png)no-repeat center center; background-size:contain;}
 
 
 
