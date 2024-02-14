@@ -436,7 +436,7 @@ input:read-only {background: #f0f0f0;}
 .mm-unit:has([main-menu=meta]) { height:14.0rem; margin-bottom:1.2rem;}
 .mm-unit:has([main-menu=ems]) { height:64.4rem; margin-bottom:1.2rem;}
 
-[main-menu=batch]:after,
+
 [main-menu=user]:after,
 [main-menu=code]:after,
 [main-menu=noti]:after,
