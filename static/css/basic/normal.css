@@ -698,6 +698,15 @@ input:read-only {background: #f0f0f0;}
 [component-icon=component-LoadH]:before {background: url(../../images/component/supply/png/LoadH.png)no-repeat center center; background-size:contain;}
 [component-icon=component-CP]:before {background: url(../../images/component/supply/png/CablePole.png)no-repeat center center; background-size:contain;}
 
+[component-icon=component-BG]:before {background: url(../../images/component/gauge/png/BarGauge.png)no-repeat center center; background-size:contain;}
+[component-icon=component-EESCG]:before {background: url(../../images/component/gauge/png/EESChargeGauge.png)no-repeat center center; background-size:contain;}
+[component-icon=component-HLG]:before {background: url(../../images/component/gauge/png/HLinearGauge.png)no-repeat center center; background-size:contain;}
+[component-icon=component-RG]:before {background: url(../../images/component/gauge/png/RadialGauge.png)no-repeat center center; background-size:contain;}
+[component-icon=component-SRG]:before {background: url(../../images/component/gauge/png/SemiRadialGauge.png)no-repeat center center; background-size:contain;}
+[component-icon=component-VG]:before {background: url(../../images/component/gauge/png/VLinearGauge.png)no-repeat center center; background-size:contain;}
+
+
+
 
 /* 계통설비 및 심볼 */
 .scm-rtab-wrap {height:56%;}
@@ -733,8 +742,6 @@ input:read-only {background: #f0f0f0;}
 .symbol-ltem:after {display: block;width: 6.6rem;height: 6.6rem;background-color: var(--color-bg04);border-radius: 6px;border:1px solid transparent;box-sizing: border-box;}
 .symbol-ltem:hover:after {background-color:var(--color-hover-bg02); border:1px solid var(--border06)}
 .symbol-ltem:before {display: block;width: 4.2rem;height: 4.2rem;position: absolute;top: 1.3rem;left: 1.3rem;z-index: 11;}
-
-[symbol-icon=symbol-ALTS]:before {background: url(../../images/component/supply/png/CablePole.png)no-repeat center center; background-size:contain;}
 
 
 /* 속성 */
