@@ -911,15 +911,15 @@ input:read-only {background: #f0f0f0;}
 
 /* toast ui grid */
 .contain-wrap .tui-grid-rside-area {width:100%;}
-.contain-wrap .tui-grid-header-area {background-color: var(--color-bg04) !important;border-color: var(--border05) !important;}
+.contain-wrap .tui-grid-header-area {background-color: var(--color-bg04) !important;border-color: var(--border04) !important;}
 .contain-wrap .tui-grid-cell-header.tui-grid-cell-selected {background-color: var(--color-bg04) !important;}
 .contain-wrap .tui-grid-content-area {border-color: var(--border05) !important}
 .contain-wrap .tui-grid-body-area {background-color: transparent !important;border-color: var(--border05) !important;}
-.contain-wrap .tui-grid-cell {background-color: transparent !important; color:var(--color-text05) !important; border-color: var(--border03) !important;}
+.contain-wrap .tui-grid-cell {background-color: transparent !important;color:var(--color-text05) !important;border-color: var(--border04) !important;}
 .contain-wrap th.tui-grid-cell {font-weight: 500;}
 .contain-wrap .tui-grid-no-scroll-x .tui-grid-border-line-bottom {border-bottom: 1px solid  var(--border05) !important;}
 .contain-wrap .tui-grid-border-line-bottom {border-bottom: 1px solid  var(--border05) !important;}
-.contain-wrap .tui-grid-border-line-top {border-top: 1px solid  var(--border05) !important;}
+.contain-wrap .tui-grid-border-line-top {border-top: 2px solid  var(--border05) !important;}
 .contain-wrap .tui-grid-cell input[type="checkbox"] {vertical-align:middle; width:1.6rem; height:1.6rem; margin:0; opacity:.9; -webkit-appearance:auto; border:transparent}
 .contain-wrap .tui-grid-cell input[type="checkbox"]:checked {opacity:1; accent-color:var(--border06);}
 .contain-wrap .tui-grid-layer-editing {background: transparent !important;}
