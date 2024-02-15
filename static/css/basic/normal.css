@@ -457,8 +457,8 @@ input:read-only {background: #f0f0f0;}
 .c-top-wrap {background: var(--color-bg06);height: 4.4rem;line-height: 4.4rem;}
 .c-top-wrap .c-top-inner {padding:0 2.0rem;}
 .c-top-wrap .c-top-inner > p {display: flex; align-items: center; justify-content: flex-start;}
-.c-top-wrap .c-top-inner > p > span:first-child {font-weight: 600; margin-right:1.2rem}
-.c-top-wrap .c-top-inner > p > span:last-child {font-size:1.4rem;}
+.c-top-wrap .c-top-inner > p > span:nth-child(1) {font-weight: 500; margin-right:1.2rem}
+.c-top-wrap .c-top-inner > p > span:nth-child(2) {font-size:1.4rem;}
 .c-main-cont-wrap {width:100%;height: calc(100% - 7.2rem);flex-grow: 1;}
 .c-main-cont-wrap .c-main-cont-inner {display: flex;justify-content: flex-start;width:100%;border: 2px solid var(--border00); border-bottom:none; height: 100%; box-sizing: border-box;}
 
