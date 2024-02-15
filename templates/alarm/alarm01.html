@@ -16,14 +16,12 @@
         <link media="all" rel="stylesheet" href="../../static/css/font.css">  
         <link media="all" rel="stylesheet" href="../../static/css/basic/normal.css">         
         <link media="all" rel="stylesheet" href="../../static/js/swiper/swiper-bundle.min.css">  
-        <link media="all" rel="stylesheet" href="../../static/js/tui/tui-context-menu.css">
-        <link media="all" rel="stylesheet" href="../../static/js/tui/tui-tree.css">
+        <link media="all" rel="stylesheet" href="../../static/js/grid/tui-grid.css" />
         <script src="../../static/js/jquery-3.7.0.min.js"></script>
         <script src="../../static/js/swiper/swiper-bundle.min.js"></script>
-        <script src="../../static/js/tui/tui-context-menu.js"></script>
-        <script src="../../static/js/tui/tui-tree.js"></script>
         <script src="../../static/js/common_design.js"></script>
-        <script src="../../static/js/tree-menu.js"></script>
+        <script src="../../static/js/grid/tui-grid.js"></script>
+        <script src="../../static/js/grid-table.js"></script>
     </head>
     <body class="scroll">  
         <div id="wrap">
@@ -161,8 +159,7 @@
                                     <!-- stab-menu-list :s -->
                                     <div class="swiper stab-menu-list"> 
                                         <div class="swiper-wrapper"> 
-                                            <div class="swiper-slide"><a href="" class="stab-menu-item on"><span>SCL저작도구</span></a><button class="stab-close"><span class="dis-none">닫기</span></button></div> <!-- 선택시 on 추가 -->
-                                            <div class="swiper-slide"><a href="" class="stab-menu-item"><span>화면저작도구</span></a><button class="stab-close"><span class="dis-none">닫기</span></button></div> 
+                                            <div class="swiper-slide"><a href="" class="stab-menu-item on"><span>알람 카테고리 관리</span></a><button class="stab-close"><span class="dis-none">닫기</span></button></div> <!-- 선택시 on 추가 -->
                                         </div>                                        
                                         <div class="swiper-scrollbar"></div>
                                     </div> 
@@ -187,16 +184,70 @@
                                             <!-- contain main :s -->
                                             <div class="c-main-wrap">
                                                 <div class="c-main-inner">
-
                                                     
-                                                    <!-- scl cont :s -->
-                                                    <div class="c-main-cont-wrap alarm-cont-wrap">
-                                                        <div class="c-main-cont-inner alarm-cont-inner">
+                                                    <!-- main cont :s -->
+                                                    <div class="c-main-cont-wrap table-cont-wrap">
+                                                        <div class="c-main-cont-inner table-cont-inner">
+                                                            
+                                                            <!-- contain top search :s -->
+                                                            <div class="c-top-search-wrap">
+                                                                <div class="c-top-search-inner">
+                                                                    <div class="c-top-search-input">
+                                                                        <label for="">알람 카테고리명</label>
+                                                                        <input type="text" id="" class="input-type02" placeholder="검색어를 입력하세요.">
+                                                                        <button class="search-btn"><span class="dis-none">검색</span></button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- contain top search :e -->                                                        
 
-                                                            123
+                                                            <!-- contain top btn :s -->
+                                                            <div class="c-top-btn-wrap">
+                                                                <button class="btn btn-gradation">신규</button>
+                                                                <button class="btn btn-type04">삭제</button>
+                                                                <button class="btn btn-type05">저장</button>
+                                                            </div>
+                                                            <!-- contain top btn :e -->
+
+                                                            <div class="c-cont-wrap">
+                                                                <div class="c-cont-inner">
+                                                                    <div class="c-cont-title">
+                                                                        <span>알람 카테고리 목록</span>
+                                                                    </div>
+
+                                                                    <div class="c-cont-box cm-scroll">
+                                                                        <div class="c-cont-box-inner">
+                                                                            <div id="grid"></div>
+                                                                        </div>
+                                                                        
+                                                                    </div>
+
+                                                                    <div class="c-cont-paging">
+                                                                        <div class="pagination">       
+                                                                            <span class="prev-group">
+                                                                                <a class="page-first" href="" onclick="" onkeypress=""><span class="dis-none">처음 페이지로 이동</span></a>
+                                                                                <a class="page-prev" href="" onclick="" onkeypress=""><span class="dis-none">이전 페이지로 이동</span></a>
+                                                                            </span>
+                                                                            <a class="on" href="" onclick="" onkeypress="">1</a><a href="=" onclick="" onkeypress="">2</a><a href="=" onclick="" onkeypress="">3</a><a href="=" onclick="" onkeypress="">4</a><a href="=" onclick="" onkeypress="">5</a>
+                                                                            <span class="next-group">
+                                                                                <a class="page-next" href="" onclick="" onkeypress=""><span class="dis-none">다음 페이지로 이동</span></a>
+                                                                                <a class="page-end" href="" onclick="" onkeypress=""><span class="dis-none">마지막 페이지로 이동</span></a>
+                                                                            </span>                
+                                                                        </div>
+
+                                                                        <div class="page-go">
+                                                                            <label for="PageNumInput">Page</label>
+                                                                            <input id="PageNumInput" type="number" value="1" class="input-type01">
+                                                                            <span>of 4</span>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+
                                                         </div>
                                                     </div>
-                                                    <!-- scl cont :e -->
+                                                    <!-- main cont :e -->
                                                 </div>
                                             </div>                                            
                                             <!-- contain main :e -->
@@ -295,7 +346,6 @@
              el: ".swiper-scrollbar",
              },
         });  
-
 
     </script>
 </html>
