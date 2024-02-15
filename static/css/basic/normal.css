@@ -916,6 +916,7 @@ input:read-only {background: #f0f0f0;}
 .contain-wrap .tui-grid-content-area {border-color: var(--border05) !important}
 .contain-wrap .tui-grid-body-area {background-color: transparent !important;border-color: var(--border05) !important;}
 .contain-wrap .tui-grid-cell {background-color: transparent !important; color:var(--color-text05) !important; border-color: var(--border03) !important;}
+.contain-wrap th.tui-grid-cell {font-weight: 500;}
 .contain-wrap .tui-grid-no-scroll-x .tui-grid-border-line-bottom {border-bottom: 1px solid  var(--border05) !important;}
 .contain-wrap .tui-grid-border-line-bottom {border-bottom: 1px solid  var(--border05) !important;}
 .contain-wrap .tui-grid-border-line-top {border-top: 1px solid  var(--border05) !important;}
