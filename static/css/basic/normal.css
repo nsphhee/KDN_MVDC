@@ -912,7 +912,7 @@ input:read-only {background: #f0f0f0;}
 /* toast ui grid */
 .contain-wrap .tui-grid-rside-area {width:100%;}
 .contain-wrap .tui-grid-header-area {background-color: var(--color-bg04) !important;border-color: var(--border04) !important;}
-.contain-wrap .tui-grid-cell-header.tui-grid-cell-selected {background-color: var(--color-bg04) !important;}
+.contain-wrap .tui-grid-cell-header.tui-grid-cell-selected {background-color: var(--color-bg05) !important;}
 .contain-wrap .tui-grid-content-area {border-color: var(--border05) !important}
 .contain-wrap .tui-grid-body-area {background-color: transparent !important;border-color: var(--border05) !important;}
 .contain-wrap .tui-grid-cell {background-color: transparent !important;color:var(--color-text05) !important;border-color: var(--border04) !important;}
