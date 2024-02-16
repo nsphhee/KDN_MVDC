@@ -877,10 +877,11 @@ input:read-only {background: #f0f0f0;}
 .c-cont-box-inner {padding: 1.6rem 1.2rem;min-width: 118rem;}
 .c-cont-paging {position: relative; background: var(--color-bg04);padding:0.6rem 1.2rem;}
 .grid-wrap {height: 100%;}
-.c-cont-title + .tab-wrap {height:calc(100% - 8.5rem);}
+.c-cont-title + .tab-wrap {height:calc(100% - 8.5rem); position: relative;}
 .tab-wrap .c-cont-box {height: 100%;} 
 .tab-wrap .c-cont-box-inner {padding: 0 1.2rem 1.2rem 1.2rem;} 
-
+.c-sub-btn-wrap {position: absolute; top:1.2rem; right:1.2rem;}
+.c-sub-btn-wrap > button {height: 3.0rem; line-height: 2.8rem; font-size:1.2rem; min-width: auto; padding:0 1.6rem; margin:0;}
 
 /* 페이지 */
 .pagination {margin:0 auto; width:30.0rem; display: flex;align-items: center;justify-content: center;}
