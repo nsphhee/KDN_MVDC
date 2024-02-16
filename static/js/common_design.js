@@ -117,10 +117,13 @@ $(document).ready(function() {
     const rightTabList = document.querySelectorAll('.r-tab-default .tab-h-list li'); //계통설비 및 심볼 목록 탭 컨텐츠 탭
     const rightContents = document.querySelectorAll('.r-tab-cont .tab-c-item'); //계통설비 및 심볼 목록 탭 컨텐츠 탭
    
-
     const symbolTabList = document.querySelectorAll('.symbol-tab-default .tab-h-list li'); //계통설비 및 심볼 목록 탭 컨텐츠 탭
     const symbolContents = document.querySelectorAll('.symbol-tab-cont .tab-c-item'); //계통설비 및 심볼 목록 탭 컨텐츠 탭
+    
+    const subTabList = document.querySelectorAll('.s-tab-default .tab-h-list li'); //서브컨텐츠 목록 탭 컨텐츠 탭
+    const subContents = document.querySelectorAll('.s-tab-cont .tab-c-item'); //서브컨텐츠 목록 탭 컨텐츠 탭
    
+    
     
     let activeCont = ''; // 현재 활성화 된 컨텐츠 (기본:#tab1 활성화)
 
@@ -304,6 +307,29 @@ $(document).ready(function() {
             });
         }
     };
+
+    for(var i = 0; i < subTabList.length; i++){
+        if ( subTabList[i].querySelector('.t-tit') != null ) {
+            subTabList[i].querySelector('.t-tit').addEventListener('click', function(e){
+                e.preventDefault();
+                for(var j = 0; j < subTabList.length; j++){
+                    // 나머지 버튼 클래스 제거
+                    subTabList[j].classList.remove('tab-h-on');
+
+                    // 나머지 컨텐츠 display:none 처리
+                    subContents[j].style.display = 'none';   
+                }
+
+                // 버튼 관련 이벤트
+                this.parentNode.classList.add('tab-h-on');
+
+                // 버튼 클릭시 컨텐츠 전환
+                activeCont = this.getAttribute('href');
+                document.querySelector(activeCont).style.display = 'block';
+            });
+        }
+    };
+
 
 });
 
