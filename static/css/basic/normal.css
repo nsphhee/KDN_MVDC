@@ -895,7 +895,7 @@ input:read-only {background: #f0f0f0;}
 .c-cont-inner:has(.c-top-btn-wrap) .c-cont-box-inner {padding-top:0;}
 
 .c-cont-col02 {display: flex; justify-content: flex-start;}
-.c-cont-col02 > .c-cont-inner:first-child {width:60.0rem;/* min-width: 50.0rem; */border-right:0.4rem solid var(--border02);}
+.c-cont-col02 > .c-cont-inner:first-child {width:60.0rem;/* min-width: 50.0rem; */border-right:0.4rem solid var(--color-bg05);}
 .c-cont-col02 > .c-cont-inner:last-child {flex-grow: 1;width: calc(100% - 60.8rem);border-left:0.4rem solid var(--border00);}
 
 
