@@ -71,31 +71,6 @@ $(document).ready(function() {
             thead01: 'text02',
             thead02: 'text03'
         },
-        {
-            thead00: 'text01',
-            thead01: 'text02',
-            thead02: 'text03'
-        },
-        {
-            thead00: 'text01',
-            thead01: 'text02',
-            thead02: 'text03'
-        },
-        {
-            thead00: 'text01',
-            thead01: 'text02',
-            thead02: 'text03'
-        },
-        {
-            thead00: 'text01',
-            thead01: 'text02',
-            thead02: 'text03'
-        },
-        {
-            thead00: 'text01',
-            thead01: 'text02',
-            thead02: 'text03'
-        },
 
         ];
         const grid = new tui.Grid({
