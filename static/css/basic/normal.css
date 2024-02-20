@@ -949,7 +949,7 @@ input:read-only {background: #f0f0f0;}
 .contain-wrap .tui-grid-border-line-top {border-top: 2px solid  var(--color-thead-brd) !important;}
 .contain-wrap .tui-grid-cell input[type="checkbox"] {vertical-align:middle; width:1.6rem; height:1.6rem; margin:0; opacity:.9; -webkit-appearance:auto; border:transparent}
 .contain-wrap .tui-grid-cell input[type="checkbox"]:checked {opacity:1; accent-color:var(--border06);}
-.contain-wrap .tui-grid-layer-editing {background: transparent !important;}
+.contain-wrap .tui-grid-layer-editing {background: var(--color-bg02) !important;}
 .contain-wrap .tui-grid-layer-editing > input {border-radius: 2px; font-size:1.3rem !important; border:none !important; height:auto !important; box-sizing: border-box; color:var(--color-text01) !important;}
 
 
