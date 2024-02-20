@@ -943,6 +943,7 @@ input:read-only {background: #f0f0f0;}
 .contain-wrap .tui-grid-content-area {border-color: var(--border05) !important}
 .contain-wrap .tui-grid-body-area {background-color: transparent !important;border-color: var(--border05) !important;}
 .contain-wrap .tui-grid-cell {background-color: transparent !important;color:var(--color-text05) !important;border-color: var(--border04) !important;}
+.contain-wrap .tui-grid-cell > div {line-height: 1.3;}
 .contain-wrap th.tui-grid-cell {font-weight: 500;}
 .contain-wrap .tui-grid-no-scroll-x .tui-grid-border-line-bottom {border-bottom: 1px solid  var(--border05) !important;}
 .contain-wrap .tui-grid-border-line-bottom {border-bottom: 1px solid  var(--border05) !important;}
@@ -950,7 +951,8 @@ input:read-only {background: #f0f0f0;}
 .contain-wrap .tui-grid-cell input[type="checkbox"] {vertical-align:middle; width:1.6rem; height:1.6rem; margin:0; opacity:.9; -webkit-appearance:auto; border:transparent}
 .contain-wrap .tui-grid-cell input[type="checkbox"]:checked {opacity:1; accent-color:var(--border06);}
 .contain-wrap .tui-grid-layer-editing {background: var(--color-bg02) !important;}
-.contain-wrap .tui-grid-layer-editing > input {border-radius: 2px; font-size:1.3rem !important; border:none !important; height:auto !important; box-sizing: border-box; color:var(--color-text01) !important;}
+.contain-wrap .tui-grid-layer-editing > input {	font-family:'Noto Sans KR','Apple SD Gothic Neo','맑은 고딕','Malgun Gothic','돋움','Dotum','굴림','Gulim','AppleGothic','Sans-serif';
+ border-radius: 2px; font-size:1.2rem !important; border:none !important; height:auto !important; box-sizing: border-box; color:var(--color-text01) !important;}
 
 
 /* main cont left menu */
