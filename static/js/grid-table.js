@@ -107,16 +107,19 @@ $(document).ready(function() {
             columns: [
                 {
                     header: 'THEAD00',
-                    name: 'thead00'
+                    name: 'thead00', 
+                    whiteSpace: 'normal'
                   },
                   {
                     header: 'THEAD01',
                     name: 'thead01',
-                    editor: 'text'
+                    editor: 'text', 
+                    whiteSpace: 'normal'
                   },
                   {
                     header: 'THEAD02',
-                    name: 'thead02'
+                    name: 'thead02', 
+                    whiteSpace: 'normal'
                   }
             ],
             //rowHeaders: ['rowNum'],
@@ -135,16 +138,19 @@ $(document).ready(function() {
             columns: [
                 {
                     header: 'THEAD00',
-                    name: 'thead00'
+                    name: 'thead00', 
+                    whiteSpace: 'normal'
                   },
                   {
                     header: 'THEAD01',
                     name: 'thead01',
-                    editor: 'text'
+                    editor: 'text', 
+                    whiteSpace: 'normal'
                   },
                   {
                     header: 'THEAD02',
-                    name: 'thead02'
+                    name: 'thead02', 
+                    whiteSpace: 'normal'
                   }
             ]
         });
