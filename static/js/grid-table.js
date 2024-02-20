@@ -104,6 +104,7 @@ $(document).ready(function() {
             scrollX: false,
             scrollY: false,
             rowHeaders: ['checkbox'],
+            rowHeight: 'auto',
             columns: [
                 {
                     header: 'THEAD00',
@@ -135,6 +136,7 @@ $(document).ready(function() {
             scrollX: false,
             scrollY: false,
             rowHeaders: ['checkbox'],
+            rowHeight: 'auto',
             columns: [
                 {
                     header: 'THEAD00',
