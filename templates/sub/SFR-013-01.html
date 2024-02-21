@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- 호환성 -->     
+        <meta name="generator" content="EditPlus®"><!-- 사용프로그램 -->
+        <meta name="format-detection" content="telephone=no,email=no,address=no"><!-- 전화번호, 주소, 메일등 링크로 인식방지 -->
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"><!-- 화면맞춤 -->
+        <meta name="author" content="한전KDN(주)"><!-- 저작자 -->
+        <meta name="keywords" content="한전KDN(주) MVDC"><!-- 키워드 -->
+        <meta name="description" content="한전KDN(주) MVDC"><!-- 웹페이지의 축약된 설명을 제공_최대45자(네이버 웹마스터도구 기준) -->
+        <meta name="copyright" content="&copy; 한전KDN(주). All right reserved."><!-- 저작권 -->
+        <link rel="shortcut icon" type="image/x-icon" href="../../static/images/common/favicon.ico"><!-- 파비콘 -->        
+        <title>한전KDN(주) MVDC</title>   
+        <link media="all" rel="stylesheet" href="../../static/css/common.css">  
+        <link media="all" rel="stylesheet" href="../../static/css/font.css">  
+        <link media="all" rel="stylesheet" href="../../static/css/basic/normal.css">         
+        <link media="all" rel="stylesheet" href="../../static/js/swiper/swiper-bundle.min.css">  
+        <link media="all" rel="stylesheet" href="../../static/js/grid/tui-grid.css" />
+        <script src="../../static/js/jquery-3.7.0.min.js"></script>
+        <script src="../../static/js/swiper/swiper-bundle.min.js"></script>
+        <script src="../../static/js/common_design.js"></script>
+        <script src="../../static/js/grid/tui-grid.js"></script>
+        <script src="../../static/js/grid-table.js"></script>
+    </head>
+    <body class="scroll">  
+        <div id="wrap">
+            <!-- header :s --> 
+            <header id="header" class="header-wrap">
+                <div class="header-inner">  
+                    <div class="swiper header-menu-wrap">
+                        <div class="swiper-wrapper header-menu-inner">
+                            <div class="swiper-slide">
+                                <div class="top-left header-item">
+                                    <h1 class="logo-img">로고영역</h1>
+                                    <p class="program-name">Engineering Tools - <span class="ellipsis">TK_VT2</span></p>
+                                </div>
+                                <div class="top-mid header-item">
+                                    <div class="all-menu-wrap">
+                                        <button class="btn all-menu btn-type01"><span>모든메뉴</span></button> <!-- 현재와 같은 방식으로 보여줄지 모달로 띄울지 고민 -->
+                                    </div>
+                                    <div class="info-list">
+                                        <span class="info-ip nw-good">localhost:8070</span> <!-- 상태값 확인필요 / 상태값별 포인트 컬러 변경 -->
+                                        <span class="info-date">2024-01-01 13:35:15</span>
+                                        <span class="info-paths ellipsis">편집도구 > SCL저작도구(KGRID.MG.ENG.Editor.SCL.View.SclEditor)</span>
+                                    </div>
+                                    <div class="tnb-list header-item">
+                                        <button class="top-icon" menu-icon="top-home" title="메인"><span class="dis-none">메인</span></button>
+                                        <button class="top-icon" menu-icon="top-tab-close" title="탭닫기"><span class="dis-none">탭닫기</span></button>
+                                        <button class="top-icon" menu-icon="top-alltab-close" title="탭모두닫기"><span class="dis-none">탭모두닫기</span></button>
+                                        <button class="top-icon" menu-icon="top-img-save" title="이미지저장"><span class="dis-none">이미지저장</span></button>
+                                        <button class="top-icon" menu-icon="top-print" title="인쇄"><span class="dis-none">인쇄</span></button>
+                                    </div>
+                                </div>
+                                <div class="top-right">
+                                    <div class="select-wrap">
+                                        <select class="select-type01">
+                                            <option>TK_VT1</option>
+                                            <option>TK_VT2</option>
+                                            <option>TK_VT3</option>
+                                            <option>TK_VT4</option>
+                                            <option>TK_VT5</option>
+                                        </select> 
+                                    </div>      
+                                    <div class="utill-wrap">
+                                        <p class="utill-welcome"><span class="welcome-user">mgadmin 님</span><span>, 안녕하세요.</span></p>
+                                        <a href="" class="utill-setting"><span class="dis-none">설정</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-scrollbar"></div>
+                    </div>  
+                </div>
+            </header>
+            <!-- header :e -->  
+              
+            <!-- main :s -->
+            <main id="main">     
+                <div id="main-wrap">
+                    
+                    <!-- left-nav :s -->
+                    <nav id="left-nav" class="left-nav-wrap">
+                        <div class="left-nav-inner" id="lnb-full">
+                            <div class="swiper lnb-list">                               
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="lnb-list-top">
+                                            <div class="lnb-list-item">
+                                                <button class="nav-icon menu-full" menu-icon="left01"><span class="dis-none">메뉴펼침</span></button> 
+                                            </div>
+                                            <div class="lnb-list-item">
+                                                <button class="nav-icon" menu-icon="left02"><span class="">공통정보</span></button> <!-- 클릭시 클래스 on 추가 -->
+                                                <div class="lnb-depth-wrap lnb-nav01">
+                                                    <div class="lnb-depth01-inner">
+                                                        <ul>
+                                                            <li><a href=""><span>시스템정보 관리</span></a></li>
+                                                            <li><a href=""><span>프로세스 관리</span></a></li>
+                                                            <li><a href=""><span>배치작업 관리</span></a></li>
+                                                            <li><a href=""><span>플러그인 프로그램 관리</span></a></li>
+                                                            <li><a href=""><span>메뉴 관리</span></a></li>
+                                                            <li><a href="" class="depth-more on"><span>사용자 관리</span></a>
+                                                                <div class="lnb-depth02-inner">
+                                                                    <ul>
+                                                                        <li><a href=""><span>사용자그룹</span></a></li>
+                                                                        <li><a href=""><span>사용자</span></a></li>
+                                                                        <li><a href=""><span>사용자그룹별권한</span></a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </li>
+                                                            <li><a href="" class="depth-more"><span>코드 관리</span></a>
+                                                                <div class="lnb-depth02-inner">
+                                                                    <ul>
+                                                                        <li><a href=""><span>코드공통</span></a></li>
+                                                                        <li><a href=""><span>스케일팩터</span></a></li>
+                                                                        <li><a href=""><span>단위코드</span></a></li>
+                                                                        <li><a href=""><span>상태변환맵</span></a></li>
+                                                                        <li><a href=""><span>선종</span></a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div> 
+                                            </div>
+                                            <div class="lnb-list-item">
+                                                <button class="nav-icon" menu-icon="left03"><span class="">운영설정</span></button>
+                                            </div>                                    
+                                            <div class="lnb-list-item">
+                                                <button class="nav-icon" menu-icon="left04"><span class="">편집도구</span></button>
+                                            </div>                                    
+                                            <div class="lnb-list-item">
+                                                <button class="nav-icon" menu-icon="left05"><span class="">배포관리</span></button>
+                                            </div>
+                                        </div>   
+                                        <div class="lnb-list-bottom">       
+                                            <div class="lnb-list-item">
+                                                <button class="nav-icon" menu-icon="left06"><span class="">보기</span></button>
+                                            </div>                                           
+                                            <div class="lnb-list-item">
+                                                <button class="nav-icon" menu-icon="left07"><span class="">환경설정</span></button>
+                                            </div>
+                                        </div>                         
+                                    </div>    
+                                </div>                  
+                                <div class="swiper-scrollbar"></div>
+                            </div>   
+                        </div>
+                    </nav>        
+                    <!-- left-nav :e -->
+
+                    <!-- cont-area :s -->
+                    <div id="cont-area" class="cont-area-wrap">
+                        <div class="cont-area-inner">
+                            <!-- stab-menu-wrap :s -->
+                            <div class="stab-menu-wrap">
+                                <div class="stab-menu-inner">
+                                    <a href="" class="go-main-btn"><span class="dis-none">메인</span></a> <!-- 선택시 on 추가 -->
+                                    <!-- stab-menu-list :s -->
+                                    <div class="swiper stab-menu-list"> 
+                                        <div class="swiper-wrapper"> 
+                                            <div class="swiper-slide"><a href="" class="stab-menu-item on"><span>선종</span></a><button class="stab-close"><span class="dis-none">닫기</span></button></div> <!-- 선택시 on 추가 -->
+                                        </div>                                        
+                                        <div class="swiper-scrollbar"></div>
+                                    </div> 
+                                    <!-- stab-menu-list :e -->
+                                </div>
+                            </div>
+                            <!-- stab-menu-wrap :e -->
+
+                            <!-- contain-wrap :s -->
+                            <div class="contain-wrap">
+                                <div class="contain-inner">
+                                    <!-- contain-box :s -->
+                                    <div class="contain-box scroll">
+                                        <div class="contain-box-inner">
+                                            <!-- contain title top :s -->
+                                            <div class="c-top-wrap">
+                                                <div class="c-top-inner">
+                                                    <p><span>선종</span></p>
+                                                </div>
+                                            </div>
+                                            <!-- contain title top :e -->
+                                            <!-- contain main :s -->
+                                            <div class="c-main-wrap">
+                                                <div class="c-main-inner">
+                                                    
+                                                    <!-- main cont :s -->
+                                                    <div class="c-main-cont-wrap">
+                                                        <div class="c-main-cont-inner flex-column">
+                                                            
+                                                            <!-- contain top search :s -->
+                                                            <div class="c-top-search-wrap">
+                                                                <div class="c-top-search-inner">
+                                                                    <div class="c-top-search-input">
+                                                                        <label for="">전체 검색</label>
+                                                                        <input type="text" id="" class="input-type02" placeholder="검색어를 입력하세요.">
+                                                                        <button class="search-btn"><span class="dis-none">검색</span></button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- contain top search :e -->                                                        
+
+                                                            <!-- contain top btn :s -->
+                                                            <div class="c-top-btn-wrap">
+                                                                <button class="btn btn-gradation">신규</button>
+                                                                <button class="btn btn-type04">삭제</button>
+                                                                <button class="btn btn-type05">저장</button>
+                                                            </div>
+                                                            <!-- contain top btn :e -->
+
+                                                            <div class="c-cont-wrap">
+                                                                <div class="c-cont-inner">
+                                                                    <div class="c-cont-title">
+                                                                        <span>선종 목록</span>
+                                                                    </div>
+
+                                                                    <div class="c-cont-box cm-scroll">
+                                                                        <div class="c-cont-box-inner">
+                                                                            <div class="grid-wrap cm-scroll">
+                                                                                <div id="grid"></div>
+                                                                            </div>
+                                                                        </div>
+                                                                        
+                                                                    </div>
+
+                                                                    <div class="c-cont-paging">
+                                                                        <div class="pagination">       
+                                                                            <span class="prev-group">
+                                                                                <button class="page-first"><span class="dis-none">처음 페이지로 이동</span></button><button class="page-prev"><span class="dis-none">이전 페이지로 이동</span></button>
+                                                                            </span>
+                                                                            <button class="on">1</button><button>2</button><button>3</button><button>4</button><button>5</button>
+                                                                            <span class="next-group">
+                                                                                <button class="page-next"><span class="dis-none">다음 페이지로 이동</span></button><button class="page-end"><span class="dis-none">마지막 페이지로 이동</span></button>
+                                                                            </span>                
+                                                                        </div>
+
+                                                                        <div class="page-go">
+                                                                            <label for="PageNumInput">Page</label>
+                                                                            <input id="PageNumInput" type="number" value="1" class="input-type01">
+                                                                            <span>of 4</span>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <!-- main cont :e -->
+                                                </div>
+                                            </div>                                            
+                                            <!-- contain main :e -->
+                                        </div>
+                                    </div>                                    
+                                    <!-- contain-box :e -->
+                                </div>
+                            </div>                            
+                            <!-- contain-wrap :e -->
+                        </div>
+                    </div>
+                    <!-- cont-area :e -->
+                </div>  
+
+            </main>       
+            <!-- main :e -->
+        </div>
+    </body>
+    <script>
+        new Swiper(".stab-menu-list", {
+            direction: 'horizontal',
+            slidesPerView: "auto",
+            spaceBetween: 0,
+            mousewheel: true,
+            observer: true,	
+            observeParents: true,	
+            freeMode: {
+                enabled: true,
+                sticky: true,
+            },        
+            scrollbar: {
+             el: ".swiper-scrollbar",
+             },
+        });   
+        new Swiper(".header-menu-wrap", {
+            direction: 'horizontal',
+            slidesPerView: "auto",
+            spaceBetween: 0,
+            mousewheel: true,
+            observer: true,	
+            observeParents: true,	
+            freeMode: {
+                enabled: true,
+                sticky: true,
+            },        
+            scrollbar: {
+             el: ".swiper-scrollbar",
+             },
+        });  
+
+        new Swiper(".lnb-list", {
+            direction: "vertical",
+            slidesPerView: "auto",
+            spaceBetween: 0,
+            mousewheel: true,
+            observer: true,	
+            observeParents: true,	
+            freeMode: {
+                enabled: true,
+                sticky: true,
+            },        
+            scrollbar: {
+             el: ".swiper-scrollbar",
+             },
+        }); 
+
+        new Swiper(".tool-menu-wrap", {
+            direction: 'horizontal',
+            slidesPerView: "auto",
+            spaceBetween: 0,
+            mousewheel: true,
+            observer: true,	
+            observeParents: true,	
+            freeMode: {
+                enabled: true,
+                sticky: true,
+            },        
+            scrollbar: {
+             el: ".swiper-scrollbar",
+             },
+        });  
+
+
+        new Swiper(".c-mid-tab-default", {
+            direction: 'horizontal',
+            slidesPerView: "auto",
+            spaceBetween: 0,
+            mousewheel: true,
+            observer: true,	
+            observeParents: true,	
+            freeMode: {
+                enabled: true,
+                sticky: true,
+            },        
+            scrollbar: {
+             el: ".swiper-scrollbar",
+             },
+        });  
+
+    </script>
+</html>
