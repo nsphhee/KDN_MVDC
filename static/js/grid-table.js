@@ -53,24 +53,26 @@ $(document).ready(function() {
             virtualScrolling: true,
             rowHeight: 'auto',
             display: { noData: 'No Data' },
-            columnOptions:{ resizable: true },
-
+            columnOptions:{ resizable: true }, 
+            header: {
+                height: 34
+            },
             columns: [
                 {
                     header: 'THEAD00',
                     name: 'thead00', 
-                    whiteSpace: 'normal'
+                    whiteSpace: 'normal',
                   },
                   {
                     header: 'THEAD01',
                     name: 'thead01',
                     editor: 'text', 
-                    whiteSpace: 'normal'
+                    whiteSpace: 'normal',
                   },
                   {
                     header: 'THEAD02',
                     name: 'thead02', 
-                    whiteSpace: 'normal'
+                    whiteSpace: 'normal',
                   }
             ],
             //rowHeaders: ['rowNum'],
@@ -86,7 +88,10 @@ $(document).ready(function() {
             scrollX: false,
             scrollY: false,
             rowHeight: 'auto',
-            display: { noData: 'No Data' },
+            display: { noData: 'No Data'}, 
+            header: {
+                height: 34
+            },
             columns: [
                 {
                     header: 'THEAD00',
