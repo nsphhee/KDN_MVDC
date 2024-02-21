@@ -8,7 +8,7 @@ $(document).ready(function() {
             {text: '메뉴2', state: 'closed', children: [
                 {text:'메뉴3', children:[
                     {text:'메뉴4', state: 'closed', children: [                        
-                        {text:'메뉴5'},                        
+                        {text:'메뉴5메뉴5메뉴5메뉴5메뉴5메뉴5'},                        
                         {text:'메뉴5'}
                     ]},
                     {text:'메뉴4', state: 'closed', children: [                        
