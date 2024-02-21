@@ -180,7 +180,7 @@ input:read-only {background: #f0f0f0;}
 .btn-refresh::before {content:''; display: inline-block; background: url(../../images/common/icon_refresh.svg) no-repeat center center; opacity: 0.8; background-size:contain; width:1.2rem; height:1.2rem; padding:0; margin:0 0.8rem 0 0;}
 .btn-refresh:hover::before {opacity: 0.9;}
 
-.btn-disabled {color: #ffffff; display: inline-block; border: 1px solid #d0d0d0 !important; background: #d0d0d0; cursor: default;}
+.btn-disabled { color:var(--color-text04); padding:0 1.2rem; display: inline-block; border: 1px solid var(--color-bg06) !important; background: var(--color-bg06); cursor: default;}
 
 .btn-close {position: absolute; right:1.0rem; top:0.6rem;}
 .btn-close:before {display: block;background: url(../../images/common/icon_close.svg) no-repeat center top; background-size:contain; width:2.2rem; height:2.2rem;}
