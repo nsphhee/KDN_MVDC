@@ -85,7 +85,6 @@ $(document).ready(function() {
             data: gridData,
             scrollX: false,
             scrollY: false,
-            rowHeaders: ['checkbox'],
             rowHeight: 'auto',
             display: { noData: 'No Data' },
             columns: [
