@@ -55,7 +55,7 @@ $(document).ready(function() {
             display: { noData: 'No Data' },
             columnOptions:{ resizable: true }, 
             header: {
-                height: 34
+                height: 36
             },
             columns: [
                 {
@@ -90,7 +90,7 @@ $(document).ready(function() {
             rowHeight: 'auto',
             display: { noData: 'No Data'}, 
             header: {
-                height: 34
+                height: 36
             },
             columns: [
                 {
