@@ -50,7 +50,11 @@ $(document).ready(function() {
             scrollX: false,
             scrollY: false,
             rowHeaders: ['checkbox'],
+            virtualScrolling: true,
             rowHeight: 'auto',
+            display: { noData: 'No Data' },
+            columnOptions:{ resizable: true },
+
             columns: [
                 {
                     header: 'THEAD00',
@@ -83,6 +87,7 @@ $(document).ready(function() {
             scrollY: false,
             rowHeaders: ['checkbox'],
             rowHeight: 'auto',
+            display: { noData: 'No Data' },
             columns: [
                 {
                     header: 'THEAD00',
@@ -103,32 +108,7 @@ $(document).ready(function() {
             ]
         });
 
-        const grid03 = new tui.Grid({
-            el: document.getElementById('grid03'),
-            data: gridData,
-            scrollX: false,
-            scrollY: false,
-            rowHeaders: ['checkbox'],
-            rowHeight: 'auto',
-            columns: [
-                {
-                    header: 'THEAD00',
-                    name: 'thead00', 
-                    whiteSpace: 'normal'
-                  },
-                  {
-                    header: 'THEAD01',
-                    name: 'thead01',
-                    editor: 'text', 
-                    whiteSpace: 'normal'
-                  },
-                  {
-                    header: 'THEAD02',
-                    name: 'thead02', 
-                    whiteSpace: 'normal'
-                  }
-            ]
-        });
+
 });
 
 
