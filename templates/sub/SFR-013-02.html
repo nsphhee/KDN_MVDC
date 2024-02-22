@@ -159,7 +159,7 @@
                                     <!-- stab-menu-list :s -->
                                     <div class="swiper stab-menu-list"> 
                                         <div class="swiper-wrapper"> 
-                                            <div class="swiper-slide"><a href="" class="stab-menu-item on"><span>시스템정보 관리</span></a><button class="stab-close"><span class="dis-none">닫기</span></button></div> <!-- 선택시 on 추가 -->
+                                            <div class="swiper-slide"><a href="" class="stab-menu-item on"><span>설비 종류 및 속성 관리</span></a><button class="stab-close"><span class="dis-none">닫기</span></button></div> <!-- 선택시 on 추가 -->
                                         </div>                                        
                                         <div class="swiper-scrollbar"></div>
                                     </div> 
@@ -177,7 +177,7 @@
                                             <!-- contain title top :s -->
                                             <div class="c-top-wrap">
                                                 <div class="c-top-inner">
-                                                    <p><span>시스템정보 관리</span></p>
+                                                    <p><span>설비 종류 및 속성 관리</span></p>
                                                 </div>
                                             </div>
                                             <!-- contain title top :e -->
@@ -192,55 +192,18 @@
                                                             <!-- contain top btn :s -->
                                                             <div class="c-top-btn-wrap">
                                                                 <button class="btn btn-refresh">새로고침</button>
-                                                                <button class="btn btn-gradation">신규</button>
-                                                                <button class="btn btn-type04">삭제</button>
                                                                 <button class="btn btn-type05">저장</button>
                                                             </div>
                                                             <!-- contain top btn :e -->
 
-                                                            <div class="c-cont-wrap c-cont-row02">
-
-                                                                <div class="c-cont-inner">
-                                                                    <div class="c-cont-title">
-                                                                        <span>시스템 목록</span>
-                                                                    </div>
-
-                                                                    <div class="c-cont-box cm-scroll">
-                                                                        <div class="c-cont-box-inner">
-                                                                            <div class="grid-wrap cm-scroll">                                                                                                                                                           
-                                                                                <div id="grid"></div>
-                                                                            </div>
-                                                                        </div>
-                                                                        
-                                                                    </div>
-
-                                                                    <div class="c-cont-paging">
-                                                                        <div class="pagination">       
-                                                                            <span class="prev-group">
-                                                                                <button class="page-first"><span class="dis-none">처음 페이지로 이동</span></button><button class="page-prev"><span class="dis-none">이전 페이지로 이동</span></button>
-                                                                            </span>
-                                                                            <button class="on">1</button><button>2</button><button>3</button><button>4</button><button>5</button>
-                                                                            <span class="next-group">
-                                                                                <button class="page-next"><span class="dis-none">다음 페이지로 이동</span></button><button class="page-end"><span class="dis-none">마지막 페이지로 이동</span></button>
-                                                                            </span>                
-                                                                        </div>
-
-                                                                        <div class="page-go">
-                                                                            <label for="PageNumInput">Page</label>
-                                                                            <input id="PageNumInput" type="number" value="1" class="input-type01">
-                                                                            <span>of 4</span>
-                                                                        </div>
-                                                                    </div>
-
-                                                                </div>
+                                                            <div class="c-cont-wrap c-cont-row02 row-half">
 
                                                                 <div class="c-cont-inner-g">
-                                                                    <div class="c-cont-col02 col-half ">
+                                                                    <div class="c-cont-col02">
                                                                         <div class="c-cont-inner">
                                                                             <div class="c-cont-title">
-                                                                                <span>노드 목록</span>
-                                                                            </div>        
-
+                                                                                <span>설비 타입 목록</span>
+                                                                            </div>
                                                                             <!-- contain inner top btn :s -->
                                                                             <div class="c-top-btn-wrap">
                                                                                 <button class="btn btn-gradation">신규</button>
@@ -250,7 +213,101 @@
 
                                                                             <div class="c-cont-box cm-scroll">
                                                                                 <div class="c-cont-box-inner">
-                                                                                    <div class="grid-wrap cm-scroll">                                                                                                                                                           
+                                                                                    <div class="equip-list-wrap c-cont-col02">
+                                                                                        <!-- 설비목록 :s -->
+                                                                                        <div class="equip-box cm-scroll">
+                                                                                            <div class="equip-box-inner">
+                                                                                                <div class="equip-item">
+                                                                                                    <span class="bold">CBR</span><span>Circuit Breaker</span>
+                                                                                                </div>
+                                                                                                <div class="equip-item on"> <!-- 선택시 on 추가 -->
+                                                                                                    <span class="bold">GEN</span><span>Generation</span>
+                                                                                                </div>
+                                                                                                <div class="equip-item">
+                                                                                                    <span class="bold">BAT</span><span>Battery(ESS)</span>
+                                                                                                </div>
+                                                                                                <div class="equip-item">
+                                                                                                    <span class="bold">CBR</span><span>Circuit Breaker</span>
+                                                                                                </div>
+                                                                                                <div class="equip-item">
+                                                                                                    <span class="bold">CBR</span><span>Circuit Breaker</span>
+                                                                                                </div>
+                                                                                                <div class="equip-item">
+                                                                                                    <span class="bold">BAT</span><span>Battery(ESS)</span>
+                                                                                                </div>
+                                                                                                <div class="equip-item">
+                                                                                                    <span class="bold">CBR</span><span>Circuit Breaker</span>
+                                                                                                </div>
+                                                                                                <div class="equip-item">
+                                                                                                    <span class="bold">CBR</span><span>Circuit Breaker</span>
+                                                                                                </div>
+                                                                                                <div class="equip-item">
+                                                                                                    <span class="bold">CBR</span><span>Circuit Breaker</span>
+                                                                                                </div>
+                                                                                                <div class="equip-item">
+                                                                                                    <span class="bold">CBR</span><span>Circuit Breaker</span>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <!-- 설비목록 :e -->
+                                                                                        
+                                                                                        <!-- 설비정보 :s -->
+                                                                                        <div class="equip-box cm-scroll">                                                                                            
+                                                                                            <div class="equip-box-inner">
+                                                                                                <div class="equip-item-info">
+                                                                                                    <label for="">타입 코드</label>
+                                                                                                    <div class="input-wrap">
+                                                                                                        <input type="text" id="" class="input-type02" value="GEN">
+                                                                                                    </div>   
+                                                                                                </div>
+                                                                                                <div class="equip-item-info">
+                                                                                                    <label for="">설명</label>
+                                                                                                    <div class="input-wrap">
+                                                                                                        <input type="text" id="" class="input-type02" value="Generation">
+                                                                                                    </div>   
+                                                                                                </div>
+                                                                                                <div class="equip-item-info">
+                                                                                                    <label for="">설비 구분</label>
+                                                                                                    <div class="select-wrap">
+                                                                                                        <select class="select-type03">
+                                                                                                            <option>전력설비11</option>
+                                                                                                            <option>전력설비22</option>
+                                                                                                            <option>전력설비33</option>
+                                                                                                        </select> 
+                                                                                                    </div>  
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <!-- 설비정보 :e -->
+                                                                                    </div>
+                                                                                </div>                                                                                
+                                                                            </div>    
+
+                                                                        </div>
+                                                                        <div class="c-cont-inner">
+                                                                            <div class="c-cont-title">
+                                                                                <span>설비 타입 속성 목록</span>
+                                                                            </div>
+
+                                                                            <div class="c-top-g">
+                                                                                <!-- select item title :s -->        
+                                                                                <div class="c-top-nav-wrap">
+                                                                                    <span class="bold">GEN</span> <span>Generation</span>
+                                                                                </div>
+                                                                                <!-- select item title :e -->
+
+                                                                                <!-- contain inner top btn :s -->
+                                                                                <div class="c-top-btn-wrap">                                                                                
+                                                                                    <button class="btn btn-gradation">신규</button>
+                                                                                    <button class="btn btn-type04">삭제</button>
+                                                                                </div>
+                                                                                <!-- contain inner top btn :e -->       
+                                                                            </div> 
+                                                                      
+
+                                                                            <div class="c-cont-box cm-scroll">
+                                                                                <div class="c-cont-box-inner">
+                                                                                    <div class="grid-wrap cm-scroll">                                                                                                                                                             
                                                                                         <div id="grid02"></div>
                                                                                     </div>
                                                                                 </div>
@@ -276,25 +333,99 @@
                                                                             </div>
         
                                                                         </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="c-cont-inner-g">
+                                                                    <div class="c-cont-col02">
                                                                         <div class="c-cont-inner">
                                                                             <div class="c-cont-title">
-                                                                                <span>프로세스 목록</span>
-                                                                            </div>
+                                                                                <span>하위 설비 타입 목록</span>
+                                                                            </div>        
 
                                                                             <!-- contain inner top btn :s -->
-                                                                            <div class="c-top-btn-wrap">                                                                                
+                                                                            <div class="c-top-btn-wrap">
                                                                                 <button class="btn btn-gradation">신규</button>
                                                                                 <button class="btn btn-type04">삭제</button>
                                                                             </div>
                                                                             <!-- contain inner top btn :e -->
+
+                                                                            <div class="c-cont-box cm-scroll">
+                                                                                <div class="c-cont-box-inner">
+
+                                                                                    <div class="equip-list-wrap c-cont-col02">
+                                                                                        <!-- 설비목록 :s -->
+                                                                                        <div class="equip-box cm-scroll">
+                                                                                            <div class="equip-box-inner">
+                                                                                                <div class="equip-item">
+                                                                                                    <span class="bold">PV</span><span>태양광</span>
+                                                                                                </div>
+                                                                                                <div class="equip-item on"> <!-- 선택시 on 추가 -->
+                                                                                                    <span class="bold">WT</span><span>풍력</span>
+                                                                                                </div>
+                                                                                                <div class="equip-item">
+                                                                                                    <span class="bold">THERMAL</span><span>화력</span>
+                                                                                                </div>
+                                                                                                <div class="equip-item">
+                                                                                                    <span class="bold">FC</span><span>연료전지</span>
+                                                                                                </div>
+                                                                                                <div class="equip-item">
+                                                                                                    <span class="bold">CHP</span><span>열병합</span>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <!-- 설비목록 :e -->
+                                                                                        
+                                                                                        <!-- 설비정보 :s -->
+                                                                                        <div class="equip-box cm-scroll">                                                                                            
+                                                                                            <div class="equip-box-inner ">
+                                                                                                <div class="equip-item-info">
+                                                                                                    <label for="">하위 타입 코드</label>
+                                                                                                    <div class="input-wrap">
+                                                                                                        <input type="text" id="" class="input-type02" value="WT">
+                                                                                                    </div>   
+                                                                                                </div>
+                                                                                                <div class="equip-item-info">
+                                                                                                    <label for="">설명</label>
+                                                                                                    <div class="input-wrap">
+                                                                                                        <input type="text" id="" class="input-type02" value="풍력">
+                                                                                                    </div>   
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <!-- 설비정보 :e -->
+                                                                                    </div>
+
+                                                                                </div>                                                                                
+                                                                            </div>   
+
+                                                                        </div>
+                                                                        <div class="c-cont-inner">
+                                                                            <div class="c-cont-title">
+                                                                                <span>하위 설비 타입 속성 목록</span>
+                                                                            </div>
+
+                                                                            <div class="c-top-g">
+                                                                                <!-- select item title :s -->        
+                                                                                <div class="c-top-nav-wrap">
+                                                                                    <span class="bold">GEN</span> <span>Generation</span> <span>></span> <span class="bold">WT</span> <span>풍력</span>
+                                                                                </div>
+                                                                                <!-- select item title :e -->
+
+                                                                                <!-- contain inner top btn :s -->
+                                                                                <div class="c-top-btn-wrap">                                                                                
+                                                                                    <button class="btn btn-gradation">신규</button>
+                                                                                    <button class="btn btn-type04">삭제</button>
+                                                                                </div>
+                                                                                <!-- contain inner top btn :e -->       
+                                                                            </div>
+ 
         
                                                                             <div class="c-cont-box cm-scroll">
                                                                                 <div class="c-cont-box-inner">
-                                                                                    <div class="grid-wrap cm-scroll">        
-                                                                                        컨텐츠 영역
+                                                                                    <div class="grid-wrap cm-scroll">                                                                                                                                                             
+                                                                                        <div id="grid"></div>
                                                                                     </div>
-                                                                                </div>
-                                                                                
+                                                                                </div>                                                                                
                                                                             </div>
         
                                                                             <div class="c-cont-paging">
@@ -318,7 +449,6 @@
                                                                         </div>
                                                                     </div>
                                                                 </div>
-
                                                             </div>
 
                                                         </div>
