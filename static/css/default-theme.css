@@ -124,7 +124,7 @@ html:has(.scroll-off){overflow: hidden !important;}
 .select-type01 {width:14.0rem; padding: 0 3.6rem 0 0.8rem; font-size:1.3rem !important; border:1px solid var(--border05); background-color: var(--color-select-bg02); height:3.4rem; box-sizing: border-box; color:var(--color-text06);}
 .select-type01:focus {border:1px solid var(--border06);}
 
-.select-type02 {padding: 0 3.6rem 0 0.8rem; background:url('../../images/basic/common/select_arrow_b.svg') no-repeat calc(100% - 1.2rem) 52%/12px auto; }
+.select-type02 {padding: 0 3.6rem 0 0.8rem; background:url('../images/default/common/select_arrow_b.svg') no-repeat calc(100% - 1.2rem) 52%/12px auto; }
 .select-type02:focus {outline:none; box-shadow:0 0 0 1px #343434;}
 
 .select-type03 {padding: 0 3.6rem 0 0.8rem; font-size:1.3rem !important; border:1px solid var(--border05); background-color: var(--color-select-bg01); color:var(--color-text06); box-sizing: border-box;}
@@ -166,7 +166,7 @@ input:read-only {background: #f0f0f0;}
 .btn-gray:hover {background: #dddddd; border:1px solid #cccccc !important;}
 
 .btn-down {color:#ffffff; padding:0 1.6rem; border-radius: 4px; display: flex; justify-content:center; align-items: center; box-sizing: border-box;border: 1px solid #265ABF !important; background: #265ABF;}
-.btn-down::before {content:''; display: inline-block; background: url(../../images/basic/common/icon_down_w.svg) no-repeat center center; background-size:contain; width:1.2rem; height:1.2rem; padding:0; margin:0 0.8rem 0 0;}
+.btn-down::before {content:''; display: inline-block; background: url(../images/default/common/icon_down_w.svg) no-repeat center center; background-size:contain; width:1.2rem; height:1.2rem; padding:0; margin:0 0.8rem 0 0;}
 .btn-down:hover {background: #1346a9; border: 1px solid #1346a9 !important;  color:#ffffff;}
 
 .btn-gradation { background: transparent var(--color-gradient01); color: #ffffff; cursor: pointer; padding: 0 1.2rem; background-size: 200% auto;}
@@ -177,13 +177,13 @@ input:read-only {background: #f0f0f0;}
 
 
 .btn-refresh { padding:0 1.6rem; display: flex; justify-content:center; align-items: center; box-sizing: border-box; background: var(--color-btn-bg03); border: 1px solid var(--color-btn-bg03) !important; color: var(--color-text05);}
-.btn-refresh::before {content:''; display: inline-block; background: url(../../images/basic/common/icon_refresh.svg) no-repeat center center; opacity: 0.8; background-size:contain; width:1.2rem; height:1.2rem; padding:0; margin:0 0.8rem 0 0;}
+.btn-refresh::before {content:''; display: inline-block; background: url(../images/default/common/icon_refresh.svg) no-repeat center center; opacity: 0.8; background-size:contain; width:1.2rem; height:1.2rem; padding:0; margin:0 0.8rem 0 0;}
 .btn-refresh:hover::before {opacity: 0.9;}
 
 .btn-disabled { color:var(--color-text04); padding:0 1.2rem; display: inline-block; border: 1px solid var(--color-bg06) !important; background: var(--color-bg06); cursor: default;}
 
 .btn-close {position: absolute; right:1.0rem; top:0.6rem;}
-.btn-close:before {display: block;background: url(../../images/basic/common/icon_close.svg) no-repeat center top; background-size:contain; width:2.2rem; height:2.2rem;}
+.btn-close:before {display: block;background: url(../images/default/common/icon_close.svg) no-repeat center top; background-size:contain; width:2.2rem; height:2.2rem;}
 
 .btn-area {display: flex; align-items: center;}
 .btn-col-2 {justify-content: space-between;}
@@ -200,7 +200,7 @@ input:read-only {background: #f0f0f0;}
 .default-inner .left-area-inner .logo-title span {display:block;}
 .default-inner .left-area-inner .logo-title span {font-size:1.6rem; color:var(--color-text03);}
 .default-inner .left-area-inner .logo-title span:last-child::before {display: block; width:2.4rem; height:0.2rem; background: #9092A0; margin:0.8rem auto;}
-.default-inner .left-area-inner .logo-title:after {display: block;background: url(../../images/basic/login/login_bg.png) no-repeat center center;margin:0 auto;width:100%;height: 40vh;background-size: contain;}
+.default-inner .left-area-inner .logo-title:after {display: block;background: url(../images/default/login/login_bg.png) no-repeat center center;margin:0 auto;width:100%;height: 40vh;background-size: contain;}
 .default-inner .right-area {padding: 3.0rem 0;position: relative;width:50%;}
 .default-inner .right-area-inner {height: 100%;display: flex;justify-content: center;align-items: center;width: calc(100% - 6.0rem);margin: 0 auto;}
 .default-inner .right-area-inner .right-title {text-align: center; margin-bottom:5.0rem;}
@@ -219,16 +219,16 @@ input:read-only {background: #f0f0f0;}
 .input-box:has(input):after {display:block; position: absolute;  width:0%; height: 2px; bottom: 0; left: 50%; transform: translateX(-50%);  background: #0065DE; transition: ease .2s;}
 .input-box:has(input:focus):after {width: 100%;}
 .input-box:has(input):before {display: block; z-index: 1; position: absolute; top:calc(50% - 1.4rem); left:0.4rem; width:2.8rem; height:2.8rem;}
-.input-box:has(.id-input):before {background: url(../../images/basic/login/icon_user.svg)no-repeat center center;}
-.input-box:has(.pw-input):before {background: url(../../images/basic/login/icon_pw.svg)no-repeat center center; }
-.input-box:has(.id-input:focus):before {background: url(../../images/basic/login/icon_user_ov.svg)no-repeat center center;}
-.input-box:has(.pw-input:focus):before {background: url(../../images/basic/login/icon_pw_ov.svg)no-repeat center center; }
+.input-box:has(.id-input):before {background: url(../images/default/login/icon_user.svg)no-repeat center center;}
+.input-box:has(.pw-input):before {background: url(../images/default/login/icon_pw.svg)no-repeat center center; }
+.input-box:has(.id-input:focus):before {background: url(../images/default/login/icon_user_ov.svg)no-repeat center center;}
+.input-box:has(.pw-input:focus):before {background: url(../images/default/login/icon_pw_ov.svg)no-repeat center center; }
 
 .login-input-wrap .login-btn {font-size:1.7rem;border-radius: 8px;height: 6.0rem; font-weight: 500; box-shadow: 0px 4px 8px rgb(47 60 85 / 20%);background:#0065DE;color:var(--color-white);margin-top: 5.4rem;}
 .login-input-wrap .login-btn:hover { box-shadow: none; background:#065bc3; transition: all .2s;}
 .kdn-logo {text-align: center;margin-top: 5rem;}
 .kdn-logo img {width:14.0rem; object-fit: contain;}
-.btn-setting {background: url(../../images/basic/common/icon_setting.svg) no-repeat center center;width:2.0rem;height:2.0rem;position:absolute;top: 3.0rem;right: 3.0rem;opacity: 0.4;background-size: contain;}
+.btn-setting {background: url(../images/default/common/icon_setting.svg) no-repeat center center;width:2.0rem;height:2.0rem;position:absolute;top: 3.0rem;right: 3.0rem;opacity: 0.4;background-size: contain;}
 .btn-setting:hover {opacity: 1;}
 .default-footer {position: absolute;bottom: 4.0rem;width: 100%;text-align: center;font-size: 1.3rem;color: var(--color-gray);}
 
@@ -239,10 +239,10 @@ input:read-only {background: #f0f0f0;}
 .project-top > button:before {display: block;width:1.2rem;height:1.2rem;margin: 0 0.6rem 0 0;}
 .project-create {border:1px solid #1554b5; margin-right:0.6rem; color:#1554b5;}
 .project-create:hover {background: #eceeff;transition: all .2s;}
-.project-create:before {background: url(../../images/basic/common/icon_plus_b.svg)no-repeat center center; background-size: contain;}
+.project-create:before {background: url(../images/default/common/icon_plus_b.svg)no-repeat center center; background-size: contain;}
 .project-del {border:1px solid #F13131; color:#F13131;}
 .project-del:hover {background: #ffeeee;transition: all .2s;}
-.project-del:before {background: url(../../images/basic/common/icon_minus_r.svg)no-repeat center center; background-size: contain;}
+.project-del:before {background: url(../images/default/common/icon_minus_r.svg)no-repeat center center; background-size: contain;}
 
 .project-list {overflow-y: auto;width:100%;padding:0 1.8rem 0 0;height: 25.2rem;}
 .projcet-item > a {border:2px solid transparent;width:57.6rem;margin-bottom:0.1rem;padding: 1.0rem 0;font-size:1.5rem;line-height: 1.7;border-radius: 6px;display: flex;align-items: center;background: #f5f5f8;}
@@ -284,11 +284,11 @@ input:read-only {background: #f0f0f0;}
 .top-icon:after {display: block; width:2.0rem; height:2.0rem; opacity: 0.85; }
 .top-icon:hover:after {opacity: 1;}
 
-[menu-icon=top-home]:after {background: url(../../images/basic/common/top_icon01.svg)no-repeat center center; background-size:contain;}
-[menu-icon=top-tab-close]:after {background: url(../../images/basic/common/top_icon02.svg)no-repeat center center; background-size:contain;}
-[menu-icon=top-alltab-close]:after {background: url(../../images/basic/common/top_icon03.svg)no-repeat center center; background-size:contain;}
-[menu-icon=top-img-save]:after {background: url(../../images/basic/common/top_icon04.svg)no-repeat center center; background-size:contain;}
-[menu-icon=top-print]:after {background: url(../../images/basic/common/top_icon05.svg)no-repeat center center; background-size:contain;}
+[menu-icon=top-home]:after {background: url(../images/default/common/top_icon01.svg)no-repeat center center; background-size:contain;}
+[menu-icon=top-tab-close]:after {background: url(../images/default/common/top_icon02.svg)no-repeat center center; background-size:contain;}
+[menu-icon=top-alltab-close]:after {background: url(../images/default/common/top_icon03.svg)no-repeat center center; background-size:contain;}
+[menu-icon=top-img-save]:after {background: url(../images/default/common/top_icon04.svg)no-repeat center center; background-size:contain;}
+[menu-icon=top-print]:after {background: url(../images/default/common/top_icon05.svg)no-repeat center center; background-size:contain;}
 
 .info-list {display: flex; align-items: center;}
 .info-list > span {color:var(--color-text05); margin-right:1.4rem;}
@@ -304,9 +304,9 @@ input:read-only {background: #f0f0f0;}
 .top-right {display: flex; align-items: center; flex-wrap: wrap;}
 .utill-wrap {font-size:1.3rem; display: flex; align-items: center; flex-wrap: wrap; margin-left:1.8rem;}
 .utill-wrap .utill-welcome {color:var(--color-text04); display: flex; align-items: center; margin-right:1.2rem;}
-.utill-wrap .utill-welcome:before {display: block; background: url(../../images/basic/common/icon_user_w.svg) no-repeat center center; width:1.3em; height:1.3rem; background-size: contain; opacity: 0.6; margin-right:0.8rem;}
+.utill-wrap .utill-welcome:before {display: block; background: url(../images/default/common/icon_user_w.svg) no-repeat center center; width:1.3em; height:1.3rem; background-size: contain; opacity: 0.6; margin-right:0.8rem;}
 .utill-wrap .utill-welcome > span:first-child {color:var(--color-text06); font-weight: 500;}
-.utill-wrap .utill-setting {background: url(../../images/basic/common/icon_setting_w.svg)no-repeat center center; width:1.6rem; height:1.6rem; opacity: 0.6; background-size: contain;}
+.utill-wrap .utill-setting {background: url(../images/default/common/icon_setting_w.svg)no-repeat center center; width:1.6rem; height:1.6rem; opacity: 0.6; background-size: contain;}
 .utill-wrap .utill-setting:hover {opacity: 1;}
 
 /* layout - main */
@@ -341,26 +341,26 @@ input:read-only {background: #f0f0f0;}
 .lnb-depth01-inner > ul > li > a.on {color:#1d5edf; border:1px solid #1d5edf;background: #e5f0ff; box-sizing: border-box;}
 .lnb-depth01-inner > ul > li > a + .lnb-depth02-inner {display: none;}
 .lnb-depth01-inner > ul > li > a.on + .lnb-depth02-inner {display: block;padding: 1rem;background: #e6ecfb;border-radius: 6px;margin:0.4rem 0;}
-.depth-more:after {display: block; background: url(../../images/basic/common/arrow_down.svg)no-repeat center center; width:1.8rem; height:1.8rem; background-size: contain; position: absolute; top:calc(50% - 0.9rem); right: 0.2rem;}
+.depth-more:after {display: block; background: url(../images/default/common/arrow_down.svg)no-repeat center center; width:1.8rem; height:1.8rem; background-size: contain; position: absolute; top:calc(50% - 0.9rem); right: 0.2rem;}
 .lnb-depth01-inner > ul > li > a:hover.depth-more:after,
-.lnb-depth01-inner > ul > li > a.on.depth-more:after {display: block; background: url(../../images/basic/common/arrow_down_b.svg)no-repeat center center; width:1.8rem; height:1.8rem; background-size: contain; position: absolute; top:calc(50% - 0.9rem); right: 0.2rem;}
+.lnb-depth01-inner > ul > li > a.on.depth-more:after {display: block; background: url(../images/default/common/arrow_down_b.svg)no-repeat center center; width:1.8rem; height:1.8rem; background-size: contain; position: absolute; top:calc(50% - 0.9rem); right: 0.2rem;}
 .lnb-depth02-inner > ul > li > a {padding:0.4rem; display: block; font-size: 1.3rem; color:#666666}
 .lnb-depth02-inner > ul > li > a:hover {text-decoration: underline; color:#1d5edf;}
 
 .menu-full:hover,
 .menu-full.on {background-color: transparent !important; }
 .menu-full:hover[menu-icon=left01]:before,
-.menu-full.on[menu-icon=left01]:before {background: url(../../images/basic/common/left_icon01_ov.svg)no-repeat center center;}
+.menu-full.on[menu-icon=left01]:before {background: url(../images/default/common/left_icon01_ov.svg)no-repeat center center;}
 .menu-full:hover:after,
 .menu-full.on:after {display: none !important;}
 
-[menu-icon=left01]:before {background: url(../../images/basic/common/left_icon01.svg)no-repeat center center;}
-[menu-icon=left02]:before {background: url(../../images/basic/common/left_icon02.svg)no-repeat center center;}
-[menu-icon=left03]:before {background: url(../../images/basic/common/left_icon03.svg)no-repeat center center;}
-[menu-icon=left04]:before {background: url(../../images/basic/common/left_icon04.svg)no-repeat center center;}
-[menu-icon=left05]:before {background: url(../../images/basic/common/left_icon05.svg)no-repeat center center;}
-[menu-icon=left06]:before {background: url(../../images/basic/common/left_icon06.svg)no-repeat center center;}
-[menu-icon=left07]:before {background: url(../../images/basic/common/left_icon07.svg)no-repeat center center;}
+[menu-icon=left01]:before {background: url(../images/default/common/left_icon01.svg)no-repeat center center;}
+[menu-icon=left02]:before {background: url(../images/default/common/left_icon02.svg)no-repeat center center;}
+[menu-icon=left03]:before {background: url(../images/default/common/left_icon03.svg)no-repeat center center;}
+[menu-icon=left04]:before {background: url(../images/default/common/left_icon04.svg)no-repeat center center;}
+[menu-icon=left05]:before {background: url(../images/default/common/left_icon05.svg)no-repeat center center;}
+[menu-icon=left06]:before {background: url(../images/default/common/left_icon06.svg)no-repeat center center;}
+[menu-icon=left07]:before {background: url(../images/default/common/left_icon07.svg)no-repeat center center;}
 
 
 /* layout - cont area */
@@ -374,7 +374,7 @@ input:read-only {background: #f0f0f0;}
 .stab-menu-inner {height: 100%; margin:0 auto; position: relative;}                           
 
 .go-main-btn {display: block;width: 3.0rem;height: 3.0rem;border-radius: 4px;z-index: 2;background-size: 200% auto;display: flex;align-items: center;position: absolute;top: 0.6rem;left: 0.8rem;overflow: hidden;}
-.go-main-btn:after {display: block; background: url(../../images/basic/common/icon_home.svg)no-repeat center center; background-size: contain; width:1.4rem; height:1.4rem; margin:0 auto;}
+.go-main-btn:after {display: block; background: url(../images/default/common/icon_home.svg)no-repeat center center; background-size: contain; width:1.4rem; height:1.4rem; margin:0 auto;}
 .go-main-btn:hover,
 .go-main-btn.on {display: block;width:3.0rem;height:3.0rem;border-radius: 4px;z-index: 2;background: var(--color-gradient01);background-size: 200% auto;display: flex;align-items: center;position: absolute;top: 0.6rem;left: 0.8rem;overflow: hidden;transition: all .2s;}
 
@@ -382,19 +382,19 @@ input:read-only {background: #f0f0f0;}
 .stab-menu-list .swiper-slide {width:auto;height: 100%; position: relative;}
 .stab-menu-list .swiper-slide:before {display: block;width:1px;height: 3.0rem;background: var(--border05);position: absolute;top: calc(50% - 1.5rem);left:0;opacity: 0.6;}
 .stab-menu-item {color:var(--color-text06); padding:0 4.0rem 0 2.0rem;display: flex;height: 100%;align-items: center; border-radius: 4px 4px 0 0;}
-.stab-menu-item:before {display: block; background: url(../../images/basic/common/tab_menu_icon.svg)no-repeat center center; width:1.6rem; height:1.4rem; opacity: 0.9;}
+.stab-menu-item:before {display: block; background: url(../images/default/common/tab_menu_icon.svg)no-repeat center center; width:1.6rem; height:1.4rem; opacity: 0.9;}
 .stab-menu-item > span {display: block; margin: 0 1.6rem 0 1.0rem; font-size:1.4rem; height: 1.6rem; color:(var(--color-text06)); opacity: 0.9;}
 .stab-menu-item:hover,
 .stab-menu-item.on {background: var(--color-bg06); box-shadow: 1px 0px 4px rgb(0 0 0 / 60%);}
 .stab-menu-item:hover:before, 
-.stab-menu-item.on:before {display: block; background: url(../../images/basic/common/tab_menu_icon_ov.svg)no-repeat center center; width:1.6rem; height:1.4rem; opacity: 0.9;}
+.stab-menu-item.on:before {display: block; background: url(../images/default/common/tab_menu_icon_ov.svg)no-repeat center center; width:1.6rem; height:1.4rem; opacity: 0.9;}
 
 .swiper-slide:has(.stab-close:hover) > .stab-menu-item {background: var(--color-bg06);}
 .swiper-slide:has(.stab-close:hover) + .swiper-slide:before {display: none;}
-.swiper-slide:has(.stab-close:hover) > .stab-menu-item:before {display: block; background: url(../../images/basic/common/tab_menu_icon_ov.svg)no-repeat center center; width:1.6rem; height:1.4rem; opacity: 0.9;}
+.swiper-slide:has(.stab-close:hover) > .stab-menu-item:before {display: block; background: url(../images/default/common/tab_menu_icon_ov.svg)no-repeat center center; width:1.6rem; height:1.4rem; opacity: 0.9;}
 
 .stab-menu-list .stab-close {position: absolute;right:1.4rem;top: calc(50% - 0.6rem);width: 1.2rem;height: 1.2rem;}
-.stab-menu-list .stab-close:before {display: block;background: url(../../images/basic/common/tab_menu_close.svg)no-repeat center center;width: 1.2rem;height: 1.2rem;opacity: 0.8;background-size: contain;}
+.stab-menu-list .stab-close:before {display: block;background: url(../images/default/common/tab_menu_close.svg)no-repeat center center;width: 1.2rem;height: 1.2rem;opacity: 0.8;background-size: contain;}
 
 .swiper-slide:has(.stab-menu-item:hover) + .swiper-slide:before {display: none;}
 .swiper-slide:has(.stab-menu-item.on) + .swiper-slide:before {display: none;}
@@ -456,16 +456,16 @@ input:read-only {background: #f0f0f0;}
 [main-menu=user]:after,
 [main-menu=code]:after,
 [main-menu=noti]:after,
-[main-menu=meta]:after {display: block; background: url(../../images/basic/common/icon_go.svg)no-repeat center center; width:2.4rem; height:2.4rem; background-size: contain; margin-top:1.0rem;}
+[main-menu=meta]:after {display: block; background: url(../images/default/common/icon_go.svg)no-repeat center center; width:2.4rem; height:2.4rem; background-size: contain; margin-top:1.0rem;}
 
-[main-menu=system]:before {display: block; background: url(../../images/basic/common/main_icon01.svg)no-repeat center center; width:14.0rem; height:13.0rem; background-size: contain; margin-bottom:1.4rem;}
-[main-menu=process]:before {display: block; background: url(../../images/basic/common/main_icon02.svg)no-repeat center center; width:5.8rem; height:5.8rem; background-size: contain;margin-bottom:1.4rem;}
-[main-menu=scl]:before {display: block; background: url(../../images/basic/common/main_icon08.svg)no-repeat center center; width:12.0rem; height:6.0rem; background-size: contain;margin-bottom:1.4rem;}
-[main-menu=data]:before {display: block; background: url(../../images/basic/common/main_icon03.svg)no-repeat center center; width:8.0rem; height:6.0rem; background-size: contain;margin-bottom:1.4rem;}
-[main-menu=view]:before {display: block; background: url(../../images/basic/common/main_icon04.svg)no-repeat center center; width:5.4rem; height:5.4rem; background-size: contain;margin-bottom:1.4rem;}
-[main-menu=scada]:before {display: block; background: url(../../images/basic/common/main_icon07.svg)no-repeat center center; width:12.0rem; height:6.0rem; background-size: contain;margin-bottom:1.4rem;}
-[main-menu=plugin]:before {display: block; background: url(../../images/basic/common/main_icon05.svg)no-repeat center center; width:5.8rem; height:6.0rem; background-size: contain;margin-bottom:1.4rem;}
-[main-menu=ems]:before {display: block; background: url(../../images/basic/common/main_icon06.svg)no-repeat center center; width:10.0rem; height:10.0rem; background-size: contain;margin-bottom:1.4rem;}
+[main-menu=system]:before {display: block; background: url(../images/default/common/main_icon01.svg)no-repeat center center; width:14.0rem; height:13.0rem; background-size: contain; margin-bottom:1.4rem;}
+[main-menu=process]:before {display: block; background: url(../images/default/common/main_icon02.svg)no-repeat center center; width:5.8rem; height:5.8rem; background-size: contain;margin-bottom:1.4rem;}
+[main-menu=scl]:before {display: block; background: url(../images/default/common/main_icon08.svg)no-repeat center center; width:12.0rem; height:6.0rem; background-size: contain;margin-bottom:1.4rem;}
+[main-menu=data]:before {display: block; background: url(../images/default/common/main_icon03.svg)no-repeat center center; width:8.0rem; height:6.0rem; background-size: contain;margin-bottom:1.4rem;}
+[main-menu=view]:before {display: block; background: url(../images/default/common/main_icon04.svg)no-repeat center center; width:5.4rem; height:5.4rem; background-size: contain;margin-bottom:1.4rem;}
+[main-menu=scada]:before {display: block; background: url(../images/default/common/main_icon07.svg)no-repeat center center; width:12.0rem; height:6.0rem; background-size: contain;margin-bottom:1.4rem;}
+[main-menu=plugin]:before {display: block; background: url(../images/default/common/main_icon05.svg)no-repeat center center; width:5.8rem; height:6.0rem; background-size: contain;margin-bottom:1.4rem;}
+[main-menu=ems]:before {display: block; background: url(../images/default/common/main_icon06.svg)no-repeat center center; width:10.0rem; height:10.0rem; background-size: contain;margin-bottom:1.4rem;}
 
 /* contain */
 .c-main-wrap {box-sizing: border-box;border-left:8px solid var(--color-bg06);border-bottom:8px solid var(--color-bg06);border-right:8px solid var(--color-bg06);box-sizing: border-box;height: calc(100% - 4.4rem);/* min-height: calc(100vh - 16rem); *//* padding-right: 20.0rem; */}
@@ -488,8 +488,8 @@ input:read-only {background: #f0f0f0;}
 .c-main-top-wrap {background: var(--color-bg03); box-sizing: border-box; border-bottom:1px solid var(--border05);}
 .c-main-top-inner {border:2px solid var(--color-bg03); position: relative; border-bottom: none;}
 
-.btn-display {z-index:11; position: absolute; top:0.1rem; right:0.1rem; background: url(../../images/basic/common/arrow_up_w.svg)no-repeat center center; width:2.4rem; height:2.4rem; background-size: contain; opacity: 0.8;}
-.btn-display-none { background: url(../../images/basic/common/arrow_down_w.svg)no-repeat center center !important;  background-size: contain !important;}
+.btn-display {z-index:11; position: absolute; top:0.1rem; right:0.1rem; background: url(../images/default/common/arrow_up_w.svg)no-repeat center center; width:2.4rem; height:2.4rem; background-size: contain; opacity: 0.8;}
+.btn-display-none { background: url(../images/default/common/arrow_down_w.svg)no-repeat center center !important;  background-size: contain !important;}
 .btn-display:hover,
 .btn-display-none:hover {opacity: 1;} 
 
@@ -497,8 +497,8 @@ input:read-only {background: #f0f0f0;}
 .c-main-mid-inner .tab-wrap {height:100%;display: flex;flex-direction: column;width: 100%;/* width: 122rem; */}
 
 .c-main-right-wrap > .area-hide {position: absolute; right:0.4rem; top:0.6rem; width:2.4rem; height:2.4rem;}
-.c-main-right-wrap > .area-hide:before {display:block; width:2.4rem; height:2.4rem; background:url(../../images/basic/common/arrow_up_w.svg)no-repeat center center; transform: rotate(90deg); background-size: contain;  opacity: 0.8;}
-.c-main-right-wrap > .area-open:before {display:block; width:2.4rem; height:2.4rem; background:url(../../images/basic/common/arrow_up_w.svg)no-repeat center center; transform: rotate(270deg); background-size: contain;  opacity: 0.8;}
+.c-main-right-wrap > .area-hide:before {display:block; width:2.4rem; height:2.4rem; background:url(../images/default/common/arrow_up_w.svg)no-repeat center center; transform: rotate(90deg); background-size: contain;  opacity: 0.8;}
+.c-main-right-wrap > .area-open:before {display:block; width:2.4rem; height:2.4rem; background:url(../images/default/common/arrow_up_w.svg)no-repeat center center; transform: rotate(270deg); background-size: contain;  opacity: 0.8;}
 
 .c-main-right-inner {height:100%;}
 .c-main-right-inner .tab-wrap {height:100%;display: flex;flex-direction: column;width:100%;}
@@ -509,8 +509,8 @@ input:read-only {background: #f0f0f0;}
 .c-main-left-wrap.left-close .cm-left-cont {display: none; height: 0;}
 .c-main-left-wrap.left-close .cm-left-top > span {margin-bottom:0.6rem;}
 .c-main-left-wrap.left-close .cm-left-top > button {right: 0.8rem; top: unset;}
-.c-main-left-wrap.left-close button.area-hide:before {display:block; width:2.4rem; height:2.4rem; background:url(../../images/basic/common/arrow_up_w.svg)no-repeat center center; transform: rotate(90deg); background-size: contain;  opacity: 0.8;}
-.c-main-left-wrap.left-close button.area-open:before {display:block; width:2.4rem; height:2.4rem; background:url(../../images/basic/common/arrow_up_w.svg)no-repeat center center; transform: rotate(270deg); background-size: contain;  opacity: 0.8;}
+.c-main-left-wrap.left-close button.area-hide:before {display:block; width:2.4rem; height:2.4rem; background:url(../images/default/common/arrow_up_w.svg)no-repeat center center; transform: rotate(90deg); background-size: contain;  opacity: 0.8;}
+.c-main-left-wrap.left-close button.area-open:before {display:block; width:2.4rem; height:2.4rem; background:url(../images/default/common/arrow_up_w.svg)no-repeat center center; transform: rotate(270deg); background-size: contain;  opacity: 0.8;}
 
 
 /* 오른쪽영역 펼침,닫힘 */
@@ -536,60 +536,60 @@ input:read-only {background: #f0f0f0;}
 .tool-txt .tool-icon > span {display: block; margin-left:0.6rem; font-size:1.3rem; color:var(--color-text05);}
 .tool-txt .tool-icon:hover > span {color:var(--color-text09)}
 
-[tool-icon=tool-save]:before {background: url(../../images/basic/toolbar/file_save.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-undo]:before {background: url(../../images/basic/toolbar/edit_undo.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-redo]:before {background: url(../../images/basic/toolbar/edit_redo.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-paste]:before {background: url(../../images/basic/toolbar/edit_paste.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-cut]:before {background: url(../../images/basic/toolbar/edit_cut.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-copy]:before {background: url(../../images/basic/toolbar/edit_copy.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-delete]:before {background: url(../../images/basic/toolbar/edit_delete.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-pointer]:before {background: url(../../images/basic/toolbar/tool_pointer.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-textbox]:before {background: url(../../images/basic/toolbar/tool_textbox.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-pencil]:before {background: url(../../images/basic/toolbar/tool_pencil.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-path]:before {background: url(../../images/basic/toolbar/tool_path.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-connector]:before {background: url(../../images/basic/toolbar/tool_connector.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-group]:before {background: url(../../images/basic/toolbar/layout_group.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-ungroup]:before {background: url(../../images/basic/toolbar/layout_ungroup.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-bring-forward]:before {background: url(../../images/basic/toolbar/layout_bring_forward.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-bring-front]:before {background: url(../../images/basic/toolbar/layout_bring_front.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-send-backward]:before {background: url(../../images/basic/toolbar/layout_send_backward.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-send-back]:before {background: url(../../images/basic/toolbar/layout_send_back.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-halign-left]:before {background: url(../../images/basic/toolbar/layout_halign_left.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-halign-center]:before {background: url(../../images/basic/toolbar/layout_halign_center.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-halign-right]:before {background: url(../../images/basic/toolbar/layout_halign_right.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-valign-top]:before {background: url(../../images/basic/toolbar/layout_valign_top.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-valign-middle]:before {background: url(../../images/basic/toolbar/layout_valign_middle.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-valign-bottom]:before {background: url(../../images/basic/toolbar/layout_valign_bottom.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-export-image]:before {background: url(../../images/basic/toolbar/export_image.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-cn-ac]:before {background: url(../../images/basic/toolbar/tool_connection_cn_ac.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-cn-dc]:before {background: url(../../images/basic/toolbar/tool_connection_cn_dc.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-lin-ac]:before {background: url(../../images/basic/toolbar/tool_connection_lin_ac.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-lin-dc]:before {background: url(../../images/basic/toolbar/tool_connection_lin_dc.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-epip-w]:before {background: url(../../images/basic/toolbar/tool_connection_epip_w.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-epip-g]:before {background: url(../../images/basic/toolbar/tool_connection_epip_g.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-epip-t]:before {background: url(../../images/basic/toolbar/tool_connection_epip_t.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-error-check]:before {background: url(../../images/basic/toolbar/tool_error_check.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-file-open]:before {background: url(../../images/basic/toolbar/file_open.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-save]:before {background: url(../images/default/toolbar/file_save.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-undo]:before {background: url(../images/default/toolbar/edit_undo.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-redo]:before {background: url(../images/default/toolbar/edit_redo.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-paste]:before {background: url(../images/default/toolbar/edit_paste.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-cut]:before {background: url(../images/default/toolbar/edit_cut.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-copy]:before {background: url(../images/default/toolbar/edit_copy.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-delete]:before {background: url(../images/default/toolbar/edit_delete.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-pointer]:before {background: url(../images/default/toolbar/tool_pointer.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-textbox]:before {background: url(../images/default/toolbar/tool_textbox.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-pencil]:before {background: url(../images/default/toolbar/tool_pencil.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-path]:before {background: url(../images/default/toolbar/tool_path.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-connector]:before {background: url(../images/default/toolbar/tool_connector.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-group]:before {background: url(../images/default/toolbar/layout_group.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-ungroup]:before {background: url(../images/default/toolbar/layout_ungroup.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-bring-forward]:before {background: url(../images/default/toolbar/layout_bring_forward.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-bring-front]:before {background: url(../images/default/toolbar/layout_bring_front.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-send-backward]:before {background: url(../images/default/toolbar/layout_send_backward.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-send-back]:before {background: url(../images/default/toolbar/layout_send_back.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-halign-left]:before {background: url(../images/default/toolbar/layout_halign_left.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-halign-center]:before {background: url(../images/default/toolbar/layout_halign_center.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-halign-right]:before {background: url(../images/default/toolbar/layout_halign_right.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-valign-top]:before {background: url(../images/default/toolbar/layout_valign_top.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-valign-middle]:before {background: url(../images/default/toolbar/layout_valign_middle.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-valign-bottom]:before {background: url(../images/default/toolbar/layout_valign_bottom.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-export-image]:before {background: url(../images/default/toolbar/export_image.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-cn-ac]:before {background: url(../images/default/toolbar/tool_connection_cn_ac.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-cn-dc]:before {background: url(../images/default/toolbar/tool_connection_cn_dc.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-lin-ac]:before {background: url(../images/default/toolbar/tool_connection_lin_ac.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-lin-dc]:before {background: url(../images/default/toolbar/tool_connection_lin_dc.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-epip-w]:before {background: url(../images/default/toolbar/tool_connection_epip_w.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-epip-g]:before {background: url(../images/default/toolbar/tool_connection_epip_g.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-epip-t]:before {background: url(../images/default/toolbar/tool_connection_epip_t.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-error-check]:before {background: url(../images/default/toolbar/tool_error_check.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-file-open]:before {background: url(../images/default/toolbar/file_open.png)no-repeat center center; background-size:contain;}
 
-[tool-icon=tool-bg-color]:before {background: url(../../images/basic/toolbar/tool_bg_color.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-grid-show]:before {background: url(../../images/basic/toolbar/prop_grid_show.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-grid-color]:before {background: url(../../images/basic/toolbar/prop_grid_show.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-zoom-fit]:before {background: url(../../images/basic/toolbar/prop_zoom_to_fit.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-snap-grid]:before {background: url(../../images/basic/toolbar/prop_snap_grid.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-view]:before {background: url(../../images/basic/toolbar/prop_view.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-bg-color]:before {background: url(../images/default/toolbar/tool_bg_color.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-grid-show]:before {background: url(../images/default/toolbar/prop_grid_show.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-grid-color]:before {background: url(../images/default/toolbar/prop_grid_show.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-zoom-fit]:before {background: url(../images/default/toolbar/prop_zoom_to_fit.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-snap-grid]:before {background: url(../images/default/toolbar/prop_snap_grid.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-view]:before {background: url(../images/default/toolbar/prop_view.png)no-repeat center center; background-size:contain;}
 
-[tool-icon=tool-export-file]:before {background: url(../../images/basic/toolbar/export_file.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-add-image]:before {background: url(../../images/basic/toolbar/tool_add_image.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-connector]:before {background: url(../../images/basic/toolbar/tool_connector.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-line]:before {background: url(../../images/basic/toolbar/tool_line.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-triangle]:before {background: url(../../images/basic/toolbar/tool_triangle.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-circle]:before {background: url(../../images/basic/toolbar/tool_circle.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-roundrect]:before {background: url(../../images/basic/toolbar/tool_roundrect.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-rect]:before {background: url(../../images/basic/toolbar/tool_rect.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-shape]:before {background: url(../../images/basic/toolbar/tool_shape.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-export-file]:before {background: url(../images/default/toolbar/export_file.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-add-image]:before {background: url(../images/default/toolbar/tool_add_image.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-connector]:before {background: url(../images/default/toolbar/tool_connector.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-line]:before {background: url(../images/default/toolbar/tool_line.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-triangle]:before {background: url(../images/default/toolbar/tool_triangle.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-circle]:before {background: url(../images/default/toolbar/tool_circle.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-roundrect]:before {background: url(../images/default/toolbar/tool_roundrect.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-rect]:before {background: url(../images/default/toolbar/tool_rect.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-shape]:before {background: url(../images/default/toolbar/tool_shape.png)no-repeat center center; background-size:contain;}
 
 .btn-box {position: relative;}
-.btn-box .tool-txt .tool-icon:after {display: block; margin-left:0.6rem; background: url(../../images/basic/common/arrow_more.svg)no-repeat center center; width:1.0rem; height: 1.0rem; background-size: contain;}
+.btn-box .tool-txt .tool-icon:after {display: block; margin-left:0.6rem; background: url(../images/default/common/arrow_more.svg)no-repeat center center; width:1.0rem; height: 1.0rem; background-size: contain;}
 .btn-box .tool-more {display: none;}
 .btn-box .tool-more.on {color:var(--color-text06); width:100%; min-width: 16.0rem;display: block;position: absolute;top:2.8rem;left:0;background: var(--color-bg04); border: 1px solid var(--border04); border-radius: 4px;padding: 0.8rem 0.4rem;}
 .btn-box .tool-more .tool-icon {width:calc(100%); padding:0 1.2rem; justify-content: flex-start;}
@@ -647,82 +647,82 @@ input:read-only {background: #f0f0f0;}
 .component-ltem:after {display: block;width: 7.0rem;height: 7.0rem;background-color: var(--color-bg04);border-radius: 6px; border:1px solid transparent; box-sizing: border-box;}
 .component-ltem:hover:after {background-color:var(--color-hover-bg02); border:1px solid var(--border06)}
 .component-ltem:before {display: block;width: 4.0rem;height: 4.0rem;position: absolute;top: 1.5rem;left: 1.5rem;z-index: 11;}
-[component-icon=component-ALTS]:before {background: url(../../images/basic/component/electrical/PNG/ALTS.png)no-repeat center center; background-size:contain;}
-[component-icon=component-SVC]:before {background: url(../../images/basic/component/electrical/PNG/SVC.png)no-repeat center center; background-size:contain;}
-[component-icon=component-JP]:before {background: url(../../images/basic/component/electrical/PNG/JunctionPoint.png)no-repeat center center; background-size:contain;}
-[component-icon=component-FC]:before {background: url(../../images/basic/component/electrical/PNG/FC.png)no-repeat center center; background-size:contain;}
-[component-icon=component-CAP]:before {background: url(../../images/basic/component/electrical/PNG/CAP.png)no-repeat center center; background-size:contain;}
-[component-icon=component-SCS]:before {background: url(../../images/basic/component/electrical/PNG/StationContainerShape.png)no-repeat center center; background-size:contain;}
-[component-icon=component-BS]:before {background: url(../../images/basic/component/electrical/PNG/BusbarSection.png)no-repeat center center; background-size:contain;}
-[component-icon=component-CB]:before {background: url(../../images/basic/component/electrical/PNG/CircuitBreaker.png)no-repeat center center; background-size:contain;}
-[component-icon=component-CS]:before {background: url(../../images/basic/component/electrical/PNG/CompositeSwitch.png)no-repeat center center; background-size:contain;}
-[component-icon=component-CT]:before {background: url(../../images/basic/component/electrical/PNG/CurrentTransformer.png)no-repeat center center; background-size:contain;}
-[component-icon=component-EES]:before {background: url(../../images/basic/component/electrical/PNG/EES.png)no-repeat center center; background-size:contain;}
-[component-icon=component-CHP]:before {background: url(../../images/basic/component/electrical/PNG/CHP.png)no-repeat center center; background-size:contain;}
-[component-icon=component-WT]:before {background: url(../../images/basic/component/electrical/PNG/WT.png)no-repeat center center; background-size:contain;}
-[component-icon=component-PV]:before {background: url(../../images/basic/component/electrical/PNG/PV.png)no-repeat center center; background-size:contain;}
-[component-icon=component-Generator]:before {background: url(../../images/basic/component/electrical/PNG/Generator.png)no-repeat center center; background-size:contain;}
-[component-icon=component-Load]:before {background: url(../../images/basic/component/electrical/PNG/Load.png)no-repeat center center; background-size:contain;}
-[component-icon=component-PT]:before {background: url(../../images/basic/component/electrical/PNG/PowerTransformer.png)no-repeat center center; background-size:contain;}
-[component-icon=component-PT3]:before {background: url(../../images/basic/component/electrical/PNG/PowerTransformer3.png)no-repeat center center; background-size:contain;}
-[component-icon=component-Disconnector]:before {background: url(../../images/basic/component/electrical/PNG/Disconnector.png)no-repeat center center; background-size:contain;}
-[component-icon=component-SW-M]:before {background: url(../../images/basic/component/electrical/PNG/Disconnector.png)no-repeat center center; background-size:contain;}
+[component-icon=component-ALTS]:before {background: url(../images/default/component/electrical/PNG/ALTS.png)no-repeat center center; background-size:contain;}
+[component-icon=component-SVC]:before {background: url(../images/default/component/electrical/PNG/SVC.png)no-repeat center center; background-size:contain;}
+[component-icon=component-JP]:before {background: url(../images/default/component/electrical/PNG/JunctionPoint.png)no-repeat center center; background-size:contain;}
+[component-icon=component-FC]:before {background: url(../images/default/component/electrical/PNG/FC.png)no-repeat center center; background-size:contain;}
+[component-icon=component-CAP]:before {background: url(../images/default/component/electrical/PNG/CAP.png)no-repeat center center; background-size:contain;}
+[component-icon=component-SCS]:before {background: url(../images/default/component/electrical/PNG/StationContainerShape.png)no-repeat center center; background-size:contain;}
+[component-icon=component-BS]:before {background: url(../images/default/component/electrical/PNG/BusbarSection.png)no-repeat center center; background-size:contain;}
+[component-icon=component-CB]:before {background: url(../images/default/component/electrical/PNG/CircuitBreaker.png)no-repeat center center; background-size:contain;}
+[component-icon=component-CS]:before {background: url(../images/default/component/electrical/PNG/CompositeSwitch.png)no-repeat center center; background-size:contain;}
+[component-icon=component-CT]:before {background: url(../images/default/component/electrical/PNG/CurrentTransformer.png)no-repeat center center; background-size:contain;}
+[component-icon=component-EES]:before {background: url(../images/default/component/electrical/PNG/EES.png)no-repeat center center; background-size:contain;}
+[component-icon=component-CHP]:before {background: url(../images/default/component/electrical/PNG/CHP.png)no-repeat center center; background-size:contain;}
+[component-icon=component-WT]:before {background: url(../images/default/component/electrical/PNG/WT.png)no-repeat center center; background-size:contain;}
+[component-icon=component-PV]:before {background: url(../images/default/component/electrical/PNG/PV.png)no-repeat center center; background-size:contain;}
+[component-icon=component-Generator]:before {background: url(../images/default/component/electrical/PNG/Generator.png)no-repeat center center; background-size:contain;}
+[component-icon=component-Load]:before {background: url(../images/default/component/electrical/PNG/Load.png)no-repeat center center; background-size:contain;}
+[component-icon=component-PT]:before {background: url(../images/default/component/electrical/PNG/PowerTransformer.png)no-repeat center center; background-size:contain;}
+[component-icon=component-PT3]:before {background: url(../images/default/component/electrical/PNG/PowerTransformer3.png)no-repeat center center; background-size:contain;}
+[component-icon=component-Disconnector]:before {background: url(../images/default/component/electrical/PNG/Disconnector.png)no-repeat center center; background-size:contain;}
+[component-icon=component-SW-M]:before {background: url(../images/default/component/electrical/PNG/Disconnector.png)no-repeat center center; background-size:contain;}
 
-[component-icon=component-ALK]:before {background: url(../../images/basic/component/general/PNG/ALK.png)no-repeat center center; background-size:contain;}
-[component-icon=component-BP]:before {background: url(../../images/basic/component/general/PNG/BrinePump.png)no-repeat center center; background-size:contain;}
-[component-icon=component-CTower]:before {background: url(../../images/basic/component/general/PNG/CoolingTower.png)no-repeat center center; background-size:contain;}
-[component-icon=component-CWPump]:before {background: url(../../images/basic/component/general/PNG/CoolWaterPump.png)no-repeat center center; background-size:contain;}
-[component-icon=component-Dehumidifier]:before {background: url(../../images/basic/component/general/PNG/Dehumidifier.png)no-repeat center center; background-size:contain;}
-[component-icon=component-Electrolyzer]:before {background: url(../../images/basic/component/general/PNG/Electrolyzer.png)no-repeat center center; background-size:contain;}
-[component-icon=component-HP]:before {background: url(../../images/basic/component/general/PNG/HeatPump.png)no-repeat center center; background-size:contain;}
-[component-icon=component-HWP]:before {background: url(../../images/basic/component/general/PNG/HotWaterPump.png)no-repeat center center; background-size:contain;}
-[component-icon=component-PCV]:before {background: url(../../images/basic/component/general/PNG/PipeCheckValve.png)no-repeat center center; background-size:contain;}
-[component-icon=component-PipeValve]:before {background: url(../../images/basic/component/general/PNG/PipeValve.png)no-repeat center center; background-size:contain;}
-[component-icon=component-SDB]:before {background: url(../../images/basic/component/general/PNG/SmartDistBoard.png)no-repeat center center; background-size:contain;}
-[component-icon=component-SO]:before {background: url(../../images/basic/component/general/PNG/SmartOutlet.png)no-repeat center center; background-size:contain;}
-[component-icon=component-DB]:before {background: url(../../images/basic/component/general/PNG/DistBoard.png)no-repeat center center; background-size:contain;}
-[component-icon=component-PE4W]:before {background: url(../../images/basic/component/general/PNG/PipeElbow4Way.png)no-repeat center center; background-size:contain;}
-[component-icon=component-PE3W]:before {background: url(../../images/basic/component/general/PNG/PipeElbow3Way.png)no-repeat center center; background-size:contain;}
-[component-icon=component-Light]:before {background: url(../../images/basic/component/general/PNG/Light.png)no-repeat center center; background-size:contain;}
-[component-icon=component-Machine]:before {background: url(../../images/basic/component/general/PNG/Machine.png)no-repeat center center; background-size:contain;}
-[component-icon=component-HE]:before {background: url(../../images/basic/component/general/PNG/HeatExchanger.png)no-repeat center center; background-size:contain;}
-[component-icon=component-ST]:before {background: url(../../images/basic/component/general/PNG/SolarThermal.png)no-repeat center center; background-size:contain;}
-[component-icon=component-PEM]:before {background: url(../../images/basic/component/general/PNG/PEM.png)no-repeat center center; background-size:contain;}
-[component-icon=component-H2P]:before {background: url(../../images/basic/component/general/PNG/H2Purifier.png)no-repeat center center; background-size:contain;}
-[component-icon=component-PWG]:before {background: url(../../images/basic/component/general/PNG/PureWaterGenerator.png)no-repeat center center; background-size:contain;}
-[component-icon=component-Tank]:before {background: url(../../images/basic/component/general/PNG/Tank.png)no-repeat center center; background-size:contain;}
-[component-icon=component-BOILER]:before {background: url(../../images/basic/component/general/PNG/BOILER.png)no-repeat center center; background-size:contain;}
-[component-icon=component-AC]:before {background: url(../../images/basic/component/general/PNG/AirConditioner.png)no-repeat center center; background-size:contain;}
-[component-icon=component-CHILLER]:before {background: url(../../images/basic/component/general/PNG/CHILLER.png)no-repeat center center; background-size:contain;}
-[component-icon=component-DC]:before {background: url(../../images/basic/component/general/PNG/DryChamber.png)no-repeat center center; background-size:contain;}
-[component-icon=component-COMPRESSOR]:before {background: url(../../images/basic/component/general/PNG/COMPRESSOR.png)no-repeat center center; background-size:contain;}
-[component-icon=component-EF]:before {background: url(../../images/basic/component/general/PNG/ExhaustFan.png)no-repeat center center; background-size:contain;}
-[component-icon=component-WM]:before {background: url(../../images/basic/component/general/PNG/WashingMachine.png)no-repeat center center; background-size:contain;}
+[component-icon=component-ALK]:before {background: url(../images/default/component/general/PNG/ALK.png)no-repeat center center; background-size:contain;}
+[component-icon=component-BP]:before {background: url(../images/default/component/general/PNG/BrinePump.png)no-repeat center center; background-size:contain;}
+[component-icon=component-CTower]:before {background: url(../images/default/component/general/PNG/CoolingTower.png)no-repeat center center; background-size:contain;}
+[component-icon=component-CWPump]:before {background: url(../images/default/component/general/PNG/CoolWaterPump.png)no-repeat center center; background-size:contain;}
+[component-icon=component-Dehumidifier]:before {background: url(../images/default/component/general/PNG/Dehumidifier.png)no-repeat center center; background-size:contain;}
+[component-icon=component-Electrolyzer]:before {background: url(../images/default/component/general/PNG/Electrolyzer.png)no-repeat center center; background-size:contain;}
+[component-icon=component-HP]:before {background: url(../images/default/component/general/PNG/HeatPump.png)no-repeat center center; background-size:contain;}
+[component-icon=component-HWP]:before {background: url(../images/default/component/general/PNG/HotWaterPump.png)no-repeat center center; background-size:contain;}
+[component-icon=component-PCV]:before {background: url(../images/default/component/general/PNG/PipeCheckValve.png)no-repeat center center; background-size:contain;}
+[component-icon=component-PipeValve]:before {background: url(../images/default/component/general/PNG/PipeValve.png)no-repeat center center; background-size:contain;}
+[component-icon=component-SDB]:before {background: url(../images/default/component/general/PNG/SmartDistBoard.png)no-repeat center center; background-size:contain;}
+[component-icon=component-SO]:before {background: url(../images/default/component/general/PNG/SmartOutlet.png)no-repeat center center; background-size:contain;}
+[component-icon=component-DB]:before {background: url(../images/default/component/general/PNG/DistBoard.png)no-repeat center center; background-size:contain;}
+[component-icon=component-PE4W]:before {background: url(../images/default/component/general/PNG/PipeElbow4Way.png)no-repeat center center; background-size:contain;}
+[component-icon=component-PE3W]:before {background: url(../images/default/component/general/PNG/PipeElbow3Way.png)no-repeat center center; background-size:contain;}
+[component-icon=component-Light]:before {background: url(../images/default/component/general/PNG/Light.png)no-repeat center center; background-size:contain;}
+[component-icon=component-Machine]:before {background: url(../images/default/component/general/PNG/Machine.png)no-repeat center center; background-size:contain;}
+[component-icon=component-HE]:before {background: url(../images/default/component/general/PNG/HeatExchanger.png)no-repeat center center; background-size:contain;}
+[component-icon=component-ST]:before {background: url(../images/default/component/general/PNG/SolarThermal.png)no-repeat center center; background-size:contain;}
+[component-icon=component-PEM]:before {background: url(../images/default/component/general/PNG/PEM.png)no-repeat center center; background-size:contain;}
+[component-icon=component-H2P]:before {background: url(../images/default/component/general/PNG/H2Purifier.png)no-repeat center center; background-size:contain;}
+[component-icon=component-PWG]:before {background: url(../images/default/component/general/PNG/PureWaterGenerator.png)no-repeat center center; background-size:contain;}
+[component-icon=component-Tank]:before {background: url(../images/default/component/general/PNG/Tank.png)no-repeat center center; background-size:contain;}
+[component-icon=component-BOILER]:before {background: url(../images/default/component/general/PNG/BOILER.png)no-repeat center center; background-size:contain;}
+[component-icon=component-AC]:before {background: url(../images/default/component/general/PNG/AirConditioner.png)no-repeat center center; background-size:contain;}
+[component-icon=component-CHILLER]:before {background: url(../images/default/component/general/PNG/CHILLER.png)no-repeat center center; background-size:contain;}
+[component-icon=component-DC]:before {background: url(../images/default/component/general/PNG/DryChamber.png)no-repeat center center; background-size:contain;}
+[component-icon=component-COMPRESSOR]:before {background: url(../images/default/component/general/PNG/COMPRESSOR.png)no-repeat center center; background-size:contain;}
+[component-icon=component-EF]:before {background: url(../images/default/component/general/PNG/ExhaustFan.png)no-repeat center center; background-size:contain;}
+[component-icon=component-WM]:before {background: url(../images/default/component/general/PNG/WashingMachine.png)no-repeat center center; background-size:contain;}
 
-[component-icon=component-RC4-A]:before {background: url(../../images/basic/component/supply/PNG/CompositeRecloser4_RC4_A.png)no-repeat center center; background-size:contain;}
-[component-icon=component-RC4-M]:before {background: url(../../images/basic/component/supply/PNG/CompositeRecloser4_RC4_M.png)no-repeat center center; background-size:contain;}
-[component-icon=component-RC3-M]:before {background: url(../../images/basic/component/supply/PNG/CompositeRecloser3_RC3_M.png)no-repeat center center; background-size:contain;}
-[component-icon=component-RC3-A]:before {background: url(../../images/basic/component/supply/PNG/CompositeRecloser3_RC3_A.png)no-repeat center center; background-size:contain;}
-[component-icon=component-SW3-M]:before {background: url(../../images/basic/component/supply/PNG/CompositeSwitch3_SW3_M.png)no-repeat center center; background-size:contain;}
-[component-icon=component-SW3-A]:before {background: url(../../images/basic/component/supply/PNG/CompositeSwitch3_SW3_A.png)no-repeat center center; background-size:contain;}
-[component-icon=component-SW6-M]:before {background: url(../../images/basic/component/supply/PNG/CompositeSwitch6_SW6_M.png)no-repeat center center; background-size:contain;}
-[component-icon=component-SW6-A]:before {background: url(../../images/basic/component/supply/PNG/CompositeSwitch6_SW6_A.png)no-repeat center center; background-size:contain;}
-[component-icon=component-SW4-M]:before {background: url(../../images/basic/component/supply/PNG/CompositeSwitch4_SW4_M.png)no-repeat center center; background-size:contain;}
-[component-icon=component-SW4-A]:before {background: url(../../images/basic/component/supply/PNG/CompositeSwitch4_SW4_A.png)no-repeat center center; background-size:contain;}
-[component-icon=component-COS]:before {background: url(../../images/basic/component/supply/PNG/DisconnectorCos.png)no-repeat center center; background-size:contain;}
-[component-icon=component-SW-A]:before {background: url(../../images/basic/component/supply/PNG/DisconnectorA_SW_A.png)no-repeat center center; background-size:contain;}
-[component-icon=component-DER]:before {background: url(../../images/basic/component/supply/PNG/DER.png)no-repeat center center; background-size:contain;}
-[component-icon=component-DTR]:before {background: url(../../images/basic/component/supply/PNG/DTR.png)no-repeat center center; background-size:contain;}
-[component-icon=component-LoadL]:before {background: url(../../images/basic/component/supply/PNG/LoadL.png)no-repeat center center; background-size:contain;}
-[component-icon=component-LoadH]:before {background: url(../../images/basic/component/supply/PNG/LoadH.png)no-repeat center center; background-size:contain;}
-[component-icon=component-CP]:before {background: url(../../images/basic/component/supply/PNG/CablePole.png)no-repeat center center; background-size:contain;}
+[component-icon=component-RC4-A]:before {background: url(../images/default/component/supply/PNG/CompositeRecloser4_RC4_A.png)no-repeat center center; background-size:contain;}
+[component-icon=component-RC4-M]:before {background: url(../images/default/component/supply/PNG/CompositeRecloser4_RC4_M.png)no-repeat center center; background-size:contain;}
+[component-icon=component-RC3-M]:before {background: url(../images/default/component/supply/PNG/CompositeRecloser3_RC3_M.png)no-repeat center center; background-size:contain;}
+[component-icon=component-RC3-A]:before {background: url(../images/default/component/supply/PNG/CompositeRecloser3_RC3_A.png)no-repeat center center; background-size:contain;}
+[component-icon=component-SW3-M]:before {background: url(../images/default/component/supply/PNG/CompositeSwitch3_SW3_M.png)no-repeat center center; background-size:contain;}
+[component-icon=component-SW3-A]:before {background: url(../images/default/component/supply/PNG/CompositeSwitch3_SW3_A.png)no-repeat center center; background-size:contain;}
+[component-icon=component-SW6-M]:before {background: url(../images/default/component/supply/PNG/CompositeSwitch6_SW6_M.png)no-repeat center center; background-size:contain;}
+[component-icon=component-SW6-A]:before {background: url(../images/default/component/supply/PNG/CompositeSwitch6_SW6_A.png)no-repeat center center; background-size:contain;}
+[component-icon=component-SW4-M]:before {background: url(../images/default/component/supply/PNG/CompositeSwitch4_SW4_M.png)no-repeat center center; background-size:contain;}
+[component-icon=component-SW4-A]:before {background: url(../images/default/component/supply/PNG/CompositeSwitch4_SW4_A.png)no-repeat center center; background-size:contain;}
+[component-icon=component-COS]:before {background: url(../images/default/component/supply/PNG/DisconnectorCos.png)no-repeat center center; background-size:contain;}
+[component-icon=component-SW-A]:before {background: url(../images/default/component/supply/PNG/DisconnectorA_SW_A.png)no-repeat center center; background-size:contain;}
+[component-icon=component-DER]:before {background: url(../images/default/component/supply/PNG/DER.png)no-repeat center center; background-size:contain;}
+[component-icon=component-DTR]:before {background: url(../images/default/component/supply/PNG/DTR.png)no-repeat center center; background-size:contain;}
+[component-icon=component-LoadL]:before {background: url(../images/default/component/supply/PNG/LoadL.png)no-repeat center center; background-size:contain;}
+[component-icon=component-LoadH]:before {background: url(../images/default/component/supply/PNG/LoadH.png)no-repeat center center; background-size:contain;}
+[component-icon=component-CP]:before {background: url(../images/default/component/supply/PNG/CablePole.png)no-repeat center center; background-size:contain;}
 
-[component-icon=component-BG]:before {background: url(../../images/basic/component/gauge/png/BarGauge.png)no-repeat center center; background-size:contain;}
-[component-icon=component-EESCG]:before {background: url(../../images/basic/component/gauge/png/EESChargeGauge.png)no-repeat center center; background-size:contain;}
-[component-icon=component-HLG]:before {background: url(../../images/basic/component/gauge/png/HLinearGauge.png)no-repeat center center; background-size:contain;}
-[component-icon=component-RG]:before {background: url(../../images/basic/component/gauge/png/RadialGauge.png)no-repeat center center; background-size:contain;}
-[component-icon=component-SRG]:before {background: url(../../images/basic/component/gauge/png/SemiRadialGauge.png)no-repeat center center; background-size:contain;}
-[component-icon=component-VG]:before {background: url(../../images/basic/component/gauge/png/VLinearGauge.png)no-repeat center center; background-size:contain;}
+[component-icon=component-BG]:before {background: url(../images/default/component/gauge/png/BarGauge.png)no-repeat center center; background-size:contain;}
+[component-icon=component-EESCG]:before {background: url(../images/default/component/gauge/png/EESChargeGauge.png)no-repeat center center; background-size:contain;}
+[component-icon=component-HLG]:before {background: url(../images/default/component/gauge/png/HLinearGauge.png)no-repeat center center; background-size:contain;}
+[component-icon=component-RG]:before {background: url(../images/default/component/gauge/png/RadialGauge.png)no-repeat center center; background-size:contain;}
+[component-icon=component-SRG]:before {background: url(../images/default/component/gauge/png/SemiRadialGauge.png)no-repeat center center; background-size:contain;}
+[component-icon=component-VG]:before {background: url(../images/default/component/gauge/png/VLinearGauge.png)no-repeat center center; background-size:contain;}
 
 
 /* 계통설비 및 심볼 */
@@ -741,13 +741,13 @@ input:read-only {background: #f0f0f0;}
 
 .symbol-group {width: 100%;}
 .symbol-group .symbol-g-tit {position: relative;cursor: pointer;display: block;font-size:1.4rem;padding: 0.4rem 0 0.4rem 2.6rem;margin-bottom: 1.0rem;opacity: 0.8;}
-.symbol-group .symbol-g-tit:before {display: block;width: 2.0rem;height: 2.0rem;background:var(--border04) url(../../images/basic/common/arrow_down_w.svg)no-repeat center center;background-size: contain;position: absolute;top: calc(50% - 1.0rem);left:0; border-radius: 50%;}
+.symbol-group .symbol-g-tit:before {display: block;width: 2.0rem;height: 2.0rem;background:var(--border04) url(../images/default/common/arrow_down_w.svg)no-repeat center center;background-size: contain;position: absolute;top: calc(50% - 1.0rem);left:0; border-radius: 50%;}
 .symbol-group .symbol-g-tit:hover,
 .symbol-g-open .symbol-g-tit,
 .symbol-g-open .symbol-g-tit:hover {opacity: 1; color:var(--color-text07)}
 .symbol-group .symbol-g-tit:hover:before,
 .symbol-g-open .symbol-g-tit:before,
-.symbol-g-open .symbol-g-tit:hover:before {background:var(--border04) url(../../images/basic/common/arrow_up_w.svg)no-repeat center center;background-size: contain;}
+.symbol-g-open .symbol-g-tit:hover:before {background:var(--border04) url(../images/default/common/arrow_up_w.svg)no-repeat center center;background-size: contain;}
 .symbol-g-open .symbol-list {display: block;}
 
 .symbol-list {height:100%;padding: 0 0.2rem 0 0; margin-bottom:0.8rem; display: none;}
@@ -780,9 +780,9 @@ input:read-only {background: #f0f0f0;}
 .prop-search > button:before {display: block; opacity: 0.6; margin:0 auto;}
 .prop-search > button:first-child {margin-right:0.6rem;}
 .sort-category {background: var(--color-bg06); padding:0;}
-.sort-category:before {background: url(../../images/basic/common/icon_category.svg) no-repeat center center; background-size: contain; width:2.0rem; height:1.4rem;}
+.sort-category:before {background: url(../images/default/common/icon_category.svg) no-repeat center center; background-size: contain; width:2.0rem; height:1.4rem;}
 .sort-alphabet {background: var(--color-bg06); padding:0;}
-.sort-alphabet:before {background: url(../../images/basic/common/icon_alphabet.svg) no-repeat center center; background-size: contain; width:2.0rem; height:1.2rem;}
+.sort-alphabet:before {background: url(../images/default/common/icon_alphabet.svg) no-repeat center center; background-size: contain; width:2.0rem; height:1.2rem;}
 .prop-search > button.on,
 .prop-search > button:hover {background: var(--color-btn-bg02);}
 .prop-search > button.on:before,
@@ -790,7 +790,7 @@ input:read-only {background: #f0f0f0;}
 .prop-search-input {position: relative; margin-left:0.8rem; flex-grow: 1;}
 .prop-search-input > input[type=text] {padding: 0 3.4rem 0 0.8rem;width:100%;}
 .prop-search-input .search-btn {position: absolute; top:0; right:0; height:100%; padding:0 1.0rem;}
-.prop-search-input .search-btn:before {opacity: 0.6; display: block; background: url(../../images/basic/common/icon_search.svg) no-repeat center center; background-size: contain; width:1.6rem; height:1.6rem;}
+.prop-search-input .search-btn:before {opacity: 0.6; display: block; background: url(../images/default/common/icon_search.svg) no-repeat center center; background-size: contain; width:1.6rem; height:1.6rem;}
 .prop-search-input .search-btn:hover:before {opacity: 1;}
 .prop-list {overflow-y: auto;height: calc(100% - 4.6rem);padding: 0 0.4rem 0 0;}
 .prop-desc {position: relative;background: var(--color-bg02);border-radius: 4px;padding: 1.0rem 1.4rem 1.0rem 1.4rem;height: 5.2rem;width: calc(100% - 2.8rem);overflow-y: auto;margin-top: 0.8rem;display:none;}
@@ -798,7 +798,7 @@ input:read-only {background: #f0f0f0;}
 .prop-desc-title {font-weight: 500; margin-bottom:0.6rem; width:calc(100% - 2.0rem); line-height: 1.2;}
 .prop-desc-info {color:var(--color-text04); line-height: 1.4; font-weight: 300;}
 .desc-close {width:1.6rem; height:1.6rem; position: absolute; top: 0.8rem; right: 0.8rem; opacity: 0.7;}
-.desc-close:before {display: block; background: url(../../images/basic/common/icon_close.svg) no-repeat center center; width:1.6rem; height:1.6rem; background-size: contain;}
+.desc-close:before {display: block; background: url(../images/default/common/icon_close.svg) no-repeat center center; width:1.6rem; height:1.6rem; background-size: contain;}
 .desc-close:hover {opacity: 1;}
 
 .prop-cont-inner:has(.desc-on) + .prop-desc {display: block !important;}
@@ -812,8 +812,8 @@ input:read-only {background: #f0f0f0;}
 .prop-item > .select-wrap select {width:100%; height:3.0rem;}
 
 .prop-item .more-item {margin-right:0.6rem; opacity: 0.4; height: 1.2rem;}
-.prop-item .more-item:before {display: block; background: url(../../images/basic/common/icon_plus.svg) no-repeat center center; width:1.2rem; height:1.2rem; background-size: contain;}
-.prop-item .more-item.open:before {display: block; background: url(../../images/basic/common/icon_minus.svg) no-repeat center center; width:1.2rem; height:1.2rem; background-size: contain;}
+.prop-item .more-item:before {display: block; background: url(../images/default/common/icon_plus.svg) no-repeat center center; width:1.2rem; height:1.2rem; background-size: contain;}
+.prop-item .more-item.open:before {display: block; background: url(../images/default/common/icon_minus.svg) no-repeat center center; width:1.2rem; height:1.2rem; background-size: contain;}
 .prop-item .more-item:hover {opacity: 0.8;}
 
 .prop-item-depth01 {padding:0 0 0 1.8rem;}
@@ -931,7 +931,7 @@ input:read-only {background: #f0f0f0;}
 .pagination .prev-group {margin-right:0.1rem;}
 .pagination .next-group {margin-left:0.1rem;}
 .pagination .prev-group button,
-.pagination .next-group button {width:24px;height: 24px;background:url(../../images/basic/common/pagination_arrow_w.svg) no-repeat;margin:0;opacity: 0.7;}
+.pagination .next-group button {width:24px;height: 24px;background:url(../images/default/common/pagination_arrow_w.svg) no-repeat;margin:0;opacity: 0.7;}
 .pagination .prev-group button:hover,
 .pagination .next-group button:hover {opacity: 1;}
 .pagination .prev-group button.page-first {background-position: 8px 4px;}
@@ -949,7 +949,7 @@ input:read-only {background: #f0f0f0;}
 .lp-cont-wrap .pagination button.on {color: #ffffff; background: var(--color-btn-bg04); display:inline-block; margin:0.2rem; width: 2.4rem; height: 2.4rem; text-align: center; font-size: 1.3rem; line-height:2.4rem; border-radius: 4px; vertical-align: middle;}
 .lp-cont-wrap .pagination button:hover {color: #ffffff;background: var(--color-btn-bg04);}
 .lp-cont-wrap .pagination .prev-group button,
-.lp-cont-wrap .pagination .next-group button {width:24px;height: 24px;background:url(../../images/basic/common/pagination_arrow.svg) no-repeat;margin:0;opacity: 0.5;}
+.lp-cont-wrap .pagination .next-group button {width:24px;height: 24px;background:url(../images/default/common/pagination_arrow.svg) no-repeat;margin:0;opacity: 0.5;}
 .lp-cont-wrap .pagination .prev-group button:hover,
 .lp-cont-wrap .pagination .next-group button:hover {opacity: 0.8;}
 .lp-cont-wrap .pagination .prev-group button.page-first {background-position: 6px 4px;}
@@ -967,7 +967,7 @@ input:read-only {background: #f0f0f0;}
 .c-top-search-input > input[type=text] {padding:0 0.8rem; width:20.0rem; margin-right:0.6rem; height:3.2rem;}
 .c-top-search-input > select {padding:0 3.6rem 0 0.8rem; width:14.0rem; margin-right:0.6rem; height:3.2rem;}
 .c-top-search-input .search-btn {padding:0 1.0rem; background: var(--color-btn-bg02); height:3.2rem;}
-.c-top-search-input .search-btn:before {opacity: 1; display: block; background: url(../../images/basic/common/icon_search.svg) no-repeat center center; background-size: contain; width:1.6rem; height:1.6rem;}
+.c-top-search-input .search-btn:before {opacity: 1; display: block; background: url(../images/default/common/icon_search.svg) no-repeat center center; background-size: contain; width:1.6rem; height:1.6rem;}
 .c-top-search-input .search-btn:hover {background: var(--color-btn-bg00);}
 .tui-grid-layer-selection {background-color: #5d6c8e !important; border-color: #5d6c8e !important;}
 
@@ -1019,8 +1019,8 @@ input:read-only {background: #f0f0f0;}
 .cm-left-top > button {position: absolute; right:0.4rem; top:calc(50% - 1.2rem); width:2.4rem; height:2.4rem;}
 .cm-left-cont {background: var(--color-bg05);height: calc(100% - 3.8rem); flex-grow: 1; }
 .cm-left-cont-inner {height: calc(100% - 2.2rem);padding: 1.4rem 1.4rem 0.8rem 0.8rem;}
-button.area-hide:before {display:block; width:2.4rem; height:2.4rem; background:url(../../images/basic/common/arrow_up_w.svg)no-repeat center center; transform: rotate(270deg); background-size: contain;  opacity: 0.8;}
-button.area-open:before {display:block; width:2.4rem; height:2.4rem; background:url(../../images/basic/common/arrow_up_w.svg)no-repeat center center; transform: rotate(90deg); background-size: contain;  opacity: 0.8;}
+button.area-hide:before {display:block; width:2.4rem; height:2.4rem; background:url(../images/default/common/arrow_up_w.svg)no-repeat center center; transform: rotate(270deg); background-size: contain;  opacity: 0.8;}
+button.area-open:before {display:block; width:2.4rem; height:2.4rem; background:url(../images/default/common/arrow_up_w.svg)no-repeat center center; transform: rotate(90deg); background-size: contain;  opacity: 0.8;}
 button:hover.area-hide:before,
 button:hover.area-open:before {opacity: 1;}
 
@@ -1038,19 +1038,19 @@ button:hover.area-open:before {opacity: 1;}
 .tui-tree-hover > .tui-tree-content-wrapper {background: #e7eff7; background-color: var(--color-hover-bg03) !important; border-radius: 4px;}
 .tui-tree-wrap > ul {padding:0 0 1.2rem 0; width: calc(100% - 0.2rem);}
 
-.tui-tree-opened .tui-ico-tree {background: url(../../images/basic/tree/tui_icon_open.svg) no-repeat center center !important;}
-.tui-tree-closed .tui-ico-tree {background: url(../../images/basic/tree/tui_icon_close.svg) no-repeat center center !important;}
+.tui-tree-opened .tui-ico-tree {background: url(../images/default/tree/tui_icon_open.svg) no-repeat center center !important;}
+.tui-tree-closed .tui-ico-tree {background: url(../images/default/tree/tui_icon_close.svg) no-repeat center center !important;}
  
-#tree .tui-tree-root > li:first-child > div > span > span {background: url(../../images/basic/tree/tui_icon_root01.svg) no-repeat center center !important;margin: 0 8px 0 0;background-size: contain !important;width: 1.4rem !important;height: 1.4rem !important;}
-#tree .tui-ico-file {background: url(../../images/basic/tree/tui_icon_setting.svg) no-repeat center center !important;background-size: contain !important;width: 1.4rem !important;height: 1.4rem !important;}
+#tree .tui-tree-root > li:first-child > div > span > span {background: url(../images/default/tree/tui_icon_root01.svg) no-repeat center center !important;margin: 0 8px 0 0;background-size: contain !important;width: 1.4rem !important;height: 1.4rem !important;}
+#tree .tui-ico-file {background: url(../images/default/tree/tui_icon_setting.svg) no-repeat center center !important;background-size: contain !important;width: 1.4rem !important;height: 1.4rem !important;}
 #tree .tui-tree-closed .tui-ico-folder, 
-#tree .tui-tree-opened .tui-ico-folder{background: url(../../images/basic/tree/tui_icon_setting.svg) no-repeat center center !important;background-size: contain !important;width: 1.4rem !important;height: 1.4rem !important;}
+#tree .tui-tree-opened .tui-ico-folder{background: url(../images/default/tree/tui_icon_setting.svg) no-repeat center center !important;background-size: contain !important;width: 1.4rem !important;height: 1.4rem !important;}
 
-#comm-tree .tui-tree-root > li:first-child > div > span > span {background: url(../../images/basic/tree/tui_icon_root02.svg) no-repeat center center !important;margin: 0 8px 0 0;background-size: contain !important;width: 1.4rem !important;height: 1.4rem !important;}
+#comm-tree .tui-tree-root > li:first-child > div > span > span {background: url(../images/default/tree/tui_icon_root02.svg) no-repeat center center !important;margin: 0 8px 0 0;background-size: contain !important;width: 1.4rem !important;height: 1.4rem !important;}
 
-#ai-comm-tree .tui-tree-root > li:first-child > div > span > span {background: url(../../images/basic/tree/tui_icon_root03.svg) no-repeat center center !important;margin: 0 8px 0 0;background-size: contain !important;width: 1.4rem !important;height: 1.4rem !important;}
+#ai-comm-tree .tui-tree-root > li:first-child > div > span > span {background: url(../images/default/tree/tui_icon_root03.svg) no-repeat center center !important;margin: 0 8px 0 0;background-size: contain !important;width: 1.4rem !important;height: 1.4rem !important;}
 
-#data-type-tree .tui-tree-root > li:first-child > div > span > span {background: url(../../images/basic/tree/tui_icon_root04.svg) no-repeat center center !important;margin: 0 8px 0 0;background-size: contain !important;width: 1.4rem !important;height: 1.4rem !important;}
+#data-type-tree .tui-tree-root > li:first-child > div > span > span {background: url(../images/default/tree/tui_icon_root04.svg) no-repeat center center !important;margin: 0 8px 0 0;background-size: contain !important;width: 1.4rem !important;height: 1.4rem !important;}
 
  /* tab */
 .tab-c-item {display: none;height: 100%;} 
@@ -1116,9 +1116,9 @@ button:hover.area-open:before {opacity: 1;}
 .tab-head-type06 > .tab-h-list li a:hover {transition: all ease 0.1s 0s;color:var(--color-text07);border-top: 1px solid  var(--border06);border-right: 1px solid  var(--border06);border-left: 1px solid  var(--border06);box-sizing: border-box;border-radius: 4px 4px 0 0;}
 
 .symbol-tab-default a:before {display: block; width:1.4rem; height:1.4rem;}
-[symbol-tab=symbol-tab-icon01]:before {background: url(../../images/basic/common/icon_symbol_tab01.svg)no-repeat center center; background-size:contain;}
-[symbol-tab=symbol-tab-icon02]:before {background: url(../../images/basic/common/icon_symbol_tab02.svg)no-repeat center center; background-size:contain;}
-[symbol-tab=symbol-tab-icon03]:before {background: url(../../images/basic/common/icon_symbol_tab03.svg)no-repeat center center; background-size:contain;}
+[symbol-tab=symbol-tab-icon01]:before {background: url(../images/default/common/icon_symbol_tab01.svg)no-repeat center center; background-size:contain;}
+[symbol-tab=symbol-tab-icon02]:before {background: url(../images/default/common/icon_symbol_tab02.svg)no-repeat center center; background-size:contain;}
+[symbol-tab=symbol-tab-icon03]:before {background: url(../images/default/common/icon_symbol_tab03.svg)no-repeat center center; background-size:contain;}
 
 .tab-cont-type03.c-mid-tab-cont {border:0.6rem solid var(--color-bg05);box-sizing: border-box;height: calc(100% - 4.6rem);flex-grow: 1;border-bottom:none;overflow: hidden;}
 .component-tab-cont {border:0.6rem solid var(--color-bg05);box-sizing: border-box;height: calc(100% - 3.8rem);flex-grow: 1;padding: 1.6rem 0.6rem;}
@@ -1144,7 +1144,7 @@ button:hover.area-open:before {opacity: 1;}
 .swiper-slide:has(.ctab-close:hover) > a:before {z-index:10; display: block; width:100%; height:0.2rem; position: absolute; top:0; left:0; background: var(--border06);}
 
 .c-mid-tab-head .ctab-close {position: absolute;right:1.4rem;top: calc(50% - 0.5rem);width: 1.0rem;height: 1.0rem;z-index: 2;}
-.c-mid-tab-head .ctab-close:before {display: block;background: url(../../images/basic/common/tab_menu_close.svg)no-repeat center center;width: 1.0rem;height: 1.0rem;opacity: 0.7;background-size: contain;}
+.c-mid-tab-head .ctab-close:before {display: block;background: url(../images/default/common/tab_menu_close.svg)no-repeat center center;width: 1.0rem;height: 1.0rem;opacity: 0.7;background-size: contain;}
 .c-mid-tab-head .ctab-close:hover:before {opacity: 1;}
 
 /* layer popup */
@@ -1152,7 +1152,7 @@ button:hover.area-open:before {opacity: 1;}
 .layer-pop.on {display: flex; position: fixed; top:0; left:0; right:0; bottom:0; z-index: 10000;}
 .layer-pop-bg {padding: 1.0rem 0;min-height: calc(100vh - 48px);align-items: center;display: flex;justify-content: center;background:rgba(0,0,0,.8);width: 100%;flex-wrap: wrap;overflow-y: auto;flex-direction: row;}
 .layer-pop-inner {z-index:10001;background: #ffffff;border-radius: 10px 10px 8px 8px;position: relative;  animation: fadeInDown 0.4s;}
-.layer-pop-close {position: absolute; top: 18px; right: 16px; background:url(../../images/basic/common/icon_close_b.svg) no-repeat center center; background-size: contain; width: 3.6rem; height: 3.6rem; color:transparent;}
+.layer-pop-close {position: absolute; top: 18px; right: 16px; background:url(../images/default/common/icon_close_b.svg) no-repeat center center; background-size: contain; width: 3.6rem; height: 3.6rem; color:transparent;}
 .layer-pop-inner .kgrid-pop-wrap {padding: 0 0 3.0rem 0;}
 .layer-pop-inner .h3-tit {font-size:1.8rem;font-weight: 500;padding-bottom:1.6rem;background: #065bc3;padding: 2.0rem 3.0rem;color: #ffffff;border-radius: 8px 8px 0 0;}
 .layer-pop-inner .h4-tit {font-size:1.7rem;font-weight: 600;padding: 0 0 1.4rem 0; border-bottom:1px solid #c8c8c8;}

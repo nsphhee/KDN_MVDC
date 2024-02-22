@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 25.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   version="1.1"
+   id="레이어_1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 54 54"
+   style="enable-background:new 0 0 54 54;"
+   xml:space="preserve"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   id="defs80" />
+<style
+   type="text/css"
+   id="style2">
+	.그림자_x0020_만들기{fill:none;}
+	.모퉁이_x0020_둥글리기_x0020_2pt{fill:#FFFFFF;stroke:#231815;stroke-miterlimit:10;}
+	.라이브_x0020_반사_x0020_X{fill:none;}
+	.경사_x0020_부드럽게{fill:url(#SVGID_1_);}
+	.황혼{fill:#FFFFFF;}
+	.잎_GS{fill:#FFE100;}
+	.퐁파두르_GS{fill-rule:evenodd;clip-rule:evenodd;fill:#4CACE2;}
+	.st0{fill:#0C3A1A;}
+	.st1{opacity:0.3;}
+	.st2{fill:#247C4B;}
+	.st3{opacity:0.3;clip-path:url(#SVGID_00000103963148990007982340000002217983773422097586_);}
+	.st4{fill:#9E9E9E;}
+	.st5{fill:#E8E8E8;}
+</style>
+<linearGradient
+   id="SVGID_1_"
+   gradientUnits="userSpaceOnUse"
+   x1="0"
+   y1="0"
+   x2="0.7071"
+   y2="0.7071">
+	<stop
+   offset="0"
+   style="stop-color:#E6E7EA"
+   id="stop4" />
+	<stop
+   offset="0.1747"
+   style="stop-color:#E2E3E6"
+   id="stop6" />
+	<stop
+   offset="0.3538"
+   style="stop-color:#D6D7DA"
+   id="stop8" />
+	<stop
+   offset="0.5349"
+   style="stop-color:#C1C4C5"
+   id="stop10" />
+	<stop
+   offset="0.7174"
+   style="stop-color:#A4A8A8"
+   id="stop12" />
+	<stop
+   offset="0.8993"
+   style="stop-color:#808584"
+   id="stop14" />
+	<stop
+   offset="1"
+   style="stop-color:#686E6C"
+   id="stop16" />
+</linearGradient>
+<g
+   id="g75">
+	<g
+   id="g33">
+		
+		
+		
+	</g>
+	<g
+   id="g43">
+		<defs
+   id="defs36">
+			<circle
+   id="SVGID_00000025442928453435902180000007155774281924558469_"
+   cx="27"
+   cy="27"
+   r="25" />
+		</defs>
+		<clipPath
+   id="SVGID_00000158738521550858197310000002989562397959095172_">
+			<use
+   xlink:href="#SVGID_00000025442928453435902180000007155774281924558469_"
+   style="overflow:visible;"
+   id="use38" />
+		</clipPath>
+		<polygon
+   style="opacity:0.3;clip-path:url(#SVGID_00000158738521550858197310000002989562397959095172_);"
+   points="66.29,41.7     35,68 10.53,39.83 11,27 16.01,27 16.01,22.66 27.02,19.11 29.55,22.85 29.81,11.97 33.78,11.3 41.13,11.3 41.72,11.68   "
+   clip-path="url(#SVGID_00000158738521550858197310000002989562397959095172_)"
+   id="polygon41" />
+	</g>
+	<path
+   class="st4"
+   d="M34.52,12.11c0-0.45-0.36-0.81-0.81-0.81h-3.84c-0.45,0-0.81,0.36-0.81,0.81v2.42h5.45V12.11z"
+   id="path45" />
+	<rect
+   x="29.07"
+   y="16.14"
+   class="st4"
+   width="5.45"
+   height="9.75"
+   id="rect47" />
+	<polygon
+   class="st5"
+   points="34.52,22.05 29.07,23.67 29.07,20.44 34.52,18.83  "
+   id="polygon49" />
+	<path
+   class="st4"
+   d="M41.52,12.11c0-0.45-0.36-0.81-0.81-0.81h-3.84c-0.45,0-0.81,0.36-0.81,0.81v2.42h5.45V12.11z"
+   id="path51" />
+	<rect
+   x="36.07"
+   y="16.14"
+   class="st4"
+   width="5.45"
+   height="9.75"
+   id="rect53" />
+	<polygon
+   class="st5"
+   points="41.52,22.05 36.07,23.67 36.07,20.44 41.52,18.83  "
+   id="polygon55" />
+	<g
+   class="st1"
+   id="g65">
+		<g
+   id="g59">
+			<path
+   d="M42,28.51H28.46v-6.95c0-0.89-0.73-1.62-1.62-1.62h-8.68c-0.89,0-1.61,0.73-1.61,1.62v2.1h3.42     c2.57,0,4.64,2.09,4.64,4.65v12.11c0,0.58-0.17,1.13-0.45,1.61H42c0.89,0,1.62-0.72,1.62-1.61v-11.3     C43.62,28.23,42.89,28.51,42,28.51z M32.56,34h-5v-3h5V34z M40.56,34h-5v-3h5V34z"
+   id="path57" />
+		</g>
+		<g
+   id="g63">
+			<path
+   d="M42,28.51H28.46v-6.95c0-0.89-0.73-1.62-1.62-1.62h-8.68c-0.89,0-1.61,0.73-1.61,1.62v2.1h3.42     c2.57,0,4.64,2.09,4.64,4.65v12.11c0,0.58-0.17,1.13-0.45,1.61H42c0.89,0,1.62-0.72,1.62-1.61v-11.3     C43.62,28.23,42.89,28.51,42,28.51z M32.56,34h-5v-3h5V34z M40.56,34h-5v-3h5V34z"
+   id="path61" />
+		</g>
+	</g>
+	<g
+   id="g69">
+		<path
+   class="st5"
+   d="M41,27.51H27.46v-6.95c0-0.89-0.73-1.62-1.62-1.62h-8.68c-0.89,0-1.61,0.73-1.61,1.62v2.1h3.42    c2.57,0,4.64,2.09,4.64,4.65v12.11c0,0.58-0.17,1.13-0.45,1.61H41c0.89,0,1.62-0.72,1.62-1.61v-11.3    C42.62,27.23,41.89,27.51,41,27.51z M31.56,33h-5v-3h5V33z M39.56,33h-5v-3h5V33z"
+   id="path67" />
+	</g>
+	<g
+   id="g73">
+		<path
+   class="st4"
+   d="M18.77,24.28h-5.46c-1.78,0-3.22,1.45-3.22,3.23v11.91c0,0.89,0.73,1.61,1.61,1.61h8.69    c0.88,0,1.61-0.72,1.61-1.61V27.51C22,25.73,20.56,24.28,18.77,24.28z M17.33,38.5c1.42-1.14,1.2-3.47,1.2-3.47    c-0.79,1.4-2.03,2.44-2.39,0.98c-0.36-1.45-1.11-2-1.11-2c0,0.09-0.02,0.78-0.5,1.99c-0.6,1.49,0.41,2.5,0.5,2.5    c-6.45-1.67-2.81-7.69-2.81-7.69c-0.14,2.8,0.81,3.19,0.81,3.19c0-3,1.5-2.5,2-4c0.69-2.09,0-3.5,0-3.5c3.54,1.73,3.1,5,3.1,5    s-0.4,1.5,0.5,1.5c1.37,0,0.95-3.02,0.95-3.02C23.97,36.5,17.33,38.5,17.33,38.5z"
+   id="path71" />
+	</g>
+  <circle
+    cx="27"
+    cy="27"
+    r="27"
+    style="fill:#ffffff;fill-opacity:0"/>
+</g>
+</svg>

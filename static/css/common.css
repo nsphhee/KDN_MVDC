@@ -47,7 +47,7 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
 input[type=submit], input[type=button] {cursor:pointer;}
 input[type="checkbox"], input[type="radio"] {vertical-align:middle; width:2.0rem; height:2.0rem; margin:0; opacity:.3; -webkit-appearance:auto;}
 input[type="checkbox"]:checked, input[type="radio"]:checked {opacity:1; accent-color:#242424;}
-select {text-transform:none; display:block; border-radius:4px; -webkit-border-radius:4px; -moz-border-radius:4px; background:url('../images/common/select_arrow.svg') no-repeat calc(100% - 1.0rem) 52%/12px auto; border:1px solid #dedede;}
+select {text-transform:none; display:block; border-radius:4px; -webkit-border-radius:4px; -moz-border-radius:4px; background:url('../images/default/common/select_arrow.svg') no-repeat calc(100% - 1.0rem) 52%/12px auto; border:1px solid #dedede;}
 select:focus {outline:none; box-shadow:0 0 0 1px #343434;}
 select::-ms-expand {display:none;}
 button {background:none; cursor:pointer; line-height:inherit; border-radius:4px; -webkit-border-radius:4px; -moz-border-radius:4px;}
