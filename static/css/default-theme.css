@@ -914,15 +914,15 @@ input:read-only {background: #f0f0f0;}
 .select-list-box > select {flex-grow: 1;}
 
 .c-cont-col02 {display: flex; justify-content: flex-start;}
-.c-cont-col02 > .c-cont-inner:first-child {width:60.0rem;/* min-width: 50.0rem; */border-right:0.4rem solid var(--color-bg05);}
-.c-cont-col02 > .c-cont-inner:last-child {flex-grow: 1;width: calc(100% - 60.8rem);border-left:0.4rem solid var(--border00);}
+.c-cont-col02 > div:first-child {width:60.0rem; border-right:0.4rem solid var(--color-bg05);}
+.c-cont-col02 > div:last-child {flex-grow: 1;width: calc(100% - 60.8rem);border-left:0.4rem solid var(--border00);}
 
 .c-cont-col02:has(.tui-tree-wrap) > .c-cont-inner:first-child {width:36.0rem;}
 .c-cont-col02:has(.tui-tree-wrap) > .c-cont-inner:last-child {width: calc(100% - 36.8rem);}
 .c-cont-col02 .tui-tree-wrap {padding:0 0.8rem 0 0;}
 
-.col-half > .c-cont-inner:first-child {width:50%;}
-.col-half > .c-cont-inner:last-child {width:calc(50% - 0.8rem);}
+.col-half > div:first-child {width:50% !important;}
+.col-half > div:last-child {width:calc(50% - 0.8rem) !important;}
 
 .row-half > div {height:calc(100% / 2) !important;}
 
