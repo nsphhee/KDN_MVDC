@@ -967,8 +967,8 @@ input:read-only {background: #f0f0f0;}
 /* 페이지 */
 .pagination {margin:0 auto; display: flex;align-items: center;justify-content: start;}
 .pagination button {color: var(--color-text04); display:inline-block; margin:0.1rem; width:2.4rem; height:2.4rem; text-align:center; font-size:1.3rem; line-height:2.4rem; vertical-align:middle; border-radius: 4px;}
-.pagination button.on {color: var(--color-text05); background: var(--color-btn-bg01); display:inline-block; margin:0.2rem; width: 2.4rem;  height: 2.4rem; text-align: center; font-size: 1.3rem; line-height:2.4rem; border-radius: 4px; vertical-align: middle;}
-.pagination button:hover {color: var(--color-text05);background: var(--color-btn-bg01);}
+.pagination button.on {color: var(--color-text05); background: var(--color-bg06); display:inline-block; margin:0.2rem; width: 2.4rem;  height: 2.4rem; text-align: center; font-size: 1.3rem; line-height:2.4rem; border-radius: 4px; vertical-align: middle;}
+.pagination button:hover {color: var(--color-text05);background: var(--color-bg06);}
 .pagination .prev-group {margin-right:0.1rem;}
 .pagination .next-group {margin-left:0.1rem;}
 .pagination .prev-group button,
