@@ -1016,7 +1016,7 @@ input:read-only {background: #f0f0f0;}
 .c-top-btn-wrap {display: flex; justify-content: end; padding:0.8rem 1.2rem;}
 .c-top-btn-wrap > button {margin:0 0 0 0.8rem;}
 
-.c-main-cont-inner:has(.sc-tab-wrap) > .c-top-btn-wrap {position: absolute; top:0.8rem; right:1.2rem; padding:0}
+.c-main-cont-inner:has(.sc-tab-wrap) > .c-top-btn-wrap {position: absolute; top:0.8rem; right:1.2rem; padding:0; z-index:99;}
 .c-main-cont-inner:has(.sc-tab-wrap) {position: relative;}
 
 /* toast ui grid */
