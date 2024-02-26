@@ -913,13 +913,19 @@ input:read-only {background: #f0f0f0;}
 .select-list-box > label {font-size: 1.3rem; margin-right:0.8rem;}
 .select-list-box > select {flex-grow: 1;}
 
-.c-cont-col02 {display: flex; justify-content: flex-start;}
+.c-cont-col02,
+.c-cont-col04 {display: flex; justify-content: flex-start;}
 .c-cont-col02 > div:first-child {width:60.0rem; border-right:0.4rem solid var(--color-bg05);}
 .c-cont-col02 > div:last-child {flex-grow: 1;width: calc(100% - 60.8rem);border-left:0.4rem solid var(--border00);}
+.c-cont-col02:has(.tui-tree-wrap) > .c-cont-inner:first-child {width:30.0rem;}
+.c-cont-col02:has(.tui-tree-wrap) > .c-cont-inner:last-child {width: calc(100% - 30.8rem);}
+.c-cont-col02 .tui-tree-wrap,
+.c-cont-col04 .tui-tree-wrap {padding:0 0.8rem 0 0;}
 
-.c-cont-col02:has(.tui-tree-wrap) > .c-cont-inner:first-child {width:36.0rem;}
-.c-cont-col02:has(.tui-tree-wrap) > .c-cont-inner:last-child {width: calc(100% - 36.8rem);}
-.c-cont-col02 .tui-tree-wrap {padding:0 0.8rem 0 0;}
+.c-cont-col04 > div:first-child {border-right:0.4rem solid var(--color-bg05);}
+.c-cont-col04:has(.tui-tree-wrap) > .c-cont-inner:first-child {width:30.0rem !important; border-left:none;}
+.c-cont-col04:has(.tui-tree-wrap) > .c-cont-inner {width: calc((100% - 30.8rem) / 3); border-left:0.4rem solid var(--border00); border-right:0.4rem solid var(--color-bg05);}
+.c-cont-col04:has(.tui-tree-wrap) > .c-cont-inner:last-child {border-right:none;}
 
 .col-half > div:first-child {width:50% !important;}
 .col-half > div:last-child {width:calc(50% - 0.8rem) !important;}
@@ -1353,6 +1359,12 @@ button:hover.area-open:before {opacity: 1;}
     .c-cont-box-inner:has(.equip-list-wrap) {min-width:auto;}
     .c-cont-col02:has(.equip-list-wrap) > .c-cont-inner:first-child {width: 50rem;}
     .c-cont-col02:has(.equip-list-wrap) > .c-cont-inner:last-child {width: calc(100% - 50.8rem);}
+    
+    .c-cont-box-inner:has(.tui-tree-wrap) {min-width: auto;}  
+
+    .c-cont-col04:has(.tui-tree-wrap) > .c-cont-inner:first-child {width:25% !important;}
+    .c-cont-col04:has(.tui-tree-wrap) > .c-cont-inner {width: calc(25%) !important;}
+
 
 }
 
