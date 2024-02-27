@@ -1324,7 +1324,7 @@ button:hover.area-open:before {opacity: 1;}
 .lp-left-area .lp-tab-cont {height:calc(100% - 4.6rem);}
 
 .lp-search-input {display: flex; align-items: center; justify-content: flex-end; margin-bottom:0.8rem;}
-.lp-search-input input[type=text] {width:50%; margin-right:0.8rem; height:3.0rem;}
+.lp-search-input input[type=text] {width:50%; margin-right:0.8rem; height:3.0rem; font-size:1.4rem !important;}
 .lp-search-input .search-btn {padding:0 1.0rem; background: var(--color-btn-bg02); height:3.0rem; }
 .lp-search-input .search-btn:before {opacity: 1; display: block; background: url(../images/default/common/icon_search.svg) no-repeat center center; background-size: contain; width:1.6rem; height:1.6rem; margin:0 auto}
 .lp-search-input .search-btn:hover {background: var(--color-btn-bg00);}
