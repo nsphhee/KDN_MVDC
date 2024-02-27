@@ -113,6 +113,68 @@ $(document).ready(function() {
         });
 
 
+        const grid03 = new tui.Grid({
+            el: document.getElementById('grid03'),
+            data: gridData,
+            scrollX: false,
+            scrollY: false,
+            rowHeight: 'auto',
+            display: { noData: 'No Data'}, 
+            header: {
+                height: 36
+            },
+            columns: [
+                {
+                    header: 'THEAD00',
+                    name: 'thead00', 
+                    whiteSpace: 'normal'
+                  },
+                  {
+                    header: 'THEAD01',
+                    name: 'thead01',
+                    editor: 'text', 
+                    whiteSpace: 'normal'
+                  },
+                  {
+                    header: 'THEAD02',
+                    name: 'thead02', 
+                    whiteSpace: 'normal'
+                  }
+            ]
+        });
+
+        
+        const grid04 = new tui.Grid({
+            el: document.getElementById('grid04'),
+            data: gridData,
+            scrollX: false,
+            scrollY: false,
+            rowHeight: 'auto',
+            display: { noData: 'No Data'}, 
+            header: {
+                height: 36
+            },
+            columns: [
+                {
+                    header: 'THEAD00',
+                    name: 'thead00', 
+                    whiteSpace: 'normal'
+                  },
+                  {
+                    header: 'THEAD01',
+                    name: 'thead01',
+                    editor: 'text', 
+                    whiteSpace: 'normal'
+                  },
+                  {
+                    header: 'THEAD02',
+                    name: 'thead02', 
+                    whiteSpace: 'normal'
+                  }
+            ]
+        });
+
+
 });
 
 

@@ -98,6 +98,9 @@ $(document).ready(function() {
     // 탭
     const lpTabList = document.querySelectorAll('.lp-tab-default .tab-h-list li'); //레이어팝업 탭
     const lpContents = document.querySelectorAll('.lp-tab-cont .tab-c-item'); //레이어팝업 탭
+
+    const lpTabList02 = document.querySelectorAll('.lp-tab-default02 .tab-h-list li'); //레이어팝업 탭
+    const lpContents02 = document.querySelectorAll('.lp-tab-cont02 .tab-c-item'); //레이어팝업 탭
     
     const cmTabList = document.querySelectorAll('.cm-tab-default .tab-h-list li'); //홈,설정 탭
     const cmContents = document.querySelectorAll('.cm-tab-cont .tab-c-item'); //홈,설정 탭
@@ -137,6 +140,29 @@ $(document).ready(function() {
 
                     // 나머지 컨텐츠 display:none 처리
                     lpContents[j].style.display = 'none';   
+                }
+
+                // 버튼 관련 이벤트
+                this.parentNode.classList.add('tab-h-on');
+
+                // 버튼 클릭시 컨텐츠 전환
+                activeCont = this.getAttribute('href');
+                document.querySelector(activeCont).style.display = 'block';
+            });
+        }
+    };
+
+
+    for(var i = 0; i < lpTabList02.length; i++){
+        if ( lpTabList02[i].querySelector('.t-tit') != null ) {
+            lpTabList02[i].querySelector('.t-tit').addEventListener('click', function(e){
+                e.preventDefault();
+                for(var j = 0; j < lpTabList02.length; j++){
+                    // 나머지 버튼 클래스 제거
+                    lpTabList02[j].classList.remove('tab-h-on');
+
+                    // 나머지 컨텐츠 display:none 처리
+                    lpContents02[j].style.display = 'none';   
                 }
 
                 // 버튼 관련 이벤트
