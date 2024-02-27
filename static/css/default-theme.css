@@ -1297,8 +1297,8 @@ button:hover.area-open:before {opacity: 1;}
 .flex-col02 {display: flex; flex-wrap: wrap; justify-content:flex-start; align-items: flex-start;}
 .flex-row02 {display: flex; flex-wrap: wrap; justify-content:space-between; align-items: flex-start; flex-direction: column;}
 
-.lp-left-area {width:36%; height: calc(100% - 3.2rem); background: #f2f3f5; padding: 1.6rem; border-radius: 6px;}
-.lp-right-area {width: calc(64% - 4.4rem); height: 100%; margin-left: 1.2rem;box-sizing: border-box;}
+.lp-left-area {width:30rem;height: calc(100% - 2.8rem);background: #f2f3f5;padding: 1.4rem 1.6rem;border-radius: 6px;}
+.lp-right-area {width: calc(100% - 35.0rem); height: 100%; margin-left: 1.8rem;box-sizing: border-box;}
 
 .lp-cont-inner.flex-col02 > div {width:48.5% !important;}
 .lp-cont-inner.flex-col02 > div:nth-child(2n) {margin-left:3%;}
