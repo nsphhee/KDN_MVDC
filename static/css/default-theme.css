@@ -896,7 +896,7 @@ input:read-only {background: #f0f0f0;}
 .c-sub-btn-wrap > button {height: 3.0rem; line-height: 2.8rem; font-size:1.2rem; min-width: auto; padding:0 1.6rem; margin:0;}
 
 .c-cont-inner .c-top-btn-wrap {padding:0.8rem 1.2rem;}
-.c-cont-inner .c-top-btn-wrap > button {height: 2.8rem; line-height: 2.8rem; min-width: 7rem;}
+.c-cont-inner .c-top-btn-wrap > button {height: 2.8rem; line-height: 2.6rem; min-width: 7rem;}
 .c-cont-inner:has(.c-top-btn-wrap) .c-cont-box-inner {padding-top:0;}
 
 .c-cont-inner:has(.tab-wrap) {position: relative;}
@@ -1062,7 +1062,7 @@ input:read-only {background: #f0f0f0;}
 .tui-grid-layer-selection {background-color: #5d6c8e !important; border-color: #5d6c8e !important;}
 
 .c-top-btn-wrap {display: flex; justify-content: end; padding:0.8rem 1.2rem;}
-.c-top-btn-wrap > button {margin:0 0 0 0.8rem;height: 3.0rem; line-height: 3.0rem;}
+.c-top-btn-wrap > button {margin:0 0 0 0.8rem;height: 3.0rem; line-height: 2.8rem;}
 
 .c-main-cont-inner:has(.sc-tab-wrap) {position: relative;}
 .c-main-cont-inner:has(.sc-tab-wrap) > .c-top-btn-wrap {position: absolute; top:0.8rem; right:1.2rem; padding:0; z-index:99;}
