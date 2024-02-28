@@ -202,6 +202,8 @@ input:read-only {background: #f0f0f0;}
 .default-inner .left-area-inner .logo-title span {font-size:1.6rem; color:var(--color-text03);}
 .default-inner .left-area-inner .logo-title span:last-child::before {display: block; width:2.4rem; height:0.2rem; background: #9092A0; margin:0.8rem auto;}
 .default-inner .left-area-inner .logo-title:after {display: block;background: url(../images/default/login/login_bg.png) no-repeat center center;margin:0 auto;width:100%;height: 40vh;background-size: contain;}
+/* .default-inner .left-area-inner .logo-title:after {display: block;background: url(../images/default/login/login_bg3.png) no-repeat center center;margin:6.0rem auto 0 auto;width:100%;height: 46vh;background-size: contain;} */
+
 .default-inner .right-area {padding: 3.0rem 0;position: relative;width:50%;}
 .default-inner .right-area-inner {height: 100%;display: flex;justify-content: center;align-items: center;width: calc(100% - 6.0rem);margin: 0 auto;}
 .default-inner .right-area-inner .right-title {text-align: center; margin-bottom:5.0rem;}
