@@ -46,7 +46,8 @@
     --color-select-bg02: #33384A;
 
     --color-top-bg: #21242F;
-    --color-lnb-bg: #21242F;
+    --color-lnb-bg: #21242F;    
+    --color-stab-bg:#21242F;
     --color-thead-bg: #1e2535;
     --color-thead-brd: #575e79;
 
@@ -373,7 +374,7 @@ input:read-only {background: #f0f0f0;}
 .cont-area-inner {min-height: calc(100vh - 5.1rem);width: 100%;height: 100%;}
 
 /* layout - stab */
-.stab-menu-wrap {width:100%;height: 4.4rem;background: var(--color-bg01);display: block;padding-bottom: 0.1rem;}
+.stab-menu-wrap {width:100%;height: 4.4rem;background: var(--color-stab-bg);display: block;padding-bottom: 0.1rem;}
 .stab-menu-wrap:after {display: block; width:100%; height:0.1rem; background: var(--border00);}
 .stab-menu-inner {height: 100%; margin:0 auto; position: relative;}                           
 
@@ -382,23 +383,24 @@ input:read-only {background: #f0f0f0;}
 .go-main-btn:hover,
 .go-main-btn.on {display: block;width:3.0rem;height:3.0rem;border-radius: 4px;z-index: 2;background: var(--color-gradient01);background-size: 200% auto;display: flex;align-items: center;position: absolute;top: 0.6rem;left: 0.8rem;overflow: hidden;transition: all .2s;}
 
-.stab-menu-list {width: calc(100% - 4.6rem);margin: 0 0 0 4.6rem !important;height: 100%;}
+.stab-menu-list {width: calc(100% - 4.6rem);margin: 0 0 0 4.6rem !important;height: calc(100% - 0.4rem); padding: 0.4rem 0 0 0 !important;}
 .stab-menu-list .swiper-slide {width:auto;height: 100%; position: relative;}
+.stab-menu-list .swiper-slide:has(.on) {z-index: 11;}
 .stab-menu-list .swiper-slide:before {display: block;width:1px;height: 3.0rem;background: var(--border05);position: absolute;top: calc(50% - 1.5rem);left:0;opacity: 0.6;}
-.stab-menu-item {color:var(--color-text06); padding:0 4.0rem 0 2.0rem;display: flex;height: 100%;align-items: center; border-radius: 4px 4px 0 0;}
-.stab-menu-item:before {display: block; background: url(../images/default/common/tab_menu_icon.svg)no-repeat center center; width:1.6rem; height:1.4rem; opacity: 0.9;}
-.stab-menu-item > span {display: block; margin: 0 1.6rem 0 1.0rem; font-size:1.4rem; height: 1.6rem; color:(var(--color-text06)); opacity: 0.9;}
+.stab-menu-item {color:var(--color-text06); padding:0 4.0rem 0 2.0rem;display: flex;height: 100%;align-items: center; border-radius: 8px 8px 0 0;}
+.stab-menu-item:before {display: block; background: url(../images/default/common/tab_menu_icon.svg)no-repeat center center; width:1.6rem; height:1.4rem; opacity: 0.9; margin-top:-0.2rem;}
+.stab-menu-item > span {display: block; margin: -0.2rem 1.6rem 0 1.0rem; font-size:1.4rem; height: 1.6rem; color:(var(--color-text06)); opacity: 0.9;}
 .stab-menu-item:hover,
-.stab-menu-item.on {background: var(--color-bg06); box-shadow: 1px 0px 4px rgb(0 0 0 / 60%);}
+.stab-menu-item.on {background: var(--color-bg06); box-shadow: 1px 0px 10px rgb(0 0 0 / 40%);}
 .stab-menu-item:hover:before, 
-.stab-menu-item.on:before {display: block; background: url(../images/default/common/tab_menu_icon_ov.svg)no-repeat center center; width:1.6rem; height:1.4rem; opacity: 0.9;}
+.stab-menu-item.on:before {display: block; background: url(../images/default/common/tab_menu_icon_ov.svg)no-repeat center center; width:1.6rem; height:1.4rem; opacity: 0.9; margin-top:-0.2rem;}
 
 .swiper-slide:has(.stab-close:hover) > .stab-menu-item {background: var(--color-bg06);}
 .swiper-slide:has(.stab-close:hover) + .swiper-slide:before {display: none;}
-.swiper-slide:has(.stab-close:hover) > .stab-menu-item:before {display: block; background: url(../images/default/common/tab_menu_icon_ov.svg)no-repeat center center; width:1.6rem; height:1.4rem; opacity: 0.9;}
+.swiper-slide:has(.stab-close:hover) > .stab-menu-item:before {display: block; background: url(../images/default/common/tab_menu_icon_ov.svg)no-repeat center center; width:1.6rem; height:1.4rem; opacity: 0.9; margin-top:-0.2rem;}
 
-.stab-menu-list .stab-close {position: absolute;right:1.4rem;top: calc(50% - 0.6rem);width: 1.2rem;height: 1.2rem;}
-.stab-menu-list .stab-close:before {display: block;background: url(../images/default/common/tab_menu_close.svg)no-repeat center center;width: 1.2rem;height: 1.2rem;opacity: 0.8;background-size: contain;}
+.stab-menu-list .stab-close {position: absolute;right:1.4rem;top: calc(50% - 0.8rem);width: 1.0rem;height: 1.0rem;}
+.stab-menu-list .stab-close:before {display: block;background: url(../images/default/common/tab_menu_close.svg)no-repeat center center;width: 1.0rem;height: 1.0rem;opacity: 0.8;background-size: contain;}
 
 .swiper-slide:has(.stab-menu-item:hover) + .swiper-slide:before {display: none;}
 .swiper-slide:has(.stab-menu-item.on) + .swiper-slide:before {display: none;}
