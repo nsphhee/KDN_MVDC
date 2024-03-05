@@ -999,7 +999,7 @@ input:read-only {background:#f0f0f2;}
 
 
 /* 검색영역 */
-.c-top-search-wrap {width:100%;background:#eaecf1;box-sizing:border-box;}
+.c-top-search-wrap {width:100%;background:#eaecf1;box-sizing:border-box;border-bottom: 1px solid #d5d8db;}
 .c-top-search-inner {padding:1.0rem 1.2rem;}
 .c-top-search-input {display:flex; align-items:center; justify-content:flex-start;}
 .c-top-search-input > label {font-size:1.3rem;margin-right:1.0rem;margin-left:1.4rem;font-weight:500;}
