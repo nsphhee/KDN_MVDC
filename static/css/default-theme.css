@@ -1133,19 +1133,16 @@ button:hover.area-open:before {opacity: 1;}
 .tui-tree-hover > .tui-tree-content-wrapper {background: #e7eff7; background-color: var(--color-hover-bg03) !important; border-radius: 4px;}
 .tui-tree-wrap > ul {padding:0 0 1.2rem 0; width: calc(100% - 0.2rem);}
 
-.tui-tree-opened .tui-ico-tree {background: url(../images/default/tree/tui_icon_open.svg) no-repeat center center !important;}
-.tui-tree-closed .tui-ico-tree {background: url(../images/default/tree/tui_icon_close.svg) no-repeat center center !important;}
+.tui-tree-opened .tui-ico-tree {background: url(../images/default/tree/tui_icon_open.svg) no-repeat center center !important;  transform: skew(0deg);}
+.tui-tree-closed .tui-ico-tree {background: url(../images/default/tree/tui_icon_close.svg) no-repeat center center !important; transform: skew(0deg);}
  
-#tree .tui-tree-root > li:first-child > div > span > span {background: url(../images/default/tree/tui_icon_root01.svg) no-repeat center center !important;margin: 0 8px 0 0;background-size: contain !important;width: 1.4rem !important;height: 1.4rem !important;}
-#tree .tui-ico-file {background: url(../images/default/tree/tui_icon_setting.svg) no-repeat center center !important;background-size: contain !important;width: 1.4rem !important;height: 1.4rem !important;}
+#tree .tui-tree-root > li:first-child > div > span > span {transform: skew(0deg); background: url(../images/default/tree/icon_SUB.png) no-repeat center center !important;margin: 0 8px 0 0;background-size: contain !important;width: 1.4rem !important;height: 1.4rem !important;}
+#tree .tui-ico-file { transform: skew(0deg);background: url(../images/default/tree/tui_icon_setting.svg) no-repeat center center !important;background-size: contain !important;width: 1.4rem !important;height: 1.4rem !important;}
 #tree .tui-tree-closed .tui-ico-folder, 
-#tree .tui-tree-opened .tui-ico-folder{background: url(../images/default/tree/tui_icon_setting.svg) no-repeat center center !important;background-size: contain !important;width: 1.4rem !important;height: 1.4rem !important;}
-
-#comm-tree .tui-tree-root > li:first-child > div > span > span {background: url(../images/default/tree/tui_icon_root02.svg) no-repeat center center !important;margin: 0 8px 0 0;background-size: contain !important;width: 1.4rem !important;height: 1.4rem !important;}
-
-#ai-comm-tree .tui-tree-root > li:first-child > div > span > span {background: url(../images/default/tree/tui_icon_root03.svg) no-repeat center center !important;margin: 0 8px 0 0;background-size: contain !important;width: 1.4rem !important;height: 1.4rem !important;}
-
-#data-type-tree .tui-tree-root > li:first-child > div > span > span {background: url(../images/default/tree/tui_icon_root04.svg) no-repeat center center !important;margin: 0 8px 0 0;background-size: contain !important;width: 1.4rem !important;height: 1.4rem !important;}
+#tree .tui-tree-opened .tui-ico-folder{ transform: skew(0deg);background: url(../images/default/tree/tui_icon_setting.svg) no-repeat center center !important;background-size: contain !important;width: 1.4rem !important;height: 1.4rem !important;}
+#comm-tree .tui-tree-root > li:first-child > div > span > span { transform: skew(0deg);background: url(../images/default/tree/icon_COM.png) no-repeat center center !important;margin: 0 8px 0 0;background-size: contain !important;width: 1.4rem !important;height: 1.4rem !important;}
+#ai-comm-tree .tui-tree-root > li:first-child > div > span > span { transform: skew(0deg);background: url(../images/default/tree/icon_SVR.png) no-repeat center center !important;margin: 0 8px 0 0;background-size: contain !important;width: 1.4rem !important;height: 1.4rem !important;}
+#data-type-tree .tui-tree-root > li:first-child > div > span > span { transform: skew(0deg);background: url(../images/default/tree/icon_DTT.png) no-repeat center center !important;margin: 0 8px 0 0;background-size: contain !important;width: 1.4rem !important;height: 1.4rem !important;}
 
  /* tab */
 .tab-c-item {display: none;height: 100%;} 
