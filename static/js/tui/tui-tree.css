@@ -140,7 +140,7 @@
  }
  
  .tui-tree-opened > .tui-tree-content-wrapper .tui-tree-text {
-   font-weight: 700;
+   font-weight: 500;
    color: #333;
    padding-right:2.0rem;
  }
