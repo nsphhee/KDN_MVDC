@@ -267,7 +267,7 @@ input:read-only {background:#f0f0f2;}
 .lnb-list-full button > span {display:block; opacity:1; font-size:1.4rem; transition:all 0.1s;width:auto;}
 .lnb-list button:before {display:block; width:7.0rem; height:7.0rem; opacity:0.9;}
 .lnb-list button:hover,
-.lnb-list button.on {background-color:#E8E9ED; transition:all .2s; text-decoration:underline;}
+.lnb-list button.on {background-color:#eceef4; transition:all .2s; text-decoration:underline;}
 .lnb-list button:hover:before,
 .lnb-list button.on:before { opacity:1;}
 .lnb-list button.on:after,
