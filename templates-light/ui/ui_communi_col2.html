@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- 호환성 -->     
+        <meta name="generator" content="EditPlus®"><!-- 사용프로그램 -->
+        <meta name="format-detection" content="telephone=no,email=no,address=no"><!-- 전화번호, 주소, 메일등 링크로 인식방지 -->
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"><!-- 화면맞춤 -->
+        <meta name="author" content="한전KDN(주)"><!-- 저작자 -->
+        <meta name="keywords" content="한전KDN(주) MVDC"><!-- 키워드 -->
+        <meta name="description" content="한전KDN(주) MVDC"><!-- 웹페이지의 축약된 설명을 제공_최대45자(네이버 웹마스터도구 기준) -->
+        <meta name="copyright" content="&copy; 한전KDN(주). All right reserved."><!-- 저작권 -->
+        <link rel="shortcut icon" type="image/x-icon" href="../../static/images/default/common/favicon.ico"><!-- 파비콘 -->        
+        <title>한전KDN(주) MVDC</title> 
+        <link media="all" rel="stylesheet" href="../../static/css/common.css">  
+        <link media="all" rel="stylesheet" href="../../static/css/font.css">  
+        <link media="all" rel="stylesheet" href="../../static/css/default-theme.css">         
+        <link media="all" rel="stylesheet" href="../../static/js/swiper/swiper-bundle.min.css">  
+        <link media="all" rel="stylesheet" href="../../static/js/tui/tui-context-menu.css">
+        <link media="all" rel="stylesheet" href="../../static/js/tui/tui-tree.css">
+        <script src="../../static/js/jquery-3.7.0.min.js"></script>
+        <script src="../../static/js/swiper/swiper-bundle.min.js"></script>
+        <script src="../../static/js/tui/tui-context-menu.js"></script>
+        <script src="../../static/js/tui/tui-tree.js"></script>
+        <script src="../../static/js/common_design.js"></script>
+
+        <style>
+            #ui-wrap {padding:3.0rem;width: calc(100vw - 6rem);height: calc(100vh - 8rem); }
+            #ui-wrap > div > h2:first-child {margin:0 0 3.0rem 0;}
+            #ui-wrap > div > h2 {font-size:2.0rem; margin:6.0rem 0 3.0rem 0; font-weight: bold;}
+            #ui-wrap > div {width:100%;height: 100%; overflow: hidden; }
+            .ui-inner > div {color: var(--color-text06);}
+            .tui-tree-text {color: var(--color-text06);}
+            .tab-c-item {background-color: var(--color-bg01); overflow-x: auto; display: block; height: calc(100% - 5rem);}
+            .tab-c-item > div {height: 100%;}
+            .tab-c-item > div > div {height: 100%;}
+            .tab-c-item > div > div > div {height: 100%;}
+            .tab-c-item > div > div > div > div {height: 100%;}
+        </style>
+    </head>
+    <body class="b-scroll">  
+        <div id="ui-wrap">  
+            <div class="ui-inner">                
+
+                <h2>통신설정 컨텐츠 영역 2분할 - 트리메뉴 아이콘 개발 적용시 변경 예정</h2>
+
+                <div class="tab-c-item cm-scroll" id="cMidTab2">
+                    <div class="tab-c-item-wrap">
+                        <div class="tab-c-item-inner">  
+
+                            <!-- 통신설정 컨텐츠 : s -->
+                            
+                            <div class="communi-wrap">
+                                <div class="communi-inner tc-flex">              
+                                    <div class="tc-menu-list">
+                                        <div class="tc-top">
+                                            <span>통신설정 목록</span>
+                                        </div>
+                                        <div class="tc-cont">
+                                            <div class="tc-cont-inner">                                                                  
+                                                <div id="comm-tree" class="tui-tree-wrap cm-scroll"></div>
+                                            </div>                                      
+                                        </div>
+                                    </div>
+                                    <div class="area-col-1">
+                                        <div class="tc-top">
+                                            <span class="fc-yellow bold">서브네트워크</span>
+                                        </div>
+                                        <div class="comm-prop-cont tc-cont">
+                                            <div class="comm-prop-cont-inner tc-cont-inner cm-scroll">                                                                                                 
+                                                <div class="prop-item">
+                                                    <label for="" title="이름">이름</label>
+                                                    <div class="input-wrap">
+                                                        <input type="text" id="" class="input-type02" value="W01">
+                                                    </div>
+                                                </div>                                                                    
+                                                <div class="prop-item">
+                                                    <label for="" title="설명">설명</label>
+                                                    <div class="input-wrap">
+                                                        <input type="text" id="" class="input-type02" value="">
+                                                    </div>
+                                                </div>                                                                
+                                                <div class="prop-item">
+                                                    <label for="" title="타입">타입</label>
+                                                    <div class="input-wrap">
+                                                        <input type="text" id="" class="input-type02" value="8-MMS">
+                                                    </div>
+                                                </div>                                                               
+                                                <div class="prop-item">
+                                                    <label for="" title="Bit Rate">Bit Rate</label>
+                                                    <div class="input-wrap">
+                                                        <input type="text" id="" class="input-type02" value="10">
+                                                    </div>
+                                                </div>     
+                                            </div>                                                                                                      
+                                        </div>  
+                                    </div>                                
+                                </div>
+                            </div>
+                            <!-- 통신설정 컨텐츠 : e -->
+
+                        </div>
+                    </div>
+                </div>                
+
+            </div>
+        </div>   
+    </body>
+    <script>
+    const Tree = tui.Tree;
+
+    var commiData = [
+        {text: '통신설정', children: [
+            {text: 'Comm1', state: 'closed', children: [
+                {text:'W01', children:[
+                    {text:'IED1_AP', state: 'closed', children: [                       
+                        {text:'PhysConn1'},             
+                        {text:'ADDR1'},             
+                        {text:'C1'},             
+                        {text:'C1'},
+                    ]},
+
+                ]},
+                {text:'IDE4_AP', state: 'closed', children:[
+                    {text:'ADDR2'},
+
+                ]},
+                {text:'IDE5_AP', state: 'closed', children:[
+                    {text:'ADDR4'},
+
+                ]},
+            ]},
+        ]}
+    ];
+
+
+    var commTree = new tui.Tree('#comm-tree', {
+        data: commiData,
+        nodeDefaultState: 'opened'
+    }).enableFeature('ContextMenu', {
+        menuData: [
+            {title: 'menu1'},
+            {title: 'menu2', disable: true}
+        ]
+    });
+
+    commTree.on('beforeOpenContextMenu', function(nodeId) {
+        var menuData = [];
+
+        if (nodeId === 'tui-tree-node-2') { // sub-A1 node
+            menuData = [
+                {title: 'menu'}
+            ];
+        } else {
+            menuData = [
+                {title: 'menu1'},
+                {title: 'menu2', disable: true},
+                {title: 'menu3', menu: [
+                    {title: 'submenu1', disable: true},
+                    {title: 'submenu2'}
+                ]},
+                {separator: true},
+                {title: 'menu4'},
+                {title: 'menu5'}
+            ];
+        }
+
+        commTree.changeContextMenu(menuData); // change menu api
+    });
+
+    commTree.on('selectContextMenu', function(eventData) {
+        var treeNodeData = commTree.getNodeData(eventData.nodeId);
+        var message = '"' + eventData.command + '" is selected on "' + treeNodeData.text + '" node';
+
+        selectedMenuValue.value = message;
+    });
+    </script> 
+</html>

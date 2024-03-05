@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- 호환성 -->     
+        <meta name="generator" content="EditPlus®"><!-- 사용프로그램 -->
+        <meta name="format-detection" content="telephone=no,email=no,address=no"><!-- 전화번호, 주소, 메일등 링크로 인식방지 -->
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"><!-- 화면맞춤 -->
+        <meta name="author" content="한전KDN(주)"><!-- 저작자 -->
+        <meta name="keywords" content="한전KDN(주) MVDC"><!-- 키워드 -->
+        <meta name="description" content="한전KDN(주) MVDC"><!-- 웹페이지의 축약된 설명을 제공_최대45자(네이버 웹마스터도구 기준) -->
+        <meta name="copyright" content="&copy; 한전KDN(주). All right reserved."><!-- 저작권 -->
+        <link rel="shortcut icon" type="image/x-icon" href="../../static/images/default/common/favicon.ico"><!-- 파비콘 -->        
+        <title>한전KDN(주) MVDC</title>      
+        <link media="all" rel="stylesheet" href="../../static/css/common.css">  
+        <link media="all" rel="stylesheet" href="../../static/css/font.css">  
+        <link media="all" rel="stylesheet" href="../../static/css/default-theme.css">         
+        <link media="all" rel="stylesheet" href="../../static/js/swiper/swiper-bundle.min.css">  
+        <link media="all" rel="stylesheet" href="../../static/js/tui/tui-context-menu.css">
+        <link media="all" rel="stylesheet" href="../../static/js/tui/tui-tree.css">
+        <script src="../../static/js/jquery-3.7.0.min.js"></script>
+        <script src="../../static/js/swiper/swiper-bundle.min.js"></script>
+        <script src="../../static/js/tui/tui-context-menu.js"></script>
+        <script src="../../static/js/tui/tui-tree.js"></script>
+        <script src="../../static/js/common_design.js"></script>
+        <script src="../../static/js/tree-menu.js"></script>
+
+        <style>
+            #ui-wrap {padding:3.0rem;width: calc(100vw - 6rem);height: calc(100vh - 8rem);}
+            #ui-wrap > div > h2:first-child {margin:0 0 3.0rem 0;}
+            #ui-wrap > div > h2 {font-size:2.0rem; margin:6.0rem 0 3.0rem 0; font-weight: bold;}
+            #ui-wrap > div {width:100%;height: 100%; overflow: hidden;}
+            .property-wrap {width:370px; height: calc(60vh);background: var(--color-bg01); color:var(--color-text06);}
+            .tab-wrap {height: 100%; display: flex; flex-direction: column; width: 100%;}
+            .tab-wrap:has(> .tab-head-type04) {flex-direction: row-reverse; justify-content: space-between;}
+
+        </style>
+    </head>
+    <body class="b-scroll">  
+        <div id="ui-wrap">  
+            <div class="ui-inner">                
+
+                <h2>속성 탭</h2>
+                
+                <div class="property-wrap">
+                    <div class="property-inner">
+                        <!-- 속성 탭 컨텐츠 :s -->
+                        <div class="tab-wrap">
+                            <!-- tab head :s -->
+                            <div class="tab-head-type03 property-tab-default">
+                                <ul class="tab-h-list">                              
+                                    <li class="tab-h-on">
+                                        <a href="#propTab1" class="t-tit">
+                                        속성(단일)
+                                        </a>
+                                    </li> 
+                                    <li>
+                                        <a href="#propTab2" class="t-tit">
+                                        속성(탭포함)
+                                        </a>
+                                    </li>                                       
+                                </ul>
+                            </div>    
+                            <!-- tab head :e -->
+
+                            <!-- tab cont :s -->
+                            <div class="tab-cont-type03 property-tab-cont">
+                                <!-- tab1 :s -->
+                                <div class="tab-c-item" id="propTab1" style="display: block;">
+                                    <div class="tab-c-item-wrap">
+                                        <div class="tab-c-item-inner">
+                                            <div class="property-list">
+                                                <div class="property-list-inner">
+                                                    <!-- prop-top :s -->
+                                                    <div class="prop-top">
+                                                        <span title="SclConductingEquipment - 전력설비 [1149]" class="ellipsis-2">SclConductingEquipment - 전력설비 [1149]</span>
+                                                    </div>
+                                                    <!-- prop-top :e -->
+                                                    
+                                                    <!-- prop-cont :s -->
+                                                    <div class="prop-cont">
+                                                        <div class="prop-cont-inner">
+                                                            <div class="prop-search">
+                                                                <button class="sort-category on" title="Categorize"><span class="dis-none">Categorize</span></button> <!--선택시 on 추가 -->
+                                                                <button class="sort-alphabet" title="Alphabetical"><span class="dis-none">Alphabetical</span></button> 
+                                                                <div class="prop-search-input">
+                                                                    <label for="propSearch" class="dis-none">검색</label>
+                                                                    <input type="text" class="input-type02" id="propSearch">
+                                                                    <button class="search-btn"><span class="dis-none">검색</span></button>
+                                                                </div>
+                                                            </div>    
+                                                            <div class="prop-list desc-on cm-scroll"> <!-- 속성 요소 클릭시 desc-on 추가 / 설명글 닫기 버튼 클릭시 desc-on 삭제 -->
+                                                                <div class="prop-item">
+                                                                    <label for="" title="Conducting Equip ID">Conducting Equip ID</label>
+                                                                    <div class="input-wrap">
+                                                                        <input type="text" id="" class="input-type02" value="1149" readonly>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="prop-item">
+                                                                    <label for="" title="Topo Knd Code">Topo Knd Code</label>
+                                                                    <div class="select-wrap">
+                                                                        <select class="select-type03">
+                                                                            <option>111</option>
+                                                                            <option>222</option>
+                                                                            <option>333</option>
+                                                                        </select> 
+                                                                    </div>
+                                                                </div>    
+                                                                
+                                                                <div class="prop-item">
+                                                                    <button class="more-item open"><span class="dis-none">펼침/닫힘</span></button> <!-- 펼침 시 open 추가 / 닫을 시 open 삭제 -->
+                                                                    <label for="" title="Power System Resource">Power System Resource</label>
+                                                                    <div class="input-wrap">
+                                                                        <input type="text" id="" class="input-type02" value="" readonly>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- 펼침 클릭시 보여지고 닫으면 사라짐 -->
+                                                                <div class="prop-item-depth01">
+                                                                    <div class="prop-item">
+                                                                        <label for="" title="Resource ID">Resource ID</label>
+                                                                        <div class="input-wrap">
+                                                                            <input type="text" id="" class="input-type02" value="2727" readonly>
+                                                                        </div>
+                                                                    </div>  
+                                                                    <div class="prop-item">
+                                                                        <button class="more-item open"><span class="dis-none">펼침/닫힘</span></button> <!-- 펼침 시 open 추가 / 닫을 시 open 삭제 -->
+                                                                        <label for="" title="Diagram Object">Diagram Object</label>
+                                                                        <div class="input-wrap">
+                                                                            <input type="text" id="" class="input-type02" value="심볼[0]" readonly>
+                                                                        </div>
+                                                                    </div>  
+                                                                        
+                                                                    <!-- 펼침 클릭시 보여지고 닫으면 사라짐 -->
+                                                                    <div class="prop-item-depth02">
+                                                                        <div class="prop-item">
+                                                                            <label for="" title="ID">ID</label>
+                                                                            <div class="input-wrap">
+                                                                                <input type="text" id="" class="input-type02" value="test">
+                                                                            </div>
+                                                                        </div>  
+
+                                                                        <div class="prop-item">
+                                                                            <label for="" title="Name">Name</label>
+                                                                            <div class="input-wrap">
+                                                                                <input type="text" id="" class="input-type02" value="test">
+                                                                            </div>
+                                                                        </div>  
+                                                                    </div> 
+                                                                </div>  
+
+                                                                <div class="prop-item">
+                                                                    <button class="more-item"><span class="dis-none">펼침/닫힘</span></button> <!-- 펼침 시 open 추가 / 닫을 시 open 삭제 -->
+                                                                    <label for="" title="Power System Resource">Terminal</label>
+                                                                    <div class="select-wrap">
+                                                                        <select class="select-type03">
+                                                                            <option>111</option>
+                                                                            <option>222</option>
+                                                                            <option>333</option>
+                                                                        </select> 
+                                                                    </div>
+                                                                </div>
+
+                                                                <!-- 펼침 클릭시 보여지고 닫으면 사라짐 -->
+                                                                <div class="prop-item-depth01">
+                                                                    <div class="prop-item">
+                                                                        <label for="" title="Resource ID">Resource ID</label>
+                                                                        <div class="input-wrap">
+                                                                            <input type="text" id="" class="input-type02" value="2727" readonly>
+                                                                        </div>
+                                                                    </div>  
+                                                                    <div class="prop-item">
+                                                                        <button class="more-item open"><span class="dis-none">펼침/닫힘</span></button> <!-- 펼침 시 open 추가 / 닫을 시 open 삭제 -->
+                                                                        <label for="" title="Diagram Object">Diagram Object</label>
+                                                                        <div class="input-wrap">
+                                                                            <input type="text" id="" class="input-type02" value="심볼[0]" readonly>
+                                                                        </div>
+                                                                    </div>  
+                                                                </div>  
+                                                                
+                                                                 
+                                                            </div>
+                                                        </div>
+                                                        <!-- 설명영역 :s -->
+                                                        <div class="prop-desc cm-scroll"> 
+                                                            <span class="prop-desc-title">Power System Resource</span> <!-- 타이틀 -->
+                                                            <span class="prop-desc-info">Power System Resource Info</span> <!-- 상세설명 -->
+                                                            <button class="desc-close"><span class="dis-none">닫기</span></button>
+                                                        </div>
+                                                        <!-- 설명영역 :e -->                                                                                                            
+                                                    </div>
+                                                    <!-- prop-cont :e -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- tab1 :e -->
+                                <!-- tab2 :s -->
+                                <div class="tab-c-item" id="propTab2">
+                                    <div class="tab-c-item-wrap">
+                                        <div class="tab-c-item-inner">
+                                            
+                                            <div class="tab-wrap">
+                                                <!-- tab head :s -->
+                                                <div class="tab-head-type04 prop-tab-default">
+                                                    <ul class="tab-h-list">                              
+                                                        <li class="tab-h-on">
+                                                            <a href="#propInTab1" class="t-tit">
+                                                            일반
+                                                            </a>
+                                                        </li> 
+                                                        <li>
+                                                            <a href="#propInTab2" class="t-tit">
+                                                            확장
+                                                            </a>
+                                                        </li>                                        
+                                                    </ul>
+                                                </div>    
+                                                <!-- tab head :e -->
+
+
+                                                <div class="tab-cont-type04 prop-tab-cont">
+                                                    <!-- tab1 :s -->
+                                                    <div class="tab-c-item" id="propInTab1" style="display: block;">
+                                                        <div class="tab-c-item-wrap">
+                                                            <div class="tab-c-item-inner">
+
+                                                                <div class="property-list">
+                                                                    <div class="property-list-inner">
+                                                                        <div class="prop-top">
+                                                                            <span title="SclConductingEquipment - 전력설비 [1149]" class="ellipsis-2">SclConductingEquipment - 전력설비 [1149]</span>
+                                                                        </div>
+                                                                        <div class="prop-cont">
+                                                                            <div class="prop-cont-inner">
+                                                                                <div class="prop-search">
+                                                                                    <button class="sort-category on" title="Categorize"><span class="dis-none">Categorize</span></button> <!--선택시 on 추가 -->
+                                                                                    <button class="sort-alphabet" title="Alphabetical"><span class="dis-none">Alphabetical</span></button> 
+                                                                                    <div class="prop-search-input">
+                                                                                        <label for="propSearch" class="dis-none">검색</label>
+                                                                                        <input type="text" class="input-type02" id="propSearch">
+                                                                                        <button class="search-btn"><span class="dis-none">검색</span></button>
+                                                                                    </div>
+                                                                                </div>    
+                                                                                <div class="prop-list desc-on cm-scroll"> <!-- 속성 요소 클릭시 desc-on 추가 / 설명글 닫기 버튼 클릭시 desc-on 삭제 -->
+                                                                                    <div class="prop-item">
+                                                                                        <label for="" title="Conducting Equip ID">Conducting Equip ID</label>
+                                                                                        <div class="input-wrap">
+                                                                                            <input type="text" id="" class="input-type02" value="1149" readonly>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                    <div class="prop-item">
+                                                                                        <label for="" title="Topo Knd Code">Topo Knd Code</label>
+                                                                                        <div class="select-wrap">
+                                                                                            <select class="select-type03">
+                                                                                                <option>111</option>
+                                                                                                <option>222</option>
+                                                                                                <option>333</option>
+                                                                                            </select> 
+                                                                                        </div>
+                                                                                    </div>    
+                                                                                    
+                                                                                    <div class="prop-item">
+                                                                                        <button class="more-item open"><span class="dis-none">펼침/닫힘</span></button> <!-- 펼침 시 open 추가 / 닫을 시 open 삭제 -->
+                                                                                        <label for="" title="Power System Resource">Power System Resource</label>
+                                                                                        <div class="input-wrap">
+                                                                                            <input type="text" id="" class="input-type02" value="" readonly>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <!-- 펼침 클릭시 보여지고 닫으면 사라짐 -->
+                                                                                    <div class="prop-item-depth01">
+                                                                                        <div class="prop-item">
+                                                                                            <label for="" title="Resource ID">Resource ID</label>
+                                                                                            <div class="input-wrap">
+                                                                                                <input type="text" id="" class="input-type02" value="2727" readonly>
+                                                                                            </div>
+                                                                                        </div>  
+                                                                                        <div class="prop-item">
+                                                                                            <button class="more-item open"><span class="dis-none">펼침/닫힘</span></button> <!-- 펼침 시 open 추가 / 닫을 시 open 삭제 -->
+                                                                                            <label for="" title="Diagram Object">Diagram Object</label>
+                                                                                            <div class="input-wrap">
+                                                                                                <input type="text" id="" class="input-type02" value="심볼[0]" readonly>
+                                                                                            </div>
+                                                                                        </div>  
+                                                                                            
+                                                                                        <!-- 펼침 클릭시 보여지고 닫으면 사라짐 -->
+                                                                                        <div class="prop-item-depth02">
+                                                                                            <div class="prop-item">
+                                                                                                <label for="" title="ID">ID</label>
+                                                                                                <div class="input-wrap">
+                                                                                                    <input type="text" id="" class="input-type02" value="test">
+                                                                                                </div>
+                                                                                            </div>  
+
+                                                                                            <div class="prop-item">
+                                                                                                <label for="" title="Name">Name</label>
+                                                                                                <div class="input-wrap">
+                                                                                                    <input type="text" id="" class="input-type02" value="test">
+                                                                                                </div>
+                                                                                            </div>  
+                                                                                        </div> 
+                                                                                    </div>  
+
+                                                                                    <div class="prop-item">
+                                                                                        <button class="more-item"><span class="dis-none">펼침/닫힘</span></button> <!-- 펼침 시 open 추가 / 닫을 시 open 삭제 -->
+                                                                                        <label for="" title="Power System Resource">Terminal</label>
+                                                                                        <div class="select-wrap">
+                                                                                            <select class="select-type03">
+                                                                                                <option>111</option>
+                                                                                                <option>222</option>
+                                                                                                <option>333</option>
+                                                                                            </select> 
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                    <!-- 펼침 클릭시 보여지고 닫으면 사라짐 -->
+                                                                                    <div class="prop-item-depth01">
+                                                                                        <div class="prop-item">
+                                                                                            <label for="" title="Resource ID">Resource ID</label>
+                                                                                            <div class="input-wrap">
+                                                                                                <input type="text" id="" class="input-type02" value="2727" readonly>
+                                                                                            </div>
+                                                                                        </div>  
+                                                                                        <div class="prop-item">
+                                                                                            <button class="more-item open"><span class="dis-none">펼침/닫힘</span></button> <!-- 펼침 시 open 추가 / 닫을 시 open 삭제 -->
+                                                                                            <label for="" title="Diagram Object">Diagram Object</label>
+                                                                                            <div class="input-wrap">
+                                                                                                <input type="text" id="" class="input-type02" value="심볼[0]" readonly>
+                                                                                            </div>
+                                                                                        </div>  
+                                                                                    </div>  
+                                                                                    
+                                                                                     
+                                                                                </div>
+                                                                            </div>
+                                                                            <!-- 설명영역 :s -->
+                                                                            <div class="prop-desc cm-scroll"> 
+                                                                                <span class="prop-desc-title">Power System Resource</span> <!-- 타이틀 -->
+                                                                                <span class="prop-desc-info">Power System Resource Info</span> <!-- 상세설명 -->
+                                                                                <button class="desc-close"><span class="dis-none">닫기</span></button>
+                                                                            </div>
+                                                                            <!-- 설명영역 :e -->                                                                                                            
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>                                                                                                       
+                                                    </div>
+                                                    <!-- tab1 :e -->
+
+                                                    <!-- tab2 :s -->
+                                                    <div class="tab-c-item" id="propInTab2">
+                                                        <div class="tab-c-item-wrap">
+                                                            <div class="tab-c-item-inner">
+
+                                                                <div class="property-list">
+                                                                    <div class="property-list-inner">
+                                                                        <div class="prop-top">
+                                                                            <span title="SclConductingEquipment" class="ellipsis-2">SclConductingEquipment - 전력설비 [1149]</span>
+                                                                        </div>
+                                                                        <div class="prop-cont">
+                                                                            <div class="prop-list cm-scroll">
+                                                                                <div class="prop-item">
+                                                                                    <label for="" title="ESS명">ESS명</label>
+                                                                                    <div class="input-wrap">
+                                                                                        <input type="text" id="" class="input-type02" value="">
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="prop-item">
+                                                                                    <label for="" title="ESS 배터리 타입">ESS 배터리 타입</label>
+                                                                                    <div class="select-wrap">
+                                                                                        <select class="select-type03">
+                                                                                            <option>111</option>
+                                                                                            <option>222</option>
+                                                                                            <option>333</option>
+                                                                                        </select> 
+                                                                                    </div>
+                                                                                </div>   
+
+                                                                                <div class="prop-item">
+                                                                                    <label for="" title="과전압 알람기준">과전압 알람기준</label>
+                                                                                    <div class="input-wrap">
+                                                                                        <input type="number" id="" class="input-type02" value="">
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="prop-item">
+                                                                                    <label for="" title="저전압 알람기준">저전압 알람기준</label>
+                                                                                    <div class="input-wrap">
+                                                                                        <input type="number" id="" class="input-type02" value="">
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="prop-item">
+                                                                                    <label for="" title="ESS 충전가능 시간">ESS 충전가능 시간</label>
+                                                                                    <div class="input-wrap">
+                                                                                        <input type="number" id="" class="input-type02" value="">
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="prop-item">
+                                                                                    <label for="" title="ESS 방전가능 시간">ESS 방전가능 시간</label>
+                                                                                    <div class="input-wrap">
+                                                                                        <input type="number" id="" class="input-type02" value="">
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="prop-item">
+                                                                                    <label for="" title="충전시 최대출력값">충전시 최대출력값</label>
+                                                                                    <div class="input-wrap">
+                                                                                        <input type="number" id="" class="input-type02" value="">
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="prop-item">
+                                                                                    <label for="" title="충전시 최소출력값">충전시 최소출력값</label>
+                                                                                    <div class="input-wrap">
+                                                                                        <input type="number" id="" class="input-type02" value="">
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="prop-item">
+                                                                                    <label for="" title="방전시 최대출력값">방전시 최대출력값</label>
+                                                                                    <div class="input-wrap">
+                                                                                        <input type="number" id="" class="input-type02" value="">
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="prop-item">
+                                                                                    <label for="" title="운전SOC 상한값">운전SOC 상한값</label>
+                                                                                    <div class="input-wrap">
+                                                                                        <input type="number" id="" class="input-type02" value="">
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="prop-item">
+                                                                                    <label for="" title="운전SOC 하한값">운전SOC 하한값</label>
+                                                                                    <div class="input-wrap">
+                                                                                        <input type="number" id="" class="input-type02" value="">
+                                                                                    </div>
+                                                                                </div>
+                                                                                
+                                                                                 
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>                                                                                                             
+                                                    </div>
+                                                    <!-- tab2 :e -->
+                                                    
+                                                </div>
+
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- tab2 :e -->
+
+                            </div>
+                            <!-- tab cont :e -->   
+                        </div>                                                                        
+                        <!-- 속성 탭 컨텐츠 :e -->                                                                           
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>   
+    </body>
+    <script>
+
+    </script> 
+</html>

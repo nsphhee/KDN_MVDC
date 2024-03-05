@@ -14,7 +14,7 @@
         <title>한전KDN(주) MVDC</title>   
         <link media="all" rel="stylesheet" href="../../static/css/common.css">  
         <link media="all" rel="stylesheet" href="../../static/css/font.css">  
-        <link media="all" rel="stylesheet" href="../../static/css/light-theme.css">         
+        <link media="all" rel="stylesheet" href="../../static/css/default-theme.css">         
         <link media="all" rel="stylesheet" href="../../static/js/swiper/swiper-bundle.min.css">  
         <link media="all" rel="stylesheet" href="../../static/js/grid/tui-grid.css" />
         <script src="../../static/js/jquery-3.7.0.min.js"></script>
@@ -159,7 +159,7 @@
                                     <!-- stab-menu-list :s -->
                                     <div class="swiper stab-menu-list"> 
                                         <div class="swiper-wrapper"> 
-                                            <div class="swiper-slide"><a href="" class="stab-menu-item on"><span>공통코드</span></a><button class="stab-close"><span class="dis-none">닫기</span></button></div> <!-- 선택시 on 추가 -->
+                                            <div class="swiper-slide"><a href="" class="stab-menu-item on"><span>배치작업 관리</span></a><button class="stab-close"><span class="dis-none">닫기</span></button></div> <!-- 선택시 on 추가 -->
                                         </div>                                        
                                         <div class="swiper-scrollbar"></div>
                                     </div> 
@@ -177,7 +177,7 @@
                                             <!-- contain title top :s -->
                                             <div class="c-top-wrap">
                                                 <div class="c-top-inner">
-                                                    <p><span>공통코드</span></p>
+                                                    <p><span>배치작업 관리</span></p>
                                                 </div>
                                             </div>
                                             <!-- contain title top :e -->
@@ -193,7 +193,7 @@
                                                             <div class="c-top-search-wrap">
                                                                 <div class="c-top-search-inner">
                                                                     <div class="c-top-search-input">
-                                                                        <label for="">코드그룹명</label>
+                                                                        <label for="">전체 검색</label>
                                                                         <input type="text" id="" class="input-type02" placeholder="검색어를 입력하세요.">
                                                                         <button class="search-btn"><span class="dis-none">검색</span></button>
                                                                     </div>
@@ -203,69 +203,22 @@
 
                                                             <!-- contain top btn :s -->
                                                             <div class="c-top-btn-wrap">
+                                                                <button class="btn btn-refresh">새로고침</button>
+                                                                <button class="btn btn-gradation">신규</button>
+                                                                <button class="btn btn-type04">삭제</button>
                                                                 <button class="btn btn-type05">저장</button>
                                                             </div>
                                                             <!-- contain top btn :e -->
 
-                                                            <div class="c-cont-wrap c-cont-col02">
-
+                                                            <div class="c-cont-wrap">
                                                                 <div class="c-cont-inner">
                                                                     <div class="c-cont-title">
-                                                                        <span>코드그룹 목록</span>
+                                                                        <span>배치작업 목록</span>
                                                                     </div>
-
-                                                                    <!-- contain inner top btn :s -->
-                                                                    <div class="c-top-btn-wrap">
-                                                                        <button class="btn btn-gradation">신규</button>
-                                                                        <button class="btn btn-type04">삭제</button>
-                                                                    </div>
-                                                                    <!-- contain inner top btn :e -->
 
                                                                     <div class="c-cont-box cm-scroll">
                                                                         <div class="c-cont-box-inner">
-                                                                            <div class="grid-wrap cm-scroll">                                                                                                                                                           
-                                                                                <div id="grid02"></div>
-                                                                            </div>
-                                                                        </div>
-                                                                        
-                                                                    </div>
-
-                                                                    <div class="c-cont-paging">
-                                                                        <div class="pagination">       
-                                                                            <span class="prev-group">
-                                                                                <button class="page-first"><span class="dis-none">처음 페이지로 이동</span></button><button class="page-prev"><span class="dis-none">이전 페이지로 이동</span></button>
-                                                                            </span>
-                                                                            <button class="on">1</button><button>2</button><button>3</button><button>4</button><button>5</button>
-                                                                            <span class="next-group">
-                                                                                <button class="page-next"><span class="dis-none">다음 페이지로 이동</span></button><button class="page-end"><span class="dis-none">마지막 페이지로 이동</span></button>
-                                                                            </span>                
-                                                                        </div>
-
-                                                                        <div class="page-go">
-                                                                            <label for="PageNumInput">Page</label>
-                                                                            <input id="PageNumInput" type="number" value="1" class="input-type01">
-                                                                            <span>of 4</span>
-                                                                        </div>
-                                                                    </div>
-
-                                                                </div>
-
-
-                                                                <div class="c-cont-inner">
-                                                                    <div class="c-cont-title">
-                                                                        <span>코드 목록</span>
-                                                                    </div>
-
-                                                                    <!-- contain inner top btn :s -->
-                                                                    <div class="c-top-btn-wrap">
-                                                                        <button class="btn btn-gradation">신규</button>
-                                                                        <button class="btn btn-type04">삭제</button>
-                                                                    </div>
-                                                                    <!-- contain inner top btn :e -->
-
-                                                                    <div class="c-cont-box cm-scroll">
-                                                                        <div class="c-cont-box-inner">
-                                                                            <div class="grid-wrap cm-scroll">                                                                                
+                                                                            <div class="grid-wrap cm-scroll">
                                                                                 <div id="grid"></div>
                                                                             </div>
                                                                         </div>

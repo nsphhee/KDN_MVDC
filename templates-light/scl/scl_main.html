@@ -1,0 +1,1436 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- 호환성 -->     
+        <meta name="generator" content="EditPlus®"><!-- 사용프로그램 -->
+        <meta name="format-detection" content="telephone=no,email=no,address=no"><!-- 전화번호, 주소, 메일등 링크로 인식방지 -->
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"><!-- 화면맞춤 -->
+        <meta name="author" content="한전KDN(주)"><!-- 저작자 -->
+        <meta name="keywords" content="한전KDN(주) MVDC"><!-- 키워드 -->
+        <meta name="description" content="한전KDN(주) MVDC"><!-- 웹페이지의 축약된 설명을 제공_최대45자(네이버 웹마스터도구 기준) -->
+        <meta name="copyright" content="&copy; 한전KDN(주). All right reserved."><!-- 저작권 -->
+        <link rel="shortcut icon" type="image/x-icon" href="../../static/images/default/common/favicon.ico"><!-- 파비콘 -->        
+        <title>한전KDN(주) MVDC</title>   
+        <link media="all" rel="stylesheet" href="../../static/css/common.css">  
+        <link media="all" rel="stylesheet" href="../../static/css/font.css">  
+        <link media="all" rel="stylesheet" href="../../static/css/default-theme.css">         
+        <link media="all" rel="stylesheet" href="../../static/js/swiper/swiper-bundle.min.css">  
+        <link media="all" rel="stylesheet" href="../../static/js/tui/tui-context-menu.css">
+        <link media="all" rel="stylesheet" href="../../static/js/tui/tui-tree.css">
+        <script src="../../static/js/jquery-3.7.0.min.js"></script>
+        <script src="../../static/js/swiper/swiper-bundle.min.js"></script>
+        <script src="../../static/js/tui/tui-context-menu.js"></script>
+        <script src="../../static/js/tui/tui-tree.js"></script>
+        <script src="../../static/js/common_design.js"></script>
+        <script src="../../static/js/tree-menu.js"></script>
+    </head>
+    <body class="scroll">  
+        <div id="wrap">
+            <!-- header :s --> 
+            <header id="header" class="header-wrap">
+                <div class="header-inner">  
+                    <div class="swiper header-menu-wrap">
+                        <div class="swiper-wrapper header-menu-inner">
+                            <div class="swiper-slide">
+                                <div class="top-left header-item">
+                                    <h1 class="logo-img">MVDC</h1>
+                                    <p class="program-name">Engineering Tools - <span class="ellipsis">TK_VT2</span></p>
+                                </div>
+                                <div class="top-mid header-item">
+                                    <div class="all-menu-wrap">
+                                        <button class="btn all-menu btn-type01"><span>모든메뉴</span></button> <!-- 현재와 같은 방식으로 보여줄지 모달로 띄울지 고민 -->
+                                    </div>
+                                    <div class="info-list">
+                                        <span class="info-ip nw-good">localhost:8070</span> <!-- 상태값 확인필요 / 상태값별 포인트 컬러 변경 -->
+                                        <span class="info-date">2024-01-01 13:35:15</span>
+                                        <span class="info-paths ellipsis">편집도구 > 계통저작도구(KGRID.MG.ENG.Editor.SCL.View.SclEditor)</span>
+                                    </div>
+                                    <div class="tnb-list header-item">
+                                        <button class="top-icon" menu-icon="top-home" title="메인"><span class="dis-none">메인</span></button>
+                                        <button class="top-icon" menu-icon="top-tab-close" title="탭닫기"><span class="dis-none">탭닫기</span></button>
+                                        <button class="top-icon" menu-icon="top-alltab-close" title="탭모두닫기"><span class="dis-none">탭모두닫기</span></button>
+                                        <button class="top-icon" menu-icon="top-img-save" title="이미지저장"><span class="dis-none">이미지저장</span></button>
+                                        <button class="top-icon" menu-icon="top-print" title="인쇄"><span class="dis-none">인쇄</span></button>
+                                    </div>
+                                </div>
+                                <div class="top-right">
+                                    <div class="select-wrap">
+                                        <select class="select-type01">
+                                            <option>TK_VT1</option>
+                                            <option>TK_VT2</option>
+                                            <option>TK_VT3</option>
+                                            <option>TK_VT4</option>
+                                            <option>TK_VT5</option>
+                                        </select> 
+                                    </div>      
+                                    <div class="utill-wrap">
+                                        <p class="utill-welcome"><span class="welcome-user">mgadmin 님</span><span>, 안녕하세요.</span></p>
+                                        <a href="" class="utill-setting"><span class="dis-none">설정</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-scrollbar"></div>
+                    </div>  
+                </div>
+            </header>
+            <!-- header :e -->  
+              
+            <!-- main :s -->
+            <main id="main">     
+                <div id="main-wrap">
+                    
+                    <!-- left-nav :s -->
+                    <nav id="left-nav" class="left-nav-wrap">
+                        <div class="left-nav-inner" id="lnb-full">
+                            <div class="swiper lnb-list">                               
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="lnb-list-top">
+                                            <div class="lnb-list-item">
+                                                <button class="nav-icon menu-full" menu-icon="left01"><span class="dis-none">메뉴펼침</span></button> 
+                                            </div>
+                                            <div class="lnb-list-item">
+                                                <button class="nav-icon" menu-icon="left02"><span class="">공통정보</span></button> <!-- 클릭시 클래스 on 추가 -->
+                                                <div class="lnb-depth-wrap lnb-nav01">
+                                                    <div class="lnb-depth01-inner">
+                                                        <ul>
+                                                            <li><a href=""><span>시스템정보 관리</span></a></li>
+                                                            <li><a href=""><span>프로세스 관리</span></a></li>
+                                                            <li><a href=""><span>배치작업 관리</span></a></li>
+                                                            <li><a href=""><span>플러그인 프로그램 관리</span></a></li>
+                                                            <li><a href=""><span>메뉴 관리</span></a></li>
+                                                            <li><a href="" class="depth-more on"><span>사용자 관리</span></a>
+                                                                <div class="lnb-depth02-inner">
+                                                                    <ul>
+                                                                        <li><a href=""><span>사용자그룹</span></a></li>
+                                                                        <li><a href=""><span>사용자</span></a></li>
+                                                                        <li><a href=""><span>사용자그룹별권한</span></a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </li>
+                                                            <li><a href="" class="depth-more"><span>코드 관리</span></a>
+                                                                <div class="lnb-depth02-inner">
+                                                                    <ul>
+                                                                        <li><a href=""><span>코드공통</span></a></li>
+                                                                        <li><a href=""><span>스케일팩터</span></a></li>
+                                                                        <li><a href=""><span>단위코드</span></a></li>
+                                                                        <li><a href=""><span>상태변환맵</span></a></li>
+                                                                        <li><a href=""><span>선종</span></a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div> 
+                                            </div>
+                                            <div class="lnb-list-item">
+                                                <button class="nav-icon" menu-icon="left03"><span class="">운영설정</span></button>
+                                            </div>                                    
+                                            <div class="lnb-list-item">
+                                                <button class="nav-icon" menu-icon="left04"><span class="">편집도구</span></button>
+                                            </div>                                    
+                                            <div class="lnb-list-item">
+                                                <button class="nav-icon" menu-icon="left05"><span class="">배포관리</span></button>
+                                            </div>
+                                        </div>   
+                                        <div class="lnb-list-bottom">       
+                                            <div class="lnb-list-item">
+                                                <button class="nav-icon" menu-icon="left06"><span class="">보기</span></button>
+                                            </div>                                           
+                                            <div class="lnb-list-item">
+                                                <button class="nav-icon" menu-icon="left07"><span class="">환경설정</span></button>
+                                            </div>
+                                        </div>                         
+                                    </div>    
+                                </div>                  
+                                <div class="swiper-scrollbar"></div>
+                            </div>   
+                        </div>
+                    </nav>        
+                    <!-- left-nav :e -->
+
+                    <!-- cont-area :s -->
+                    <div id="cont-area" class="cont-area-wrap">
+                        <div class="cont-area-inner">
+                            <!-- stab-menu-wrap :s -->
+                            <div class="stab-menu-wrap">
+                                <div class="stab-menu-inner">
+                                    <a href="" class="go-main-btn"><span class="dis-none">메인</span></a> <!-- 선택시 on 추가 -->
+                                    <!-- stab-menu-list :s -->
+                                    <div class="swiper stab-menu-list"> 
+                                        <div class="swiper-wrapper"> 
+                                            <div class="swiper-slide"><a href="" class="stab-menu-item on"><span>계통저작도구</span></a><button class="stab-close"><span class="dis-none">닫기</span></button></div> <!-- 선택시 on 추가 -->
+                                            <div class="swiper-slide"><a href="" class="stab-menu-item"><span>화면저작도구</span></a><button class="stab-close"><span class="dis-none">닫기</span></button></div> 
+                                        </div>                                        
+                                        <div class="swiper-scrollbar"></div>
+                                    </div> 
+                                    <!-- stab-menu-list :e -->
+                                </div>
+                            </div>
+                            <!-- stab-menu-wrap :e -->
+
+                            <!-- contain-wrap :s -->
+                            <div class="contain-wrap">
+                                <div class="contain-inner">
+                                    <!-- scl-box :s -->
+                                    <div class="contain-box scl-box scroll">
+                                        <div class="contain-box-inner scl-box-inner">
+                                            <!-- contain title top :s -->
+                                            <div class="c-top-wrap">
+                                                <div class="c-top-inner">
+                                                    <p><span>계통저작도구</span><span>편집도구</span></p>
+                                                </div>
+                                            </div>
+                                            <!-- contain title top :e -->
+                                            <!-- contain main :s -->
+                                            <div class="c-main-wrap">
+                                                <div class="c-main-inner">
+                                                    <!-- 계통저작도구 홈/설정 :s -->
+                                                    <div class="c-main-top-wrap">
+                                                        <div class="c-main-top-inner">
+                                                            <!-- tool tab :s -->
+                                                            <div class="tab-wrap">
+                                                                
+                                                                <!-- tab head :s -->
+                                                                <div class="tab-head-type02 cm-tab-default">
+                                                                    <ul class="tab-h-list">                              
+                                                                        <li class="tab-h-on">
+                                                                            <a href="#cmTab1" class="t-tit">
+                                                                            홈
+                                                                            </a>
+                                                                        </li> 
+                                                                        <li>
+                                                                            <a href="#cmTab2" class="t-tit">
+                                                                            설정
+                                                                            </a>
+                                                                        </li>                                           
+                                                                    </ul>
+                                                                </div>    
+                                                                <!-- tab head :e -->
+
+                                                                <!-- tab cont :s -->
+                                                                <div class="tab-cont-type02 cm-tab-cont">
+                                                                    <!-- tab1 :s -->
+                                                                    <div class="tab-c-item" id="cmTab1" style="display: block;">
+                                                                        <div class="tab-c-item-wrap">
+                                                                            <div class="tab-c-item-inner">
+
+                                                                                <div class="swiper tool-menu-wrap">
+                                                                                    <div class="swiper-wrapper tool-menu-inner">
+                                                                                        <div class="swiper-slide">
+                                                                                            <div class="tool-item">
+                                                                                               <div class="tool-btn">  
+                                                                                               </div>
+                                                                                               <button class="tool-icon" tool-icon="tool-save" title="저장"><span class="dis-none">저장</span></button>
+                                                                                               <button class="tool-icon" tool-icon="tool-undo" title="실행취소"><span class="dis-none">실행취소</span></button>
+                                                                                               <button class="tool-icon" tool-icon="tool-redo" title="다시실행"><span class="dis-none">다시실행</span></button>
+                                                                                            </div>
+                                                                                            <div class="tool-item">
+                                                                                                <button class="tool-icon" tool-icon="tool-paste" title="붙여넣기"><span class="dis-none">붙여넣기</span></button>
+                                                                                                <button class="tool-icon" tool-icon="tool-cut" title="잘라내기"><span class="dis-none">잘라내기</span></button>
+                                                                                                <button class="tool-icon" tool-icon="tool-copy" title="복사"><span class="dis-none">복사</span></button>
+                                                                                                <button class="tool-icon" tool-icon="tool-delete" title="삭제"><span class="dis-none">삭제</span></button>
+                                                                                            </div>
+                                                                                            <div class="tool-item">
+                                                                                                <button class="tool-icon on" tool-icon="tool-pointer" title="포인터"><span class="dis-none">포인터</span></button>
+                                                                                                <button class="tool-icon" tool-icon="tool-textbox" title="텍스트상자"><span class="dis-none">텍스트상자</span></button>
+                                                                                                <button class="tool-icon" tool-icon="tool-pencil" title="연필"><span class="dis-none">연필</span></button>
+                                                                                                <button class="tool-icon" tool-icon="tool-path" title="패스툴"><span class="dis-none">패스툴</span></button>
+                                                                                                <button class="tool-icon" tool-icon="tool-connector" title="연결선"><span class="dis-none">연결선</span></button>
+                                                                                            </div>
+                                                                                            <div class="tool-item">
+                                                                                                <div class="tool-txt">                                                                                                    
+                                                                                                    <button class="tool-icon" tool-icon="tool-group" title="그룹" disabled><span>그룹</span></button>  <!-- 활성화 안될시 disabled -->
+                                                                                                </div>
+                                                                                                <div class="tool-txt">   
+                                                                                                    <button class="tool-icon" tool-icon="tool-ungroup" title="그룹해제" disabled><span>그룹해제</span></button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="tool-item">
+                                                                                                <div class="btn-box">
+                                                                                                    <div class="tool-txt">                                                                                                        
+                                                                                                        <button class="tool-icon on" tool-icon="tool-bring-forward" title="앞이로 가져오기"><span>앞으로 가져오기</span></button> <!-- 선택 시 on 추가 / 다른 툴 아이콘 선택 시 on 삭제 -->
+                                                                                                    </div>
+                                                                                                    <div class="tool-more">
+                                                                                                        <button class="tool-icon" tool-icon="tool-bring-forward" title="앞으로 가져오기"><span>앞으로 가져오기</span></button> 
+                                                                                                        <button class="tool-icon" tool-icon="tool-bring-front" title="맨앞으로 가져오기"><span>맨앞으로 가져오기</span></button>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="btn-box">
+                                                                                                    <div class="tool-txt">
+                                                                                                        <button class="tool-icon" tool-icon="tool-send-backward" title="뒤로 보내기"><span>뒤로 보내기</span></button>
+                                                                                                    </div>
+                                                                                                    <div class="tool-more">                                                                                                    
+                                                                                                        <button class="tool-icon" tool-icon="tool-send-backward" title="뒤로 보내기"><span>뒤로 보내기</span></button>
+                                                                                                        <button class="tool-icon" tool-icon="tool-send-back" title="맨뒤로 보내기"><span>맨뒤로 보내기</span></button>
+                                                                                                    </div>
+                                                                                                </div>                                                                                                
+                                                                                            </div>
+                                                                                            <div class="tool-item">
+                                                                                                <button class="tool-icon" tool-icon="tool-halign-left" title="왼쪽맞춤"><span class="dis-none">왼쪽맞춤</span></button>
+                                                                                                <button class="tool-icon" tool-icon="tool-halign-center" title="가운데맞춤"><span class="dis-none">가운데맞춤</span></button>
+                                                                                                <button class="tool-icon" tool-icon="tool-halign-right" titke="오른쪽맞춤"><span class="dis-none">오른쪽맞춤</span></button>
+                                                                                                <button class="tool-icon" tool-icon="tool-valign-top" title="위쪽맞춤"><span class="dis-none">위쪽맞춤</span></button>
+                                                                                                <button class="tool-icon" tool-icon="tool-valign-middle" title="중간맞춤"><span class="dis-none">중간맞춤</span></button>
+                                                                                                <button class="tool-icon" tool-icon="tool-valign-bottom" title="아래쪽맞춤"><span class="dis-none">아래쪽맞춤</span></button>
+                                                                                            </div>
+                                                                                            <div class="tool-item">
+                                                                                                <button class="tool-icon" tool-icon="tool-export-image" title="이미지로 내보내기"><span class="dis-none">이미지로 내보내기</span></button>
+                                                                                            </div>
+                                                                                            <div class="tool-item">
+                                                                                                <button class="tool-icon" tool-icon="tool-cn-ac" title="연결노드 AC"><span class="dis-none">연결노드 AC</span></button>
+                                                                                                <button class="tool-icon" tool-icon="tool-cn-dc" title="연결노드 DC"><span class="dis-none">연결노드 DC</span></button>
+                                                                                                <button class="tool-icon" tool-icon="tool-lin-ac" title="전력선 AC"><span class="dis-none">전력선 AC</span></button>
+                                                                                                <button class="tool-icon" tool-icon="tool-lin-dc" title="전력선 DC"><span class="dis-none">전력선 DC</span></button>
+                                                                                                <button class="tool-icon" tool-icon="tool-epip-w" title="수도 배관"><span class="dis-none">수도 배관</span></button>
+                                                                                                <button class="tool-icon" tool-icon="tool-epip-g" title="가스 배관"><span class="dis-none">가스 배관</span></button>
+                                                                                                <button class="tool-icon" tool-icon="tool-epip-t" title="열 배관"><span class="dis-none">열 배관</span></button>
+                                                                                            </div>
+
+                                                                                            <div class="tool-item">
+                                                                                                <button class="tool-icon" tool-icon="tool-error-check" title="오류검증"><span class="dis-none">오류검증</span></button>
+                                                                                            </div>                  
+
+                                                                                            <div class="tool-item">
+                                                                                                <button class="tool-icon" tool-icon="tool-file-open" title="가져오기"><span class="dis-none">가져오기</span></button>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="swiper-scrollbar"></div>
+                                                                                </div>                                                                                 
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!-- tab1 :e -->                                    
+                                                                    <!-- tab2:s -->
+                                                                    <div class="tab-c-item" id="cmTab2">
+                                                                        <div class="tab-c-item-wrap">
+                                                                            <div class="tab-c-item-inner">
+
+                                                                                <div class="swiper tool-menu-wrap">
+                                                                                    <div class="swiper-wrapper tool-menu-inner">
+                                                                                        <div class="swiper-slide">
+                                                                                            
+                                                                                            <div class="tool-item">
+                                                                                                <div class="btn-box">
+                                                                                                    <div class="tool-txt">                                                                                                        
+                                                                                                        <button class="tool-icon" tool-icon="tool-bg-color" title="배경색"><span>배경색</span></button> 
+                                                                                                    </div>
+                                                                                                    <div class="tool-more">
+                                                                                                        <div class="empty-area">
+                                                                                                            컬러팔레트 영역
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="tool-item">
+                                                                                                <div class="tool-txt">                                                                                                    
+                                                                                                    <button class="tool-icon" tool-icon="tool-grid-show" title="눈금선 표시"><span>눈금선 표시</span></button>
+                                                                                                </div>
+                                                                                                <div class="btn-box">
+                                                                                                    <div class="tool-txt">                                                                                                        
+                                                                                                        <button class="tool-icon on" tool-icon="tool-grid-color" title="눈금선 설정"><span>눈금선 설정</span></button> <!-- 선택 시 on 추가 / 다른 툴 아이콘 선택 시 on 삭제 -->
+                                                                                                    </div>
+                                                                                                    <div class="tool-more">       
+                                                                                                        <div class="tool-more-flex">
+                                                                                                            <div class="btn-box">
+                                                                                                                <div class="tool-txt">                                                                                                        
+                                                                                                                    <button class="tool-icon on" tool-icon="tool-grid-color" title="색상"><span>색상</span></button>
+                                                                                                                </div>
+                                                                                                                <div class="tool-more">
+                                                                                                                    <div class="empty-area">
+                                                                                                                        컬러팔레트 영역
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <div class="tool-number">
+                                                                                                                <label for="cellWidth">셀넓이</label><input type="number" id="cellWidth" class="input-type01">
+                                                                                                            </div>
+                                                                                                            <div class="tool-number">
+                                                                                                                <label for="cellHeight">셀높이</label><input type="number" id="cellHeight"class="input-type01">
+                                                                                                            </div>
+                                                                                                        </div>                                                                                                 
+
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                
+                                                                                            </div>
+                                                                                            <div class="tool-item">
+                                                                                                <div class="tool-number">
+                                                                                                    <label for="zoomInOut">확대/축소</label><input type="number" id="zoomInOut" class="input-type01">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            
+                                                                                            <div class="tool-item">
+                                                                                                <div class="tool-txt">                                                                                                        
+                                                                                                    <button class="tool-icon" tool-icon="tool-zoom-fit" title="자동맞춤"><span>자동 맞춤</span></button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="tool-item">
+                                                                                                <div class="btn-box">
+                                                                                                    <div class="tool-txt">                                                                                                        
+                                                                                                        <button class="tool-icon" tool-icon="tool-snap-grid" title="이동보조"><span>이동 보조</span></button> 
+                                                                                                    </div>
+                                                                                                    <div class="tool-more">
+                                                                                                        <div class="tool-check">
+                                                                                                            <input type="checkbox" id="snapItem" checked><label for="snapItem">주변 객체에 맞춤</label>
+                                                                                                        </div>
+                                                                                                        <div class="tool-check">
+                                                                                                            <input type="checkbox" id="snapGrid" checked><label for="snapGrid">눈금선에 맞춤</label>
+                                                                                                        </div>                                                                                                        
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            
+                                                                                            <div class="tool-item">
+                                                                                                <div class="btn-box">
+                                                                                                    <div class="tool-txt">
+                                                                                                        <button class="tool-icon" tool-icon="tool-view" title="보기"><span>보기</span></button>
+                                                                                                    </div>
+                                                                                                    <div class="tool-more">  
+                                                                                                        <div class="tool-check"><input type="checkbox" id="hGridView" checked><label for="hGridView">가로 눈금자 보기</label></div>                                                                                                        
+                                                                                                        <div class="tool-check"><input type="checkbox" id="vGridView" checked><label for="vGridView">세로 눈금자 보기</label></div>                                                                                                        
+                                                                                                        <div class="tool-check"><input type="checkbox" id="navView" checked><label for="navView">네이게이터 보기</label></div>                         
+                                                                                                    </div>
+                                                                                                </div>                                                                                                
+                                                                                            </div>
+                                                                                          
+                                                                                            <div class="tool-item">
+                                                                                                <div class="tool-select">
+                                                                                                    <label for="labelLocation">라벨위치</label>
+                                                                                                    <select id="labelLocation" class="select-type01">
+                                                                                                        <option>Bottom</option>
+                                                                                                        <option>Top</option>
+                                                                                                        <option>Left</option>
+                                                                                                        <option>Right</option>
+                                                                                                    </select>
+                                                                                                </div>
+                                                                                            </div>
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="swiper-scrollbar"></div>
+                                                                                </div> 
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!-- tab2:e -->                                    
+                                                                </div>                                    
+                                                                <!-- tab cont :e -->
+
+                                                            </div>  
+                                                            <!-- tool tab :e -->
+                                                            <button class="btn-display"><span class="dis-none">숨김/펼침</span></button> <!-- btn-display : cm-tab-cont 보임  / btn-display-none : cm-tab-cont 숨김 -->
+                                                        </div>
+                                                    </div>                                                    
+                                                    <!-- 계통저작도구 홈/설정 :e -->
+                                                    
+                                                    <!-- scl cont :s -->
+                                                    <div class="c-main-cont-wrap scl-cont-wrap">
+                                                        <div class="c-main-cont-inner scl-cont-inner">
+                                                            <!-- scl left area :s -->
+                                                            <div class="c-main-left-wrap"> <!-- 접혔을때 left-close 추가 -->
+                                                                <div class="c-main-left-inner">
+
+                                                                    <div class="cm-lnb-wrap">
+                                                                        <div class="cm-lnb-inner">
+                                                                            <div class="cm-left-top">
+                                                                                <span>계통설비 목록</span>
+                                                                                <button class="area-hide"><span class="dis-none">접기</span></button> <!-- 접혀있을때 area-open / 펼쳐있을때 area-hide -->
+                                                                            </div>
+                                                                            <div class="cm-left-cont">   
+                                                                                <div class="cm-left-cont-inner">
+                                                                                    <div id="tree" class="tui-tree-wrap"></div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                            <!-- scl left area :e -->
+                                                            
+                                                            <!-- scl mid area :s -->
+                                                            <div class="c-main-mid-wrap">
+                                                                <div class="c-main-mid-inner">
+                                                                    <!-- 계통도 탭 컨텐츠 :s -->
+                                                                    <div class="tab-wrap">
+                                                                        <!-- tab head :s -->
+                                                                        <div class="swiper c-mid-tab-head c-mid-tab-default">
+                                                                            <div class="swiper-wrapper tab-h-list">
+                                                                                <div class="swiper-slide tab-h-on r-area-open"><!-- 계통도 탭 선택시 우측 영역 펼침 r-area-open 추가(우측열림) / 다른 탭 선택 시 r-area-open 삭제(우측닫힘)-->
+                                                                                    <a href="#cMidTab1" class="t-tit">
+                                                                                        계통도
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="swiper-slide">
+                                                                                    <a href="#cMidTab2" class="t-tit">
+                                                                                        통신설정
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="swiper-slide">
+                                                                                    <a href="#cMidTab3" class="t-tit">
+                                                                                        지능형 통신 장치
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="swiper-slide">
+                                                                                    <a href="#cMidTab4" class="t-tit">
+                                                                                        테이터 타입 템플릿
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="swiper-scrollbar"></div>
+                                                                        </div>
+                                                                        <!-- tab head :e -->
+
+                                                                        <!-- tab cont :s -->
+                                                                        <div class="tab-cont-type03 c-mid-tab-cont">
+                                                                            <!-- tab1 :s -->
+                                                                            <div class="tab-c-item cm-scroll" id="cMidTab1" style="display: block;">
+                                                                                <div class="tab-c-item-wrap">
+                                                                                    <div class="tab-c-item-inner">
+                                                                                        <div class="no-area-info"> <!-- 영역설명 -->
+                                                                                            <span>계통도 영역</span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <!-- tab1 :e -->
+                                                                            <!-- tab2 :s -->
+                                                                            <div class="tab-c-item cm-scroll" id="cMidTab2">
+                                                                                <div class="tab-c-item-wrap">
+                                                                                    <div class="tab-c-item-inner">  
+
+                                                                                        <div class="communi-wrap">
+                                                                                            <div class="communi-inner tc-flex">              
+                                                                                                <div class="tc-menu-list">
+                                                                                                    <div class="tc-top">
+                                                                                                        <span>통신설정 목록</span>
+                                                                                                    </div>
+                                                                                                    <div class="tc-cont">
+                                                                                                        <div class="tc-cont-inner">                                                                  
+                                                                                                            <div id="comm-tree" class="tui-tree-wrap cm-scroll"></div>
+                                                                                                        </div>                                      
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="area-col-1">
+                                                                                                    <div class="tc-top">
+                                                                                                        <span class="fc-yellow bold">서브네트워크</span>
+                                                                                                    </div>
+                                                                                                    <div class="comm-prop-cont tc-cont">
+                                                                                                        <div class="comm-prop-cont-inner tc-cont-inner cm-scroll">                                                                                                 
+                                                                                                            <div class="prop-item">
+                                                                                                                <label for="" title="이름">이름</label>
+                                                                                                                <div class="input-wrap">
+                                                                                                                    <input type="text" id="" class="input-type02" value="W01">
+                                                                                                                </div>
+                                                                                                            </div>                                                                    
+                                                                                                            <div class="prop-item">
+                                                                                                                <label for="" title="설명">설명</label>
+                                                                                                                <div class="input-wrap">
+                                                                                                                    <input type="text" id="" class="input-type02" value="">
+                                                                                                                </div>
+                                                                                                            </div>                                                                
+                                                                                                            <div class="prop-item">
+                                                                                                                <label for="" title="타입">타입</label>
+                                                                                                                <div class="input-wrap">
+                                                                                                                    <input type="text" id="" class="input-type02" value="8-MMS">
+                                                                                                                </div>
+                                                                                                            </div>                                                               
+                                                                                                            <div class="prop-item">
+                                                                                                                <label for="" title="Bit Rate">Bit Rate</label>
+                                                                                                                <div class="input-wrap">
+                                                                                                                    <input type="text" id="" class="input-type02" value="10">
+                                                                                                                </div>
+                                                                                                            </div>     
+                                                                                                        </div>                                                                                                      
+                                                                                                    </div>
+                                                                                                </div>
+
+                                                                                                <!-- div class="area-col-2">
+                                                                                                    <div>
+                                                                                                        <div class="tc-top">
+                                                                                                            <span class="fc-yellow bold">GSE</span>
+                                                                                                        </div>                                                                                                        
+                                                                                                        <div class="comm-prop-cont tc-cont">
+                                                                                                            <div class="comm-prop-cont-inner tc-cont-inner cm-scroll">                                                                    
+                                                                                                                <div class="prop-item">
+                                                                                                                    <label for="" title="제어블럭 이름">제어블럭 이름</label>
+                                                                                                                    <div class="input-wrap">
+                                                                                                                        <input type="text" id="" class="input-type02" value="Goose1">
+                                                                                                                    </div>
+                                                                                                                </div>                                                                            
+                                                                                                                <div class="prop-item">
+                                                                                                                    <label for="" title="논리장치 인스턴스">논리장치 인스턴스</label>
+                                                                                                                    <div class="input-wrap">
+                                                                                                                        <input type="text" id="" class="input-type02" value="C1">
+                                                                                                                    </div>
+                                                                                                                </div>  
+                                                                                                            </div>                                                                                                      
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div>
+                                                                                                        <div class="tc-top">
+                                                                                                            <span>제어블럭 값 목록</span>
+                                                                                                        </div>                                                                                                        
+                                                                                                        <div class="comm-prop-cont tc-cont">
+                                                                                                            <div class="comm-prop-cont-inner tc-cont-inner cm-scroll">                                                                    
+                                                                                                                <div class="btn-area">
+                                                                                                                    <button class="btn btn-type02">추가</button>
+                                                                                                                    <button class="btn btn-type03">삭제</button>
+                                                                                                                </div>
+                                                                                                                <div class="grid-table-wrap cm-scroll">
+                                                                                                                    <div class="grid-table-inner">
+                                                                                                                        grid-table 영역  grid-table 영역  grid-table 영역  grid-table 영역  grid-table 영역
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>                                                                                                      
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div -->
+
+
+
+                                                                                            </div>                                
+                                                                                        </div>
+
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <!-- tab2 :e -->
+                                                                            <!-- tab3 :s -->
+                                                                            <div class="tab-c-item cm-scroll" id="cMidTab3">
+                                                                                <div class="tab-c-item-wrap">
+                                                                                    <div class="tab-c-item-inner">
+
+                                                                                        <div class="ai-communi-wrap">
+                                                                                            <div class="ai-communi-inner tc-flex">              
+                                                                                                <div class="tc-menu-list">
+                                                                                                    <div class="tc-top">
+                                                                                                        <span>지능형 통신장치 목록</span>
+                                                                                                    </div>
+                                                                                                    <div class="tc-cont">
+                                                                                                        <div class="tc-cont-inner">                                                                  
+                                                                                                            <div id="ai-comm-tree" class="tui-tree-wrap cm-scroll"></div>
+                                                                                                        </div>                                      
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="area-col-1">
+                                                                                                    <div class="ai-comm-prop-top tc-top">
+                                                                                                        <span class="fc-yellow bold">IED</span>
+                                                                                                    </div>
+                                                                                                    <div class="ai-comm-prop-cont tc-cont">
+                                                                                                        <div class="ai-comm-prop-cont-inner tc-cont-inner cm-scroll">                                                                                                 
+                                                                                                            <div class="prop-item">
+                                                                                                                <label for="" title="이름">이름</label>
+                                                                                                                <div class="input-wrap">
+                                                                                                                    <input type="text" id="" class="input-type02" value="IED1">
+                                                                                                                </div>
+                                                                                                            </div>                                                                    
+                                                                                                            <div class="prop-item">
+                                                                                                                <label for="" title="설명">설명</label>
+                                                                                                                <div class="input-wrap">
+                                                                                                                    <input type="text" id="" class="input-type02" value="RTU1">
+                                                                                                                </div>
+                                                                                                            </div>                                                                
+                                                                                                            <div class="prop-item">
+                                                                                                                <label for="" title="타입">설정버전</label>
+                                                                                                                <div class="input-wrap">
+                                                                                                                    <input type="text" id="" class="input-type02" value="1.0">
+                                                                                                                </div>
+                                                                                                            </div>                                                               
+                                                                                                            <div class="prop-item">
+                                                                                                                <label for="" title="Bit Rate">제조사</label>
+                                                                                                                <div class="input-wrap">
+                                                                                                                    <input type="text" id="" class="input-type02" value="KEPCO_consortium">
+                                                                                                                </div>
+                                                                                                            </div>     
+                                                                                                        </div>                                                                                                      
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>                                
+                                                                                        </div>
+
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <!-- tab3 :e -->
+                                                                            <!-- tab4 :s -->
+                                                                            <div class="tab-c-item cm-scroll" id="cMidTab4">
+                                                                                <div class="tab-c-item-wrap">
+                                                                                    <div class="tab-c-item-inner">
+
+
+                                                                                        <div class="data-type-wrap">
+                                                                                            <div class="data-type-inner tc-flex">              
+                                                                                                <div class="tc-menu-list">
+                                                                                                    <div class="tc-top">
+                                                                                                        <span>데이터 타입 템플릿 목록</span>
+                                                                                                    </div>
+                                                                                                    <div class="tc-cont">
+                                                                                                        <div class="tc-cont-inner">                                                                  
+                                                                                                            <div id="data-type-tree" class="tui-tree-wrap cm-scroll"></div>
+                                                                                                        </div>                                      
+                                                                                                    </div>
+                                                                                                </div>
+
+                                                                                                <div class="area-col-2">
+                                                                                                    <div>
+                                                                                                        <div class="tc-top">
+                                                                                                            <span class="fc-yellow bold">열거형 타입</span>
+                                                                                                        </div>                                                                                                        
+                                                                                                        <div class="data-type-prop-cont tc-cont">
+                                                                                                            <div class="data-type-prop-cont-inner tc-cont-inner cm-scroll">                                                                    
+                                                                                                                <div class="prop-item">
+                                                                                                                    <label for="" title="열거형 타입 ID">열거형 타입 ID</label>
+                                                                                                                    <div class="input-wrap">
+                                                                                                                        <input type="text" id="" class="input-type02" value="angid">
+                                                                                                                    </div>
+                                                                                                                </div>                                                                            
+                                                                                                                <div class="prop-item">
+                                                                                                                    <label for="" title="설명">설명</label>
+                                                                                                                    <div class="input-wrap">
+                                                                                                                        <input type="text" id="" class="input-type02" value="">
+                                                                                                                    </div>
+                                                                                                                </div>  
+                                                                                                            </div>                                                                                                      
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div>
+                                                                                                        <div class="tc-top">
+                                                                                                            <span class="fc-yellow bold">열거 값 목록</span>
+                                                                                                        </div>                                                                                                        
+                                                                                                        <div class="data-type-prop-cont tc-cont">
+                                                                                                            <div class="data-type-prop-cont-inner tc-cont-inner cm-scroll">                                                                    
+                                                                                                                <div class="btn-area">
+                                                                                                                    <button class="btn btn-type02">추가</button>
+                                                                                                                    <button class="btn btn-type03">삭제</button>
+                                                                                                                </div>
+                                                                                                                <div class="grid-table-wrap cm-scroll">
+                                                                                                                    <div class="grid-table-inner">
+                                                                                                                        <div class="no-area-info"> <!-- 영역설명 -->
+                                                                                                                            <span>grid-table 영역</span>
+                                                                                                                        </div>                                                                                                                   
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>                                                                                                      
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+
+
+
+                                                                                            </div>                                
+                                                                                        </div>
+
+
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <!-- tab4 :e -->
+                                                                        </div>
+                                                                        <!-- tab cont :e -->   
+                                                                    </div>                                                                        
+                                                                    <!-- 계통도 탭 컨텐츠 :s -->
+                                                                </div>
+                                                            </div>
+                                                            <!-- scl mid area :e -->
+                                                            <!-- scl right area :e -->
+                                                            <div class="c-main-right-wrap">
+                                                                <div class="c-main-right-inner">
+                                                                    <div class="component-wrap">
+                                                                        <div class="component-inner">
+                                                                            <!-- 계통도 컴포넌트 탭 컨텐츠 :s -->
+                                                                            <div class="tab-wrap">
+                                                                                <!-- tab head :s -->
+                                                                                <div class="tab-head-type03 component-tab-default">
+                                                                                    <ul class="tab-h-list">                              
+                                                                                        <li class="tab-h-on">
+                                                                                            <a href="#compTab1" class="t-tit">
+                                                                                            전력설비
+                                                                                            </a>
+                                                                                        </li> 
+                                                                                        <li>
+                                                                                            <a href="#compTab2" class="t-tit">
+                                                                                            일반설비
+                                                                                            </a>
+                                                                                        </li>      
+                                                                                        <li>
+                                                                                            <a href="#compTab3" class="t-tit">
+                                                                                            배전설비
+                                                                                            </a>
+                                                                                        </li>                                    
+                                                                                    </ul>
+                                                                                </div>    
+                                                                                <!-- tab head :e -->
+
+                                                                                <!-- tab cont :s -->
+                                                                                <div class="tab-cont-type03 component-tab-cont">
+                                                                                    <!-- tab1 :s -->
+                                                                                    <div class="tab-c-item cm-scroll" id="compTab1" style="display: block;">
+                                                                                        <div class="tab-c-item-wrap">
+                                                                                            <div class="tab-c-item-inner">
+                                                                                                <div class="component-list">
+                                                                                                    <div class="component-list-inner">
+                                                                                                        <button class="component-ltem" component-icon="component-ALTS"><span>ALTS</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-SVC"><span>SVC</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-JP"><span>분기점</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-FC"><span>연료전지</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-CAP"><span>캐패시터</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-SCS"><span>스테이션</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-BS"><span>버스바</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-CB"><span>차단기</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-CS"><span>개폐기4</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-CT"><span>컨버터</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-EES"><span>EES</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-CHP"><span>열병합</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-WT"><span>풍력</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-PV"><span>태양광</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-Generator"><span>디젤</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-Load"><span>수용가</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-PT"><span>변압기</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-PT3"><span>변압기3</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-Disconnector"><span>단로기</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-SW-M"><span>SW(M)</span></button>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <!-- tab1 :e -->
+                                                                                    <!-- tab2 :s -->
+                                                                                    <div class="tab-c-item cm-scroll" id="compTab2">
+                                                                                        <div class="tab-c-item-wrap">
+                                                                                            <div class="tab-c-item-inner">
+                                                                                                <div class="component-list">
+                                                                                                    <div class="component-list-inner">
+                                                                                                        <button class="component-ltem" component-icon="component-ALK"><span>ALK</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-BP"><span>브라인 펌프</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-CTower"><span>냉각탑</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-CWPump"><span>냉각수 펌프</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-Dehumidifier"><span>제습기</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-Electrolyzer"><span>전해조</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-HP"><span>히트 펌프</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-HWP"><span>온수 펌프</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-PCV"><span>체크 밸브</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-PipeValve"><span>밸브</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-SDB"><span>스마트 분전</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-SO"><span>스마트 콘센트</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-DB"><span>분전반</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-PE4W"><span>4-Way 엘보</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-PE3W"><span>3-Way 엘보</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-Light"><span>조명</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-Machine"><span>기계류</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-HE"><span>열교환기</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-ST"><span>태양열</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-PEM"><span>PEM</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-H2P"><span>수소정제기</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-PWG"><span>순수물제조</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-Tank"><span>탱크</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-BOILER"><span>보일러</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-AC"><span>공조기</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-CHILLER"><span>냉각기</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-DC"><span>건조기</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-COMPRESSOR"><span>압축기</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-EF"><span>환풍기</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-WM"><span>세탁기</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-H2Tank"><span>수소탱크(예정)</span></button>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <!-- tab2 :e -->
+                                                                                    <!-- tab3 :s -->
+                                                                                    <div class="tab-c-item cm-scroll" id="compTab3">
+                                                                                        <div class="tab-c-item-wrap">
+                                                                                            <div class="tab-c-item-inner">
+
+                                                                                                <div class="component-list">
+                                                                                                    <div class="component-list-inner">
+                                                                                                        <button class="component-ltem" component-icon="component-ALTS"><span>ALTS</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-BS"><span>버스바</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-CAP"><span>캐패시터</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-CHP"><span>열병합</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-CB"><span>차단기</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-RC4-A"><span>RC4(A)</span></button>                                                                                                        
+                                                                                                        <button class="component-ltem" component-icon="component-RC4-M"><span>RC4(M)</span></button>                                                                                                  
+                                                                                                        <button class="component-ltem" component-icon="component-RC3-M"><span>RC3(M)</span></button>                                                                                               
+                                                                                                        <button class="component-ltem" component-icon="component-RC3-A"><span>RC3(A)</span></button>                                                                                            
+                                                                                                        <button class="component-ltem" component-icon="component-SW3-M"><span>SW3(M)</span></button>                                                                                           
+                                                                                                        <button class="component-ltem" component-icon="component-SW3-A"><span>SW3(A)</span></button>                                                                                               
+                                                                                                        <button class="component-ltem" component-icon="component-SW6-M"><span>SW6(M)</span></button>                                                                                         
+                                                                                                        <button class="component-ltem" component-icon="component-SW6-A"><span>SW6(A)</span></button>                                                                                    
+                                                                                                        <button class="component-ltem" component-icon="component-SW4-M"><span>SW4(M)</span></button>                                                                                 
+                                                                                                        <button class="component-ltem" component-icon="component-SW4-A"><span>SW4(A)</span></button>                                                                                                        
+                                                                                                        <button class="component-ltem" component-icon="component-CT"><span>컨버터</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-COS"><span>COS</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-SW-M"><span>SW(M)</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-SW-A"><span>SW(A)</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-EES"><span>EES</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-SVC"><span>SVC</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-FC"><span>연료전지</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-Generator"><span>디젤</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-DER"><span>분산전원</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-DTR"><span>지상변압기</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-LoadL"><span>저압고객</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-LoadH"><span>고압고객</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-CP"><span>입상주</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-JP"><span>분기점</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-Load"><span>수용가</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-PT"><span>변압기</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-PT3"><span>변압기3</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-PV"><span>태양광</span></button>
+                                                                                                        <button class="component-ltem" component-icon="component-WT"><span>풍력</span></button>
+
+                                                                                                    </div>
+                                                                                                </div>
+
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <!-- tab3 :e -->
+
+                                                                                </div>
+                                                                                <!-- tab cont :e -->   
+                                                                            </div>                                                                        
+                                                                            <!-- 계통도 컴포넌트 탭 컨텐츠 :e -->
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="property-wrap">
+                                                                        <div class="property-inner">
+                                                                            <!-- 속성 탭 컨텐츠 :s -->
+                                                                            <div class="tab-wrap">
+                                                                                <!-- tab head :s -->
+                                                                                <div class="tab-head-type03 property-tab-default">
+                                                                                    <ul class="tab-h-list">                              
+                                                                                        <li class="tab-h-on">
+                                                                                            <a href="#propTab1" class="t-tit">
+                                                                                            속성(단일)
+                                                                                            </a>
+                                                                                        </li> 
+                                                                                        <li>
+                                                                                            <a href="#propTab2" class="t-tit">
+                                                                                            속성(탭포함)
+                                                                                            </a>
+                                                                                        </li>                                       
+                                                                                    </ul>
+                                                                                </div>    
+                                                                                <!-- tab head :e -->
+
+                                                                                <!-- tab cont :s -->
+                                                                                <div class="tab-cont-type03 property-tab-cont">
+                                                                                    <!-- tab1 :s -->
+                                                                                    <div class="tab-c-item" id="propTab1" style="display: block;">
+                                                                                        <div class="tab-c-item-wrap">
+                                                                                            <div class="tab-c-item-inner">
+                                                                                                <div class="property-list">
+                                                                                                    <div class="property-list-inner">
+                                                                                                        <div class="prop-top">
+                                                                                                            <span title="SclConductingEquipment - 전력설비 [1149]" class="ellipsis-2">SclConductingEquipment - 전력설비 [1149]</span>
+                                                                                                        </div>
+                                                                                                        <div class="prop-cont">
+                                                                                                            <div class="prop-cont-inner">
+                                                                                                                <div class="prop-search">
+                                                                                                                    <button class="sort-category on" title="Categorize"><span class="dis-none">Categorize</span></button> <!--선택시 on 추가 -->
+                                                                                                                    <button class="sort-alphabet" title="Alphabetical"><span class="dis-none">Alphabetical</span></button> 
+                                                                                                                    <div class="prop-search-input">
+                                                                                                                        <label for="propSearch" class="dis-none">검색</label>
+                                                                                                                        <input type="text" class="input-type02" id="propSearch">
+                                                                                                                        <button class="search-btn"><span class="dis-none">검색</span></button>
+                                                                                                                    </div>
+                                                                                                                </div>    
+                                                                                                                <div class="prop-list desc-on cm-scroll"> <!-- 속성 요소 클릭시 desc-on 추가 / 설명글 닫기 버튼 클릭시 desc-on 삭제 -->
+                                                                                                                    <div class="prop-item">
+                                                                                                                        <label for="" title="Conducting Equip ID">Conducting Equip ID</label>
+                                                                                                                        <div class="input-wrap">
+                                                                                                                            <input type="text" id="" class="input-type02" value="1149" readonly>
+                                                                                                                        </div>
+                                                                                                                    </div>
+
+                                                                                                                    <div class="prop-item">
+                                                                                                                        <label for="" title="Topo Knd Code">Topo Knd Code</label>
+                                                                                                                        <div class="select-wrap">
+                                                                                                                            <select class="select-type03">
+                                                                                                                                <option>111</option>
+                                                                                                                                <option>222</option>
+                                                                                                                                <option>333</option>
+                                                                                                                            </select> 
+                                                                                                                        </div>
+                                                                                                                    </div>    
+                                                                                                                    
+                                                                                                                    <div class="prop-item">
+                                                                                                                        <button class="more-item open"><span class="dis-none">펼침/닫힘</span></button> <!-- 펼침 시 open 추가 / 닫을 시 open 삭제 -->
+                                                                                                                        <label for="" title="Power System Resource">Power System Resource</label>
+                                                                                                                        <div class="input-wrap">
+                                                                                                                            <input type="text" id="" class="input-type02" value="" readonly>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                    <!-- 펼침 클릭시 보여지고 닫으면 사라짐 -->
+                                                                                                                    <div class="prop-item-depth01">
+                                                                                                                        <div class="prop-item">
+                                                                                                                            <label for="" title="Resource ID">Resource ID</label>
+                                                                                                                            <div class="input-wrap">
+                                                                                                                                <input type="text" id="" class="input-type02" value="2727" readonly>
+                                                                                                                            </div>
+                                                                                                                        </div>  
+                                                                                                                        <div class="prop-item">
+                                                                                                                            <button class="more-item open"><span class="dis-none">펼침/닫힘</span></button> <!-- 펼침 시 open 추가 / 닫을 시 open 삭제 -->
+                                                                                                                            <label for="" title="Diagram Object">Diagram Object</label>
+                                                                                                                            <div class="input-wrap">
+                                                                                                                                <input type="text" id="" class="input-type02" value="심볼[0]" readonly>
+                                                                                                                            </div>
+                                                                                                                        </div>  
+                                                                                                                            
+                                                                                                                        <!-- 펼침 클릭시 보여지고 닫으면 사라짐 -->
+                                                                                                                        <div class="prop-item-depth02">
+                                                                                                                            <div class="prop-item">
+                                                                                                                                <label for="" title="ID">ID</label>
+                                                                                                                                <div class="input-wrap">
+                                                                                                                                    <input type="text" id="" class="input-type02" value="test">
+                                                                                                                                </div>
+                                                                                                                            </div>  
+
+                                                                                                                            <div class="prop-item">
+                                                                                                                                <label for="" title="Name">Name</label>
+                                                                                                                                <div class="input-wrap">
+                                                                                                                                    <input type="text" id="" class="input-type02" value="test">
+                                                                                                                                </div>
+                                                                                                                            </div>  
+                                                                                                                        </div> 
+                                                                                                                    </div>  
+
+                                                                                                                    <div class="prop-item">
+                                                                                                                        <button class="more-item"><span class="dis-none">펼침/닫힘</span></button> <!-- 펼침 시 open 추가 / 닫을 시 open 삭제 -->
+                                                                                                                        <label for="" title="Power System Resource">Terminal</label>
+                                                                                                                        <div class="select-wrap">
+                                                                                                                            <select class="select-type03">
+                                                                                                                                <option>111</option>
+                                                                                                                                <option>222</option>
+                                                                                                                                <option>333</option>
+                                                                                                                            </select> 
+                                                                                                                        </div>
+                                                                                                                    </div>
+
+                                                                                                                    <!-- 펼침 클릭시 보여지고 닫으면 사라짐 -->
+                                                                                                                    <div class="prop-item-depth01">
+                                                                                                                        <div class="prop-item">
+                                                                                                                            <label for="" title="Resource ID">Resource ID</label>
+                                                                                                                            <div class="input-wrap">
+                                                                                                                                <input type="text" id="" class="input-type02" value="2727" readonly>
+                                                                                                                            </div>
+                                                                                                                        </div>  
+                                                                                                                        <div class="prop-item">
+                                                                                                                            <button class="more-item open"><span class="dis-none">펼침/닫힘</span></button> <!-- 펼침 시 open 추가 / 닫을 시 open 삭제 -->
+                                                                                                                            <label for="" title="Diagram Object">Diagram Object</label>
+                                                                                                                            <div class="input-wrap">
+                                                                                                                                <input type="text" id="" class="input-type02" value="심볼[0]" readonly>
+                                                                                                                            </div>
+                                                                                                                        </div>  
+                                                                                                                    </div>  
+                                                                                                                    
+                                                                                                                     
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <!-- 설명영역 :s -->
+                                                                                                            <div class="prop-desc cm-scroll"> 
+                                                                                                                <span class="prop-desc-title">Power System Resource</span> <!-- 타이틀 -->
+                                                                                                                <span class="prop-desc-info">Power System Resource Info</span> <!-- 상세설명 -->
+                                                                                                                <button class="desc-close"><span class="dis-none">닫기</span></button>
+                                                                                                            </div>
+                                                                                                            <!-- 설명영역 :e -->                                                                                                            
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <!-- tab1 :e -->
+                                                                                    <!-- tab2 :s -->
+                                                                                    <div class="tab-c-item" id="propTab2">
+                                                                                        <div class="tab-c-item-wrap">
+                                                                                            <div class="tab-c-item-inner">
+                                                                                                
+                                                                                                <div class="tab-wrap">
+                                                                                                    <!-- tab head :s -->
+                                                                                                    <div class="tab-head-type04 prop-tab-default">
+                                                                                                        <ul class="tab-h-list">                              
+                                                                                                            <li class="tab-h-on">
+                                                                                                                <a href="#propInTab1" class="t-tit">
+                                                                                                                일반
+                                                                                                                </a>
+                                                                                                            </li> 
+                                                                                                            <li>
+                                                                                                                <a href="#propInTab2" class="t-tit">
+                                                                                                                확장
+                                                                                                                </a>
+                                                                                                            </li>                                        
+                                                                                                        </ul>
+                                                                                                    </div>    
+                                                                                                    <!-- tab head :e -->
+
+
+                                                                                                    <div class="tab-cont-type04 prop-tab-cont">
+                                                                                                        <!-- tab1 :s -->
+                                                                                                        <div class="tab-c-item" id="propInTab1" style="display: block;">
+                                                                                                            <div class="tab-c-item-wrap">
+                                                                                                                <div class="tab-c-item-inner">
+
+                                                                                                                    <div class="property-list">
+                                                                                                                        <div class="property-list-inner">
+                                                                                                                            <div class="prop-top">
+                                                                                                                                <span title="SclConductingEquipment - 전력설비 [1149]" class="ellipsis-2">SclConductingEquipment - 전력설비 [1149]</span>
+                                                                                                                            </div>
+                                                                                                                            <div class="prop-cont">
+                                                                                                                                <div class="prop-cont-inner">
+                                                                                                                                    <div class="prop-search">
+                                                                                                                                        <button class="sort-category on" title="Categorize"><span class="dis-none">Categorize</span></button> <!--선택시 on 추가 -->
+                                                                                                                                        <button class="sort-alphabet" title="Alphabetical"><span class="dis-none">Alphabetical</span></button> 
+                                                                                                                                        <div class="prop-search-input">
+                                                                                                                                            <label for="propSearch" class="dis-none">검색</label>
+                                                                                                                                            <input type="text" class="input-type02" id="propSearch">
+                                                                                                                                            <button class="search-btn"><span class="dis-none">검색</span></button>
+                                                                                                                                        </div>
+                                                                                                                                    </div>    
+                                                                                                                                    <div class="prop-list desc-on cm-scroll"> <!-- 속성 요소 클릭시 desc-on 추가 / 설명글 닫기 버튼 클릭시 desc-on 삭제 -->
+                                                                                                                                        <div class="prop-item">
+                                                                                                                                            <label for="" title="Conducting Equip ID">Conducting Equip ID</label>
+                                                                                                                                            <div class="input-wrap">
+                                                                                                                                                <input type="text" id="" class="input-type02" value="1149" readonly>
+                                                                                                                                            </div>
+                                                                                                                                        </div>
+                    
+                                                                                                                                        <div class="prop-item">
+                                                                                                                                            <label for="" title="Topo Knd Code">Topo Knd Code</label>
+                                                                                                                                            <div class="select-wrap">
+                                                                                                                                                <select class="select-type03">
+                                                                                                                                                    <option>111</option>
+                                                                                                                                                    <option>222</option>
+                                                                                                                                                    <option>333</option>
+                                                                                                                                                </select> 
+                                                                                                                                            </div>
+                                                                                                                                        </div>    
+                                                                                                                                        
+                                                                                                                                        <div class="prop-item">
+                                                                                                                                            <button class="more-item open"><span class="dis-none">펼침/닫힘</span></button> <!-- 펼침 시 open 추가 / 닫을 시 open 삭제 -->
+                                                                                                                                            <label for="" title="Power System Resource">Power System Resource</label>
+                                                                                                                                            <div class="input-wrap">
+                                                                                                                                                <input type="text" id="" class="input-type02" value="" readonly>
+                                                                                                                                            </div>
+                                                                                                                                        </div>
+                                                                                                                                        <!-- 펼침 클릭시 보여지고 닫으면 사라짐 -->
+                                                                                                                                        <div class="prop-item-depth01">
+                                                                                                                                            <div class="prop-item">
+                                                                                                                                                <label for="" title="Resource ID">Resource ID</label>
+                                                                                                                                                <div class="input-wrap">
+                                                                                                                                                    <input type="text" id="" class="input-type02" value="2727" readonly>
+                                                                                                                                                </div>
+                                                                                                                                            </div>  
+                                                                                                                                            <div class="prop-item">
+                                                                                                                                                <button class="more-item open"><span class="dis-none">펼침/닫힘</span></button> <!-- 펼침 시 open 추가 / 닫을 시 open 삭제 -->
+                                                                                                                                                <label for="" title="Diagram Object">Diagram Object</label>
+                                                                                                                                                <div class="input-wrap">
+                                                                                                                                                    <input type="text" id="" class="input-type02" value="심볼[0]" readonly>
+                                                                                                                                                </div>
+                                                                                                                                            </div>  
+                                                                                                                                                
+                                                                                                                                            <!-- 펼침 클릭시 보여지고 닫으면 사라짐 -->
+                                                                                                                                            <div class="prop-item-depth02">
+                                                                                                                                                <div class="prop-item">
+                                                                                                                                                    <label for="" title="ID">ID</label>
+                                                                                                                                                    <div class="input-wrap">
+                                                                                                                                                        <input type="text" id="" class="input-type02" value="test">
+                                                                                                                                                    </div>
+                                                                                                                                                </div>  
+                    
+                                                                                                                                                <div class="prop-item">
+                                                                                                                                                    <label for="" title="Name">Name</label>
+                                                                                                                                                    <div class="input-wrap">
+                                                                                                                                                        <input type="text" id="" class="input-type02" value="test">
+                                                                                                                                                    </div>
+                                                                                                                                                </div>  
+                                                                                                                                            </div> 
+                                                                                                                                        </div>  
+                    
+                                                                                                                                        <div class="prop-item">
+                                                                                                                                            <button class="more-item"><span class="dis-none">펼침/닫힘</span></button> <!-- 펼침 시 open 추가 / 닫을 시 open 삭제 -->
+                                                                                                                                            <label for="" title="Power System Resource">Terminal</label>
+                                                                                                                                            <div class="select-wrap">
+                                                                                                                                                <select class="select-type03">
+                                                                                                                                                    <option>111</option>
+                                                                                                                                                    <option>222</option>
+                                                                                                                                                    <option>333</option>
+                                                                                                                                                </select> 
+                                                                                                                                            </div>
+                                                                                                                                        </div>
+                    
+                                                                                                                                        <!-- 펼침 클릭시 보여지고 닫으면 사라짐 -->
+                                                                                                                                        <div class="prop-item-depth01">
+                                                                                                                                            <div class="prop-item">
+                                                                                                                                                <label for="" title="Resource ID">Resource ID</label>
+                                                                                                                                                <div class="input-wrap">
+                                                                                                                                                    <input type="text" id="" class="input-type02" value="2727" readonly>
+                                                                                                                                                </div>
+                                                                                                                                            </div>  
+                                                                                                                                            <div class="prop-item">
+                                                                                                                                                <button class="more-item open"><span class="dis-none">펼침/닫힘</span></button> <!-- 펼침 시 open 추가 / 닫을 시 open 삭제 -->
+                                                                                                                                                <label for="" title="Diagram Object">Diagram Object</label>
+                                                                                                                                                <div class="input-wrap">
+                                                                                                                                                    <input type="text" id="" class="input-type02" value="심볼[0]" readonly>
+                                                                                                                                                </div>
+                                                                                                                                            </div>  
+                                                                                                                                        </div>  
+                                                                                                                                        
+                                                                                                                                         
+                                                                                                                                    </div>
+                                                                                                                                </div>
+                                                                                                                                <!-- 설명영역 :s -->
+                                                                                                                                <div class="prop-desc cm-scroll"> 
+                                                                                                                                    <span class="prop-desc-title">Power System Resource</span> <!-- 타이틀 -->
+                                                                                                                                    <span class="prop-desc-info">Power System Resource Info</span> <!-- 상세설명 -->
+                                                                                                                                    <button class="desc-close"><span class="dis-none">닫기</span></button>
+                                                                                                                                </div>
+                                                                                                                                <!-- 설명영역 :e -->                                                                                                            
+                                                                                                                            </div>
+                                                                                                                        </div>
+                                                                                                                    </div>
+
+                                                                                                                </div>
+                                                                                                            </div>                                                                                                       
+                                                                                                        </div>
+                                                                                                        <!-- tab1 :e -->
+
+                                                                                                        <!-- tab2 :s -->
+                                                                                                        <div class="tab-c-item" id="propInTab2">
+                                                                                                            <div class="tab-c-item-wrap">
+                                                                                                                <div class="tab-c-item-inner">
+
+                                                                                                                    <div class="property-list">
+                                                                                                                        <div class="property-list-inner">
+                                                                                                                            <div class="prop-top">
+                                                                                                                                <span title="SclConductingEquipment" class="ellipsis-2">SclConductingEquipment - 전력설비 [1149]</span>
+                                                                                                                            </div>
+                                                                                                                            <div class="prop-cont">
+                                                                                                                                <div class="prop-list cm-scroll">
+                                                                                                                                    <div class="prop-item">
+                                                                                                                                        <label for="" title="ESS명">ESS명</label>
+                                                                                                                                        <div class="input-wrap">
+                                                                                                                                            <input type="text" id="" class="input-type02" value="">
+                                                                                                                                        </div>
+                                                                                                                                    </div>
+                    
+                                                                                                                                    <div class="prop-item">
+                                                                                                                                        <label for="" title="ESS 배터리 타입">ESS 배터리 타입</label>
+                                                                                                                                        <div class="select-wrap">
+                                                                                                                                            <select class="select-type03">
+                                                                                                                                                <option>111</option>
+                                                                                                                                                <option>222</option>
+                                                                                                                                                <option>333</option>
+                                                                                                                                            </select> 
+                                                                                                                                        </div>
+                                                                                                                                    </div>   
+                    
+                                                                                                                                    <div class="prop-item">
+                                                                                                                                        <label for="" title="과전압 알람기준">과전압 알람기준</label>
+                                                                                                                                        <div class="input-wrap">
+                                                                                                                                            <input type="number" id="" class="input-type02" value="">
+                                                                                                                                        </div>
+                                                                                                                                    </div>
+                    
+                                                                                                                                    <div class="prop-item">
+                                                                                                                                        <label for="" title="저전압 알람기준">저전압 알람기준</label>
+                                                                                                                                        <div class="input-wrap">
+                                                                                                                                            <input type="number" id="" class="input-type02" value="">
+                                                                                                                                        </div>
+                                                                                                                                    </div>
+                    
+                                                                                                                                    <div class="prop-item">
+                                                                                                                                        <label for="" title="ESS 충전가능 시간">ESS 충전가능 시간</label>
+                                                                                                                                        <div class="input-wrap">
+                                                                                                                                            <input type="number" id="" class="input-type02" value="">
+                                                                                                                                        </div>
+                                                                                                                                    </div>
+                    
+                                                                                                                                    <div class="prop-item">
+                                                                                                                                        <label for="" title="ESS 방전가능 시간">ESS 방전가능 시간</label>
+                                                                                                                                        <div class="input-wrap">
+                                                                                                                                            <input type="number" id="" class="input-type02" value="">
+                                                                                                                                        </div>
+                                                                                                                                    </div>
+                    
+                                                                                                                                    <div class="prop-item">
+                                                                                                                                        <label for="" title="충전시 최대출력값">충전시 최대출력값</label>
+                                                                                                                                        <div class="input-wrap">
+                                                                                                                                            <input type="number" id="" class="input-type02" value="">
+                                                                                                                                        </div>
+                                                                                                                                    </div>
+                    
+                                                                                                                                    <div class="prop-item">
+                                                                                                                                        <label for="" title="충전시 최소출력값">충전시 최소출력값</label>
+                                                                                                                                        <div class="input-wrap">
+                                                                                                                                            <input type="number" id="" class="input-type02" value="">
+                                                                                                                                        </div>
+                                                                                                                                    </div>
+                    
+                                                                                                                                    <div class="prop-item">
+                                                                                                                                        <label for="" title="방전시 최대출력값">방전시 최대출력값</label>
+                                                                                                                                        <div class="input-wrap">
+                                                                                                                                            <input type="number" id="" class="input-type02" value="">
+                                                                                                                                        </div>
+                                                                                                                                    </div>
+                    
+                                                                                                                                    <div class="prop-item">
+                                                                                                                                        <label for="" title="운전SOC 상한값">운전SOC 상한값</label>
+                                                                                                                                        <div class="input-wrap">
+                                                                                                                                            <input type="number" id="" class="input-type02" value="">
+                                                                                                                                        </div>
+                                                                                                                                    </div>
+                    
+                                                                                                                                    <div class="prop-item">
+                                                                                                                                        <label for="" title="운전SOC 하한값">운전SOC 하한값</label>
+                                                                                                                                        <div class="input-wrap">
+                                                                                                                                            <input type="number" id="" class="input-type02" value="">
+                                                                                                                                        </div>
+                                                                                                                                    </div>
+                                                                                                                                    
+                                                                                                                                     
+                                                                                                                                </div>
+                    
+                                                                                                                            </div>
+                                                                                                                        </div>
+                                                                                                                    </div>
+
+                                                                                                                </div>
+                                                                                                            </div>                                                                                                             
+                                                                                                        </div>
+                                                                                                        <!-- tab2 :e -->
+                                                                                                        
+                                                                                                    </div>
+
+
+                                                                                                </div>
+
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <!-- tab2 :e -->
+
+                                                                                </div>
+                                                                                <!-- tab cont :e -->   
+                                                                            </div>                                                                        
+                                                                            <!-- 속성 탭 컨텐츠 :e -->                                                                           
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                            <!-- scl right area :e -->
+                                                        </div>
+                                                    </div>
+                                                    <!-- scl cont :e -->
+                                                </div>
+                                            </div>                                            
+                                            <!-- contain main :e -->
+                                        </div>
+                                    </div>                                    
+                                    <!-- scl-box :e -->
+                                </div>
+                            </div>                            
+                            <!-- contain-wrap :e -->
+                        </div>
+                    </div>
+                    <!-- cont-area :e -->
+                </div>  
+
+            </main>       
+            <!-- main :e -->
+        </div>
+    </body>
+    <script>
+        new Swiper(".stab-menu-list", {
+            direction: 'horizontal',
+            slidesPerView: "auto",
+            spaceBetween: 0,
+            mousewheel: true,
+            observer: true,	
+            observeParents: true,	
+            freeMode: {
+                enabled: true,
+                sticky: true,
+            },        
+            scrollbar: {
+             el: ".swiper-scrollbar",
+             },
+        });   
+        new Swiper(".header-menu-wrap", {
+            direction: 'horizontal',
+            slidesPerView: "auto",
+            spaceBetween: 0,
+            mousewheel: true,
+            observer: true,	
+            observeParents: true,	
+            freeMode: {
+                enabled: true,
+                sticky: true,
+            },        
+            scrollbar: {
+             el: ".swiper-scrollbar",
+             },
+        });  
+
+        new Swiper(".lnb-list", {
+            direction: "vertical",
+            slidesPerView: "auto",
+            spaceBetween: 0,
+            mousewheel: true,
+            observer: true,	
+            observeParents: true,	
+            freeMode: {
+                enabled: true,
+                sticky: true,
+            },        
+            scrollbar: {
+             el: ".swiper-scrollbar",
+             },
+        }); 
+
+        new Swiper(".tool-menu-wrap", {
+            direction: 'horizontal',
+            slidesPerView: "auto",
+            spaceBetween: 0,
+            mousewheel: true,
+            observer: true,	
+            observeParents: true,	
+            freeMode: {
+                enabled: true,
+                sticky: true,
+            },        
+            scrollbar: {
+             el: ".swiper-scrollbar",
+             },
+        });  
+
+
+        new Swiper(".c-mid-tab-default", {
+            direction: 'horizontal',
+            slidesPerView: "auto",
+            spaceBetween: 0,
+            mousewheel: true,
+            observer: true,	
+            observeParents: true,	
+            freeMode: {
+                enabled: true,
+                sticky: true,
+            },        
+            scrollbar: {
+             el: ".swiper-scrollbar",
+             },
+        });  
+
+
+    </script>
+</html>

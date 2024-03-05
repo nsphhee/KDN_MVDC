@@ -1154,6 +1154,8 @@ button:hover.area-open:before {opacity: 1;}
 #ai-comm-tree .tui-tree-root > li:first-child > div > span > span { transform: skew(0deg);background: url(../images/default/tree/icon_SVR.png) no-repeat center center !important;margin: 0 8px 0 0;background-size: contain !important;width: 1.4rem !important;height: 1.4rem !important;}
 #data-type-tree .tui-tree-root > li:first-child > div > span > span { transform: skew(0deg);background: url(../images/default/tree/icon_DTT.png) no-repeat center center !important;margin: 0 8px 0 0;background-size: contain !important;width: 1.4rem !important;height: 1.4rem !important;}
 
+.tui-tree-wrap .tui-tree-toggle-btn {margin: 8px 4px 0 0 !important; width: 1.2rem !important; height: 1.2rem !important;}
+
  /* tab */
 .tab-c-item {display: none;height: 100%;} 
 .c-main-mid-wrap .tab-c-item-wrap {height:100%;}

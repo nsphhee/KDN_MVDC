@@ -10,15 +10,18 @@
         <meta name="keywords" content="한전KDN(주) MVDC"><!-- 키워드 -->
         <meta name="description" content="한전KDN(주) MVDC"><!-- 웹페이지의 축약된 설명을 제공_최대45자(네이버 웹마스터도구 기준) -->
         <meta name="copyright" content="&copy; 한전KDN(주). All right reserved."><!-- 저작권 -->
-        <link rel="shortcut icon" type="image/x-icon" href="../../static/images/light-theme/common/favicon.ico"><!-- 파비콘 -->        
-        <title>한전KDN(주) MVDC</title>    
-        <link media="all" rel="stylesheet" href="../static/css/common.css">  
-        <link media="all" rel="stylesheet" href="../static/css/font.css">  
-        <link media="all" rel="stylesheet" href="../static/css/light-theme.css">         
-        <link media="all" rel="stylesheet" href="../static/js/swiper/swiper-bundle.min.css">  
-        <script src="../static/js/jquery-3.7.0.min.js"></script>
-        <script src="../static/js/swiper/swiper-bundle.min.js"></script>
-        <script src="../static/js/common_design.js"></script>
+        <link rel="shortcut icon" type="image/x-icon" href="../../static/images/default/common/favicon.ico"><!-- 파비콘 -->        
+        <title>한전KDN(주) MVDC</title>   
+        <link media="all" rel="stylesheet" href="../../static/css/common.css">  
+        <link media="all" rel="stylesheet" href="../../static/css/font.css">  
+        <link media="all" rel="stylesheet" href="../../static/css/default-theme.css">         
+        <link media="all" rel="stylesheet" href="../../static/js/swiper/swiper-bundle.min.css">  
+        <link media="all" rel="stylesheet" href="../../static/js/grid/tui-grid.css" />
+        <script src="../../static/js/jquery-3.7.0.min.js"></script>
+        <script src="../../static/js/swiper/swiper-bundle.min.js"></script>
+        <script src="../../static/js/common_design.js"></script>
+        <script src="../../static/js/grid/tui-grid.js"></script>
+        <script src="../../static/js/grid-table.js"></script>
     </head>
     <body class="scroll">  
         <div id="wrap">
@@ -35,9 +38,9 @@
                                 <div class="top-mid header-item">
                                     <div class="all-menu-wrap">
                                         <button class="btn all-menu btn-type01"><span>모든메뉴</span></button> <!-- 현재와 같은 방식으로 보여줄지 모달로 띄울지 고민 -->
-                                    </div>                                
+                                    </div>
                                     <div class="info-list">
-                                        <span class="info-ip nw-good">localhost:8070</span> <!-- 상태값 확인필요 -->
+                                        <span class="info-ip nw-good">localhost:8070</span> <!-- 상태값 확인필요 / 상태값별 포인트 컬러 변경 -->
                                         <span class="info-date">2024-01-01 13:35:15</span>
                                         <span class="info-paths ellipsis">편집도구 > 계통저작도구(KGRID.MG.ENG.Editor.SCL.View.SclEditor)</span>
                                     </div>
@@ -139,7 +142,7 @@
                                             </div>
                                         </div>                         
                                     </div>    
-                                </div>                             
+                                </div>                  
                                 <div class="swiper-scrollbar"></div>
                             </div>   
                         </div>
@@ -152,11 +155,11 @@
                             <!-- stab-menu-wrap :s -->
                             <div class="stab-menu-wrap">
                                 <div class="stab-menu-inner">
-                                    <a href="" class="go-main-btn on"><span class="dis-none">메인</span></a> <!-- 선택시 on 추가 -->
+                                    <a href="" class="go-main-btn"><span class="dis-none">메인</span></a> <!-- 선택시 on 추가 -->
                                     <!-- stab-menu-list :s -->
                                     <div class="swiper stab-menu-list"> 
                                         <div class="swiper-wrapper"> 
-                                            <!-- div class="swiper-slide"><a href="" class="stab-menu-item"><span>화면저작도구</span></a><button class="stab-close"><span class="dis-none">닫기</span></button></!--> <!-- 선택시 on 추가 -->
+                                            <div class="swiper-slide"><a href="" class="stab-menu-item on"><span>사용자</span></a><button class="stab-close"><span class="dis-none">닫기</span></button></div> <!-- 선택시 on 추가 -->
                                         </div>                                        
                                         <div class="swiper-scrollbar"></div>
                                     </div> 
@@ -168,80 +171,90 @@
                             <!-- contain-wrap :s -->
                             <div class="contain-wrap">
                                 <div class="contain-inner">
-                                    <!-- main-box :s -->
-                                    <div class="contain-box main-box scroll">
-                                        <div class="contain-box-inner main-box-inner">
-                                            <!-- main-menu-wrap :s -->
-                                            <div class="main-menu-wrap">
-                                                <div class="mm-title-box">
-                                                    <p>ENG</p>
-                                                    <div>
-                                                        <span>It is a commonly used SCADA platform for microgrid environments.</span>
-                                                        <span>We will do our best without limit or compromise for user's stable system experience.</span>
-                                                    </div>
+                                    <!-- contain-box :s -->
+                                    <div class="contain-box scroll">
+                                        <div class="contain-box-inner">
+                                            <!-- contain title top :s -->
+                                            <div class="c-top-wrap">
+                                                <div class="c-top-inner">
+                                                    <p><span>사용자</span></p>
                                                 </div>
-                                                <!-- main-menu-box :s -->
-                                                <div class="main-menu-box">
-                                                    <div class="main-menu-inner">
-                                                        <div class="main-menu-item02">
-                                                            <div class="mm-unit mb-bg03">
-                                                                <a href="" main-menu="system"><span>시스템 정보 관리</span></a>
-                                                            </div>
-                                                            <div class="mm-unit mb-bg02">                                                            
-                                                                <a href="" main-menu="batch"><span>배치 작업 관리</span></a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="main-menu-item01">
-                                                            <div class="mm-unit mb-bg01">
-                                                                <a href="" main-menu="process"><span>프로세스 관리</span></a>
-                                                            </div>
-                                                            <div class="mm-unit mb-bg02">                                                            
-                                                                <a href="" main-menu="scl"><span>계통저작도구</span></a>
-                                                            </div>
-                                                            <div class="mm-unit-s-box">
-                                                                <div class="mm-unit-s mb-bg03">                                                                                     
-                                                                    <a href="" main-menu="user"><span>사용자 관리</span></a>
-                                                                </div>
-                                                                <div class="mm-unit-s mb-bg03">                                                                                                            
-                                                                    <a href="" main-menu="code"><span>코드 관리</span></a>
+                                            </div>
+                                            <!-- contain title top :e -->
+                                            <!-- contain main :s -->
+                                            <div class="c-main-wrap">
+                                                <div class="c-main-inner">
+                                                    
+                                                    <!-- main cont :s -->
+                                                    <div class="c-main-cont-wrap">
+                                                        <div class="c-main-cont-inner flex-column">
+                                                            
+                                                            <!-- contain top search :s -->
+                                                            <div class="c-top-search-wrap">
+                                                                <div class="c-top-search-inner">
+                                                                    <div class="c-top-search-input">
+                                                                        <label for="">사용자명</label>
+                                                                        <input type="text" id="" class="input-type02" placeholder="검색어를 입력하세요.">
+                                                                        <button class="search-btn"><span class="dis-none">검색</span></button>
+                                                                    </div>
                                                                 </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="main-menu-item01">
-                                                            <div class="mm-unit mb-bg02">
-                                                                <a href="" main-menu="data"><span>데이터 수집 설정</span></a>
+                                                            <!-- contain top search :e -->                                                        
+
+                                                            <!-- contain top btn :s -->
+                                                            <div class="c-top-btn-wrap">
+                                                                <button class="btn btn-disabled" disabled>비밀번호번경</button> <!-- 사용자 선택시 btn-disabled >> btn-type02로 변경 -->
+                                                                <button class="btn btn-gradation">신규</button>
+                                                                <button class="btn btn-type04">삭제</button>
+                                                                <button class="btn btn-type05">저장</button>
                                                             </div>
-                                                            <div class="mm-unit mb-bg05">                                                            
-                                                                <a href="" main-menu="view"><span>화면저작도구</span></a>
+                                                            <!-- contain top btn :e -->
+
+                                                            <div class="c-cont-wrap">
+                                                                <div class="c-cont-inner">
+                                                                    <div class="c-cont-title">
+                                                                        <span>사용자 목록</span>
+                                                                    </div>
+
+                                                                    <div class="c-cont-box cm-scroll">
+                                                                        <div class="c-cont-box-inner">
+                                                                            <div class="grid-wrap cm-scroll">
+                                                                                <div id="grid"></div>
+                                                                            </div>
+                                                                        </div>
+                                                                        
+                                                                    </div>
+
+                                                                    <div class="c-cont-paging">
+                                                                        <div class="pagination">       
+                                                                            <span class="prev-group">
+                                                                                <button class="page-first"><span class="dis-none">처음 페이지로 이동</span></button><button class="page-prev"><span class="dis-none">이전 페이지로 이동</span></button>
+                                                                            </span>
+                                                                            <button class="on">1</button><button>2</button><button>3</button><button>4</button><button>5</button>
+                                                                            <span class="next-group">
+                                                                                <button class="page-next"><span class="dis-none">다음 페이지로 이동</span></button><button class="page-end"><span class="dis-none">마지막 페이지로 이동</span></button>
+                                                                            </span>                
+                                                                        </div>
+
+                                                                        <div class="page-go">
+                                                                            <label for="PageNumInput">Page</label>
+                                                                            <input id="PageNumInput" type="number" value="1" class="input-type01">
+                                                                            <span>of 4</span>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
                                                             </div>
-                                                            <div class="mm-unit mb-bg05">                                                            
-                                                                <a href="" main-menu="noti"><span>알람 / 이벤트</span></a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="main-menu-item01">
-                                                            <div class="mm-unit mb-bg02">
-                                                                <a href="" main-menu="scada"><span>SCADA 운영 설정</span></a>
-                                                            </div>
-                                                            <div class="mm-unit mb-bg01">                                                            
-                                                                <a href="" main-menu="plugin"><span>플러그인 프로그램 관리</span></a>
-                                                            </div>
-                                                            <div class="mm-unit mb-bg05">                                                            
-                                                                <a href="" main-menu="meta"><span>메타 데이터 관리</span></a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="main-menu-item01">
-                                                            <div class="mm-unit mb-bg04">
-                                                                <a href="" main-menu="ems"><span>EMS 운영 파일 배포</span></a>
-                                                            </div>
+
                                                         </div>
                                                     </div>
-                                                </div>                                                
-                                                <!-- main-menu-box :e -->
-                                            </div>
-                                            <!-- main-menu-wrap :e -->
+                                                    <!-- main cont :e -->
+                                                </div>
+                                            </div>                                            
+                                            <!-- contain main :e -->
                                         </div>
                                     </div>                                    
-                                    <!-- main-box :e -->
+                                    <!-- contain-box :e -->
                                 </div>
                             </div>                            
                             <!-- contain-wrap :e -->
@@ -285,6 +298,7 @@
              el: ".swiper-scrollbar",
              },
         });  
+
         new Swiper(".lnb-list", {
             direction: "vertical",
             slidesPerView: "auto",
@@ -301,7 +315,38 @@
              },
         }); 
 
+        new Swiper(".tool-menu-wrap", {
+            direction: 'horizontal',
+            slidesPerView: "auto",
+            spaceBetween: 0,
+            mousewheel: true,
+            observer: true,	
+            observeParents: true,	
+            freeMode: {
+                enabled: true,
+                sticky: true,
+            },        
+            scrollbar: {
+             el: ".swiper-scrollbar",
+             },
+        });  
 
+
+        new Swiper(".c-mid-tab-default", {
+            direction: 'horizontal',
+            slidesPerView: "auto",
+            spaceBetween: 0,
+            mousewheel: true,
+            observer: true,	
+            observeParents: true,	
+            freeMode: {
+                enabled: true,
+                sticky: true,
+            },        
+            scrollbar: {
+             el: ".swiper-scrollbar",
+             },
+        });  
 
     </script>
 </html>
