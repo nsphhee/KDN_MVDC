@@ -560,7 +560,7 @@ input:read-only {background:#f0f0f2;}
 .tool-item label {opacity:0.8;width:auto !important;font-size:1.3rem;}
 
 .tool-number > input {font-size:1.3rem; height:2.6rem; width:8.0rem;}
-.tool-select > select {font-size:1.3rem;height:2.6rem !important;border:1px solid #b1b2bd !important;background-color:#ffffff !important;background:url(../images/default/common/select_arrow_b.svg) no-repeat calc(100% - 1rem) 52% / 12px auto;color:#292b33;}
+.tool-select > select {font-size:1.3rem;height:2.6rem !important;border:1px solid #b1b2bd !important;background-color:#ffffff !important;background:url(../images/light-theme/common/select_arrow_b.svg) no-repeat calc(100% - 1rem) 52% / 12px auto;color:#292b33;}
 .tool-check > input {height:1.8rem;width:1.8rem;accent-color:#2792fe !important;}
 .tool-number > label,
 .tool-select > label {margin-right:0.6rem;}
@@ -1007,7 +1007,7 @@ input:read-only {background:#f0f0f2;}
 .c-top-search-input > input[type=text] {padding:0 0.8rem; width:20.0rem; margin-right:0.6rem; height:3.2rem;}
 .c-top-search-input > select {padding:0 3.6rem 0 0.8rem;width:14.0rem;margin-right:0.6rem;height:3.2rem;border:1px solid #b1b2bd !important;background-color:#ffffff !important;color:#292b33; background:url('../images/light-theme/common/select_arrow_b.svg') no-repeat calc(100% - 1.2rem) 52%/12px auto;}
 .c-top-search-input .search-btn {padding:0 1.0rem;background:#343949;height:3.2rem;}
-.c-top-search-input .search-btn:before {opacity:1; display:block; background:url(../images/default/common/icon_search_w.svg) no-repeat center center; background-size:contain; width:1.6rem; height:1.6rem;}
+.c-top-search-input .search-btn:before {opacity:1; display:block; background:url(../images/light-theme/common/icon_search_w.svg) no-repeat center center; background-size:contain; width:1.6rem; height:1.6rem;}
 .c-top-search-input .search-btn:hover {background:#21242e;}
 .tui-grid-layer-selection {background-color:#a6bbe7 !important; border-color:#5d6c8e !important;}
 
@@ -1080,16 +1080,16 @@ button:hover.area-open:before {opacity:1;}
 .tui-tree-hover > .tui-tree-content-wrapper {background:#e7eff7; background-color:#E9EFF7 !important; border-radius:4px;}
 .tui-tree-wrap > ul {padding:0 0 1.2rem 0; width:calc(100% - 0.2rem);}
 
-.tui-tree-opened .tui-ico-tree {background:url(../images/default/tree/tui_icon_open.svg) no-repeat center center !important;  transform:skew(0deg);}
-.tui-tree-closed .tui-ico-tree {background:url(../images/default/tree/tui_icon_close.svg) no-repeat center center !important; transform:skew(0deg);}
+.tui-tree-opened .tui-ico-tree {background:url(../images/light-theme/tree/tui_icon_open.svg) no-repeat center center !important;  transform:skew(0deg);}
+.tui-tree-closed .tui-ico-tree {background:url(../images/light-theme/tree/tui_icon_close.svg) no-repeat center center !important; transform:skew(0deg);}
  
-#tree .tui-tree-root > li:first-child > div > span > span {transform:skew(0deg); background:url(../images/default/tree/icon_SUB.svg) no-repeat center center !important;margin:0 8px 0 0;background-size:contain !important;width:1.4rem !important;height:1.4rem !important;}
-#tree .tui-ico-file { transform:skew(0deg);background:url(../images/default/tree/tui_icon_setting.svg) no-repeat center center !important;background-size:contain !important;width:1.4rem !important;height:1.4rem !important;}
+#tree .tui-tree-root > li:first-child > div > span > span {transform:skew(0deg); background:url(../images/light-theme/tree/icon_SUB.svg) no-repeat center center !important;margin:0 8px 0 0;background-size:contain !important;width:1.4rem !important;height:1.4rem !important;}
+#tree .tui-ico-file { transform:skew(0deg);background:url(../images/light-theme/tree/tui_icon_setting.svg) no-repeat center center !important;background-size:contain !important;width:1.4rem !important;height:1.4rem !important;}
 #tree .tui-tree-closed .tui-ico-folder, 
-#tree .tui-tree-opened .tui-ico-folder{ transform:skew(0deg);background:url(../images/default/tree/tui_icon_setting.svg) no-repeat center center !important;background-size:contain !important;width:1.4rem !important;height:1.4rem !important;}
-#comm-tree .tui-tree-root > li:first-child > div > span > span { transform:skew(0deg);background:url(../images/default/tree/icon_COM.svg) no-repeat center center !important;margin:0 8px 0 0;background-size:contain !important;width:1.4rem !important;height:1.4rem !important;}
-#ai-comm-tree .tui-tree-root > li:first-child > div > span > span { transform:skew(0deg);background:url(../images/default/tree/icon_SVR.svg) no-repeat center center !important;margin:0 8px 0 0;background-size:contain !important;width:1.4rem !important;height:1.4rem !important;}
-#data-type-tree .tui-tree-root > li:first-child > div > span > span { transform:skew(0deg);background:url(../images/default/tree/icon_DTT.svg) no-repeat center center !important;margin:0 8px 0 0;background-size:contain !important;width:1.4rem !important;height:1.4rem !important;}
+#tree .tui-tree-opened .tui-ico-folder{ transform:skew(0deg);background:url(../images/light-theme/tree/tui_icon_setting.svg) no-repeat center center !important;background-size:contain !important;width:1.4rem !important;height:1.4rem !important;}
+#comm-tree .tui-tree-root > li:first-child > div > span > span { transform:skew(0deg);background:url(../images/light-theme/tree/icon_COM.svg) no-repeat center center !important;margin:0 8px 0 0;background-size:contain !important;width:1.4rem !important;height:1.4rem !important;}
+#ai-comm-tree .tui-tree-root > li:first-child > div > span > span { transform:skew(0deg);background:url(../images/light-theme/tree/icon_SVR.svg) no-repeat center center !important;margin:0 8px 0 0;background-size:contain !important;width:1.4rem !important;height:1.4rem !important;}
+#data-type-tree .tui-tree-root > li:first-child > div > span > span { transform:skew(0deg);background:url(../images/light-theme/tree/icon_DTT.svg) no-repeat center center !important;margin:0 8px 0 0;background-size:contain !important;width:1.4rem !important;height:1.4rem !important;}
 
 .tui-tree-wrap .tui-tree-toggle-btn {margin:8px 4px 0 0 !important; width:1.2rem !important; height:1.2rem !important;}
 .tui-tree-content-wrapper .tui-ico-file {margin:0 8px 0 2px !important;}
