@@ -531,12 +531,12 @@ input:read-only {background:#f0f0f2;}
 [tool-icon=tool-export-file]:before {background:url(../images/light-theme/toolbar/export_file.svg)no-repeat center center; background-size:contain;}
 [tool-icon=tool-add-image]:before {background:url(../images/light-theme/toolbar/tool_add_image.svg)no-repeat center center; background-size:contain;}
 [tool-icon=tool-connector]:before {background:url(../images/light-theme/toolbar/tool_connector.svg)no-repeat center center; background-size:contain;}
-[tool-icon=tool-line]:before {background:url(../images/light-theme/toolbar/tool_line.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-triangle]:before {background:url(../images/light-theme/toolbar/tool_triangle.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-circle]:before {background:url(../images/light-theme/toolbar/tool_circle.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-roundrect]:before {background:url(../images/light-theme/toolbar/tool_roundrect.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-rect]:before {background:url(../images/light-theme/toolbar/tool_rect.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-shape]:before {background:url(../images/light-theme/toolbar/tool_shape.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-line]:before {background:url(../images/light-theme/toolbar/tool_line.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-triangle]:before {background:url(../images/light-theme/toolbar/tool_triangle.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-circle]:before {background:url(../images/light-theme/toolbar/tool_circle.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-roundrect]:before {background:url(../images/light-theme/toolbar/tool_roundrect.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-rect]:before {background:url(../images/light-theme/toolbar/tool_rect.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-shape]:before {background:url(../images/light-theme/toolbar/tool_shape.svg)no-repeat center center; background-size:contain;}
 
 .btn-box {position:relative;}
 .btn-box .tool-txt .tool-icon:after {display:block; margin-left:0.6rem; background:url(../images/light-theme/common/arrow_more.svg)no-repeat center center; width:1.0rem; height:1.0rem; background-size:contain;}
