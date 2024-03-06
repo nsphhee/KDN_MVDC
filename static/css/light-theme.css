@@ -475,7 +475,7 @@ input:read-only {background:#f0f0f2;}
 
 .tool-icon {display:flex; align-items:center; justify-content:center; border-radius:4px; border:1px solid transparent;box-sizing:border-box; height:2.6rem;width:2.6rem; margin-right:0.1rem;}
 .tool-icon.on,
-.tool-icon:hover {border:1px solid #5a8fc5;background:#dfe7ff;}
+.tool-icon:hover {border:1px solid #5a8fc5;background: rgb(223 231 255 / 80%);}
 
 .tool-icon:before {display:block;width:1.6rem;height:1.6rem;margin:0;}
 
@@ -486,40 +486,40 @@ input:read-only {background:#f0f0f2;}
 .tool-txt .tool-icon > span {display:block;margin-left:0.6rem;font-size:1.3rem;}
 .tool-txt .tool-icon:hover > span {}
 
-[tool-icon=tool-save]:before {background:url(../images/light-theme/toolbar/file_save.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-undo]:before {background:url(../images/light-theme/toolbar/edit_undo.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-redo]:before {background:url(../images/light-theme/toolbar/edit_redo.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-paste]:before {background:url(../images/light-theme/toolbar/edit_paste.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-cut]:before {background:url(../images/light-theme/toolbar/edit_cut.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-copy]:before {background:url(../images/light-theme/toolbar/edit_copy.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-delete]:before {background:url(../images/light-theme/toolbar/edit_delete.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-pointer]:before {background:url(../images/light-theme/toolbar/tool_pointer.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-textbox]:before {background:url(../images/light-theme/toolbar/tool_textbox.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-save]:before {background:url(../images/light-theme/toolbar/file_save.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-undo]:before {background:url(../images/light-theme/toolbar/edit_undo.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-redo]:before {background:url(../images/light-theme/toolbar/edit_redo.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-paste]:before {background:url(../images/light-theme/toolbar/edit_paste.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-cut]:before {background:url(../images/light-theme/toolbar/edit_cut.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-copy]:before {background:url(../images/light-theme/toolbar/edit_copy.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-delete]:before {background:url(../images/light-theme/toolbar/edit_delete.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-pointer]:before {background:url(../images/light-theme/toolbar/tool_pointer.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-textbox]:before {background:url(../images/light-theme/toolbar/tool_textbox.svg)no-repeat center center; background-size:contain;}
 [tool-icon=tool-pencil]:before {background:url(../images/light-theme/toolbar/tool_pencil.png)no-repeat center center; background-size:contain;}
 [tool-icon=tool-path]:before {background:url(../images/light-theme/toolbar/tool_path.png)no-repeat center center; background-size:contain;}
 [tool-icon=tool-connector]:before {background:url(../images/light-theme/toolbar/tool_connector.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-group]:before {background:url(../images/light-theme/toolbar/layout_group.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-ungroup]:before {background:url(../images/light-theme/toolbar/layout_ungroup.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-bring-forward]:before {background:url(../images/light-theme/toolbar/layout_bring_forward.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-bring-front]:before {background:url(../images/light-theme/toolbar/layout_bring_front.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-send-backward]:before {background:url(../images/light-theme/toolbar/layout_send_backward.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-send-back]:before {background:url(../images/light-theme/toolbar/layout_send_back.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-halign-left]:before {background:url(../images/light-theme/toolbar/layout_halign_left.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-halign-center]:before {background:url(../images/light-theme/toolbar/layout_halign_center.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-halign-right]:before {background:url(../images/light-theme/toolbar/layout_halign_right.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-valign-top]:before {background:url(../images/light-theme/toolbar/layout_valign_top.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-valign-middle]:before {background:url(../images/light-theme/toolbar/layout_valign_middle.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-valign-bottom]:before {background:url(../images/light-theme/toolbar/layout_valign_bottom.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-export-image]:before {background:url(../images/light-theme/toolbar/export_image.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-cn-ac]:before {background:url(../images/light-theme/toolbar/tool_connection_cn_ac.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-group]:before {background:url(../images/light-theme/toolbar/layout_group.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-ungroup]:before {background:url(../images/light-theme/toolbar/layout_ungroup.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-bring-forward]:before {background:url(../images/light-theme/toolbar/layout_bring_forward.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-bring-front]:before {background:url(../images/light-theme/toolbar/layout_bring_front.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-send-backward]:before {background:url(../images/light-theme/toolbar/layout_send_backward.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-send-back]:before {background:url(../images/light-theme/toolbar/layout_send_back.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-halign-left]:before {background:url(../images/light-theme/toolbar/layout_halign_left.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-halign-center]:before {background:url(../images/light-theme/toolbar/layout_halign_center.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-halign-right]:before {background:url(../images/light-theme/toolbar/layout_halign_right.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-valign-top]:before {background:url(../images/light-theme/toolbar/layout_valign_top.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-valign-middle]:before {background:url(../images/light-theme/toolbar/layout_valign_middle.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-valign-bottom]:before {background:url(../images/light-theme/toolbar/layout_valign_bottom.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-export-image]:before {background:url(../images/light-theme/toolbar/export_image.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-cn-ac]:before {background:url(../images/light-theme/toolbar/tool_connection_cn_ac.svg)no-repeat center center; background-size:contain;}
 [tool-icon=tool-cn-dc]:before {background:url(../images/light-theme/toolbar/tool_connection_cn_dc.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-lin-ac]:before {background:url(../images/light-theme/toolbar/tool_connection_lin_ac.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-lin-dc]:before {background:url(../images/light-theme/toolbar/tool_connection_lin_dc.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-epip-w]:before {background:url(../images/light-theme/toolbar/tool_connection_epip_w.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-epip-g]:before {background:url(../images/light-theme/toolbar/tool_connection_epip_g.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-epip-t]:before {background:url(../images/light-theme/toolbar/tool_connection_epip_t.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-lin-ac]:before {background:url(../images/light-theme/toolbar/tool_connection_lin_ac.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-lin-dc]:before {background:url(../images/light-theme/toolbar/tool_connection_lin_dc.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-epip-w]:before {background:url(../images/light-theme/toolbar/tool_connection_epip_w.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-epip-g]:before {background:url(../images/light-theme/toolbar/tool_connection_epip_g.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-epip-t]:before {background:url(../images/light-theme/toolbar/tool_connection_epip_t.svg)no-repeat center center; background-size:contain;}
 [tool-icon=tool-error-check]:before {background:url(../images/light-theme/toolbar/tool_error_check.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-file-open]:before {background:url(../images/light-theme/toolbar/file_open.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-file-open]:before {background:url(../images/light-theme/toolbar/file_open.svg)no-repeat center center; background-size:contain;}
 
 [tool-icon=tool-bg-color]:before {background:url(../images/light-theme/toolbar/tool_bg_color.png)no-repeat center center; background-size:contain;}
 [tool-icon=tool-grid-show]:before {background:url(../images/light-theme/toolbar/prop_grid_show.png)no-repeat center center; background-size:contain;}
@@ -528,9 +528,9 @@ input:read-only {background:#f0f0f2;}
 [tool-icon=tool-snap-grid]:before {background:url(../images/light-theme/toolbar/prop_snap_grid.png)no-repeat center center; background-size:contain;}
 [tool-icon=tool-view]:before {background:url(../images/light-theme/toolbar/prop_view.png)no-repeat center center; background-size:contain;}
 
-[tool-icon=tool-export-file]:before {background:url(../images/light-theme/toolbar/export_file.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-add-image]:before {background:url(../images/light-theme/toolbar/tool_add_image.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-connector]:before {background:url(../images/light-theme/toolbar/tool_connector.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-export-file]:before {background:url(../images/light-theme/toolbar/export_file.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-add-image]:before {background:url(../images/light-theme/toolbar/tool_add_image.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-connector]:before {background:url(../images/light-theme/toolbar/tool_connector.svg)no-repeat center center; background-size:contain;}
 [tool-icon=tool-line]:before {background:url(../images/light-theme/toolbar/tool_line.png)no-repeat center center; background-size:contain;}
 [tool-icon=tool-triangle]:before {background:url(../images/light-theme/toolbar/tool_triangle.png)no-repeat center center; background-size:contain;}
 [tool-icon=tool-circle]:before {background:url(../images/light-theme/toolbar/tool_circle.png)no-repeat center center; background-size:contain;}
@@ -544,7 +544,7 @@ input:read-only {background:#f0f0f2;}
 .btn-box .tool-more.on {width:100%;min-width:16.0rem;display:block;position:absolute;top:2.8rem;left:0;background:#ffffff;border:1px solid #90a8c5;border-radius:4px;padding:0.8rem 0.4rem;}
 .btn-box .tool-more .tool-icon {width:calc(100%); padding:0 1.2rem; justify-content:flex-start;}
 .btn-box .tool-more .tool-icon > span {font-size:1.3rem;display:block;margin-left:0.8rem;}
-.btn-box .tool-more .tool-icon:hover {border:1px solid #2B2F3B; background:#1A1C23; }
+.btn-box .tool-more .tool-icon:hover {border: 1px solid #6490c2;background: #e0e8fe;}
 
 .tool-number,
 .tool-check,
@@ -572,7 +572,7 @@ input:read-only {background:#f0f0f2;}
 .tool-more-flex > div:last-child {margin-right:0 !important;}
 .tool-more-flex .tool-more.on {top:3.4rem;}
 .tool-more-flex .tool-icon.on {background:#ffffff !important;border:1px solid #b1b2bd !important;}
-.tool-select-group .tool-icon.on {background:#1C1E22 !important; border:1px solid #2B2F3B!important;}
+.tool-select-group .tool-icon.on {background: rgb(223 231 255 / 80%) !important;border: 1px solid #6490c2 !important;}
 
 .tool-item .shape-group {justify-content:flex-start; flex-wrap:wrap;}
 .tool-item .shape-group .tool-icon {width:2.4rem !important; justify-content:center !important; padding:0; margin:0 0.2rem;}
@@ -727,7 +727,7 @@ input:read-only {background:#f0f0f2;}
 .prop-cont > div:first-child {flex:1;min-height:calc(100% - 10.4rem);}
 .prop-search {display:flex;flex-wrap:wrap;align-items:center;flex-direction:row;margin-bottom:1.0rem;}
 .prop-search > button {height:3.4rem;width:3.8rem;}
-.prop-search > button:before {display:block; opacity:0.8; margin:0 auto;}
+.prop-search > button:before {display:block; opacity:1; margin:0 auto;}
 .prop-search > button:first-child {margin-right:0.6rem;}
 .sort-category {background:#363E4D; padding:0;}
 .sort-category:before {background:url(../images/light-theme/common/icon_category.svg) no-repeat center center; background-size:contain; width:2.0rem; height:1.4rem;}
