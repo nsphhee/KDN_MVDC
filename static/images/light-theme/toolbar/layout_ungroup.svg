@@ -1,23 +1,28 @@
 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_428_674)">
-<rect width="3" height="3" fill="#0391FF"/>
-<rect x="13" y="13" width="3" height="3" fill="#0391FF"/>
-<rect width="4" height="1" transform="matrix(-1 0 0 1 5 9)" fill="#8D919E"/>
-<rect width="1" height="6" transform="matrix(-1 0 0 1 2 3)" fill="#8D919E"/>
-<rect x="9" y="5" width="4" height="1" transform="rotate(-90 9 5)" fill="#8D919E"/>
-<rect x="3" y="2" width="1" height="6" transform="rotate(-90 3 2)" fill="#8D919E"/>
-<rect x="13" y="15" width="6" height="1" transform="rotate(-180 13 15)" fill="#8D919E"/>
-<rect x="15" y="7" width="9" height="1" transform="rotate(-180 15 7)" fill="#8D919E"/>
-<rect x="7" y="15" width="1" height="8" transform="rotate(-180 7 15)" fill="#8D919E"/>
-<rect x="15" y="13" width="1" height="6" transform="rotate(-180 15 13)" fill="#8D919E"/>
-<rect x="8" width="3" height="3" fill="#0391FF"/>
-<rect y="8" width="3" height="3" fill="#0391FF"/>
-<rect x="5" y="5" width="3" height="3" fill="#0391FF"/>
-<rect x="5" y="13" width="3" height="3" fill="#0391FF"/>
-<rect x="13" y="5" width="3" height="3" fill="#0391FF"/>
+<g clip-path="url(#clip0_431_2343)">
+<mask id="mask0_431_2343" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="16">
+<path d="M16 0H0V16H16V0Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_431_2343)">
+<path d="M3 0H0V3H3V0Z" fill="#0391FF"/>
+<path d="M16 13H13V16H16V13Z" fill="#0391FF"/>
+<path d="M1 9H5V10H1V9Z" fill="#868A96"/>
+<path d="M1 3H2V9H1V3Z" fill="#868A96"/>
+<path d="M9 1V5H10V1H9Z" fill="#868A96"/>
+<path d="M3 1V2L9 2V1L3 1Z" fill="#868A96"/>
+<path d="M7 15H13V14H7V15Z" fill="#868A96"/>
+<path d="M6 7L15 7V6L6 6V7Z" fill="#868A96"/>
+<path d="M6 15H7L7 7H6L6 15Z" fill="#868A96"/>
+<path d="M14 13H15V7H14V13Z" fill="#868A96"/>
+<path d="M11 0H8V3H11V0Z" fill="#0391FF"/>
+<path d="M3 8H0V11H3V8Z" fill="#0391FF"/>
+<path d="M8 5H5V8H8V5Z" fill="#0391FF"/>
+<path d="M8 13H5V16H8V13Z" fill="#0391FF"/>
+<path d="M16 5H13V8H16V5Z" fill="#0391FF"/>
+</g>
 </g>
 <defs>
-<clipPath id="clip0_428_674">
+<clipPath id="clip0_431_2343">
 <rect width="16" height="16" fill="white"/>
 </clipPath>
 </defs>

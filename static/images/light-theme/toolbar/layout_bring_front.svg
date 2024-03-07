@@ -1,17 +1,22 @@
 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_428_609)">
-<rect x="3" y="3" width="10" height="10" fill="#F5BD2A"/>
-<rect x="14" y="10" width="2" height="1" fill="#8D919E"/>
-<rect x="10" y="15" width="6" height="1" fill="#8D919E"/>
-<rect x="15" y="10" width="1" height="5" fill="#8D919E"/>
-<rect x="10" y="14" width="1" height="1" fill="#8D919E"/>
-<rect x="2" y="6" width="2" height="1" transform="rotate(-180 2 6)" fill="#8D919E"/>
-<rect x="6" y="1" width="6" height="1" transform="rotate(-180 6 1)" fill="#8D919E"/>
-<rect x="1" y="6" width="1" height="5" transform="rotate(-180 1 6)" fill="#8D919E"/>
-<rect x="6" y="2" width="1" height="1" transform="rotate(-180 6 2)" fill="#8D919E"/>
+<g clip-path="url(#clip0_431_2285)">
+<mask id="mask0_431_2285" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="16">
+<path d="M16 0H0V16H16V0Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_431_2285)">
+<path d="M13 3H3V13H13V3Z" fill="#F5BD2A"/>
+<path d="M16 10H14V11H16V10Z" fill="#868A96"/>
+<path d="M16 15H10V16H16V15Z" fill="#868A96"/>
+<path d="M16 10H15V15H16V10Z" fill="#868A96"/>
+<path d="M11 14H10V15H11V14Z" fill="#868A96"/>
+<path d="M0 6H2V5H0L0 6Z" fill="#868A96"/>
+<path d="M0 1L6 1V0L0 0V1Z" fill="#868A96"/>
+<path d="M0 6H1L1 1H0L0 6Z" fill="#868A96"/>
+<path d="M5 2L6 2V1L5 1V2Z" fill="#868A96"/>
+</g>
 </g>
 <defs>
-<clipPath id="clip0_428_609">
+<clipPath id="clip0_431_2285">
 <rect width="16" height="16" fill="white"/>
 </clipPath>
 </defs>

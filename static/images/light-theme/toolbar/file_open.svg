@@ -1,7 +1,7 @@
 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M3 7H16L13 15H0L3 7Z" fill="#F5BD2A"/>
 <path d="M0 3H2V7L0 12V3Z" fill="#B59555"/>
-<rect x="13" y="4" width="1" height="2" fill="#B59555"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M4 1H3V6H4V2H10V1H4ZM12 3H11V6H12V3ZM9 6V5H5V6H9ZM5 3H7V4H5V3Z" fill="#8D919E"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M12 4L9 4V1L10 2V1L11 2L12 3H11L12 4Z" fill="#8D919E"/>
+<path d="M14 4H13V6H14V4Z" fill="#B59555"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M4 1H3V6H4V2H10V1H4ZM12 3H11V6H12V3ZM9 6V5H5V6H9ZM5 3H7V4H5V3Z" fill="#868A96"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 4H9V1L10 2V1L11 2L12 3H11L12 4Z" fill="#868A96"/>
 </svg>
