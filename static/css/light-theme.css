@@ -535,10 +535,10 @@ input:read-only {background:#f0f0f2;}
 [tool-icon=tool-shape]:before {background:url(../images/light-theme/toolbar/tool_shape.svg)no-repeat center center; background-size:contain;}
 
 .btn-box {position:relative;}
-.btn-box .tool-txt .tool-icon:after {display:block; margin-left:0.6rem; background:url(../images/light-theme/common/arrow_more.svg)no-repeat center center; width:1.0rem; height:1.0rem; background-size:contain;}
+.btn-box .tool-txt .tool-icon:after {display:block;margin-left: 1.0rem;background:url(../images/light-theme/common/arrow_more.svg)no-repeat center center;width:1.0rem;height:1.0rem;background-size:contain;}
 .btn-box .tool-more {display:none;}
 .btn-box .tool-more.on {width:100%;min-width:16.0rem;display:block;position:absolute;top:2.8rem;left:0;background:#ffffff;border:1px solid #90a8c5;border-radius:4px;padding:0.8rem 0.4rem;}
-.btn-box .tool-more .tool-icon {width:calc(100%); padding:0 1.2rem; justify-content:flex-start;}
+.btn-box .tool-more .tool-icon {width:calc(100%);padding: 0 0.8rem 0 1.2rem;justify-content:flex-start;}
 .btn-box .tool-more .tool-icon > span {font-size:1.3rem;display:block;margin-left:0.8rem;}
 .btn-box .tool-more .tool-icon:hover {border: 1px solid #6490c2;background: #e0e8fe;}
 
