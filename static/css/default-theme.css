@@ -537,57 +537,58 @@ input:read-only {background: #f0f0f0;}
 .tool-txt .tool-icon > span {display: block; margin-left:0.6rem; font-size:1.3rem; color:var(--color-text05);}
 .tool-txt .tool-icon:hover > span {color:var(--color-text09)}
 
-[tool-icon=tool-save]:before {background: url(../images/default/toolbar/file_save.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-undo]:before {background: url(../images/default/toolbar/edit_undo.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-redo]:before {background: url(../images/default/toolbar/edit_redo.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-paste]:before {background: url(../images/default/toolbar/edit_paste.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-cut]:before {background: url(../images/default/toolbar/edit_cut.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-copy]:before {background: url(../images/default/toolbar/edit_copy.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-delete]:before {background: url(../images/default/toolbar/edit_delete.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-pointer]:before {background: url(../images/default/toolbar/tool_pointer.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-textbox]:before {background: url(../images/default/toolbar/tool_textbox.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-pencil]:before {background: url(../images/default/toolbar/tool_pencil.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-path]:before {background: url(../images/default/toolbar/tool_path.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-connector]:before {background: url(../images/default/toolbar/tool_connector.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-group]:before {background: url(../images/default/toolbar/layout_group.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-ungroup]:before {background: url(../images/default/toolbar/layout_ungroup.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-bring-forward]:before {background: url(../images/default/toolbar/layout_bring_forward.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-bring-front]:before {background: url(../images/default/toolbar/layout_bring_front.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-send-backward]:before {background: url(../images/default/toolbar/layout_send_backward.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-send-back]:before {background: url(../images/default/toolbar/layout_send_back.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-halign-left]:before {background: url(../images/default/toolbar/layout_halign_left.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-halign-center]:before {background: url(../images/default/toolbar/layout_halign_center.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-halign-right]:before {background: url(../images/default/toolbar/layout_halign_right.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-valign-top]:before {background: url(../images/default/toolbar/layout_valign_top.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-valign-middle]:before {background: url(../images/default/toolbar/layout_valign_middle.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-valign-bottom]:before {background: url(../images/default/toolbar/layout_valign_bottom.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-export-image]:before {background: url(../images/default/toolbar/export_image.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-cn-ac]:before {background: url(../images/default/toolbar/tool_connection_cn_ac.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-cn-dc]:before {background: url(../images/default/toolbar/tool_connection_cn_dc.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-lin-ac]:before {background: url(../images/default/toolbar/tool_connection_lin_ac.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-lin-dc]:before {background: url(../images/default/toolbar/tool_connection_lin_dc.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-epip-w]:before {background: url(../images/default/toolbar/tool_connection_epip_w.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-epip-g]:before {background: url(../images/default/toolbar/tool_connection_epip_g.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-epip-t]:before {background: url(../images/default/toolbar/tool_connection_epip_t.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-error-check]:before {background: url(../images/default/toolbar/tool_error_check.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-file-open]:before {background: url(../images/default/toolbar/file_open.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-save]:before {background: url(../images/default/toolbar/file_save.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-undo]:before {background: url(../images/default/toolbar/edit_undo.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-redo]:before {background: url(../images/default/toolbar/edit_redo.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-paste]:before {background: url(../images/default/toolbar/edit_paste.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-cut]:before {background: url(../images/default/toolbar/edit_cut.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-copy]:before {background: url(../images/default/toolbar/edit_copy.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-delete]:before {background: url(../images/default/toolbar/edit_delete.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-pointer]:before {background: url(../images/default/toolbar/tool_pointer.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-textbox]:before {background: url(../images/default/toolbar/tool_textbox.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-pencil]:before {background: url(../images/default/toolbar/tool_pencil.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-path]:before {background: url(../images/default/toolbar/tool_path.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-connector]:before {background: url(../images/default/toolbar/tool_connector.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-group]:before {background: url(../images/default/toolbar/layout_group.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-ungroup]:before {background: url(../images/default/toolbar/layout_ungroup.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-bring-forward]:before {background: url(../images/default/toolbar/layout_bring_forward.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-bring-front]:before {background: url(../images/default/toolbar/layout_bring_front.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-send-backward]:before {background: url(../images/default/toolbar/layout_send_backward.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-send-back]:before {background: url(../images/default/toolbar/layout_send_back.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-halign-left]:before {background: url(../images/default/toolbar/layout_halign_left.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-halign-center]:before {background: url(../images/default/toolbar/layout_halign_center.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-halign-right]:before {background: url(../images/default/toolbar/layout_halign_right.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-valign-top]:before {background: url(../images/default/toolbar/layout_valign_top.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-valign-middle]:before {background: url(../images/default/toolbar/layout_valign_middle.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-valign-bottom]:before {background: url(../images/default/toolbar/layout_valign_bottom.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-export-image]:before {background: url(../images/default/toolbar/export_image.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-cn-ac]:before {background: url(../images/default/toolbar/tool_connection_cn_ac.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-cn-dc]:before {background: url(../images/default/toolbar/tool_connection_cn_dc.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-lin-ac]:before {background: url(../images/default/toolbar/tool_connection_lin_ac.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-lin-dc]:before {background: url(../images/default/toolbar/tool_connection_lin_dc.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-epip-w]:before {background: url(../images/default/toolbar/tool_connection_epip_w.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-epip-g]:before {background: url(../images/default/toolbar/tool_connection_epip_g.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-epip-t]:before {background: url(../images/default/toolbar/tool_connection_epip_t.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-error-check]:before {background: url(../images/default/toolbar/tool_error_check.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-file-open]:before {background: url(../images/default/toolbar/file_open.svg)no-repeat center center; background-size:contain;}
 
-[tool-icon=tool-bg-color]:before {background: url(../images/default/toolbar/tool_bg_color.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-grid-show]:before {background: url(../images/default/toolbar/prop_grid_show.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-grid-color]:before {background: url(../images/default/toolbar/prop_grid_show.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-zoom-fit]:before {background: url(../images/default/toolbar/prop_zoom_to_fit.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-snap-grid]:before {background: url(../images/default/toolbar/prop_snap_grid.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-view]:before {background: url(../images/default/toolbar/prop_view.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-bg-color]:before {background: url(../images/default/toolbar/tool_bg_color.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-grid-show]:before {background: url(../images/default/toolbar/prop_grid_show.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-grid-setting]:before {background:url(../images/default/toolbar/prop_grid_settings.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-grid-color]:before {background: url(../images/default/toolbar/prop_grid_color.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-zoom-fit]:before {background: url(../images/default/toolbar/prop_zoom_to_fit.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-snap-grid]:before {background: url(../images/default/toolbar/prop_snap_grid.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-view]:before {background: url(../images/default/toolbar/prop_view.svg)no-repeat center center; background-size:contain;}
 
-[tool-icon=tool-export-file]:before {background: url(../images/default/toolbar/export_file.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-add-image]:before {background: url(../images/default/toolbar/tool_add_image.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-connector]:before {background: url(../images/default/toolbar/tool_connector.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-line]:before {background: url(../images/default/toolbar/tool_line.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-triangle]:before {background: url(../images/default/toolbar/tool_triangle.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-circle]:before {background: url(../images/default/toolbar/tool_circle.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-roundrect]:before {background: url(../images/default/toolbar/tool_roundrect.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-rect]:before {background: url(../images/default/toolbar/tool_rect.png)no-repeat center center; background-size:contain;}
-[tool-icon=tool-shape]:before {background: url(../images/default/toolbar/tool_shape.png)no-repeat center center; background-size:contain;}
+[tool-icon=tool-export-file]:before {background: url(../images/default/toolbar/export_file.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-add-image]:before {background: url(../images/default/toolbar/tool_add_image.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-connector]:before {background: url(../images/default/toolbar/tool_connector.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-line]:before {background: url(../images/default/toolbar/tool_line.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-triangle]:before {background: url(../images/default/toolbar/tool_triangle.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-circle]:before {background: url(../images/default/toolbar/tool_circle.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-roundrect]:before {background: url(../images/default/toolbar/tool_roundrect.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-rect]:before {background: url(../images/default/toolbar/tool_rect.svg)no-repeat center center; background-size:contain;}
+[tool-icon=tool-shape]:before {background: url(../images/default/toolbar/tool_shape.svg)no-repeat center center; background-size:contain;}
 
 .btn-box {position: relative;}
 .btn-box .tool-txt .tool-icon:after {display: block; margin-left:0.6rem; background: url(../images/default/common/arrow_more.svg)no-repeat center center; width:1.0rem; height: 1.0rem; background-size: contain;}
@@ -770,9 +771,9 @@ input:read-only {background: #f0f0f0;}
 .property-inner .tab-c-item-inner {height:100%;}
 .property-inner .property-list {height:100%;}
 .property-list .property-list-inner {height:100%;padding: 0 1.4rem;display: flex;flex-direction: column;}
-.prop-title {border-bottom:1px solid var(--border05);max-height: 5.6rem;box-sizing: border-box; display: flex;flex-direction: column;justify-content: center;padding: 0.4rem 0 0.6rem 0;min-height: 4.6rem;}
+.prop-title {border-bottom:1px solid var(--border05);max-height: 5.6rem;box-sizing: border-box; display: flex;flex-direction: column;justify-content: center;padding: 0.4rem 0 0.6rem 0;min-height: 4.4rem;}
 .prop-title > span {font-size:1.4rem;padding: 0.2rem;box-sizing: border-box;line-height: 1.4; font-weight: 500;}
-.prop-top {border-bottom:1px solid var(--border05);max-height: 5.6rem;box-sizing: border-box; display: flex;flex-direction: column;justify-content: center;padding: 0.4rem 0 0.6rem 0;min-height: 4.6rem;}
+.prop-top {border-bottom:1px solid var(--border05);max-height: 5.6rem;box-sizing: border-box; display: flex;flex-direction: column;justify-content: center;padding: 0.4rem 0 0.6rem 0;min-height: 4.4rem;}
 .prop-top > span {font-size:1.3rem;padding: 0.2rem;box-sizing: border-box;line-height: 1.4; }
 .prop-cont {padding: 1.2rem 0 0.4rem 0;flex-grow: 1;position: relative;height: calc(100% - 6.6rem);display: flex;flex-direction: column;}
 .prop-cont > div:first-child {flex: 1;min-height: calc(100% - 10.4rem);}
