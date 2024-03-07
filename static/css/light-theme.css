@@ -595,8 +595,8 @@ input:read-only {background:#f0f0f2;}
 .component-ltem:nth-child(4n) {margin-right:0;}
 .component-ltem > span {display:block;margin-left:0;font-size:1.3rem;text-align:center;margin:0.6rem auto 0 auto;}
 .component-ltem:hover > span {color:#2d6fd4}
-.component-ltem:after {display:block;width:7.0rem;height:7.0rem;background-color:#dfe2eb;border-radius:6px;border:1px solid transparent;box-sizing:border-box;}
-.component-ltem:hover:after {background-color:#dfe2ea;border:1px solid #2d6fd4}
+.component-ltem:after {display:block;width:7.0rem;height:7.0rem;background-color: #f7f7fa;border-radius:6px;border: 1px solid #d8d8e5;box-sizing:border-box;}
+.component-ltem:hover:after {background-color:#eeeef5;border:1px solid #2d6fd4}
 .component-ltem:before {display:block;width:4.0rem;height:4.0rem;position:absolute;top:1.5rem;left:1.5rem;z-index:11;}
 [component-icon=component-ALTS]:before {background:url(../images/light-theme/component/electrical/PNG/ALTS.png)no-repeat center center; background-size:contain;}
 [component-icon=component-SVC]:before {background:url(../images/light-theme/component/electrical/PNG/SVC.png)no-repeat center center; background-size:contain;}
@@ -707,8 +707,8 @@ input:read-only {background:#f0f0f2;}
 .symbol-ltem:nth-child(4n) {margin-right:0;}
 .symbol-ltem > span {display:block;margin-left:0;font-size:1.3rem;text-align:center;margin:0.6rem auto 0 auto;}
 .symbol-ltem:hover > span {color:#2d6fd4}
-.symbol-ltem:after {display:block;width:6.6rem;height:6.6rem;background-color:#dfe2ea;border-radius:6px;border:1px solid transparent;box-sizing:border-box;}
-.symbol-ltem:hover:after {background-color:#dfe2ea;border:1px solid #2d6fd4}
+.symbol-ltem:after {display:block;width:6.6rem;height:6.6rem;background-color: #f7f7fa;border-radius:6px;border: 1px solid #d8d8e5;box-sizing:border-box;}
+.symbol-ltem:hover:after {background-color:#eeeef5;border:1px solid #2d6fd4}
 .symbol-ltem:before {display:block;width:4.2rem;height:4.2rem;position:absolute;top:1.3rem;left:1.3rem;z-index:11;}
 
 
