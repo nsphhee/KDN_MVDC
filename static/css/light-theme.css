@@ -13,7 +13,7 @@
     --color-gradient01:linear-gradient(135deg, #0A84FF 0%, #6951FF 51%, #0A84FF 100%);
     --color-input-bg01:#1C1E22;
     --color-select-bg01:#1C1E22;
-    --color-select-bg02: #454d67;
+    --color-select-bg02: #3c4562;
     --color-top-bg:#2e344a;
     --color-lnb-bg:#ffffff;
     --color-stab-bg:#e4e6ec;
@@ -360,7 +360,7 @@ input:read-only {background:#f0f0f2;}
 .main-box-inner .mm-title-box > p { font-size:5.6rem; font-weight:bold; margin-right:1.4rem;}
 .main-box-inner .mm-title-box > div > span {display:block; line-height:1.5; opacity:0.8; font-weight:400;}
 
-.main-menu-inner {color:#E5EBF5;font-size:1.7rem;width:100%;display:flex;justify-content:space-between;}
+.main-menu-inner {color: #f8fbff;font-size:1.7rem;width:100%;display:flex;justify-content:space-between;}
 .main-menu-item02 {width:calc(100%/6*2); margin-right:1.2rem;}
 .main-menu-item01 {width:calc(100%/6); margin-right:1.2rem;}
 .main-menu-item01:last-child {margin-right:0;}
