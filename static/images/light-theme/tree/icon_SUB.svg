@@ -1,13 +1,13 @@
 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="2.5" y="2.5" width="14" height="14" stroke="#7B8294"/>
-<rect x="1" y="1" width="3" height="3" fill="#0290FF"/>
-<rect x="1" y="15" width="3" height="3" fill="#0290FF"/>
-<rect x="8" y="1" width="3" height="3" fill="#0290FF"/>
-<rect x="5" y="6" width="4" height="3" fill="#FFD571"/>
-<rect x="5" y="10" width="4" height="3" fill="#FFD571"/>
-<rect x="10" y="6" width="4" height="3" fill="#FFD571"/>
-<rect x="10" y="10" width="4" height="3" fill="#FFD571"/>
-<rect x="8" y="15" width="3" height="3" fill="#0290FF"/>
-<rect x="15" y="1" width="3" height="3" fill="#0290FF"/>
-<rect x="15" y="15" width="3" height="3" fill="#0290FF"/>
+<path d="M16.5 2.5H2.5V16.5H16.5V2.5Z" stroke="#7B8294"/>
+<path d="M4 1H1V4H4V1Z" fill="#0290FF"/>
+<path d="M4 15H1V18H4V15Z" fill="#0290FF"/>
+<path d="M11 1H8V4H11V1Z" fill="#0290FF"/>
+<path d="M9 6H5V9H9V6Z" fill="#F9BC2C"/>
+<path d="M9 10H5V13H9V10Z" fill="#F9BC2C"/>
+<path d="M14 6H10V9H14V6Z" fill="#F9BC2C"/>
+<path d="M14 10H10V13H14V10Z" fill="#F9BC2C"/>
+<path d="M11 15H8V18H11V15Z" fill="#0290FF"/>
+<path d="M18 1H15V4H18V1Z" fill="#0290FF"/>
+<path d="M18 15H15V18H18V15Z" fill="#0290FF"/>
 </svg>
