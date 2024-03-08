@@ -1085,6 +1085,8 @@ input:read-only {background: #f0f0f0;}
 .contain-wrap .tui-grid-layer-editing {background: var(--color-bg02) !important;}
 .contain-wrap .tui-grid-layer-editing > input {	font-family:'Noto Sans KR','Apple SD Gothic Neo','맑은 고딕','Malgun Gothic','돋움','Dotum','굴림','Gulim','AppleGothic','Sans-serif'; border-radius: 2px; font-size:1.2rem !important; border:none !important; height:auto !important; box-sizing: border-box; color:var(--color-text01) !important;}
 
+.tui-grid-border-line {z-index: 2 !important;}
+.tui-grid-lside-area {z-index: 2 !important;}
 
 /* toast ui grid */
 .layer-pop .tui-grid-rside-area {width:100% !important; color:var(--color-text01) !important;}
