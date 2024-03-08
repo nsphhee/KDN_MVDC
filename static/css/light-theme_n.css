@@ -249,7 +249,7 @@ input:read-only {background:#f0f0f2;}
 #main-wrap {display:flex;justify-content:space-between;min-height:calc(100vh - 5.1rem);}
 
 /* layout - left nav */
-#left-nav {z-index:1;background:var(--color-lnb-bg);min-height:calc(100vh - 5.1rem);position:relative;padding-right:0.1rem;}
+#left-nav {z-index:3;background:var(--color-lnb-bg);min-height:calc(100vh - 5.1rem);position:relative;padding-right:0.1rem;}
 #left-nav:after {display:block;width:0.1rem;height:100%;background:#d5d8db;top:0;position:absolute;right:0;}
 
 .left-nav-inner {width:7.0rem;height:100%;height:calc(100vh - 5.1rem);box-sizing:border-box;position:relative; }
