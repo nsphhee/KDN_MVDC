@@ -479,7 +479,6 @@ input:read-only {background:#f0f0f2;}
 
 .tool-txt .tool-icon {width:auto; padding:0 0.6rem;}
 .tool-txt .tool-icon > span {display:block;margin-left:0.6rem;font-size:1.3rem;}
-.tool-txt .tool-icon:hover > span {}
 
 [tool-icon=tool-save]:before {background:url(../images/light-theme/toolbar/file_save.svg)no-repeat center center; background-size:contain;}
 [tool-icon=tool-undo]:before {background:url(../images/light-theme/toolbar/edit_undo.svg)no-repeat center center; background-size:contain;}
@@ -868,7 +867,6 @@ input:read-only {background:#f0f0f2;}
 .c-cont-col02 .tui-tree-wrap,
 .c-cont-col04 .tui-tree-wrap {padding:0 0.6rem 0 0;}
 
-.c-cont-col04 > div:first-child {}
 .c-cont-col04:has(.tui-tree-wrap) > .c-cont-inner:first-child {width:30.0rem !important; margin-left:0;}
 .c-cont-col04:has(.tui-tree-wrap) > .c-cont-inner {width:calc((100% - 30.8rem) / 3);margin-left:0.6rem;box-sizing:border-box;}
 .c-cont-col04:has(.tui-tree-wrap) > .c-cont-inner:last-child {border-right:none;}
