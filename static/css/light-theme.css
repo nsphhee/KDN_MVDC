@@ -432,8 +432,8 @@ input:read-only {background:#f0f0f2;}
 .c-main-top-wrap {background:#f4f5f9;box-sizing:border-box;border-bottom:1px solid #ffffff;}
 .c-main-top-inner {border:1px solid transparent;position:relative;}
 
-.btn-display {z-index:11; position:absolute; top:0.1rem; right:0.1rem; background:url(../images/light-theme/common/arrow_up_w.svg)no-repeat center center; width:2.4rem; height:2.4rem; background-size:contain; opacity:0.8;}
-.btn-display-none { background:url(../images/light-theme/common/arrow_down_w.svg)no-repeat center center !important;  background-size:contain !important;}
+.btn-display {z-index:11; position:absolute; top:0.1rem; right:0.1rem; background:url(../images/light-theme/common/arrow_up_b.svg)no-repeat center center; width:2.4rem; height:2.4rem; background-size:contain; opacity:0.8;}
+.btn-display-none { background:url(../images/light-theme/common/arrow_down_b.svg)no-repeat center center !important;  background-size:contain !important;}
 .btn-display:hover,
 .btn-display-none:hover {opacity:1;} 
 
@@ -441,8 +441,8 @@ input:read-only {background:#f0f0f2;}
 .c-main-mid-inner .tab-wrap {height:100%;display:flex;flex-direction:column;width:100%;}
 
 .c-main-right-wrap > .area-hide {position:absolute; right:0.4rem; top:0.6rem; width:2.4rem; height:2.4rem;}
-.c-main-right-wrap > .area-hide:before {display:block; width:2.4rem; height:2.4rem; background:url(../images/light-theme/common/arrow_up_w.svg)no-repeat center center; transform:rotate(90deg); background-size:contain; opacity:0.8;}
-.c-main-right-wrap > .area-open:before {display:block; width:2.4rem; height:2.4rem; background:url(../images/light-theme/common/arrow_up_w.svg)no-repeat center center; transform:rotate(270deg); background-size:contain; opacity:0.8;}
+.c-main-right-wrap > .area-hide:before {display:block; width:2.4rem; height:2.4rem; background:url(../images/light-theme/common/arrow_up_b.svg)no-repeat center center; transform:rotate(90deg); background-size:contain; opacity:0.8;}
+.c-main-right-wrap > .area-open:before {display:block; width:2.4rem; height:2.4rem; background:url(../images/light-theme/common/arrow_up_b.svg)no-repeat center center; transform:rotate(270deg); background-size:contain; opacity:0.8;}
 
 .c-main-right-inner {height:100%;}
 .c-main-right-inner .tab-wrap {height:100%;display:flex;flex-direction:column;width:100%;}
