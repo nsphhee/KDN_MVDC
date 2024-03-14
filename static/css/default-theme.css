@@ -1432,8 +1432,7 @@ button:hover.area-open:before {opacity: 1;}
 }
 @media (max-width: 1550px){ 
     .header-menu-inner > div {width: 1550px !important; margin: 0 1.7rem;}
-    .tool-menu-inner > div {width:1280px !important; margin: 0 1.5rem 0;}
-    .tool-menu-inner > div {width:1280px !important; margin: 0 1.5rem 0;}
+    .tool-menu-inner > div {width:1300px !important; margin:0 1.5rem 0;}
     .tc-flex > div:first-child {min-width:32.0rem;}
     .c-main-mid-wrap .area-col-1,
     .c-main-mid-wrap .area-col-2 {width: calc(100% - 32rem);}
