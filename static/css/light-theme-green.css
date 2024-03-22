@@ -381,13 +381,13 @@ input:read-only {background:#f0f0f2;}
 .mm-mb-bg03 {background:var(--color-main-bg03);}
 .mm-mb-bg04 {background:var(--color-main-bg04);}
 
-.mm-unit:has([main-menu=mm-scada]) { height:45.2rem; margin-bottom:1.2rem;}
-.mm-unit:has([main-menu=mm-view]) { height:45.2rem; margin-bottom:1.2rem;}
-.mm-unit:has([main-menu=mm-ems]) { height:45.2rem; margin-bottom:1.2rem;}
-.mm-unit:has([main-menu=mm-data]) { height:22.0rem; margin-bottom:1.2rem;}
-.mm-unit:has([main-menu=mm-scl]) { height:22.0rem; margin-bottom:1.2rem;}
-.mm-unit:has([main-menu=mm-plugin]) { height:22.0rem; margin-bottom:1.2rem;}
-.mm-unit:has([main-menu=mm-menu]) { height:22.0rem; margin-bottom:1.2rem;}
+.mm-unit:has([main-menu=mm-scada]) { height:47.2rem; margin-bottom:1.2rem;}
+.mm-unit:has([main-menu=mm-view]) { height:47.2rem; margin-bottom:1.2rem;}
+.mm-unit:has([main-menu=mm-ems]) { height:47.2rem; margin-bottom:1.2rem;}
+.mm-unit:has([main-menu=mm-data]) { height:23.0rem; margin-bottom:1.2rem;}
+.mm-unit:has([main-menu=mm-scl]) { height:23.0rem; margin-bottom:1.2rem;}
+.mm-unit:has([main-menu=mm-plugin]) { height:23.0rem; margin-bottom:1.2rem;}
+.mm-unit:has([main-menu=mm-menu]) { height:23.0rem; margin-bottom:1.2rem;}
 .mm-unit-s:has([main-menu=mm-system]) { height:16.0rem; margin-bottom:1.2rem;}
 .mm-unit-s:has([main-menu=mm-batch]) { height:16.0rem; margin-bottom:1.2rem;}
 .mm-unit:has([main-menu=mm-user]) { height:16.0rem; margin-bottom:1.2rem;}
