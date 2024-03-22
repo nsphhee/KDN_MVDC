@@ -381,19 +381,19 @@ input:read-only {background:#f0f0f2;}
 .mm-mb-bg03 {background:var(--color-main-bg03);}
 .mm-mb-bg04 {background:var(--color-main-bg04);}
 
-.mm-unit:has([main-menu=mm-scada]) { height:49.2rem; margin-bottom:1.2rem;}
-.mm-unit:has([main-menu=mm-view]) { height:49.2rem; margin-bottom:1.2rem;}
-.mm-unit:has([main-menu=mm-ems]) { height:49.2rem; margin-bottom:1.2rem;}
-.mm-unit:has([main-menu=mm-data]) { height:24.0rem; margin-bottom:1.2rem;}
-.mm-unit:has([main-menu=mm-scl]) { height:24.0rem; margin-bottom:1.2rem;}
-.mm-unit:has([main-menu=mm-plugin]) { height:24.0rem; margin-bottom:1.2rem;}
-.mm-unit:has([main-menu=mm-menu]) { height:24.0rem; margin-bottom:1.2rem;}
-.mm-unit-s:has([main-menu=mm-system]) { height:14.0rem; margin-bottom:1.2rem;}
-.mm-unit-s:has([main-menu=mm-batch]) { height:14.0rem; margin-bottom:1.2rem;}
-.mm-unit:has([main-menu=mm-user]) { height:14.0rem; margin-bottom:1.2rem;}
-.mm-unit:has([main-menu=mm-code]) { height:14.0rem; margin-bottom:1.2rem;}
-.mm-unit:has([main-menu=mm-meta]) { height:14.0rem; margin-bottom:1.2rem;}
-.mm-unit:has([main-menu=mm-noti]) { height:14.0rem; margin-bottom:1.2rem;}
+.mm-unit:has([main-menu=mm-scada]) { height:45.2rem; margin-bottom:1.2rem;}
+.mm-unit:has([main-menu=mm-view]) { height:45.2rem; margin-bottom:1.2rem;}
+.mm-unit:has([main-menu=mm-ems]) { height:45.2rem; margin-bottom:1.2rem;}
+.mm-unit:has([main-menu=mm-data]) { height:22.0rem; margin-bottom:1.2rem;}
+.mm-unit:has([main-menu=mm-scl]) { height:22.0rem; margin-bottom:1.2rem;}
+.mm-unit:has([main-menu=mm-plugin]) { height:22.0rem; margin-bottom:1.2rem;}
+.mm-unit:has([main-menu=mm-menu]) { height:22.0rem; margin-bottom:1.2rem;}
+.mm-unit-s:has([main-menu=mm-system]) { height:16.0rem; margin-bottom:1.2rem;}
+.mm-unit-s:has([main-menu=mm-batch]) { height:16.0rem; margin-bottom:1.2rem;}
+.mm-unit:has([main-menu=mm-user]) { height:16.0rem; margin-bottom:1.2rem;}
+.mm-unit:has([main-menu=mm-code]) { height:16.0rem; margin-bottom:1.2rem;}
+.mm-unit:has([main-menu=mm-meta]) { height:16.0rem; margin-bottom:1.2rem;}
+.mm-unit:has([main-menu=mm-noti]) { height:16.0rem; margin-bottom:1.2rem;}
 
 [main-menu=mm-system]:after,
 [main-menu=mm-batch]:after,
