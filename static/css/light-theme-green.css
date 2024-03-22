@@ -374,7 +374,11 @@ input:read-only {background:#f0f0f2;}
 .mm-unit-s:hover {border:6px solid rgb(255 255 255 / 50%); box-sizing:border-box;}
 
 .mm-unit a > span,
-.mm-unit-s a > span {padding:0 1.2rem; text-align:center; line-height: 1.2;  font-weight:500; text-shadow: 1px 1px 1px rgb(0 0 0 / 50%);  }
+.mm-unit-s a > span {position:relative; padding:0 1.2rem; text-align:center; line-height: 1.2;  font-weight:500; text-shadow: 1px 1px 1px rgb(0 0 0 / 50%);  }
+
+.mm-unit:hover a > span,
+.mm-unit-s:hover a > span {text-shadow: 1px 1px 1px rgb(0 0 0 / 80%);}
+
 
 .mm-mb-bg01 {background:var(--color-main-bg01);}
 .mm-mb-bg02 {background:var(--color-main-bg02);}
