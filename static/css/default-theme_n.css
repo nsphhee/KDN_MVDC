@@ -373,10 +373,10 @@ input:read-only {background: #f0f0f0;}
 .stab-menu-wrap:after {display: block; width:100%; height:0.1rem; background: var(--border00);}
 .stab-menu-inner {height: 100%; margin:0 auto; position: relative;}                           
 
-.go-main-btn {display: block;width: 3.0rem;height: 3.0rem;border-radius: 4px;z-index: 2;background-size: 200% auto;display: flex;align-items: center;position: absolute;top: 0.6rem;left: 0.8rem;overflow: hidden;}
+.go-main-btn {display: block;width: 3.0rem;height: 3.0rem;border-radius: 4px;z-index: 2;background-size: 200% auto;display: flex;align-items: center;position: absolute;top: 0.8rem;left: 0.8rem;overflow: hidden;}
 .go-main-btn:after {display: block; background: url(../images/default/common/icon_home.svg)no-repeat center center; background-size: contain; width:1.4rem; height:1.4rem; margin:0 auto;}
 .go-main-btn:hover,
-.go-main-btn.on {display: block;width:3.0rem;height:3.0rem;border-radius: 4px;z-index: 2;background: var(--color-gradient01);background-size: 200% auto;display: flex;align-items: center;position: absolute;top: 0.6rem;left: 0.8rem;overflow: hidden;transition: all .2s;}
+.go-main-btn.on {display: block;width:3.0rem;height:3.0rem;border-radius: 4px;z-index: 2;background: var(--color-gradient01);background-size: 200% auto;display: flex;align-items: center;position: absolute;top: 0.8rem;left: 0.8rem;overflow: hidden;transition: all .2s;}
 
 .stab-menu-list {width: calc(100% - 4.6rem);margin: 0 0 0 4.6rem !important;height: calc(100% - 0.4rem); padding: 0.4rem 0 0 0 !important;}
 .stab-menu-list .swiper-slide {width:auto;height: 100%; position: relative;}
@@ -410,8 +410,8 @@ input:read-only {background: #f0f0f0;}
 .contain-box-inner {height:100%;}
 
 /* main menu */
-.main-box {height: calc(100vh - 11rem);overflow-y: auto;}
-.main-box-inner {display: flex;align-items: center;min-width:120.0rem;flex-wrap: wrap;height: 100%;}
+.main-box {height: calc(100vh - 9.7rem);overflow-y: auto;}
+.main-box-inner {display: flex;align-items: center;min-width:140.0rem;flex-wrap: wrap;height: 100%;}
 .main-box-inner .main-menu-wrap {width:80%;margin: 0 auto; padding: 3.0rem 0;}
 .main-box-inner .mm-title-box {display: flex;justify-content: flex-start;flex-wrap: wrap;align-items: end;margin-bottom:2.6rem;}
 .main-box-inner .mm-title-box > p { font-size:5.6rem; font-weight: bold; margin-right:1.4rem}

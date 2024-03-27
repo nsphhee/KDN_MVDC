@@ -18,10 +18,11 @@
     --color-top-bg: #282828;
     --color-lnb-bg:#ffffff;
     --color-stab-bg:#E8E8E6;
-    --color-main-bg01:#51973F;
-    --color-main-bg02:#87B251;
-    --color-main-bg03:#73B15E;
-    --color-main-bg04:#386641;
+    --color-main-bg01:#8BAC50;
+    --color-main-bg02:#78A74B;
+    --color-main-bg03:#549B3F;
+    --color-main-bg04:#457F40;
+    --color-main-bg05:#386641;
     --color-yellow :#e3bf0b;
     --color-red :#db5b5b;
     --color-blue :#2792FE;
@@ -205,7 +206,7 @@ input:read-only {background:#f0f0f2;}
 .header-menu-inner > div {padding:0; display:flex;justify-content:space-between; align-items:center; position:relative; width:calc(100% - 3.4rem) !important;margin:0 auto;}
 .header-item {display:flex; justify-content:flex-start; align-items:center;}
 
-.logo-img {background:#171717;border-radius:4px;color:#5DA600;font-size:1.3rem;padding:0.8rem 0;margin-right:1.2rem;width:7.0rem;text-align:center; font-weight:bold;}
+.logo-img {background:#171717;border-radius:4px;color:#5FA606;font-size:1.3rem;padding:0.8rem 0;margin-right:1.2rem;width:7.0rem;text-align:center; font-weight:bold;}
 .program-name {color: #ffffff;font-size:1.4rem;padding-bottom:0.1rem;display:flex;align-items:center;}
 .program-name > span {color: #ffffff;margin-left:0.3rem;font-weight:normal;padding-bottom:0.1rem;max-width:18.0rem;}
 
@@ -374,16 +375,17 @@ input:read-only {background:#f0f0f2;}
 .mm-unit-s:hover {border:6px solid rgb(255 255 255 / 50%); box-sizing:border-box;}
 
 .mm-unit a > span,
-.mm-unit-s a > span {position:relative; padding:0 1.2rem; text-align:center; line-height: 1.2;  font-weight:500; text-shadow: 1px 1px 1px rgb(0 0 0 / 50%);  }
+.mm-unit-s a > span {position:relative; padding:0 1.2rem; text-align:center; line-height: 1.2;  font-weight:400; text-shadow: 1px 1px 1px rgb(0 0 0 / 20%);  }
 
 .mm-unit:hover a > span,
-.mm-unit-s:hover a > span {text-shadow: 1px 1px 1px rgb(0 0 0 / 80%);}
+.mm-unit-s:hover a > span {text-shadow: 1px 1px 1px rgb(0 0 0 / 25%);}
 
 
 .mm-mb-bg01 {background:var(--color-main-bg01);}
 .mm-mb-bg02 {background:var(--color-main-bg02);}
 .mm-mb-bg03 {background:var(--color-main-bg03);}
 .mm-mb-bg04 {background:var(--color-main-bg04);}
+.mm-mb-bg05 {background:var(--color-main-bg05);}
 
 .mm-unit:has([main-menu=mm-scada]) { height:47.2rem; margin-bottom:1.2rem;}
 .mm-unit:has([main-menu=mm-view]) { height:47.2rem; margin-bottom:1.2rem;}
