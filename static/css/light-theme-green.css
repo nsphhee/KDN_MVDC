@@ -1059,7 +1059,7 @@ input:read-only {background:#f0f0f2;}
 .cm-lnb-wrap,
 .cm-lnb-inner {height:100%;}
 .cm-lnb-inner {display:flex; flex-direction:column;}
-.cm-left-top {background:#1f883d;position:relative;padding:1.2rem 1.2rem;}
+.cm-left-top {background:#29863b;position:relative;padding:1.2rem 1.2rem;}
 .cm-left-top > span {display:block;font-size:1.4rem;color:#ffffff;}
 .cm-left-top > button {position:absolute; right:0.4rem; top:calc(50% - 1.2rem); width:2.4rem; height:2.4rem;}
 .cm-left-cont {background:#ffffff;height:calc(100% - 3.8rem);flex-grow:1;}
