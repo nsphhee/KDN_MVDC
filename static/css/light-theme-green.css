@@ -206,7 +206,7 @@ input:read-only {background:#f0f0f2;}
 .header-menu-inner > div {padding:0; display:flex;justify-content:space-between; align-items:center; position:relative; width:calc(100% - 3.4rem) !important;margin:0 auto;}
 .header-item {display:flex; justify-content:flex-start; align-items:center;}
 
-.logo-img {background:#171717;border-radius:4px;color:#5FA606;font-size:1.3rem;padding:0.8rem 0;margin-right:1.2rem;width:7.0rem;text-align:center; font-weight:bold;}
+.logo-img {background:#171717;border-radius:4px;color:#339536;font-size:1.3rem;padding:0.8rem 0;margin-right:1.2rem;width:7.0rem;text-align:center; font-weight:bold;}
 .program-name {color: #ffffff;font-size:1.4rem;padding-bottom:0.1rem;display:flex;align-items:center;}
 .program-name > span {color: #ffffff;margin-left:0.3rem;font-weight:normal;padding-bottom:0.1rem;max-width:18.0rem;}
 
