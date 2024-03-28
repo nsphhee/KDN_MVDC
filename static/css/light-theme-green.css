@@ -1080,7 +1080,7 @@ button:hover.area-open:before {opacity:1;}
 .tui-tree-opened > .tui-tree-content-wrapper .tui-tree-text { font-size:1.4rem; color:#444444 !important;}
 .tui-tree-content-wrapper {min-width:fit-content; width:auto;}
 .tui-tree-content-wrapper:hover,
-.tui-tree-hover > .tui-tree-content-wrapper {background:#e7eff7; background-color:#E9EFF7 !important; border-radius:4px;}
+.tui-tree-hover > .tui-tree-content-wrapper {background:#ededed; background-color:#ededed !important; border-radius:4px;}
 .tui-tree-wrap > ul {padding:0 0 1.2rem 0; width:calc(100% - 0.2rem);}
 
 .tui-tree-opened .tui-ico-tree {background:url(../images/light-theme-green/tree/tui_icon_open.svg) no-repeat center center !important;  transform:skew(0deg);}
